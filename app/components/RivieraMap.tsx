@@ -7,6 +7,12 @@ import { localePath, type Locale } from "../i18n/config";
 import { getMessages, type MessagesForLocale } from "../i18n/messages";
 import type { ExperiencePhoto } from "../lib/experience-photos";
 
+const cannesPhotos = [
+  { fileName: "la-croisette.jpg", src: "/images/destinations/cannes/la-croisette.jpg", alt: "La Croisette in Cannes on the French Riviera", objectPosition: "60% 50%" },
+  { fileName: "le-suquet.jpg", src: "/images/destinations/cannes/le-suquet.jpg", alt: "Le Suquet old town in Cannes", objectPosition: "65% 50%" },
+  { fileName: "marche-forville.jpg", src: "/images/destinations/cannes/marche-forville.jpg", alt: "Marché Forville in Cannes", objectPosition: "50% 50%" },
+];
+
 export default function RivieraMap({
   copy,
   locale,
@@ -23,7 +29,7 @@ export default function RivieraMap({
     destinations[0];
   const selectedSubtitle =
     "subtitle" in selected ? selected.subtitle : undefined;
-  const photos = destinationPhotos[selected.id] ?? [];
+  const photos = selected.id === "cannes" ? cannesPhotos : destinationPhotos[selected.id] ?? [];
   const experienceItems = getMessages(locale).experiences.items;
   const availableExperiences = selected.experiences
     .map((slug) =>
@@ -135,7 +141,8 @@ export default function RivieraMap({
                   key={photo.fileName}
                 >
                   <Image
-                    alt={copy.photoAlt}
+                    alt={selected.id === "cannes" ? cannesPhotos[index].alt : copy.photoAlt}
+                    style={selected.id === "cannes" ? { objectPosition: cannesPhotos[index].objectPosition } : undefined}
                     fill
                     sizes="(max-width: 780px) 90vw, 30vw"
                     src={photo.src}
