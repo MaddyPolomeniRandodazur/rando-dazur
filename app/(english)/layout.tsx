@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import TemporaryUpdateNotice from "../components/TemporaryUpdateNotice";
 import "../globals.css";
 import { getHomeMetadata } from "../lib/metadata";
 
@@ -13,7 +14,7 @@ export default function EnglishRootLayout({
 }>) {
   return (
     <html data-scroll-behavior="smooth" lang="en">
-      <body>{children}</body>
+      <body><TemporaryUpdateNotice>{children}</TemporaryUpdateNotice></body>
     </html>
   );
 }

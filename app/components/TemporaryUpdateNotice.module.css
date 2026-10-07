@@ -1,0 +1,27 @@
+.notice {
+  width: 100%;
+  padding: 9px 20px;
+  background: var(--sage-dark);
+  color: var(--paper);
+  text-align: center;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.notice a {
+  display: inline-block;
+  white-space: nowrap;
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.site {
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .notice {
+    padding: 9px 16px;
+  }
+}
