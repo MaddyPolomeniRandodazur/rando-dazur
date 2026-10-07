@@ -23,6 +23,17 @@ const detailPages: Partial<Record<string, ExperienceSlug>> = {
   "cruise-guests": "cruise-guests",
 };
 
+const homeCardPhotos: Partial<Record<string, { src: string; objectPosition: string }>> = {
+  "food-tours": {
+    src: "/images/experiences/food-tour-cannes-seaview.jpg",
+    objectPosition: "50% 50%",
+  },
+  hiking: {
+    src: "/images/experiences/food-tour-tasting-cannes.jpg",
+    objectPosition: "40% 50%",
+  },
+};
+
 export default function ExperienceSection({
   locale,
   photos,
@@ -46,6 +57,8 @@ export default function ExperienceSection({
         <div className="experience-grid">
           {copy.items.map((experience, index) => {
             const pageSlug = detailPages[experience.id];
+            const cardPhoto = homeCardPhotos[experience.id];
+            const photoSrc = cardPhoto?.src ?? (pageSlug ? photos[pageSlug].hero?.src : undefined);
 
             return (
               <article
@@ -62,13 +75,14 @@ export default function ExperienceSection({
                   }
                   aria-label={`${experience.title} — ${copy.explore}`}
                 >
-                  {pageSlug && photos[pageSlug].hero && (
+                  {photoSrc && (
                     <Image
                       alt=""
                       className="experience-cover-image"
                       fill
                       sizes="(max-width: 780px) 100vw, 33vw"
-                      src={photos[pageSlug].hero.src}
+                      src={photoSrc}
+                      style={cardPhoto ? { objectPosition: cardPhoto.objectPosition } : undefined}
                     />
                   )}
                   <span className="card-number">0{index + 1}</span>
