@@ -21,16 +21,14 @@ const articlesDirectory = path.join(
   process.cwd(),
   "public",
   "images",
-  "Rando d_Azur",
-  "Press",
+  "press",
   "Articles",
 );
 const televisionDirectory = path.join(
   process.cwd(),
   "public",
   "images",
-  "Rando d_Azur",
-  "Press",
+  "press",
   "TV",
 );
 
@@ -73,15 +71,14 @@ export async function getPressAssets(): Promise<PressAsset[]> {
       kind: "article",
       title: titleFromFile(fileName),
       href: publicAssetUrl(
-        path.join("images", "Rando d_Azur", "Press", "Articles", fileName),
+        path.join("images", "press", "Articles", fileName),
       ),
       ...(thumbnail
         ? {
             thumbnail: publicAssetUrl(
               path.join(
                 "images",
-                "Rando d_Azur",
-                "Press",
+                "press",
                 "Articles",
                 thumbnail,
               ),
@@ -100,7 +97,7 @@ export async function getPressAssets(): Promise<PressAsset[]> {
       kind: "video",
       title: fileName,
       href: publicAssetUrl(
-        path.join("images", "Rando d_Azur", "Press", "TV", fileName),
+        path.join("images", "press", "TV", fileName),
       ),
       ...(date ? { date } : {}),
     };
@@ -119,7 +116,7 @@ export async function getPressTelevisionPhotos(): Promise<
   return fileNames.map((fileName) => ({
     fileName,
     src: publicAssetUrl(
-      path.join("images", "Rando d_Azur", "Press", "TV", fileName),
+      path.join("images", "press", "TV", fileName),
     ),
   }));
 }

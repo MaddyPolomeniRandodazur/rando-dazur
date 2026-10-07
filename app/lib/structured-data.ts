@@ -21,7 +21,7 @@ export function getBusinessStructuredData(locale: Locale) {
     url: new URL(localePath(locale), baseUrl).toString(),
     description: copy.hero.description,
     image: new URL(
-      publicAssetUrl("images/Rando d_Azur/Brand/Logo/version bleu.png"),
+      publicAssetUrl("images/about/brand/version bleu.png"),
       baseUrl,
     ).toString(),
     email: [contactChannels.primaryEmail, contactChannels.secondaryEmail],

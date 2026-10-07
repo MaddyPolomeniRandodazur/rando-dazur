@@ -2,8 +2,8 @@ import Image from "next/image";
 import { publicAssetUrl } from "../lib/public-assets";
 
 const logoSources = {
-  blue: publicAssetUrl("images/Rando d_Azur/Brand/Logo/version bleu.png"),
-  white: publicAssetUrl("images/Rando d_Azur/Brand/Logo/version blanche.png"),
+  blue: publicAssetUrl("images/about/brand/version bleu.png"),
+  white: publicAssetUrl("images/about/brand/version blanche.png"),
 };
 
 export default function BrandLogo({

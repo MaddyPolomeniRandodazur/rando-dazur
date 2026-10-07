@@ -17,7 +17,7 @@ export const pressStories: PressStory[] = [
     id: "france3-wild-plants",
     publication: "France 3 Côte d’Azur",
     logo: publicAssetUrl(
-      "images/Rando d_Azur/Press/Logos/franceinfo.svg",
+      "images/press/Logos/franceinfo.svg",
     ),
     href: "https://france3-regions.franceinfo.fr/provence-alpes-cote-d-azur/var/quelles-sont-les-plantes-sauvages-comestibles-dans-le-massif-de-l-esterel-les-reponses-d-une-guide-de-randonnee-3138490.html",
     date: "2025-04-14",
@@ -32,7 +32,7 @@ export const pressStories: PressStory[] = [
   {
     id: "rcf-walking",
     publication: "RCF",
-    logo: publicAssetUrl("images/Rando d_Azur/Press/Logos/rcf.webp"),
+    logo: publicAssetUrl("images/press/Logos/rcf.webp"),
     href: "https://www.rcf.fr/articles/culture/pourquoi-la-marche-rencontre-un-succes-fou-en-france",
     date: "2022-05-01",
     datePrecision: "month",
@@ -46,7 +46,7 @@ export const pressStories: PressStory[] = [
   {
     id: "actu-rando-apero",
     publication: "actu.fr",
-    logo: publicAssetUrl("images/Rando d_Azur/Press/Logos/actu.svg"),
+    logo: publicAssetUrl("images/press/Logos/actu.svg"),
     href: "https://actu.fr/provence-alpes-cote-d-azur/mandelieu-la-napoule_06079/alpes-maritimes-des-degustations-au-sommet-avec-ces-rando-apero-dans-le-massif-de-l-esterel_42224680.html",
     date: "2021-05-29",
     title:
@@ -61,7 +61,7 @@ export const pressStories: PressStory[] = [
     id: "france3-mimosa",
     publication: "France 3 Côte d’Azur",
     logo: publicAssetUrl(
-      "images/Rando d_Azur/Press/Logos/franceinfo.svg",
+      "images/press/Logos/franceinfo.svg",
     ),
     href: "https://france3-regions.franceinfo.fr/provence-alpes-cote-d-azur/alpes-maritimes/cannes/randonnees-parfumees-tanneron-pres-cannes-decouvrir-foret-mimosas-1912466.html",
     date: "2021-01-09",

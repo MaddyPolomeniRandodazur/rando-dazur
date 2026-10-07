@@ -20,25 +20,25 @@ export type ExperiencePhotoCollection = {
 };
 
 export const experiencePhotoFolders = {
-  "food-tours": ["Photos/Food Tour Cannes", "Website assets/Food Tour"],
-  "hiking-experiences": ["Photos/Wild Plants"],
-  "sunset-apero-hikes": ["Photos/Rando Apéro"],
-  "cycling-experiences": ["Photos/Bike"],
-  "wild-provence": ["Photos/Wild Plants"],
-  "edible-plants": ["Photos/Wild Plants"],
-  "outdoor-escape-games": ["Photos/Corporate"],
-  "family-experiences": ["Photos/Families"],
-  "evjf-experiences": ["Photos/Corporate", "Photos/Rando Apéro"],
-  "evg-experiences": ["Photos/Corporate", "Photos/Rando Apéro"],
-  "corporate-incentive-travel": ["Photos/Corporate"],
-  "cruise-guests": ["Photos/Cruise"],
-} satisfies Record<ExperienceSlug, string[]>;
+  "food-tours": "food-tours",
+  "hiking-experiences": "hiking-experiences",
+  "sunset-apero-hikes": "rando-apero",
+  "cycling-experiences": "cycling-experiences",
+  "wild-provence": "wild-provence",
+  "edible-plants": "edible-plants",
+  "outdoor-escape-games": "outdoor-escape-games",
+  "family-experiences": "family-experiences",
+  "evjf-experiences": "evjf-experiences",
+  "evg-experiences": "evg-experiences",
+  "corporate-incentive-travel": "corporate-incentive-travel",
+  "cruise-guests": "cruise-guests",
+} satisfies Record<ExperienceSlug, string>;
 
-const assetRoot = path.join(
+const experienceAssetRoot = path.join(
   process.cwd(),
   "public",
   "images",
-  "Rando d_Azur",
+  "experiences",
 );
 const supportedPhoto = /\.(jpe?g|png|webp)$/i;
 
@@ -59,28 +59,16 @@ function comparePhotos(left: ExperiencePhoto, right: ExperiencePhoto) {
 export async function getExperiencePhotoCollection(
   slug: ExperienceSlug,
 ): Promise<ExperiencePhotoCollection> {
-  const relativeFolders = experiencePhotoFolders[slug];
-  const sourceFiles = (
-    await Promise.all(
-      relativeFolders.map(async (relativeFolder) => {
-        const photoDirectory = path.join(
-          assetRoot,
-          ...relativeFolder.split("/"),
-        );
-        const fileNames = (await readdir(photoDirectory))
-          .filter((fileName) => supportedPhoto.test(fileName))
-          .sort((left, right) =>
-            left.localeCompare(right, undefined, { numeric: true }),
-          );
-
-        return fileNames.map((fileName) => ({ fileName, relativeFolder }));
-      }),
-    )
-  ).flat();
+  const experienceFolder = experiencePhotoFolders[slug];
+  const photoDirectory = path.join(experienceAssetRoot, experienceFolder);
+  const fileNames = (await readdir(photoDirectory))
+    .filter((fileName) => supportedPhoto.test(fileName))
+    .sort((left, right) =>
+      left.localeCompare(right, undefined, { numeric: true }),
+    );
 
   const photos = await Promise.all(
-    sourceFiles.map(async ({ fileName, relativeFolder }) => {
-      const photoDirectory = path.join(assetRoot, ...relativeFolder.split("/"));
+    fileNames.map(async (fileName) => {
       const filePath = path.join(photoDirectory, fileName);
       const [metadata, fileStats] = await Promise.all([
         sharp(filePath).metadata(),
@@ -99,7 +87,7 @@ export async function getExperiencePhotoCollection(
 
       return {
         src: publicAssetUrl(
-          path.join("images", "Rando d_Azur", relativeFolder, fileName),
+          path.join("images", "experiences", experienceFolder, fileName),
         ),
         fileName,
         width,

@@ -71,7 +71,7 @@ export default function WhySection({ locale }: { locale: Locale }) {
                 fill
                 sizes="(max-width: 780px) 100vw, 42vw"
                 src={publicAssetUrl(
-                  "images/Rando d_Azur/Equipe/Maddy/Maddy - portait mimosa.jpg",
+                  "images/about/maddy/Maddy - portait mimosa.jpg",
                 )}
               />
               <figcaption>{copy.portraitAlt}</figcaption>
@@ -82,7 +82,7 @@ export default function WhySection({ locale }: { locale: Locale }) {
                 fill
                 sizes="(max-width: 780px) 100vw, 42vw"
                 src={publicAssetUrl(
-                  "images/Rando d_Azur/Photos/Team/IMG_20250629_111151.jpg",
+                  "images/about/team/IMG_20250629_111151.jpg",
                 )}
               />
               <figcaption>{copy.teamAlt}</figcaption>

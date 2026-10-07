@@ -56,7 +56,7 @@ export function getLocalizedPageMetadata({
       : {}),
   };
   const socialImage =
-    image ?? publicAssetUrl("images/Rando d_Azur/Brand/Logo/version bleu.png");
+    image ?? publicAssetUrl("images/about/brand/version bleu.png");
 
   return {
     metadataBase: baseUrl,
