@@ -37,6 +37,12 @@ const grassePhotos = [
   { fileName: "traditional-perfume-making.jpg", src: "/images/destinations/grasse/traditional-perfume-making.jpg", alt: "Traditional perfume making in Grasse", objectPosition: "50% 50%" },
 ];
 
+const fayencePhotos = [
+  { fileName: "pont-des-tuves-siagne.jpg", src: "/images/destinations/pays-de-fayence/pont-des-tuves-siagne.jpg", alt: "Pont des Tuves and the Siagne river in the Pays de Fayence", objectPosition: "60% 50%" },
+  { fileName: "tanneron-mimosa-eucalyptus.jpg", src: "/images/destinations/pays-de-fayence/tanneron-mimosa-eucalyptus.jpg", alt: "Mimosa and eucalyptus hills of Tanneron", objectPosition: "50% 50%" },
+  { fileName: "mons-hilltop-village.jpg", src: "/images/destinations/pays-de-fayence/mons-hilltop-village.jpg", alt: "Hilltop village of Mons in the Pays de Fayence", objectPosition: "50% 50%" },
+];
+
 export default function RivieraMap({
   copy,
   locale,
@@ -53,7 +59,7 @@ export default function RivieraMap({
     destinations[0];
   const selectedSubtitle =
     "subtitle" in selected ? selected.subtitle : undefined;
-  const destinationGallery = selected.id === "cannes" ? cannesPhotos : selected.id === "iles-de-lerins" ? lerinsPhotos : selected.id === "esterel" ? esterelPhotos : selected.id === "antibes" ? antibesPhotos : selected.id === "grasse" ? grassePhotos : undefined;
+  const destinationGallery = selected.id === "cannes" ? cannesPhotos : selected.id === "iles-de-lerins" ? lerinsPhotos : selected.id === "esterel" ? esterelPhotos : selected.id === "antibes" ? antibesPhotos : selected.id === "grasse" ? grassePhotos : selected.id === "pays-de-fayence" ? fayencePhotos : undefined;
   const photos = destinationGallery ?? destinationPhotos[selected.id] ?? [];
   const experienceItems = getMessages(locale).experiences.items;
   const availableExperiences = selected.experiences
