@@ -24,6 +24,10 @@ const detailPages: Partial<Record<string, ExperienceSlug>> = {
 };
 
 const homeCardPhotos: Partial<Record<string, { src: string; objectPosition: string }>> = {
+  "sunset-apero-hikes": {
+    src: "/images/experiences/sunset-apero-hikes-picnic.jpg",
+    objectPosition: "65% 50%",
+  },
   "cruise-guests": {
     src: "/images/experiences/cruise-guests-cannes-port.jpg",
     objectPosition: "20% 50%",
