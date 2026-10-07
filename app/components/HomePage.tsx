@@ -41,7 +41,7 @@ export default async function HomePage({ locale }: { locale: Locale }) {
                 ? [collection.hero, ...collection.gallery]
                 : collection.gallery;
             })
-            .map((photo) => [photo.src, photo]),
+            .map((photo) => [photo.fileName, photo]),
         ).values(),
       ].slice(0, 3),
     ]),

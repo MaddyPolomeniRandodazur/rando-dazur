@@ -132,7 +132,7 @@ export default function RivieraMap({
               {photos.map((photo, index) => (
                 <figure
                   className={`map-detail-photo map-detail-photo-${index + 1}`}
-                  key={photo.src}
+                  key={photo.fileName}
                 >
                   <Image
                     alt={copy.photoAlt}

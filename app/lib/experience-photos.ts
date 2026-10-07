@@ -1,10 +1,7 @@
 import "server-only";
 
-import { readdir, stat } from "node:fs/promises";
-import path from "node:path";
-import sharp from "sharp";
 import { experienceSlugs, type ExperienceSlug } from "../i18n/config";
-import { publicAssetUrl } from "./public-assets";
+import { mediaPlaceholderUrl } from "./public-assets";
 
 export type ExperiencePhoto = {
   src: string;
@@ -34,13 +31,20 @@ export const experiencePhotoFolders = {
   "cruise-guests": "cruise-guests",
 } satisfies Record<ExperienceSlug, string>;
 
-const experienceAssetRoot = path.join(
-  process.cwd(),
-  "public",
-  "images",
-  "experiences",
-);
-const supportedPhoto = /\.(jpe?g|png|webp)$/i;
+const experiencePhotoCounts = {
+  "food-tours": 56,
+  "hiking-experiences": 8,
+  "sunset-apero-hikes": 37,
+  "cycling-experiences": 8,
+  "wild-provence": 8,
+  "edible-plants": 8,
+  "outdoor-escape-games": 3,
+  "family-experiences": 37,
+  "evjf-experiences": 3,
+  "evg-experiences": 3,
+  "corporate-incentive-travel": 27,
+  "cruise-guests": 0,
+} satisfies Record<ExperienceSlug, number>;
 
 function comparePhotos(left: ExperiencePhoto, right: ExperiencePhoto) {
   const targetRatio = 16 / 9;
@@ -59,50 +63,16 @@ function comparePhotos(left: ExperiencePhoto, right: ExperiencePhoto) {
 export async function getExperiencePhotoCollection(
   slug: ExperienceSlug,
 ): Promise<ExperiencePhotoCollection> {
-  const experienceFolder = experiencePhotoFolders[slug];
-  const photoDirectory = path.join(experienceAssetRoot, experienceFolder);
-  const fileNames = (await readdir(photoDirectory))
-    .filter((fileName) => supportedPhoto.test(fileName))
-    .sort((left, right) =>
-      left.localeCompare(right, undefined, { numeric: true }),
-    );
-
-  const photos = await Promise.all(
-    fileNames.map(async (fileName) => {
-      const filePath = path.join(photoDirectory, fileName);
-      const [metadata, fileStats] = await Promise.all([
-        sharp(filePath).metadata(),
-        stat(filePath),
-      ]);
-
-      if (!metadata.width || !metadata.height) {
-        throw new Error(
-          `Experience photo has no dimensions: ${photoDirectory}\\${fileName}`,
-        );
-      }
-
-      const isRotated = metadata.orientation && metadata.orientation >= 5;
-      const width = isRotated ? metadata.height : metadata.width;
-      const height = isRotated ? metadata.width : metadata.height;
-
-      return {
-        src: publicAssetUrl(
-          path.join("images", "experiences", experienceFolder, fileName),
-        ),
-        fileName,
-        width,
-        height,
-        fileSize: fileStats.size,
-      };
-    }),
-  );
-
-  const landscapePhotos = photos
-    .filter((photo) => photo.width > photo.height)
-    .sort(comparePhotos);
-  // TODO: Add landscape photos to Bike; that folder currently only contains portrait images.
-  const hero = landscapePhotos[0] ?? photos.sort(comparePhotos)[0] ?? null;
-  const gallery = photos.filter((photo) => photo.src !== hero?.src);
+  const photoCount = experiencePhotoCounts[slug];
+  const photos = Array.from({ length: photoCount }, (_, index) => ({
+    src: mediaPlaceholderUrl,
+    fileName: `${experiencePhotoFolders[slug]}-photo-${index + 1}`,
+    width: 1600,
+    height: 900,
+    fileSize: 0,
+  }));
+  const hero = photos[0] ?? null;
+  const gallery = photos.slice(1);
 
   return { hero, gallery };
 }

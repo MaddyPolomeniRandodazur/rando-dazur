@@ -38,9 +38,6 @@ export default async function ExperiencePage({
           localePath(locale, `/experiences/${slug}`),
           baseUrl,
         ).toString(),
-        ...(photos.hero
-          ? { image: new URL(photos.hero.src, baseUrl).toString() }
-          : {}),
         provider: {
           "@id": new URL("/#organization", baseUrl).toString(),
         },
@@ -122,7 +119,7 @@ export default async function ExperiencePage({
             </div>
             <div className="experience-photo-gallery-grid">
               {photos.gallery.map((photo, index) => (
-                <figure className="experience-photo-gallery-photo" key={photo.src}>
+                <figure className="experience-photo-gallery-photo" key={photo.fileName}>
                   <Image
                     alt={copy.photoGallery.photoAlt}
                     fill

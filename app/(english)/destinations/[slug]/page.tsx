@@ -21,7 +21,6 @@ export async function generateMetadata({ params }: PageParameters) {
     path: `/destinations/${slug}`,
     title: `${content.seoTitle} | Rando d’Azur`,
     description: content.metaDescription,
-    image: `/images/destinations/${slug}/${content.photos[0]}`,
   });
 }
 

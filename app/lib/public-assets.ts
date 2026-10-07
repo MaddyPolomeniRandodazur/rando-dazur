@@ -4,3 +4,5 @@ export function publicAssetUrl(relativePath: string) {
     .map((segment) => encodeURIComponent(segment))
     .join("/")}`;
 }
+
+export const mediaPlaceholderUrl = publicAssetUrl("media-placeholder.svg");

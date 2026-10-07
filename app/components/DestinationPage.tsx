@@ -10,6 +10,7 @@ import {
   getBusinessStructuredData,
 } from "../lib/structured-data";
 import { getSiteUrl } from "../lib/site-url";
+import { mediaPlaceholderUrl } from "../lib/public-assets";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import ScrollReveal from "../scroll-reveal";
@@ -90,9 +91,6 @@ export default function DestinationPage({
         name: copy.title,
         description: copy.metaDescription,
         url: pageUrl,
-        image: copy.photos.map((photo) =>
-          new URL(`/images/destinations/${slug}/${photo}`, baseUrl).toString(),
-        ),
         touristType: [
           "Private travellers",
           "Families",
@@ -151,7 +149,7 @@ export default function DestinationPage({
             fill
             preload
             sizes="100vw"
-            src={`/images/destinations/${slug}/${copy.photos[0]}`}
+            src={mediaPlaceholderUrl}
           />
           <div aria-hidden="true" className="hero-shade" />
           <div className="page-width experience-detail-content">
@@ -194,7 +192,7 @@ export default function DestinationPage({
                     alt={`${copy.imageAlt} · ${String(index + 1).padStart(2, "0")}`}
                     fill
                     sizes="(max-width: 780px) 100vw, 50vw"
-                    src={`/images/destinations/${slug}/${photo}`}
+                    src={mediaPlaceholderUrl}
                   />
                 </figure>
               ))}

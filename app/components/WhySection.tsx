@@ -1,7 +1,7 @@
 import type { Locale } from "../i18n/config";
 import Image from "next/image";
 import { getMessages } from "../i18n/messages";
-import { publicAssetUrl } from "../lib/public-assets";
+import { mediaPlaceholderUrl } from "../lib/public-assets";
 
 export default function WhySection({ locale }: { locale: Locale }) {
   const copy = getMessages(locale).about;
@@ -70,9 +70,7 @@ export default function WhySection({ locale }: { locale: Locale }) {
                 alt={copy.portraitAlt}
                 fill
                 sizes="(max-width: 780px) 100vw, 42vw"
-                src={publicAssetUrl(
-                  "images/about/maddy/Maddy - portait mimosa.jpg",
-                )}
+                src={mediaPlaceholderUrl}
               />
               <figcaption>{copy.portraitAlt}</figcaption>
             </figure>
@@ -81,9 +79,7 @@ export default function WhySection({ locale }: { locale: Locale }) {
                 alt={copy.teamAlt}
                 fill
                 sizes="(max-width: 780px) 100vw, 42vw"
-                src={publicAssetUrl(
-                  "images/about/team/IMG_20250629_111151.jpg",
-                )}
+                src={mediaPlaceholderUrl}
               />
               <figcaption>{copy.teamAlt}</figcaption>
             </figure>

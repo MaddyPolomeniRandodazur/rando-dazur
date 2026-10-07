@@ -3,11 +3,6 @@ import { locales, localePath, type Locale } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
 import { getSiteUrl } from "./site-url";
 import { publicAssetUrl } from "./public-assets";
-import {
-  getAllExperiencePhotoCollections,
-  getBestLandscapeExperiencePhoto,
-  getExperiencePhotoCollection,
-} from "./experience-photos";
 import { isExperienceSlug } from "../i18n/config";
 
 const localeOpenGraph: Record<Locale, string> = {
@@ -93,9 +88,6 @@ export function getLocalizedPageMetadata({
 
 export async function getHomeMetadata(locale: Locale): Promise<Metadata> {
   const copy = getMessages(locale);
-  const heroPhoto = await getBestLandscapeExperiencePhoto(
-    await getAllExperiencePhotoCollections(),
-  );
   const title =
     locale === "en"
       ? "Authentic French Riviera Experiences & Private Guides | Rando d’Azur"
@@ -106,7 +98,6 @@ export async function getHomeMetadata(locale: Locale): Promise<Metadata> {
     path: "/",
     title,
     description: copy.hero.description,
-    image: heroPhoto.src,
   });
 }
 
@@ -183,7 +174,6 @@ export async function getExperienceMetadata(
   const copy = getMessages(locale);
   if (!isExperienceSlug(slug)) return {};
   const experience = copy.experiencePage.pages[slug];
-  const experiencePhoto = await getExperiencePhotoCollection(slug);
   const path = `/experiences/${slug}`;
   const englishMetadata = englishExperienceMetadata[slug];
   const title =
@@ -199,6 +189,5 @@ export async function getExperienceMetadata(
       locale === "en"
         ? englishMetadata.description
         : experience.description,
-    image: experiencePhoto.hero?.src,
   });
 }

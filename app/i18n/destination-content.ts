@@ -37,7 +37,7 @@ const english: Record<DestinationSlug, DestinationContent> = {
       "Explore the waterfront or set out by bike at your own pace.",
     ],
     imageAlt: "The waterfront and colourful streets of Cannes, France",
-    photos: ["suquet.webp", "market.webp", "croisette.webp"],
+    photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
     experiences: [
       "food-tours",
       "hiking-experiences",
@@ -70,7 +70,7 @@ const english: Record<DestinationSlug, DestinationContent> = {
       "Make time for viewpoints, quiet woodland and a sunset apéro.",
     ],
     imageAlt: "Red volcanic rocks and Mediterranean trails in the Estérel",
-    photos: ["hero.webp", "mountain.webp", "calanque.webp"],
+    photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
     experiences: [
       "hiking-experiences",
       "sunset-apero-hikes",
@@ -104,7 +104,7 @@ const english: Record<DestinationSlug, DestinationContent> = {
       "Meet local producers and connect the landscape with its flavours.",
     ],
     imageAlt: "Flower-filled historic lanes in Grasse, the perfume capital of Provence",
-    photos: ["old-lane.webp", "flowers.webp", "lavender.webp"],
+    photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
     experiences: ["food-tours", "hiking-experiences", "wild-provence"],
     faqs: [
       {
@@ -132,7 +132,7 @@ const english: Record<DestinationSlug, DestinationContent> = {
       "Explore wild plants, family adventures and quieter walking trails.",
     ],
     imageAlt: "Clear river water and green woodland in Pays de Fayence, Var",
-    photos: ["hero.webp", "waterfall.webp", "river.webp"],
+    photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
     experiences: [
       "hiking-experiences",
       "wild-provence",
@@ -165,7 +165,7 @@ const english: Record<DestinationSlug, DestinationContent> = {
       "Explore the coast by foot or link Antibes into a private bike tour.",
     ],
     imageAlt: "The historic ramparts and Mediterranean shoreline of Antibes",
-    photos: ["hero.webp", "coast.webp", "harbor.webp"],
+    photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
     experiences: [
       "food-tours",
       "hiking-experiences",
@@ -198,7 +198,7 @@ const english: Record<DestinationSlug, DestinationContent> = {
       "Connect an island visit with Cannes, local food and coastal stories.",
     ],
     imageAlt: "Pine forest and clear Mediterranean coves on the Lérins Islands",
-    photos: ["hero.webp", "cove.webp", "island.webp"],
+    photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
     experiences: [
       "cruise-guests",
       "hiking-experiences",
@@ -234,7 +234,7 @@ const french: Record<DestinationSlug, DestinationContent> = {
       "Explorez le front de mer ou partez à vélo à votre rythme.",
     ],
     imageAlt: "Le front de mer et les ruelles colorées de Cannes",
-    photos: ["suquet.webp", "market.webp", "croisette.webp"],
+    photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
     experiences: ["food-tours", "hiking-experiences", "cycling-experiences", "cruise-guests"],
     faqs: [
       { question: "Que faire à Cannes au-delà du Festival ?", answer: "Explorez le Suquet, visitez le marché Forville, longez le front de mer ou découvrez la ville lors d’une expérience privée à pied, à vélo ou gourmande." },
@@ -254,7 +254,7 @@ const french: Record<DestinationSlug, DestinationContent> = {
       "Prenez le temps des belvédères, des forêts et d’un apéritif au coucher du soleil.",
     ],
     imageAlt: "Roches volcaniques rouges et sentiers méditerranéens de l’Estérel",
-    photos: ["hero.webp", "mountain.webp", "calanque.webp"],
+    photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
     experiences: ["hiking-experiences", "sunset-apero-hikes", "cycling-experiences", "outdoor-escape-games", "family-experiences"],
     faqs: [
       { question: "Peut-on réserver une randonnée privée dans l’Estérel ?", answer: "Oui. Les randonnées privées dans l’Estérel sont adaptées à votre groupe, à votre rythme et aux conditions du jour." },
@@ -274,7 +274,7 @@ const french: Record<DestinationSlug, DestinationContent> = {
       "Rencontrez des producteurs et reliez le paysage à ses saveurs.",
     ],
     imageAlt: "Ruelles fleuries et patrimoine historique de Grasse",
-    photos: ["old-lane.webp", "flowers.webp", "lavender.webp"],
+    photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
     experiences: ["food-tours", "hiking-experiences", "wild-provence"],
     faqs: [
       { question: "Pourquoi Grasse est-elle connue ?", answer: "Grasse est connue pour son patrimoine de la parfumerie, ses traditions florales et sa situation perchée au-dessus de la Côte d’Azur." },
@@ -294,7 +294,7 @@ const french: Record<DestinationSlug, DestinationContent> = {
       "Explorez les plantes sauvages, la nature et des sentiers en famille.",
     ],
     imageAlt: "Eaux claires et forêt verdoyante du Pays de Fayence dans le Var",
-    photos: ["hero.webp", "waterfall.webp", "river.webp"],
+    photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
     experiences: ["hiking-experiences", "wild-provence", "family-experiences", "outdoor-escape-games"],
     faqs: [
       { question: "Où se trouve le Pays de Fayence ?", answer: "Le Pays de Fayence rassemble plusieurs villages du Var, au nord-ouest de Cannes, entre le littoral et les collines provençales." },
@@ -314,7 +314,7 @@ const french: Record<DestinationSlug, DestinationContent> = {
       "Explorez le littoral à pied ou lors d’un itinéraire privé à vélo.",
     ],
     imageAlt: "Remparts historiques et littoral méditerranéen d’Antibes",
-    photos: ["hero.webp", "coast.webp", "harbor.webp"],
+    photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
     experiences: ["food-tours", "hiking-experiences", "cycling-experiences", "family-experiences"],
     faqs: [
       { question: "Que faire à Antibes ?", answer: "Parcourez la vieille ville et ses remparts, visitez le marché provençal, découvrez le port Vauban et explorez le littoral avec un guide." },
@@ -334,7 +334,7 @@ const french: Record<DestinationSlug, DestinationContent> = {
       "Reliez la visite à Cannes, à sa cuisine locale et à son littoral.",
     ],
     imageAlt: "Forêt de pins et criques méditerranéennes des îles de Lérins",
-    photos: ["hero.webp", "cove.webp", "island.webp"],
+    photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
     experiences: ["cruise-guests", "hiking-experiences", "food-tours", "cycling-experiences"],
     faqs: [
       { question: "Comment visiter les îles de Lérins depuis Cannes ?", answer: "Les îles sont accessibles en bateau depuis Cannes. Rando d’Azur imagine une expérience adaptée à la traversée, au temps disponible et à vos envies." },
@@ -357,7 +357,7 @@ const italian: Record<DestinationSlug, DestinationContent> = {
       "Esplora il lungomare o parti in bicicletta al tuo ritmo.",
     ],
     imageAlt: "Il lungomare e i vicoli colorati di Cannes",
-    photos: ["suquet.webp", "market.webp", "croisette.webp"],
+    photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
     experiences: ["food-tours", "hiking-experiences", "cycling-experiences", "cruise-guests"],
     faqs: [
       { question: "Cosa fare a Cannes oltre al Festival?", answer: "Scopri Le Suquet, visita il mercato Forville, passeggia sul lungomare o scegli un’esperienza privata a piedi, in bici o dedicata ai sapori locali." },
@@ -377,7 +377,7 @@ const italian: Record<DestinationSlug, DestinationContent> = {
       "Fermati ad ammirare i panorami, i boschi e il tramonto.",
     ],
     imageAlt: "Rocce vulcaniche rosse e sentieri mediterranei nell’Estérel",
-    photos: ["hero.webp", "mountain.webp", "calanque.webp"],
+    photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
     experiences: ["hiking-experiences", "sunset-apero-hikes", "cycling-experiences", "outdoor-escape-games", "family-experiences"],
     faqs: [
       { question: "È possibile prenotare un trekking privato nell’Estérel?", answer: "Sì. I trekking privati nell’Estérel si adattano al gruppo, al ritmo desiderato e alle condizioni del giorno." },
@@ -397,7 +397,7 @@ const italian: Record<DestinationSlug, DestinationContent> = {
       "Incontra i produttori e scopri i sapori del territorio.",
     ],
     imageAlt: "Vicoli storici e fioriti di Grasse, capitale del profumo",
-    photos: ["old-lane.webp", "flowers.webp", "lavender.webp"],
+    photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
     experiences: ["food-tours", "hiking-experiences", "wild-provence"],
     faqs: [
       { question: "Per cosa è conosciuta Grasse?", answer: "Grasse è conosciuta per la tradizione della profumeria, la coltivazione dei fiori e la sua posizione collinare sopra la Costa Azzurra." },
@@ -417,7 +417,7 @@ const italian: Record<DestinationSlug, DestinationContent> = {
       "Esplora piante selvatiche, natura e sentieri adatti alle famiglie.",
     ],
     imageAlt: "Acque limpide e boschi verdi nel Pays de Fayence, nel Var",
-    photos: ["hero.webp", "waterfall.webp", "river.webp"],
+    photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
     experiences: ["hiking-experiences", "wild-provence", "family-experiences", "outdoor-escape-games"],
     faqs: [
       { question: "Dove si trova il Pays de Fayence?", answer: "Il Pays de Fayence riunisce diversi borghi del Var, a nord-ovest di Cannes, tra la costa e le colline provenzali." },
@@ -437,7 +437,7 @@ const italian: Record<DestinationSlug, DestinationContent> = {
       "Esplora la costa a piedi o in un itinerario privato in bici.",
     ],
     imageAlt: "I bastioni storici e la costa mediterranea di Antibes",
-    photos: ["hero.webp", "coast.webp", "harbor.webp"],
+    photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
     experiences: ["food-tours", "hiking-experiences", "cycling-experiences", "family-experiences"],
     faqs: [
       { question: "Cosa fare ad Antibes?", answer: "Passeggia nel centro storico e lungo i bastioni, visita il mercato provenzale, scopri Port Vauban e la costa con una guida privata." },
@@ -457,7 +457,7 @@ const italian: Record<DestinationSlug, DestinationContent> = {
       "Collega la visita a Cannes, ai sapori locali e alle storie della costa.",
     ],
     imageAlt: "Pineta e calette mediterranee sulle isole di Lérins",
-    photos: ["hero.webp", "cove.webp", "island.webp"],
+    photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
     experiences: ["cruise-guests", "hiking-experiences", "food-tours", "cycling-experiences"],
     faqs: [
       { question: "Come raggiungere le isole di Lérins da Cannes?", answer: "Le isole si raggiungono in barca da Cannes. Rando d’Azur può creare un’esperienza in base alla traversata, al tempo disponibile e ai tuoi interessi." },
