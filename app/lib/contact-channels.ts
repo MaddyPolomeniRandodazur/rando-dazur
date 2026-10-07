@@ -1,5 +1,5 @@
 export const contactChannels = {
-  primaryEmail: "info@randodazur.com",
+  primaryEmail: "bonjour@maddypolomeni.com",
   secondaryEmail: "bonjour@maddypolomeni.com",
   phoneDisplay: "+33 6 67 90 69 32",
   phoneInternational: "+33667906932",

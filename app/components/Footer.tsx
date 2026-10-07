@@ -75,10 +75,10 @@ export default function Footer({ locale }: { locale: Locale }) {
                   <span>{copy.emailLabel}</span>
                   <span>{contactChannels.primaryEmail}</span>
                 </a>
-                <a href={`mailto:${contactChannels.secondaryEmail}`}>
+                {contactChannels.secondaryEmail !== contactChannels.primaryEmail && <a href={`mailto:${contactChannels.secondaryEmail}`}>
                   <span>{copy.partnershipsEmailLabel}</span>
                   <span>{contactChannels.secondaryEmail}</span>
-                </a>
+                </a>}
               </nav>
             </div>
           </div>

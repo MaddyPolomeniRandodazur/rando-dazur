@@ -1,3 +1,4 @@
+import { businessDetails } from "./business-details";
 import type { Locale } from "../i18n/config";
 import { localePath } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
@@ -26,12 +27,16 @@ export function getBusinessStructuredData(locale: Locale) {
       publicAssetUrl("images/about/brand/version bleu.png"),
       baseUrl,
     ).toString(),
-    email: [contactChannels.primaryEmail, contactChannels.secondaryEmail],
+    email: [...new Set([contactChannels.primaryEmail, contactChannels.secondaryEmail])],
+    legalName: businessDetails.owner,
+    vatID: businessDetails.vatID,
+    identifier: { "@type": "PropertyValue", propertyID: "SIRET", value: businessDetails.siret.replace(/ /g, "") },
     telephone: contactChannels.phoneInternational,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "225 Rue F. Leger",
-      addressLocality: "Biot",
+      streetAddress: `${businessDetails.streetAddress}, ${businessDetails.addressLine2}`,
+      postalCode: businessDetails.postalCode,
+      addressLocality: businessDetails.city,
       addressCountry: "FR",
     },
     hasMap: googleBusinessProfile,

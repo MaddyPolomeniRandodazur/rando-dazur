@@ -53,7 +53,7 @@ export default function LegalPage({
               {section.paragraphs.map((paragraph) => (
                 <p key={paragraph}>
                   {paragraph
-                    .split(/(info@randodazur\.com|\+33 6 67 90 69 32)/g)
+                    .split(/(bonjour@maddypolomeni\.com|\+33 6 67 90 69 32)/g)
                     .map((part, index) =>
                       part === contactChannels.primaryEmail ? (
                         <a href={`mailto:${contactChannels.primaryEmail}`} key={index}>
