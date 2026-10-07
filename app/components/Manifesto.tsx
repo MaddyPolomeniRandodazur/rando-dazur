@@ -58,7 +58,9 @@ export default function Manifesto({
                   ? "/images/manifesto/walk-it-forest-hike.jpg"
                   : moment.image === "manifesto-meet"
                     ? "/images/manifesto/meet-it-socca-cannes-market.jpg"
-                    : photos[moment.slug].hero?.src;
+                    : moment.image === "manifesto-live"
+                      ? "/images/manifesto/live-it-shared-hiking-picnic.jpg"
+                      : photos[moment.slug].hero?.src;
 
             return (
               <a
