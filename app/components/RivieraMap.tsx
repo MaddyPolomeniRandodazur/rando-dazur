@@ -19,6 +19,12 @@ const lerinsPhotos = [
   { fileName: "mediterranean-coastal-trail.jpg", src: "/images/destinations/iles-de-lerins/mediterranean-coastal-trail.jpg", alt: "Mediterranean coastal trail on the Lérins Islands", objectPosition: "50% 50%" },
 ];
 
+const esterelPhotos = [
+  { fileName: "la-napoule-coastal-trail.jpg", src: "/images/destinations/esterel/la-napoule-coastal-trail.jpg", alt: "Coastal trail and Château de la Napoule on the Mediterranean", objectPosition: "40% 50%" },
+  { fileName: "pic-du-cap-roux.jpg", src: "/images/destinations/esterel/pic-du-cap-roux.jpg", alt: "Pic du Cap Roux red rocks overlooking the Mediterranean in the Estérel", objectPosition: "50% 50%" },
+  { fileName: "cap-dramont-coastal-trail.jpg", src: "/images/destinations/esterel/cap-dramont-coastal-trail.jpg", alt: "Cap Dramont coastal trail with red volcanic rocks, pines and blue Mediterranean water", objectPosition: "55% 50%" },
+];
+
 export default function RivieraMap({
   copy,
   locale,
@@ -35,7 +41,7 @@ export default function RivieraMap({
     destinations[0];
   const selectedSubtitle =
     "subtitle" in selected ? selected.subtitle : undefined;
-  const destinationGallery = selected.id === "cannes" ? cannesPhotos : selected.id === "iles-de-lerins" ? lerinsPhotos : undefined;
+  const destinationGallery = selected.id === "cannes" ? cannesPhotos : selected.id === "iles-de-lerins" ? lerinsPhotos : selected.id === "esterel" ? esterelPhotos : undefined;
   const photos = destinationGallery ?? destinationPhotos[selected.id] ?? [];
   const experienceItems = getMessages(locale).experiences.items;
   const availableExperiences = selected.experiences
