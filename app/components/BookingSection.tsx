@@ -1,7 +1,9 @@
 import type { Locale } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
 
-export default function BookingSection({ locale }: { locale: Locale }) {
+import PrivateRates from "./PrivateRates";
+
+export default function BookingSection({ locale, customQuote = false }: { locale: Locale; customQuote?: boolean }) {
   const copy = getMessages(locale).booking;
 
   return (
@@ -10,6 +12,7 @@ export default function BookingSection({ locale }: { locale: Locale }) {
         <div className="booking-copy">
           <p className="eyebrow">{copy.eyebrow}</p>
           <h2>{copy.title}</h2>
+          <PrivateRates locale={locale} customQuote={customQuote} />
           <p>{copy.introduction}</p>
         </div>
         <div

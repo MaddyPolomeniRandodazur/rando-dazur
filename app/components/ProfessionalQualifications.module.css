@@ -1,0 +1,20 @@
+.qualifications {
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--sage-pale);
+  color: var(--ink-soft);
+  font-size: 13px;
+  line-height: 1.75;
+}
+.qualifications h3 {
+  margin: 12px 0;
+  color: var(--sage-dark);
+  font-family: var(--serif);
+  font-size: 25px;
+  line-height: 1.25;
+}
+.qualifications p { margin: 12px 0; }
+.qualifications summary { cursor: pointer; color: var(--sage-dark); padding-block: 10px; }
+.qualifications ul { padding-left: 18px; margin-top: 8px; }
+.qualifications li { margin-bottom: 8px; }
+.qualifications a { overflow-wrap: anywhere; }

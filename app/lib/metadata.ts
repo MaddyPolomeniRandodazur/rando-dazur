@@ -58,7 +58,7 @@ export function getLocalizedPageMetadata({
     ? destinationImages[slug]?.[0]
     : path.startsWith("/experiences/") ? experienceImages[slug]?.[0] : undefined;
   const socialImage = image ?? pagePhoto?.src ?? "/images/hero/french-riviera-panoramic-picnic.jpg";
-  const socialImageAlt = pagePhoto?.alt ?? "A Provençal picnic overlooking the French Riviera";
+  const socialImageAlt = path === "/meet-maddy" ? "Maddy Polomeni with yellow mimosa on the French Riviera" : pagePhoto?.alt ?? "A Provençal picnic overlooking the French Riviera";
 
   return {
     metadataBase: baseUrl,

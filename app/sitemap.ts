@@ -44,6 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return locales.flatMap((locale) => [
     localizedSitemapEntry(locale, "", 1),
     localizedSitemapEntry(locale, "/press", 0.5),
+    localizedSitemapEntry(locale, "/meet-maddy", 0.8),
     ...(locale !== "it" ? [localizedSitemapEntry(locale, "/travel-trade", 0.8)] : []),
     ...experienceSlugs
       .filter((slug) => locale === "it" || slug !== "evg-experiences")

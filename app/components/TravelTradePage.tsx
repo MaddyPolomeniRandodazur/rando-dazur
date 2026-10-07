@@ -7,6 +7,7 @@ import { getTravelTradeContent } from "../i18n/travel-trade";
 import { contactChannels } from "../lib/contact-channels";
 import { getBusinessStructuredData, getBreadcrumbStructuredData, getWebPageStructuredData, getWebsiteStructuredData } from "../lib/structured-data";
 import Navbar from "./Navbar";
+import PrivateRates from "./PrivateRates";
 import Footer from "./Footer";
 
 export default function TravelTradePage({ locale }: { locale: Locale }) {
@@ -26,6 +27,7 @@ export default function TravelTradePage({ locale }: { locale: Locale }) {
         </div>
       </section>
       <section className="experience-detail-section"><div className="page-width destination-faq-list">
+        <PrivateRates locale={locale} customQuote />
         {copy.sections.map(section => <article className="section-heading" key={section.title}><div><h2>{section.title}</h2></div><p className="section-intro">{section.text}</p></article>)}
       </div></section>
       <section className="experience-detail-section"><div className="page-width">

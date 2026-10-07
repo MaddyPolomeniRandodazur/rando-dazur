@@ -2,6 +2,9 @@ import { localePath, type ExperienceSlug, type Locale } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
 import Image from "next/image";
 import BookingSection from "./BookingSection";
+import { RateSummary } from "./PrivateRates";
+import rateStyles from "./PrivateRates.module.css";
+import { rateContent, isCustomQuoteExperience, getGuideOffers } from "../lib/private-rates";
 import ExperienceConnections from "./ExperienceConnections";
 import { experienceImages } from "../lib/experience-images";
 import Footer from "./Footer";
@@ -26,6 +29,7 @@ export default async function ExperiencePage({
   const experience = copy.experiencePage.pages[slug];
   const photos = await getExperiencePhotoCollection(slug);
   const baseUrl = getSiteUrl();
+  const customQuote = isCustomQuoteExperience(slug);
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -40,6 +44,7 @@ export default async function ExperiencePage({
         ).toString(),
         name: experience.title,
         serviceType: experience.title,
+        ...(!customQuote ? { offers: getGuideOffers(locale, new URL(localePath(locale, `/experiences/${slug}`), baseUrl).toString()) } : {}),
         ...(experienceImages[slug]?.[0] ? { image: new URL(experienceImages[slug][0].src, baseUrl).toString() } : {}),
         description: experience.description,
         url: new URL(
@@ -101,6 +106,8 @@ export default async function ExperiencePage({
               {copy.experiencePage.enquire}
               <span aria-hidden="true">↗</span>
             </a>
+            <RateSummary locale={locale} customQuote={customQuote} />
+            <p className={rateStyles.note}>{rateContent[locale].benefit}</p>
           </div>
           <a
             className="experience-back-link"
@@ -210,7 +217,7 @@ export default async function ExperiencePage({
           </div>
         </section>
         <ExperienceConnections locale={locale} slug={slug} />
-        <BookingSection locale={locale} />
+        <BookingSection locale={locale} customQuote={customQuote} />
       </main>
       <Footer locale={locale} />
       <script

@@ -56,7 +56,7 @@ const origin = 'https://www.randodazur.com';
         }
       } catch (error) { failures.push(`${path}: invalid JSON-LD ${error.message}`); }
     }
-    if (path.includes('/experiences/') || path.includes('/destinations/') || path.endsWith('/travel-trade') || ['/', '/fr', '/it'].includes(path)) check(data.scripts.length > 0, 'missing structured data');
+    if (path.includes('/experiences/') || path.includes('/destinations/') || path.endsWith('/travel-trade') || path.endsWith('/meet-maddy') || ['/', '/fr', '/it'].includes(path)) check(data.scripts.length > 0, 'missing structured data');
     if (path.endsWith('/destinations/iles-de-lerins')) {
       const activityLinks = await page.locator('.destination-experience-list a').evaluateAll(a => a.map(x => x.getAttribute('href')));
       check(activityLinks.length === 3 && activityLinks.every(h => !/food-tours|cycling|cruise-guests/.test(h)), 'incorrect Lerins activities');
