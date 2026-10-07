@@ -31,6 +31,12 @@ const antibesPhotos = [
   { fileName: "cap-antibes-cycling.jpg", src: "/images/destinations/antibes/cap-antibes-cycling.jpg", alt: "Cycling along the coastal road of Cap d’Antibes", objectPosition: "65% 50%" },
 ];
 
+const grassePhotos = [
+  { fileName: "historic-streets-pink-umbrellas.jpg", src: "/images/destinations/grasse/historic-streets-pink-umbrellas.jpg", alt: "Pink umbrellas in the historic streets of Grasse", objectPosition: "55% 50%" },
+  { fileName: "panoramic-french-riviera-view.jpg", src: "/images/destinations/grasse/panoramic-french-riviera-view.jpg", alt: "Panoramic view from Grasse towards the French Riviera", objectPosition: "50% 50%" },
+  { fileName: "traditional-perfume-making.jpg", src: "/images/destinations/grasse/traditional-perfume-making.jpg", alt: "Traditional perfume making in Grasse", objectPosition: "50% 50%" },
+];
+
 export default function RivieraMap({
   copy,
   locale,
@@ -47,7 +53,7 @@ export default function RivieraMap({
     destinations[0];
   const selectedSubtitle =
     "subtitle" in selected ? selected.subtitle : undefined;
-  const destinationGallery = selected.id === "cannes" ? cannesPhotos : selected.id === "iles-de-lerins" ? lerinsPhotos : selected.id === "esterel" ? esterelPhotos : selected.id === "antibes" ? antibesPhotos : undefined;
+  const destinationGallery = selected.id === "cannes" ? cannesPhotos : selected.id === "iles-de-lerins" ? lerinsPhotos : selected.id === "esterel" ? esterelPhotos : selected.id === "antibes" ? antibesPhotos : selected.id === "grasse" ? grassePhotos : undefined;
   const photos = destinationGallery ?? destinationPhotos[selected.id] ?? [];
   const experienceItems = getMessages(locale).experiences.items;
   const availableExperiences = selected.experiences
