@@ -52,7 +52,9 @@ export default function Manifesto({
           {moments.map((moment, index) => {
             const photoSrc = moment.image === "manifesto-food"
               ? "/images/manifesto/eat-it-retouched.jpg"
-              : photos[moment.slug].hero?.src;
+              : moment.image === "manifesto-cycle"
+                ? "/images/manifesto/cycle-tour-french-riviera.jpg"
+                : photos[moment.slug].hero?.src;
 
             return (
               <a
@@ -64,6 +66,7 @@ export default function Manifesto({
                   <Image
                     className="manifesto-card-image"
                     src={photoSrc}
+                    style={moment.image === "manifesto-cycle" ? { objectPosition: "60% 60%" } : undefined}
                     alt=""
                     fill
                     sizes="(max-width: 720px) 100vw, (max-width: 1050px) 50vw, 34vw"
