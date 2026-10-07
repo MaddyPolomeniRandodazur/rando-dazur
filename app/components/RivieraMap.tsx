@@ -25,6 +25,12 @@ const esterelPhotos = [
   { fileName: "cap-dramont-coastal-trail.jpg", src: "/images/destinations/esterel/cap-dramont-coastal-trail.jpg", alt: "Cap Dramont coastal trail with red volcanic rocks, pines and blue Mediterranean water", objectPosition: "55% 50%" },
 ];
 
+const antibesPhotos = [
+  { fileName: "old-antibes-ramparts.jpg", src: "/images/destinations/antibes/old-antibes-ramparts.jpg", alt: "Old Antibes and its ramparts overlooking the Mediterranean", objectPosition: "50% 50%" },
+  { fileName: "baie-des-milliardaires-coastal-trail.jpg", src: "/images/destinations/antibes/baie-des-milliardaires-coastal-trail.jpg", alt: "Coastal trail at the Baie des Milliardaires in Cap d’Antibes", objectPosition: "50% 50%" },
+  { fileName: "cap-antibes-cycling.jpg", src: "/images/destinations/antibes/cap-antibes-cycling.jpg", alt: "Cycling along the coastal road of Cap d’Antibes", objectPosition: "65% 50%" },
+];
+
 export default function RivieraMap({
   copy,
   locale,
@@ -41,7 +47,7 @@ export default function RivieraMap({
     destinations[0];
   const selectedSubtitle =
     "subtitle" in selected ? selected.subtitle : undefined;
-  const destinationGallery = selected.id === "cannes" ? cannesPhotos : selected.id === "iles-de-lerins" ? lerinsPhotos : selected.id === "esterel" ? esterelPhotos : undefined;
+  const destinationGallery = selected.id === "cannes" ? cannesPhotos : selected.id === "iles-de-lerins" ? lerinsPhotos : selected.id === "esterel" ? esterelPhotos : selected.id === "antibes" ? antibesPhotos : undefined;
   const photos = destinationGallery ?? destinationPhotos[selected.id] ?? [];
   const experienceItems = getMessages(locale).experiences.items;
   const availableExperiences = selected.experiences
