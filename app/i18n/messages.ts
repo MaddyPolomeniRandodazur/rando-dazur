@@ -164,22 +164,12 @@ const english = {
       {
         id: "evjf-experiences",
         slug: "evjf-experiences",
-        title: "EVJF · Bachelorette Groups",
+        title: "EVJF & EVG · Bachelorette & Bachelor Groups",
         detail: "Celebrate together",
         description:
-          "A private Riviera celebration shaped around the bride-to-be and the people closest to her.",
+          "Bring your group together for a private Riviera celebration, locally guided and shaped around the people at the heart of the occasion.",
         image: "experience-evjf",
-        alt: "A private celebration with friends on the French Riviera",
-      },
-      {
-        id: "evg-experiences",
-        slug: "evg-experiences",
-        title: "EVG · Bachelor Groups",
-        detail: "Make it a story",
-        description:
-          "Bring the group together for a spirited, locally guided Riviera escape.",
-        image: "experience-evg",
-        alt: "A group of friends enjoying an outdoor Riviera experience",
+        alt: "Friends celebrating an EVJF or EVG on the French Riviera",
       },
       {
         id: "cruise-guests",
@@ -894,22 +884,12 @@ const french: Messages = {
       {
         id: "evjf-experiences",
         slug: "evjf-experiences",
-        title: "EVJF · Groupes entre amies",
+        title: "EVJF & EVG · Groupes entre amis",
         detail: "Célébrer ensemble",
         description:
-          "Une célébration privée sur la Riviera, imaginée autour de la future mariée et de ses proches.",
+          "Réunissez votre groupe pour une célébration privée et conviviale sur la Riviera, accompagnée localement et imaginée autour des personnes au cœur de l’événement.",
         image: "experience-evjf",
-        alt: "Un groupe d’amies célèbre un EVJF sur la Côte d’Azur",
-      },
-      {
-        id: "evg-experiences",
-        slug: "evg-experiences",
-        title: "EVG · Groupes entre amis",
-        detail: "En faire une histoire",
-        description:
-          "Réunissez votre groupe pour une escapade conviviale sur la Riviera avec un accompagnement local.",
-        image: "experience-evg",
-        alt: "Un groupe d’amis partage une aventure en plein air",
+        alt: "Des amis célèbrent un EVJF ou un EVG sur la Côte d’Azur",
       },
       {
         id: "cruise-guests",
