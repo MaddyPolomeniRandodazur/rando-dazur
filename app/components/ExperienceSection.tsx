@@ -45,8 +45,8 @@ const homeCardPhotos: Partial<Record<string, { src: string; objectPosition: stri
     objectPosition: "40% 50%",
   },
   hiking: {
-    src: "/images/experiences/food-tour-tasting-cannes.jpg",
-    objectPosition: "40% 50%",
+    src: "/images/experiences/hiking-young-hikers-sunset.jpg",
+    objectPosition: "80% 50%",
   },
 };
 
