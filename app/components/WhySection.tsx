@@ -1,7 +1,6 @@
 import type { Locale } from "../i18n/config";
 import Image from "next/image";
 import { getMessages } from "../i18n/messages";
-import { mediaPlaceholderUrl } from "../lib/public-assets";
 
 export default function WhySection({ locale }: { locale: Locale }) {
   const copy = getMessages(locale).about;
@@ -77,10 +76,11 @@ export default function WhySection({ locale }: { locale: Locale }) {
             </figure>
             <figure className="founder-photo founder-team">
               <Image
-                alt={copy.teamAlt}
+                alt="The Rando d’Azur local team"
                 fill
                 sizes="(max-width: 780px) 100vw, 42vw"
-                src={mediaPlaceholderUrl}
+                src="/images/about/rando-dazur-local-team.jpg"
+                style={{ objectFit: "contain", objectPosition: "center" }}
               />
               <figcaption>{copy.teamAlt}</figcaption>
             </figure>
