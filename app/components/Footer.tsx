@@ -1,6 +1,7 @@
 import { localePath, type Locale } from "../i18n/config";
+import { getTravelTradeContent } from "../i18n/travel-trade";
 import { getMessages } from "../i18n/messages";
-import { contactChannels } from "../lib/contact-channels";
+import { contactChannels, isPublishedSocialUrl } from "../lib/contact-channels";
 import { getWhatsAppUrl } from "../lib/whatsapp";
 import BrandLogo from "./BrandLogo";
 import BackToTop from "./BackToTop";
@@ -42,22 +43,22 @@ export default function Footer({ locale }: { locale: Locale }) {
             <div className="footer-contact-details">
               <p className="eyebrow eyebrow-light">{copy.contactDetailsTitle}</p>
               <nav aria-label={copy.contactLinksLabel} className="footer-contact-links">
-                <a
+                {isPublishedSocialUrl(contactChannels.facebookUrl) && <a
                   href={contactChannels.facebookUrl}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   {copy.facebookLabel}
                   <span aria-hidden="true">↗</span>
-                </a>
-                <a
+                </a>}
+                {isPublishedSocialUrl(contactChannels.instagramUrl) && <a
                   href={contactChannels.instagramUrl}
                   rel="noopener noreferrer"
                   target="_blank"
                 >
                   {copy.instagramLabel}
                   <span aria-hidden="true">↗</span>
-                </a>
+                </a>}
                 <a
                   href={getWhatsAppUrl(contactCopy.whatsappMessage)}
                   rel="noopener noreferrer"
@@ -105,6 +106,7 @@ export default function Footer({ locale }: { locale: Locale }) {
           <nav className="footer-links" aria-label={copy.navigationLabel}>
             <a href={`${root}#experiences`}>{copy.experiences}</a>
             <a href={`${root}#agences-mice`}>{copy.mice}</a>
+            <a href={localePath(locale === "it" ? "en" : locale, "/travel-trade")}>{getTravelTradeContent(locale).linkLabel}</a>
             <a href={`${root}#about`}>{copy.about}</a>
             <a href={`${root}#riviera-map`}>{copy.destinations}</a>
             <a href={localePath(locale, "/legal-notice")}>{copy.legalNotice}</a>

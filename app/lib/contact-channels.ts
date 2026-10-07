@@ -6,3 +6,8 @@ export const contactChannels = {
   facebookUrl: "https://www.facebook.com/REPLACE-WITH-RANDO-DAZUR",
   instagramUrl: "https://www.instagram.com/REPLACE-WITH-RANDO-DAZUR",
 };
+
+// Do not expose provisional social destinations as official profiles.
+export function isPublishedSocialUrl(url: string) {
+  return /^https:\/\//.test(url) && !url.includes("REPLACE-");
+}

@@ -195,16 +195,11 @@ const english: Record<DestinationSlug, DestinationContent> = {
     highlights: [
       "Plan a boat excursion around your time and the conditions at sea.",
       "Walk woodland paths and discover the islands’ natural character.",
-      "Connect an island visit with Cannes, local food and coastal stories.",
+      "Share a sunset apéro hike or an outdoor escape game on the island trails.",
     ],
     imageAlt: "Pine forest and clear Mediterranean coves on the Lérins Islands",
     photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
-    experiences: [
-      "cruise-guests",
-      "hiking-experiences",
-      "food-tours",
-      "cycling-experiences",
-    ],
+    experiences: ["hiking-experiences", "sunset-apero-hikes", "outdoor-escape-games"],
     faqs: [
       {
         question: "How do you visit the Lérins Islands from Cannes?",
@@ -331,11 +326,11 @@ const french: Record<DestinationSlug, DestinationContent> = {
     highlights: [
       "Imaginez une excursion en bateau selon votre temps et les conditions en mer.",
       "Parcourez les sentiers boisés et découvrez la nature des îles.",
-      "Reliez la visite à Cannes, à sa cuisine locale et à son littoral.",
+      "Partagez une randonnée apéro au coucher du soleil ou un escape game outdoor sur les sentiers insulaires.",
     ],
     imageAlt: "Forêt de pins et criques méditerranéennes des îles de Lérins",
     photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
-    experiences: ["cruise-guests", "hiking-experiences", "food-tours", "cycling-experiences"],
+    experiences: ["hiking-experiences", "sunset-apero-hikes", "outdoor-escape-games"],
     faqs: [
       { question: "Comment visiter les îles de Lérins depuis Cannes ?", answer: "Les îles sont accessibles en bateau depuis Cannes. Rando d’Azur imagine une expérience adaptée à la traversée, au temps disponible et à vos envies." },
       { question: "Que voir sur les îles de Lérins ?", answer: "Les visiteurs viennent pour les criques méditerranéennes, les chemins insulaires, les pins et le patrimoine historique. L’accès peut varier selon la saison." },
@@ -454,11 +449,11 @@ const italian: Record<DestinationSlug, DestinationContent> = {
     highlights: [
       "Organizza un’escursione in barca secondo i tempi e le condizioni del mare.",
       "Passeggia nei boschi e scopri la natura delle isole.",
-      "Collega la visita a Cannes, ai sapori locali e alle storie della costa.",
+      "Condividi una passeggiata con aperitivo al tramonto o un escape game all’aperto sui sentieri delle isole.",
     ],
     imageAlt: "Pineta e calette mediterranee sulle isole di Lérins",
     photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
-    experiences: ["cruise-guests", "hiking-experiences", "food-tours", "cycling-experiences"],
+    experiences: ["hiking-experiences", "sunset-apero-hikes", "outdoor-escape-games"],
     faqs: [
       { question: "Come raggiungere le isole di Lérins da Cannes?", answer: "Le isole si raggiungono in barca da Cannes. Rando d’Azur può creare un’esperienza in base alla traversata, al tempo disponibile e ai tuoi interessi." },
       { question: "Cosa vedere sulle isole di Lérins?", answer: "Le isole sono apprezzate per le calette mediterranee, i sentieri, le pinete e i luoghi storici. L’accesso può variare secondo la stagione." },

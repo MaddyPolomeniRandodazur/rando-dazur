@@ -14,12 +14,14 @@ export function getBusinessStructuredData(locale: Locale) {
   const businessUrl = new URL("/#organization", baseUrl).toString();
 
   return {
-    "@type": "TravelAgency",
+    "@type": ["Organization", "LocalBusiness"],
     "@id": businessUrl,
     name: "Rando d’Azur",
     alternateName: "Rando d'Azur",
-    url: new URL(localePath(locale), baseUrl).toString(),
+    url: baseUrl.toString(),
     description: copy.hero.description,
+    logo: new URL(publicAssetUrl("images/about/brand/version bleu.png"), baseUrl).toString(),
+    founder: { "@id": new URL("/#maddy-polomeni", baseUrl).toString() },
     image: new URL(
       publicAssetUrl("images/about/brand/version bleu.png"),
       baseUrl,
@@ -32,11 +34,6 @@ export function getBusinessStructuredData(locale: Locale) {
       addressLocality: "Biot",
       addressCountry: "FR",
     },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: 43.5540491,
-      longitude: 6.9471584,
-    },
     hasMap: googleBusinessProfile,
     areaServed: [
       "Cannes",
@@ -45,6 +42,9 @@ export function getBusinessStructuredData(locale: Locale) {
       "Pays de Fayence",
       "Antibes",
       "Îles de Lérins",
+      "French Riviera / Côte d’Azur",
+      "Alpes-Maritimes",
+      "Var",
     ].map((name) => ({
       "@type": "Place",
       name,
@@ -82,4 +82,35 @@ export function getBreadcrumbStructuredData(
       item: new URL(localePath(locale, item.path), baseUrl).toString(),
     })),
   };
+}
+
+export function getPersonStructuredData(locale: Locale) {
+  const baseUrl = getSiteUrl();
+  const copy = getMessages(locale).about;
+  return {
+    "@type": "Person",
+    "@id": new URL("/#maddy-polomeni", baseUrl).toString(),
+    name: "Maddy Polomeni",
+    jobTitle: copy.founderRole,
+    description: copy.founderParagraphs[0],
+    url: new URL(`${localePath(locale)}#about`, baseUrl).toString(),
+    image: new URL("/images/about/maddy-polomeni-mimosa-portrait.jpg", baseUrl).toString(),
+    worksFor: { "@id": new URL("/#organization", baseUrl).toString() },
+  };
+}
+
+export function getWebPageStructuredData(locale: Locale, path: string, name: string, description: string) {
+  const baseUrl = getSiteUrl();
+  const url = new URL(localePath(locale, path), baseUrl).toString();
+  return {
+    "@type": "WebPage", "@id": `${url}#webpage`, url, name, description,
+    inLanguage: locale,
+    isPartOf: { "@id": new URL("/#website", baseUrl).toString() },
+    publisher: { "@id": new URL("/#organization", baseUrl).toString() },
+  };
+}
+
+export function getWebsiteStructuredData() {
+  const baseUrl = getSiteUrl();
+  return { "@type": "WebSite", "@id": new URL("/#website", baseUrl).toString(), name: "Rando d’Azur", url: baseUrl.toString(), inLanguage: ["en", "fr", "it"], publisher: { "@id": new URL("/#organization", baseUrl).toString() } };
 }

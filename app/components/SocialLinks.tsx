@@ -1,4 +1,4 @@
-import { contactChannels } from "../lib/contact-channels";
+import { contactChannels, isPublishedSocialUrl } from "../lib/contact-channels";
 
 const accounts = [
   {
@@ -24,7 +24,7 @@ export default function SocialLinks({
 }) {
   return (
     <nav aria-label={ariaLabel} className={`social-links ${className}`}>
-      {accounts.map((account) => (
+      {accounts.filter(account => isPublishedSocialUrl(account.href)).map((account) => (
         <a
           aria-label={`${account.label} · Rando d’Azur`}
           className="social-link"

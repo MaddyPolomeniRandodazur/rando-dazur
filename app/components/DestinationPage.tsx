@@ -8,11 +8,14 @@ import { getWhatsAppUrl } from "../lib/whatsapp";
 import {
   getBreadcrumbStructuredData,
   getBusinessStructuredData,
+  getWebPageStructuredData,
+  getWebsiteStructuredData,
 } from "../lib/structured-data";
 import { getSiteUrl } from "../lib/site-url";
-import { mediaPlaceholderUrl } from "../lib/public-assets";
+import { destinationImages } from "../lib/destination-images";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
+import { getTravelTradeContent } from "../i18n/travel-trade";
 import ScrollReveal from "../scroll-reveal";
 
 const destinationLabels: Record<
@@ -77,6 +80,7 @@ export default function DestinationPage({
 }) {
   const messages = getMessages(locale);
   const copy = getDestinationContent(locale, slug);
+  const images = destinationImages[slug];
   const labels = destinationLabels[locale];
   const baseUrl = getSiteUrl();
   const pagePath = `/destinations/${slug}`;
@@ -85,19 +89,16 @@ export default function DestinationPage({
     "@context": "https://schema.org",
     "@graph": [
       getBusinessStructuredData(locale),
+      getWebsiteStructuredData(),
+      getWebPageStructuredData(locale, pagePath, copy.title, copy.introduction),
       {
-        "@type": "TouristAttraction",
+        "@type": "Place",
         "@id": `${pageUrl}#destination`,
         name: copy.title,
         description: copy.metaDescription,
         url: pageUrl,
-        touristType: [
-          "Private travellers",
-          "Families",
-          "Luxury travel designers",
-          "Corporate and incentive groups",
-        ],
-        isPartOf: {
+        image: images.map(image => new URL(image.src, baseUrl).toString()),
+        containedInPlace: {
           "@type": "Place",
           name: "French Riviera",
         },
@@ -144,12 +145,13 @@ export default function DestinationPage({
         </nav>
         <section className={`experience-detail-hero detail-destination detail-${slug}`}>
           <Image
-            alt={copy.imageAlt}
+            alt={images[0].alt}
             className="experience-detail-photo"
             fill
+            style={{ objectPosition: images[0].objectPosition }}
             preload
             sizes="100vw"
-            src={mediaPlaceholderUrl}
+            src={images[0].src}
           />
           <div aria-hidden="true" className="hero-shade" />
           <div className="page-width experience-detail-content">
@@ -186,13 +188,14 @@ export default function DestinationPage({
               ))}
             </div>
             <div className="destination-photo-grid">
-              {copy.photos.slice(1).map((photo, index) => (
-                <figure className="destination-photo" key={photo}>
+              {images.slice(1).map((photo) => (
+                <figure className="destination-photo" key={photo.src}>
                   <Image
-                    alt={`${copy.imageAlt} · ${String(index + 1).padStart(2, "0")}`}
+                    alt={photo.alt}
                     fill
                     sizes="(max-width: 780px) 100vw, 50vw"
-                    src={mediaPlaceholderUrl}
+                    src={photo.src}
+                    style={{ objectPosition: photo.objectPosition }}
                   />
                 </figure>
               ))}
@@ -259,6 +262,7 @@ export default function DestinationPage({
               {labels.contact}
               <span aria-hidden="true">↗</span>
             </a>
+            <Link className="text-link" href={localePath(locale === "it" ? "en" : locale, "/travel-trade")}>{getTravelTradeContent(locale).linkLabel} ↗</Link>
             <Link className="text-link" href={`${localePath(locale)}#riviera-map`}>
               {labels.map}
               <span aria-hidden="true">↗</span>
@@ -268,7 +272,7 @@ export default function DestinationPage({
       </main>
       <Footer locale={locale} />
       <script
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }}
         type="application/ld+json"
       />
     </>

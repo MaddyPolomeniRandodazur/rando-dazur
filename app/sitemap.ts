@@ -16,7 +16,7 @@ function localizedSitemapEntry(
 ): MetadataRoute.Sitemap[number] {
   const baseUrl = getSiteUrl();
   const languages = Object.fromEntries(
-    locales.map((language) => [
+    (path === "/travel-trade" ? locales.filter(language => language !== "it") : path === "/experiences/evg-experiences" && locale === "it" ? [locale] : locales).map((language) => [
       language,
       new URL(
         localePath(language, canonicalExperiencePath(language, path)),
@@ -31,7 +31,7 @@ function localizedSitemapEntry(
       languages: {
         ...languages,
         "x-default": new URL(
-          localePath("en", canonicalExperiencePath("en", path)),
+          localePath(path === "/experiences/evg-experiences" && locale === "it" ? "it" : "en", canonicalExperiencePath(path === "/experiences/evg-experiences" && locale === "it" ? "it" : "en", path)),
           baseUrl,
         ).toString(),
       },
@@ -44,6 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return locales.flatMap((locale) => [
     localizedSitemapEntry(locale, "", 1),
     localizedSitemapEntry(locale, "/press", 0.5),
+    ...(locale !== "it" ? [localizedSitemapEntry(locale, "/travel-trade", 0.8)] : []),
     ...experienceSlugs
       .filter((slug) => locale === "it" || slug !== "evg-experiences")
       .map((slug) =>

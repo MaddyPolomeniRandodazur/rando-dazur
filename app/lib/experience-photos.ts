@@ -1,4 +1,6 @@
 import "server-only";
+import { imageDimensions } from "./image-dimensions";
+import { experienceImages } from "./experience-images";
 
 import { experienceSlugs, type ExperienceSlug } from "../i18n/config";
 import { mediaPlaceholderUrl } from "./public-assets";
@@ -31,21 +33,6 @@ export const experiencePhotoFolders = {
   "cruise-guests": "cruise-guests",
 } satisfies Record<ExperienceSlug, string>;
 
-const experiencePhotoCounts = {
-  "food-tours": 56,
-  "hiking-experiences": 8,
-  "sunset-apero-hikes": 37,
-  "cycling-experiences": 8,
-  "wild-provence": 8,
-  "edible-plants": 8,
-  "outdoor-escape-games": 3,
-  "family-experiences": 37,
-  "evjf-experiences": 3,
-  "evg-experiences": 3,
-  "corporate-incentive-travel": 27,
-  "cruise-guests": 0,
-} satisfies Record<ExperienceSlug, number>;
-
 function comparePhotos(left: ExperiencePhoto, right: ExperiencePhoto) {
   const targetRatio = 16 / 9;
   const ratioDifference =
@@ -63,14 +50,12 @@ function comparePhotos(left: ExperiencePhoto, right: ExperiencePhoto) {
 export async function getExperiencePhotoCollection(
   slug: ExperienceSlug,
 ): Promise<ExperiencePhotoCollection> {
-  const photoCount = experiencePhotoCounts[slug];
-  const photos = Array.from({ length: photoCount }, (_, index) => ({
-    src: mediaPlaceholderUrl,
-    fileName: `${experiencePhotoFolders[slug]}-photo-${index + 1}`,
-    width: 1600,
-    height: 900,
-    fileSize: 0,
-  }));
+  const originals = experienceImages[slug];
+  const photos: ExperiencePhoto[] = originals
+    ? originals.map((photo) => ({ ...photo, fileName: photo.src.split("/").pop()!, ...imageDimensions[photo.src], fileSize: 0 }))
+    : Array.from({ length: 1 }, (_, index) => ({
+        src: mediaPlaceholderUrl, fileName: `${experiencePhotoFolders[slug]}-photo-${index + 1}`, width: 1600, height: 900, fileSize: 0,
+      }));
   const hero = photos[0] ?? null;
   const gallery = photos.slice(1);
 

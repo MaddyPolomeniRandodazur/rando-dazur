@@ -20,7 +20,7 @@ export default function Hero({
         alt={copy.imageAlt}
         fill
         sizes="100vw"
-        fetchPriority="high"
+        preload
       />
       <div className="hero-shade" aria-hidden="true" />
       <div className="hero-content page-width">

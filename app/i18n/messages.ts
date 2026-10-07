@@ -52,7 +52,7 @@ const english = {
     titleFirst: "Taste the",
     titleSecond: "French Riviera",
     description:
-      "Private, authentic experiences shaped around the very best of the French Riviera.",
+      "Private hiking, food and cycling experiences shaped by local French Riviera guides.",
     discover: "Discover our experiences",
     create: "Create a private journey",
     scroll: "Scroll to discover",
@@ -214,7 +214,7 @@ const english = {
     founderTitle: "Meet Maddy Polomeni",
     founderRole: "Founder & Experience Manager",
     founderParagraphs: [
-      "Rando d’Azur was originally created by Maddy Polomeni, with a simple belief: the most memorable way to discover the Riviera is through the people, places and everyday moments that make it unique.",
+      "Rando d’Azur was created by Maddy Polomeni, a local French Riviera expert sharing hiking, outdoor adventures and encounters with local people. It began with a simple belief: the most memorable way to discover the Riviera is through the people, places and everyday moments that make it unique.",
       "Today, the company has grown into a trusted local team sharing the same values. Together, we can welcome more guests while preserving the authenticity, flexibility and quality that have always mattered.",
     ],
     portraitAlt: "Maddy Polomeni, Founder & Experience Manager",
@@ -939,7 +939,7 @@ const french: Messages = {
     founderTitle: "Rencontrez Maddy Polomeni",
     founderRole: "Fondatrice & responsable des expériences",
     founderParagraphs: [
-      "Rando d’Azur a été créée à l’origine par Maddy Polomeni, autour d’une conviction simple : la plus belle façon de découvrir la Riviera passe par ses habitants, ses lieux et les instants du quotidien qui la rendent unique.",
+      "Maddy Polomeni, fondatrice de Rando d’Azur, partage sa connaissance locale de la Côte d’Azur à travers les randonnées, les expériences outdoor et les rencontres avec ses habitants. Une conviction simple anime cette démarche : la plus belle façon de découvrir la Riviera passe par ses habitants, ses lieux et les instants du quotidien qui la rendent unique.",
       "Aujourd’hui, l’entreprise est devenue une équipe locale de confiance qui partage les mêmes valeurs. Cette évolution nous permet d’accueillir davantage de voyageurs tout en préservant l’authenticité, la souplesse et la qualité qui nous tiennent à cœur.",
     ],
     portraitAlt: "Maddy Polomeni, fondatrice & responsable des expériences",

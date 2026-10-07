@@ -22,7 +22,7 @@ import {
   getBestLandscapeExperiencePhoto,
 } from "../lib/experience-photos";
 import type { ExperiencePhoto } from "../lib/experience-photos";
-import { getBusinessStructuredData } from "../lib/structured-data";
+import { getBusinessStructuredData, getPersonStructuredData, getWebsiteStructuredData } from "../lib/structured-data";
 
 export default async function HomePage({ locale }: { locale: Locale }) {
   const copy = getMessages(locale);
@@ -50,21 +50,13 @@ export default async function HomePage({ locale }: { locale: Locale }) {
     "@context": "https://schema.org",
     "@graph": [
       getBusinessStructuredData(locale),
-      {
-        "@type": "WebSite",
-        "@id": new URL("/#website", baseUrl).toString(),
-        name: "Rando d’Azur",
-        url: new URL(localePath(locale), baseUrl).toString(),
-        inLanguage: locale,
-        publisher: {
-          "@id": new URL("/#organization", baseUrl).toString(),
-        },
-      },
+      getPersonStructuredData(locale),
+      getWebsiteStructuredData(),
       {
         "@type": "WebPage",
         "@id": new URL(`${localePath(locale)}#webpage`, baseUrl).toString(),
         url: new URL(localePath(locale), baseUrl).toString(),
-        name: "Taste the French Riviera — Rando d’Azur",
+        name: `${copy.hero.titleFirst} ${copy.hero.titleSecond} — Rando d’Azur`,
         description: copy.hero.description,
         inLanguage: locale,
         isPartOf: {
@@ -115,7 +107,7 @@ export default async function HomePage({ locale }: { locale: Locale }) {
       </main>
       <Footer locale={locale} />
       <script
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }}
         type="application/ld+json"
       />
     </>

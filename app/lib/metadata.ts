@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
+import { imageDimensions } from "./image-dimensions";
+import { homeSeo, frenchExperienceSeo } from "./seo-content";
+import { destinationImages } from "./destination-images";
+import { experienceImages } from "./experience-images";
 import { canonicalExperiencePath, locales, localePath, type Locale } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
 import { getSiteUrl } from "./site-url";
-import { publicAssetUrl } from "./public-assets";
 import { isExperienceSlug } from "../i18n/config";
 
 const localeOpenGraph: Record<Locale, string> = {
@@ -30,7 +33,7 @@ export function getLocalizedPageMetadata({
   const localizedPath = localePath(locale, path);
   const absoluteUrl = new URL(localizedPath, baseUrl).toString();
   const languages = Object.fromEntries(
-    locales.map((language) => [
+    (path === "/travel-trade" ? locales.filter(language => language !== "it") : path === "/experiences/evg-experiences" && locale === "it" ? [locale] : locales).map((language) => [
       language,
       new URL(
         localePath(language, canonicalExperiencePath(language, path)),
@@ -50,8 +53,12 @@ export function getLocalizedPageMetadata({
         }
       : {}),
   };
-  const socialImage =
-    image ?? publicAssetUrl("images/about/brand/version bleu.png");
+  const slug = path.split("/").pop()!;
+  const pagePhoto = path.startsWith("/destinations/")
+    ? destinationImages[slug]?.[0]
+    : path.startsWith("/experiences/") ? experienceImages[slug]?.[0] : undefined;
+  const socialImage = image ?? pagePhoto?.src ?? "/images/hero/french-riviera-panoramic-picnic.jpg";
+  const socialImageAlt = pagePhoto?.alt ?? "A Provençal picnic overlooking the French Riviera";
 
   return {
     metadataBase: baseUrl,
@@ -62,7 +69,7 @@ export function getLocalizedPageMetadata({
       languages: {
         ...languages,
         "x-default": new URL(
-          localePath("en", canonicalExperiencePath("en", path)),
+          localePath(path === "/experiences/evg-experiences" && locale === "it" ? "it" : "en", canonicalExperiencePath(path === "/experiences/evg-experiences" && locale === "it" ? "it" : "en", path)),
           baseUrl,
         ).toString(),
       },
@@ -78,7 +85,7 @@ export function getLocalizedPageMetadata({
       description,
       url: absoluteUrl,
       locale: localeOpenGraph[locale],
-      images: [{ url: socialImage, alt: title }],
+      images: [{ url: socialImage, alt: socialImageAlt, ...imageDimensions[socialImage] }],
     },
     twitter: {
       card: "summary_large_image",
@@ -90,18 +97,7 @@ export function getLocalizedPageMetadata({
 }
 
 export async function getHomeMetadata(locale: Locale): Promise<Metadata> {
-  const copy = getMessages(locale);
-  const title =
-    locale === "en"
-      ? "Authentic French Riviera Experiences & Private Guides | Rando d’Azur"
-      : `${copy.hero.titleFirst} ${copy.hero.titleSecond} | Rando d’Azur`;
-
-  return getLocalizedPageMetadata({
-    locale,
-    path: "/",
-    title,
-    description: copy.hero.description,
-  });
+  return getLocalizedPageMetadata({ locale, path: "/", ...homeSeo[locale] });
 }
 
 const englishExperienceMetadata: Record<
@@ -114,7 +110,7 @@ const englishExperienceMetadata: Record<
       "Join a private Cannes food tour through local markets, regional specialities and independent producers, guided by people who know the French Riviera.",
   },
   "hiking-experiences": {
-    title: "Private Hiking Experiences on the French Riviera | Rando d’Azur",
+    title: "Private Hiking Guides in Cannes & the French Riviera | Rando d’Azur",
     description:
       "Explore coastal paths, the Estérel red rocks and the Riviera hinterland on a private guided hike tailored to your pace and interests.",
   },
@@ -134,14 +130,14 @@ const englishExperienceMetadata: Record<
       "Find thoughtful outdoor family activities on the French Riviera, with private adventures adapted to your children’s ages and your pace.",
   },
   "corporate-incentive-travel": {
-    title: "French Riviera DMC, Incentives & Corporate Events | Rando d’Azur",
+    title: "Cannes Corporate Experiences & Incentive Travel | Rando d’Azur",
     description:
-      "A local French Riviera DMC for tailor-made incentive programmes, corporate events, multilingual guides and carefully coordinated experiences.",
+      "A local experience partner for agencies and DMCs: private outdoor activities, team building and incentive experiences in Cannes and on the French Riviera.",
   },
   "wild-provence": {
-    title: "Wild Provence & Edible Plant Experiences | Rando d’Azur",
+    title: "Wild Provence & Local Nature Walks in the Var | Rando d’Azur",
     description:
-      "Discover Provence’s edible and wild plants with a knowledgeable local guide on a seasonal, nature-led experience on the French Riviera.",
+      "Explore Provence’s wild plants and landscapes with a local guide on a seasonal private nature experience around Grasse and the Pays de Fayence.",
   },
   "edible-plants": {
     title: "Edible Plant Experiences in Provence | Rando d’Azur",
@@ -182,7 +178,7 @@ export async function getExperienceMetadata(
   const title =
     locale === "en"
       ? englishMetadata.title
-      : `${experience.title} | Rando d’Azur`;
+      : locale === "fr" ? `${frenchExperienceSeo[slug].title} | Rando d’Azur` : `${experience.title} | Rando d’Azur`;
 
   return getLocalizedPageMetadata({
     locale,
@@ -191,6 +187,6 @@ export async function getExperienceMetadata(
     description:
       locale === "en"
         ? englishMetadata.description
-        : experience.description,
+        : locale === "fr" ? frenchExperienceSeo[slug].description : experience.description,
   });
 }

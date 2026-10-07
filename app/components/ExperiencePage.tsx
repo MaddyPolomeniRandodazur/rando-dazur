@@ -2,6 +2,8 @@ import { localePath, type ExperienceSlug, type Locale } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
 import Image from "next/image";
 import BookingSection from "./BookingSection";
+import ExperienceConnections from "./ExperienceConnections";
+import { experienceImages } from "../lib/experience-images";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { getSiteUrl } from "../lib/site-url";
@@ -9,6 +11,8 @@ import { getExperiencePhotoCollection } from "../lib/experience-photos";
 import {
   getBreadcrumbStructuredData,
   getBusinessStructuredData,
+  getWebPageStructuredData,
+  getWebsiteStructuredData,
 } from "../lib/structured-data";
 
 export default async function ExperiencePage({
@@ -26,6 +30,8 @@ export default async function ExperiencePage({
     "@context": "https://schema.org",
     "@graph": [
       getBusinessStructuredData(locale),
+      getWebsiteStructuredData(),
+      getWebPageStructuredData(locale, `/experiences/${slug}`, experience.title, experience.description),
       {
         "@type": "Service",
         "@id": new URL(
@@ -33,6 +39,8 @@ export default async function ExperiencePage({
           baseUrl,
         ).toString(),
         name: experience.title,
+        serviceType: experience.title,
+        ...(experienceImages[slug]?.[0] ? { image: new URL(experienceImages[slug][0].src, baseUrl).toString() } : {}),
         description: experience.description,
         url: new URL(
           localePath(locale, `/experiences/${slug}`),
@@ -72,9 +80,10 @@ export default async function ExperiencePage({
         <section className={`experience-detail-hero detail-${slug}`}>
           {photos.hero && (
             <Image
-              alt={experience.imageAlt}
+              alt={experienceImages[slug]?.[0]?.alt ?? ""}
               className="experience-detail-photo"
               fill
+              style={{ objectPosition: experienceImages[slug]?.[0]?.objectPosition }}
               preload
               sizes="100vw"
               src={photos.hero.src}
@@ -121,7 +130,7 @@ export default async function ExperiencePage({
               {photos.gallery.map((photo, index) => (
                 <figure className="experience-photo-gallery-photo" key={photo.fileName}>
                   <Image
-                    alt={copy.photoGallery.photoAlt}
+                    alt={experienceImages[slug]?.[index + 1]?.alt ?? copy.photoGallery.photoAlt}
                     fill
                     sizes="(max-width: 780px) 100vw, 33vw"
                     src={photo.src}
@@ -200,11 +209,12 @@ export default async function ExperiencePage({
             </div>
           </div>
         </section>
+        <ExperienceConnections locale={locale} slug={slug} />
         <BookingSection locale={locale} />
       </main>
       <Footer locale={locale} />
       <script
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }}
         type="application/ld+json"
       />
     </>
