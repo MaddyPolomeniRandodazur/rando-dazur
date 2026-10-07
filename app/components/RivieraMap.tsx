@@ -13,6 +13,12 @@ const cannesPhotos = [
   { fileName: "marche-forville.jpg", src: "/images/destinations/cannes/marche-forville.jpg", alt: "Marché Forville in Cannes", objectPosition: "50% 50%" },
 ];
 
+const lerinsPhotos = [
+  { fileName: "boat-arrival.jpg", src: "/images/destinations/iles-de-lerins/boat-arrival.jpg", alt: "Boat arriving at the Lérins Islands from Cannes", objectPosition: "20% 50%" },
+  { fileName: "saint-honorat-monastery.jpg", src: "/images/destinations/iles-de-lerins/saint-honorat-monastery.jpg", alt: "Monastery of Saint-Honorat on the Lérins Islands", objectPosition: "55% 50%" },
+  { fileName: "mediterranean-coastal-trail.jpg", src: "/images/destinations/iles-de-lerins/mediterranean-coastal-trail.jpg", alt: "Mediterranean coastal trail on the Lérins Islands", objectPosition: "50% 50%" },
+];
+
 export default function RivieraMap({
   copy,
   locale,
@@ -29,7 +35,8 @@ export default function RivieraMap({
     destinations[0];
   const selectedSubtitle =
     "subtitle" in selected ? selected.subtitle : undefined;
-  const photos = selected.id === "cannes" ? cannesPhotos : destinationPhotos[selected.id] ?? [];
+  const destinationGallery = selected.id === "cannes" ? cannesPhotos : selected.id === "iles-de-lerins" ? lerinsPhotos : undefined;
+  const photos = destinationGallery ?? destinationPhotos[selected.id] ?? [];
   const experienceItems = getMessages(locale).experiences.items;
   const availableExperiences = selected.experiences
     .map((slug) =>
@@ -141,8 +148,8 @@ export default function RivieraMap({
                   key={photo.fileName}
                 >
                   <Image
-                    alt={selected.id === "cannes" ? cannesPhotos[index].alt : copy.photoAlt}
-                    style={selected.id === "cannes" ? { objectPosition: cannesPhotos[index].objectPosition } : undefined}
+                    alt={destinationGallery ? destinationGallery[index].alt : copy.photoAlt}
+                    style={destinationGallery ? { objectPosition: destinationGallery[index].objectPosition } : undefined}
                     fill
                     sizes="(max-width: 780px) 90vw, 30vw"
                     src={photo.src}

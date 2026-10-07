@@ -425,8 +425,8 @@ const english = {
         region: "French Riviera • Alpes-Maritimes",
         driveTime: "15 min by boat from Cannes",
         photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
-        experiences: ["food-tours", "hiking-experiences", "cycling-experiences", "cruise-guests"],
-        photosFrom: ["cycling-experiences", "food-tours"],
+        experiences: ["hiking-experiences", "sunset-apero-hikes", "outdoor-escape-games"],
+        photosFrom: ["hiking-experiences", "sunset-apero-hikes", "outdoor-escape-games"],
       },
       {
         id: "pays-de-fayence",
@@ -1151,8 +1151,8 @@ const french: Messages = {
         region: "Côte d’Azur • Alpes-Maritimes",
         driveTime: "15 min en bateau depuis Cannes",
         photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
-        experiences: ["food-tours", "hiking-experiences", "cycling-experiences", "cruise-guests"],
-        photosFrom: ["cycling-experiences", "food-tours"],
+        experiences: ["hiking-experiences", "sunset-apero-hikes", "outdoor-escape-games"],
+        photosFrom: ["hiking-experiences", "sunset-apero-hikes", "outdoor-escape-games"],
       },
       {
         id: "pays-de-fayence",
@@ -1848,8 +1848,8 @@ const italian: Messages = {
         region: "Costa Azzurra • Alpi Marittime",
         driveTime: "15 min in barca da Cannes",
         photos: ["photo-slot-1", "photo-slot-2", "photo-slot-3"],
-        experiences: ["food-tours", "hiking-experiences", "cycling-experiences", "cruise-guests"],
-        photosFrom: ["cycling-experiences", "food-tours"],
+        experiences: ["hiking-experiences", "sunset-apero-hikes", "outdoor-escape-games"],
+        photosFrom: ["hiking-experiences", "sunset-apero-hikes", "outdoor-escape-games"],
       },
       {
         id: "pays-de-fayence",
