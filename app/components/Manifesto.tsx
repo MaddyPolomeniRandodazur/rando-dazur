@@ -50,7 +50,9 @@ export default function Manifesto({
         </div>
         <div className="manifesto-grid">
           {moments.map((moment, index) => {
-            const photo = photos[moment.slug].hero;
+            const photoSrc = moment.image === "manifesto-food"
+              ? "/images/manifesto/eat-it-retouched.jpg"
+              : photos[moment.slug].hero?.src;
 
             return (
               <a
@@ -58,10 +60,10 @@ export default function Manifesto({
                 href={moment.href}
                 key={moment.image}
               >
-                {photo && (
+                {photoSrc && (
                   <Image
                     className="manifesto-card-image"
-                    src={photo.src}
+                    src={photoSrc}
                     alt=""
                     fill
                     sizes="(max-width: 720px) 100vw, (max-width: 1050px) 50vw, 34vw"
