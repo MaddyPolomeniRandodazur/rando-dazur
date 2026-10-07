@@ -1,18 +1,49 @@
-export default function Hero() {
+import Image from "next/image";
+import type { Locale } from "../i18n/config";
+import { getMessages } from "../i18n/messages";
+import type { ExperiencePhoto } from "../lib/experience-photos";
+
+export default function Hero({
+  locale,
+  photo,
+}: {
+  locale: Locale;
+  photo: ExperiencePhoto;
+}) {
+  const copy = getMessages(locale).hero;
+
   return (
-    <section className="min-h-screen flex items-center justify-center bg-green-700 text-white">
-      <div className="text-center">
-        <h1 className="text-5xl font-bold">
-          Découvrez les plus belles randonnées de la Côte d'Azur
+    <section className="hero" id="accueil">
+      <Image
+        className="hero-image"
+        src={photo.src}
+        alt={copy.imageAlt}
+        fill
+        sizes="100vw"
+        fetchPriority="high"
+      />
+      <div className="hero-shade" aria-hidden="true" />
+      <div className="hero-content page-width">
+        <p className="eyebrow eyebrow-light">{copy.eyebrow}</p>
+        <h1>
+          {copy.titleFirst}
+          <br />
+          <em>{copy.titleSecond}</em>
         </h1>
-
-        <p className="mt-6 text-xl">
-          Randonnées accompagnées au départ de Cannes
-        </p>
-
-        <button className="mt-8 bg-white text-green-700 px-6 py-3 rounded-lg font-semibold">
-          Réserver une randonnée
-        </button>
+        <p className="hero-description">{copy.description}</p>
+        <div className="hero-actions">
+          <a className="button button-light" href="#experiences">
+            {copy.discover}
+            <span aria-hidden="true">↗</span>
+          </a>
+          <a className="button button-quiet" href="#agences-mice">
+            {copy.create}
+          </a>
+        </div>
+        <div className="hero-caption" aria-hidden="true">
+          <span>43°33’ N &nbsp; 7°01’ E</span>
+          <span>{copy.scroll}</span>
+        </div>
       </div>
     </section>
   );

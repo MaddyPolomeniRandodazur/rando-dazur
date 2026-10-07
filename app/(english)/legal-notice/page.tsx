@@ -1,0 +1,9 @@
+import LegalPage, { getLegalPageMetadata } from "../../components/LegalPage";
+
+export function generateMetadata() {
+  return getLegalPageMetadata("en", "legal-notice");
+}
+
+export default function Page() {
+  return <LegalPage locale="en" slug="legal-notice" />;
+}
