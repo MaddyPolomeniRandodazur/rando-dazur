@@ -4937,3 +4937,30 @@ a {
     transition: none;
   }
 }
+
+/* Keep the homepage picnic visible without changing detail-page heroes. */
+.hero > .hero-image {
+  object-position: 50% 80%;
+}
+
+@media (max-width: 1050px) {
+  .hero > .hero-image {
+    object-position: 22% 100%;
+  }
+}
+
+@media (max-width: 780px) {
+  .hero .hero-content h1 {
+    line-height: 1.04;
+    overflow-wrap: break-word;
+  }
+
+  .hero .hero-description {
+    max-width: 100%;
+    overflow-wrap: break-word;
+  }
+
+  .hero .hero-actions .button {
+    max-width: 100%;
+  }
+}

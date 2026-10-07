@@ -86,7 +86,10 @@ export default async function HomePage({ locale }: { locale: Locale }) {
       />
       <ScrollReveal />
       <main>
-        <Hero locale={locale} photo={heroPhoto} />
+        <Hero
+          locale={locale}
+          photo={{ ...heroPhoto, src: "/images/hero/french-riviera-panoramic-picnic.jpg" }}
+        />
         <Manifesto locale={locale} photos={experiencePhotos} />
         <ExperienceSection
           locale={locale}
