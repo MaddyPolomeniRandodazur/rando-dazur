@@ -54,7 +54,9 @@ export default function Manifesto({
               ? "/images/manifesto/eat-it-retouched.jpg"
               : moment.image === "manifesto-cycle"
                 ? "/images/manifesto/cycle-tour-french-riviera.jpg"
-                : photos[moment.slug].hero?.src;
+                : moment.image === "manifesto-walk"
+                  ? "/images/manifesto/walk-it-forest-hike.jpg"
+                  : photos[moment.slug].hero?.src;
 
             return (
               <a
@@ -66,7 +68,7 @@ export default function Manifesto({
                   <Image
                     className="manifesto-card-image"
                     src={photoSrc}
-                    style={moment.image === "manifesto-cycle" ? { objectPosition: "60% 60%" } : undefined}
+                    style={moment.image === "manifesto-cycle" ? { objectPosition: "60% 60%" } : moment.image === "manifesto-walk" ? { objectPosition: "60% 50%" } : undefined}
                     alt=""
                     fill
                     sizes="(max-width: 720px) 100vw, (max-width: 1050px) 50vw, 34vw"
