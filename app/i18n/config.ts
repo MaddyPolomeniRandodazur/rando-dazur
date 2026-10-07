@@ -43,3 +43,9 @@ export type LegalPageSlug = (typeof legalPageSlugs)[number];
 export function isExperienceSlug(value: string): value is ExperienceSlug {
   return experienceSlugs.includes(value as ExperienceSlug);
 }
+
+export function canonicalExperiencePath(locale: Locale, path: string) {
+  return locale !== "it" && path === "/experiences/evg-experiences"
+    ? "/experiences/evjf-experiences"
+    : path;
+}

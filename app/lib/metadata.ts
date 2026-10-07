@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { locales, localePath, type Locale } from "../i18n/config";
+import { canonicalExperiencePath, locales, localePath, type Locale } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
 import { getSiteUrl } from "./site-url";
 import { publicAssetUrl } from "./public-assets";
@@ -33,7 +33,7 @@ export function getLocalizedPageMetadata({
     locales.map((language) => [
       language,
       new URL(
-        localePath(language, path),
+        localePath(language, canonicalExperiencePath(language, path)),
         baseUrl,
       ).toString(),
     ]),
@@ -61,7 +61,10 @@ export function getLocalizedPageMetadata({
       canonical: localizedPath,
       languages: {
         ...languages,
-        "x-default": new URL(localePath("en", path), baseUrl).toString(),
+        "x-default": new URL(
+          localePath("en", canonicalExperiencePath("en", path)),
+          baseUrl,
+        ).toString(),
       },
     },
     robots: noIndex
@@ -151,9 +154,9 @@ const englishExperienceMetadata: Record<
       "Bring your group together for an outdoor escape game on the French Riviera, with local stories, shared challenges and thoughtful planning.",
   },
   "evjf-experiences": {
-    title: "Bachelorette Experiences on the French Riviera | Rando d’Azur",
+    title: "Bachelorette & Bachelor Experiences on the French Riviera | Rando d’Azur",
     description:
-      "Celebrate a bachelorette weekend with a private French Riviera experience, locally guided and shaped around your group.",
+      "Celebrate a bachelorette or bachelor party with a private French Riviera experience, locally guided and shaped around your group.",
   },
   "evg-experiences": {
     title: "Bachelor Group Experiences on the French Riviera | Rando d’Azur",

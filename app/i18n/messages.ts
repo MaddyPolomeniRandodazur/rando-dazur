@@ -42,8 +42,7 @@ const english = {
       ["edible-plants", "Edible Plants of Provence"],
       ["outdoor-escape-games", "Outdoor Escape Games"],
       ["family-experiences", "Family Experiences"],
-      ["evjf-experiences", "EVJF · Bachelorette Groups"],
-      ["evg-experiences", "EVG · Bachelor Groups"],
+      ["evjf-experiences", "EVJF & EVG · Bachelorette & Bachelor Groups"],
       ["corporate-incentive-travel", "Corporate & Incentive Travel"],
       ["cruise-guests", "Cruise Guests"],
     ],
@@ -647,10 +646,10 @@ const english = {
         ],
       },
       "evjf-experiences": {
-        title: "EVJF · Bachelorette Groups",
+        title: "EVJF & EVG · Bachelorette & Bachelor Groups",
         subtitle: "A celebration, made personal.",
         description:
-          "Celebrate the bride-to-be with a private Riviera experience, thoughtfully tailored to your group.",
+          "Celebrate the bride- or groom-to-be with a private Riviera experience, from outdoor adventures to local discoveries, thoughtfully tailored to your group.",
         imageAlt: "Friends celebrating together on the French Riviera",
         points: [
           "A private experience tailored to your group",
@@ -714,7 +713,13 @@ type Destination = {
 };
 
 type EnglishMessages = Widen<typeof english>;
-type Messages = Omit<EnglishMessages, "map"> & {
+type Messages = Omit<EnglishMessages, "map" | "navigation" | "experiences"> & {
+  navigation: Omit<EnglishMessages["navigation"], "experienceLinks"> & {
+    experienceLinks: readonly (readonly [string, string])[];
+  };
+  experiences: Omit<EnglishMessages["experiences"], "items"> & {
+    items: readonly EnglishMessages["experiences"]["items"][number][];
+  };
   map: Omit<EnglishMessages["map"], "destinations"> & {
     destinations: readonly Destination[];
   };
@@ -762,8 +767,7 @@ const french: Messages = {
       ["edible-plants", "Plantes comestibles de Provence"],
       ["outdoor-escape-games", "Escape games outdoor"],
       ["family-experiences", "Expériences en famille"],
-      ["evjf-experiences", "EVJF · Groupes entre amies"],
-      ["evg-experiences", "EVG · Groupes entre amis"],
+      ["evjf-experiences", "EVJF & EVG · Groupes entre amis"],
       ["corporate-incentive-travel", "Voyages d’entreprise & incentive"],
       ["cruise-guests", "Excursions pour croisiéristes"],
     ],
@@ -1368,11 +1372,11 @@ const french: Messages = {
         ],
       },
       "evjf-experiences": {
-        title: "EVJF · Groupes entre amies",
+        title: "EVJF & EVG · Groupes entre amis",
         subtitle: "Une célébration à votre image.",
         description:
-          "Célébrez la future mariée avec une expérience privée sur la Riviera, imaginée pour votre groupe.",
-        imageAlt: "Des amies célèbrent un EVJF sur la Côte d’Azur",
+          "Célébrez la future mariée ou le futur marié avec une expérience privée sur la Riviera, entre aventure en plein air et découvertes locales, imaginée pour votre groupe.",
+        imageAlt: "Des amis célèbrent un EVJF ou un EVG sur la Côte d’Azur",
         points: [
           "Une expérience privée adaptée à votre groupe",
           "Découvertes en plein air et attentions locales",

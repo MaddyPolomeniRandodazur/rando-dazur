@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import {
+  canonicalExperiencePath,
   experienceSlugs,
   legalPageSlugs,
   localePath,
@@ -17,7 +18,10 @@ function localizedSitemapEntry(
   const languages = Object.fromEntries(
     locales.map((language) => [
       language,
-      new URL(localePath(language, path), baseUrl).toString(),
+      new URL(
+        localePath(language, canonicalExperiencePath(language, path)),
+        baseUrl,
+      ).toString(),
     ]),
   );
 
@@ -26,7 +30,10 @@ function localizedSitemapEntry(
     alternates: {
       languages: {
         ...languages,
-        "x-default": new URL(localePath("en", path), baseUrl).toString(),
+        "x-default": new URL(
+          localePath("en", canonicalExperiencePath("en", path)),
+          baseUrl,
+        ).toString(),
       },
     },
     priority,
@@ -37,9 +44,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return locales.flatMap((locale) => [
     localizedSitemapEntry(locale, "", 1),
     localizedSitemapEntry(locale, "/press", 0.5),
-    ...experienceSlugs.map((slug) =>
-      localizedSitemapEntry(locale, `/experiences/${slug}`, 0.8),
-    ),
+    ...experienceSlugs
+      .filter((slug) => locale === "it" || slug !== "evg-experiences")
+      .map((slug) =>
+        localizedSitemapEntry(locale, `/experiences/${slug}`, 0.8),
+      ),
     ...destinationSlugs.map((slug) =>
       localizedSitemapEntry(locale, `/destinations/${slug}`, 0.8),
     ),
