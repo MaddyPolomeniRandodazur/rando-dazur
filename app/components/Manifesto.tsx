@@ -56,7 +56,9 @@ export default function Manifesto({
                 ? "/images/manifesto/cycle-tour-french-riviera.jpg"
                 : moment.image === "manifesto-walk"
                   ? "/images/manifesto/walk-it-forest-hike.jpg"
-                  : photos[moment.slug].hero?.src;
+                  : moment.image === "manifesto-meet"
+                    ? "/images/manifesto/meet-it-socca-cannes-market.jpg"
+                    : photos[moment.slug].hero?.src;
 
             return (
               <a
@@ -68,7 +70,7 @@ export default function Manifesto({
                   <Image
                     className="manifesto-card-image"
                     src={photoSrc}
-                    style={moment.image === "manifesto-cycle" ? { objectPosition: "60% 60%" } : moment.image === "manifesto-walk" ? { objectPosition: "60% 50%" } : undefined}
+                    style={moment.image === "manifesto-cycle" ? { objectPosition: "60% 60%" } : moment.image === "manifesto-walk" ? { objectPosition: "60% 50%" } : moment.image === "manifesto-meet" ? { objectPosition: "45% 65%" } : undefined}
                     alt=""
                     fill
                     sizes="(max-width: 720px) 100vw, (max-width: 1050px) 50vw, 34vw"
