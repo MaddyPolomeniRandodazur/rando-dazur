@@ -70,7 +70,8 @@ export default function WhySection({ locale }: { locale: Locale }) {
                 alt={copy.portraitAlt}
                 fill
                 sizes="(max-width: 780px) 100vw, 42vw"
-                src={mediaPlaceholderUrl}
+                src="/images/about/maddy-polomeni-mimosa-portrait.jpg"
+                style={{ objectPosition: "45% 50%" }}
               />
               <figcaption>{copy.portraitAlt}</figcaption>
             </figure>
