@@ -1,10 +1,13 @@
-import type { Locale } from "../i18n/config";
+import type { ExperienceSlug, Locale } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
 
 import PrivateRates from "./PrivateRates";
+import { bookingLabels, getRegiondoBookingUrl } from "../lib/regiondo";
+import { getWhatsAppUrl } from "../lib/whatsapp";
 
-export default function BookingSection({ locale, customQuote = false }: { locale: Locale; customQuote?: boolean }) {
+export default function BookingSection({ locale, customQuote = false, experience }: { locale: Locale; customQuote?: boolean; experience?: ExperienceSlug }) {
   const copy = getMessages(locale).booking;
+  const contact = getMessages(locale).contact;
 
   return (
     <section className="booking-section" id="booking">
@@ -16,15 +19,23 @@ export default function BookingSection({ locale, customQuote = false }: { locale
           <p>{copy.introduction}</p>
         </div>
         <div
-          aria-label={copy.widgetLabel}
+          aria-label={copy.onlineLabel}
           className="regiondo-placeholder"
-          data-regiondo-widget-slot
+          data-regiondo-booking-links
         >
           <span className="regiondo-placeholder-mark" aria-hidden="true">
             RD
           </span>
-          <strong>{copy.comingSoon}</strong>
-          <p>{copy.widgetNote}</p>
+          <strong>{copy.onlineTitle}</strong>
+          <p>{copy.onlineNote}</p>
+          <div className="hero-actions">
+            <a className="button button-light" href={getRegiondoBookingUrl(experience)} target="_blank" rel="noopener noreferrer" data-conversion="booking_request">
+              {bookingLabels[locale].book} <span aria-hidden="true">↗</span>
+            </a>
+            <a className="button button-quiet" href={getWhatsAppUrl(contact.whatsappMessage)} target="_blank" rel="noopener noreferrer">
+              {contact.maddyButton} <span aria-hidden="true">↗</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>

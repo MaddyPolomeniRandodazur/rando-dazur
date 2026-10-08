@@ -91,7 +91,7 @@ const documents: Record<Locale, Record<LegalPageSlug, LegalDocument>> = {
           "paragraphs": [
             "When you contact Maddy by email, telephone or WhatsApp, the contact details and information you provide are used to answer your enquiry, prepare a quotation and, where applicable, arrange and follow up your booking. Only share information relevant to your request.",
             "Website hosting involves technical information needed to deliver and secure pages, including the IP address and technical request information.",
-            "In the current website, the newsletter form does not send the entered email address or register a subscription. The displayed booking area does not load a third-party booking or payment widget."
+            "In the current website, the newsletter form does not send the entered email address or register a subscription. Online booking links open the external Regiondo shop (https://randodazur.regiondo.fr/categories). No booking or payment widget loads on this website. Instagram and Facebook links also open external sites; their own privacy and cookie choices apply after you open them."
           ]
         },
         {
@@ -144,7 +144,7 @@ const documents: Record<Locale, Record<LegalPageSlug, LegalDocument>> = {
         {
           "title": "Optional Vercel Web Analytics",
           "paragraphs": [
-            "Vercel Web Analytics is integrated but its script and events load only after explicit consent. No advertising pixels or external booking widget are integrated. The map remains local; external services such as WhatsApp load only when you open them.",
+            "Vercel Web Analytics is integrated but its script and events load only after explicit consent. No advertising pixels or external booking widget are integrated. The map remains local; external services such as WhatsApp, Instagram, Facebook and the Regiondo booking shop load only when you open their links. Those links themselves do not set third-party cookies on this website.",
             "After your consent, Vercel Web Analytics measures page visits and four click categories: WhatsApp, telephone, email and booking requests. Custom events have fixed names only, with no contact details, link destination, message content, form values or customer identifier. A click indicates an intention to contact us, not a completed booking.",
             "Vercel processes technical request data to create aggregated statistics, including device/browser information, approximate location and a short-lived visit hash. According to Vercel, the visit identifier is discarded after 24 hours; this is not the retention period of aggregate statistics. No identify/group feature or analytics cookie is enabled. Page URLs are limited to public routes and stripped of queries and fragments. Events with potentially identifying referrers are filtered out."
           ]
@@ -247,7 +247,7 @@ const documents: Record<Locale, Record<LegalPageSlug, LegalDocument>> = {
           "paragraphs": [
             "Lorsque vous contactez Maddy par e-mail, téléphone ou WhatsApp, les coordonnées et informations que vous communiquez servent à répondre à votre demande, préparer un devis et, le cas échéant, organiser et suivre votre réservation. Ne transmettez que les informations utiles à votre demande.",
             "L’hébergement du site implique le traitement de données techniques nécessaires à la délivrance des pages et à leur sécurité, notamment l’adresse IP et les informations techniques de la requête.",
-            "Dans la version actuelle du site, le formulaire de newsletter ne transmet pas l’adresse saisie et ne procède à aucune inscription. Le bloc de réservation affiché ne charge pas de widget de paiement ou de réservation tiers."
+            "Dans la version actuelle du site, le formulaire de newsletter ne transmet pas l’adresse saisie et ne procède à aucune inscription. Les liens de réservation ouvrent la boutique externe Regiondo (https://randodazur.regiondo.fr/categories). Aucun widget de paiement ou de réservation ne se charge sur ce site. Les liens Instagram et Facebook ouvrent également des sites externes, soumis à leurs propres politiques et choix de confidentialité et de cookies."
           ]
         },
         {
@@ -300,7 +300,7 @@ const documents: Record<Locale, Record<LegalPageSlug, LegalDocument>> = {
         {
           "title": "Vercel Web Analytics facultatif",
           "paragraphs": [
-            "Vercel Web Analytics est intégré, mais son script et ses événements ne sont chargés qu’après consentement explicite. Aucun pixel publicitaire ni widget externe de réservation n’est intégré. La carte reste locale ; les services externes comme WhatsApp ne se chargent que si vous les ouvrez.",
+            "Vercel Web Analytics est intégré, mais son script et ses événements ne sont chargés qu’après consentement explicite. Aucun pixel publicitaire ni widget externe de réservation n’est intégré. La carte reste locale ; les services externes comme WhatsApp, Instagram, Facebook et la boutique Regiondo ne se chargent que si vous les ouvrez.",
             "Après votre consentement, Vercel Web Analytics mesure les visites et quatre catégories de clics : WhatsApp, téléphone, email et demandes de réservation. Les événements personnalisés portent uniquement des noms fixes, sans coordonnées, destination du lien, contenu de message, valeurs de formulaire ni identifiant client. Un clic indique une intention de contact, pas une réservation confirmée.",
             "Vercel traite des données techniques de requête pour produire des statistiques agrégées : appareil et navigateur, localisation approximative et empreinte de visite éphémère. Selon Vercel, l’identifiant de visite est supprimé après 24 heures ; ce délai n’est pas la durée de conservation des statistiques agrégées. Aucune fonctionnalité identify/group ni aucun cookie Analytics n’est activé. Les URLs sont limitées aux routes publiques, sans paramètres ni fragments. Les événements dont le référent peut contenir des informations identifiantes sont filtrés."
           ]
@@ -403,7 +403,7 @@ const documents: Record<Locale, Record<LegalPageSlug, LegalDocument>> = {
           "paragraphs": [
             "Quando contatti Maddy via e-mail, telefono o WhatsApp, i recapiti e le informazioni comunicati servono a rispondere alla richiesta, preparare un preventivo e, se necessario, organizzare e seguire la prenotazione. Comunica solo informazioni utili alla richiesta.",
             "L’hosting comporta il trattamento di dati tecnici necessari per fornire e proteggere le pagine, tra cui l’indirizzo IP e le informazioni tecniche della richiesta.",
-            "Nella versione attuale, il modulo newsletter non invia l’e-mail inserita e non effettua iscrizioni. L’area di prenotazione non carica widget di pagamento o prenotazione di terzi."
+            "Nella versione attuale, il modulo newsletter non invia l’e-mail inserita e non effettua iscrizioni. I link di prenotazione aprono lo shop esterno Regiondo (https://randodazur.regiondo.fr/categories). Nessun widget di pagamento o prenotazione viene caricato su questo sito. Anche i link Instagram e Facebook aprono siti esterni, con le rispettive politiche e preferenze sulla privacy e sui cookie."
           ]
         },
         {
@@ -456,7 +456,7 @@ const documents: Record<Locale, Record<LegalPageSlug, LegalDocument>> = {
         {
           "title": "Vercel Web Analytics facoltativo",
           "paragraphs": [
-            "Vercel Web Analytics è integrato, ma script ed eventi si caricano solo dopo consenso esplicito. Non sono integrati pixel pubblicitari o widget esterni di prenotazione. La mappa è locale e i servizi esterni come WhatsApp si caricano solo quando li apri.",
+            "Vercel Web Analytics è integrato, ma script ed eventi si caricano solo dopo consenso esplicito. Non sono integrati pixel pubblicitari o widget esterni di prenotazione. La mappa è locale e i servizi esterni come WhatsApp, Instagram, Facebook e lo shop Regiondo si caricano solo quando li apri.",
             "Dopo il consenso, Vercel Web Analytics misura visite e quattro categorie di clic: WhatsApp, telefono, email e richieste di prenotazione. Gli eventi personalizzati hanno solo nomi fissi, senza recapiti, destinazioni dei link, contenuti dei messaggi, valori dei moduli o identificativi dei clienti. Un clic indica un’intenzione di contatto, non una prenotazione confermata.",
             "Vercel tratta dati tecnici delle richieste per statistiche aggregate, inclusi dispositivo e browser, posizione approssimativa e un hash di visita temporaneo. Secondo Vercel, l’identificatore viene eliminato dopo 24 ore; questo non è il periodo di conservazione delle statistiche aggregate. Non sono abilitate funzioni identify/group o cookie Analytics. Gli URL sono limitati alle pagine pubbliche, senza query o frammenti; gli eventi con referenti potenzialmente identificativi vengono esclusi."
           ]

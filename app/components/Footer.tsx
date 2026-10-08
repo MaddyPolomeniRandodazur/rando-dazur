@@ -1,7 +1,8 @@
 import { localePath, type Locale } from "../i18n/config";
 import { getTravelTradeContent } from "../i18n/travel-trade";
 import { getMessages } from "../i18n/messages";
-import { contactChannels, isPublishedSocialUrl } from "../lib/contact-channels";
+import { contactChannels } from "../lib/contact-channels";
+import { regiondoShopUrl } from "../lib/regiondo";
 import { getWhatsAppUrl } from "../lib/whatsapp";
 import { AnalyticsSettingsLink } from "./SiteAnalytics";
 import BrandLogo from "./BrandLogo";
@@ -43,23 +44,12 @@ export default function Footer({ locale }: { locale: Locale }) {
             <p>{copy.descriptor}</p>
             <div className="footer-contact-details">
               <p className="eyebrow eyebrow-light">{copy.contactDetailsTitle}</p>
+              <SocialLinks
+                ariaLabel={messages.navigation.socialNavigationLabel}
+                className="footer-social-links"
+                showLabels
+              />
               <nav aria-label={copy.contactLinksLabel} className="footer-contact-links">
-                {isPublishedSocialUrl(contactChannels.facebookUrl) && <a
-                  href={contactChannels.facebookUrl}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  {copy.facebookLabel}
-                  <span aria-hidden="true">↗</span>
-                </a>}
-                {isPublishedSocialUrl(contactChannels.instagramUrl) && <a
-                  href={contactChannels.instagramUrl}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  {copy.instagramLabel}
-                  <span aria-hidden="true">↗</span>
-                </a>}
                 <a
                   href={getWhatsAppUrl(contactCopy.whatsappMessage)}
                   rel="noopener noreferrer"
@@ -91,7 +81,7 @@ export default function Footer({ locale }: { locale: Locale }) {
                 <span key={phrase}>{phrase}</span>
               ))}
             </p>
-            <a className="button button-light" href={`${root}#booking`}>
+            <a className="button button-light" href={regiondoShopUrl} target="_blank" rel="noopener noreferrer" data-conversion="booking_request">
               {copy.cta} <span aria-hidden="true">↗</span>
             </a>
             <a

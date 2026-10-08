@@ -461,11 +461,11 @@ const english = {
     eyebrow: "YOUR RIVIERA STORY BEGINS HERE",
     title: "Book an Experience",
     introduction:
-      "We are preparing a seamless way to enquire about your private Riviera experience.",
-    comingSoon: "Booking coming soon",
-    widgetLabel: "Regiondo booking widget placeholder",
-    widgetNote:
-      "The Regiondo booking widget will be embedded here once the integration is ready.",
+      "Book online, or contact Maddy to create a private Riviera journey.",
+    onlineTitle: "Book online with Regiondo",
+    onlineLabel: "Online booking with Regiondo",
+    onlineNote:
+      "Explore available experiences in our booking shop. For a tailor-made experience, contact Maddy.",
   },
   photoGallery: {
     eyebrow: "A CLOSER LOOK",
@@ -1188,11 +1188,11 @@ const french: Messages = {
     eyebrow: "VOTRE HISTOIRE RIVIERA COMMENCE ICI",
     title: "Réserver une expérience",
     introduction:
-      "Nous préparons un moyen simple de demander votre expérience privée sur la Riviera.",
-    comingSoon: "Réservation bientôt disponible",
-    widgetLabel: "Emplacement du widget de réservation Regiondo",
-    widgetNote:
-      "Le widget Regiondo sera intégré ici lorsque la connexion sera prête.",
+      "Réservez en ligne ou contactez Maddy pour créer votre expérience privée sur la Riviera.",
+    onlineTitle: "Réservez en ligne avec Regiondo",
+    onlineLabel: "Réservation en ligne avec Regiondo",
+    onlineNote:
+      "Découvrez les expériences disponibles dans notre boutique. Pour une expérience sur mesure, contactez Maddy.",
   },
   photoGallery: {
     eyebrow: "UN REGARD DE PLUS PRÈS",
@@ -1886,11 +1886,11 @@ const italian: Messages = {
     eyebrow: "LA TUA STORIA SULLA RIVIERA INIZIA QUI",
     title: "Prenota un’esperienza",
     introduction:
-      "Stiamo preparando un modo semplice per richiedere la tua esperienza privata sulla Riviera.",
-    comingSoon: "Prenotazioni in arrivo",
-    widgetLabel: "Segnaposto widget di prenotazione Regiondo",
-    widgetNote:
-      "Il widget Regiondo sarà integrato qui quando il collegamento sarà pronto.",
+      "Prenota online o contatta Maddy per creare la tua esperienza privata sulla Riviera.",
+    onlineTitle: "Prenota online con Regiondo",
+    onlineLabel: "Prenotazione online con Regiondo",
+    onlineNote:
+      "Scopri le esperienze disponibili nel nostro shop. Per un’esperienza su misura, contatta Maddy.",
   },
   photoGallery: {
     eyebrow: "UNO SGUARDO PIÙ DA VICINO",

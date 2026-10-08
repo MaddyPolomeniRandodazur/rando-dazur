@@ -7,6 +7,7 @@ import {
 } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
 import type { ExperiencePhotoCollection } from "../lib/experience-photos";
+import { bookingLabels, getRegiondoBookingUrl } from "../lib/regiondo";
 
 const detailPages: Partial<Record<string, ExperienceSlug>> = {
   "food-tours": "food-tours",
@@ -129,6 +130,9 @@ export default function ExperienceSection({
                   <p className="card-detail">{experience.detail}</p>
                   <h3>{experience.title}</h3>
                   <p>{experience.description}</p>
+                  {pageSlug && <p><a className="text-link" href={getRegiondoBookingUrl(pageSlug)} target="_blank" rel="noopener noreferrer" data-conversion="booking_request">
+                    {bookingLabels[locale].experience} <span aria-hidden="true">↗</span>
+                  </a></p>}
                 </div>
               </article>
             );

@@ -8,6 +8,7 @@ import type { MessagesForLocale } from "../i18n/messages";
 import { getWhatsAppUrl } from "../lib/whatsapp";
 import BrandLogo from "./BrandLogo";
 import SocialLinks from "./SocialLinks";
+import { regiondoShopUrl } from "../lib/regiondo";
 
 function closeMenus(event: MouseEvent<HTMLAnchorElement>) {
   const link = event.currentTarget;
@@ -114,7 +115,6 @@ function LanguageSelector({
 }
 
 function BookingLink({
-  locale,
   copy,
   mobile = false,
 }: {
@@ -122,16 +122,19 @@ function BookingLink({
   copy: MessagesForLocale["navigation"];
   mobile?: boolean;
 }) {
-  const href = `${localePath(locale, "")}#booking`;
+  const href = regiondoShopUrl;
 
   return (
-    <Link
+    <a
       className={`booking-button${mobile ? " booking-button-mobile" : ""}`}
       href={href}
       onClick={closeMenus}
+      data-conversion="booking_request"
+      rel="noopener noreferrer"
+      target="_blank"
     >
       {copy.book} <span aria-hidden="true">↗</span>
-    </Link>
+    </a>
   );
 }
 

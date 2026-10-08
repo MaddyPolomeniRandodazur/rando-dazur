@@ -10,6 +10,7 @@ import { rateContent, isCustomQuoteExperience, getGuideOffers } from "../lib/pri
 import ExperienceConnections from "./ExperienceConnections";
 import { cyclingTourImages, experienceImages } from "../lib/experience-images";
 import { getWhatsAppUrl } from "../lib/whatsapp";
+import { bookingLabels, getRegiondoBookingUrl } from "../lib/regiondo";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { getSiteUrl } from "../lib/site-url";
@@ -105,10 +106,15 @@ export default async function ExperiencePage({
             <h1>{experience.title}</h1>
             <p className="experience-detail-subtitle">{experience.subtitle}</p>
             <p className="hero-description">{experience.description}</p>
+            <div className="hero-actions">
+            <a className="button button-light" href={getRegiondoBookingUrl(slug)} target="_blank" rel="noopener noreferrer" data-conversion="booking_request">
+              {bookingLabels[locale].experience} <span aria-hidden="true">↗</span>
+            </a>
             <a className="button button-light" href="#booking">
               {copy.experiencePage.enquire}
               <span aria-hidden="true">↗</span>
             </a>
+            </div>
             <RateSummary locale={locale} customQuote={customQuote} />
             <p className={rateStyles.note}>{rateContent[locale].benefit}</p>
           </div>
@@ -192,6 +198,11 @@ export default async function ExperiencePage({
                         <h3>{tour.title}</h3>
                         <p>{tour.description}</p>
                         {"seasonality" in tour && <p>{tour.seasonality}</p>}
+                        <p>
+                          <a className="text-link" href={getRegiondoBookingUrl(slug, tour.title)} target="_blank" rel="noopener noreferrer" data-conversion="booking_request">
+                            {bookingLabels[locale].experience} <span aria-hidden="true">↗</span>
+                          </a>
+                        </p>
                         <a
                           className="text-link"
                           href={getWhatsAppUrl(`${copy.contact.whatsappMessage}\n\n${tour.title}`)}
@@ -233,7 +244,7 @@ export default async function ExperiencePage({
           </div>
         </section>
         <ExperienceConnections locale={locale} slug={slug} />
-        <BookingSection locale={locale} customQuote={customQuote} />
+        <BookingSection locale={locale} customQuote={customQuote} experience={slug} />
       </main>
       <Footer locale={locale} />
       <script

@@ -42,6 +42,7 @@ export function getBusinessStructuredData(locale: Locale) {
       addressCountry: "FR",
     },
     hasMap: googleBusinessProfile,
+    sameAs: [contactChannels.instagramUrl, contactChannels.facebookUrl],
     areaServed: [
       "Cannes",
       "Estérel",

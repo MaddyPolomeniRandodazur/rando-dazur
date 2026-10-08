@@ -26,7 +26,7 @@ export default function SocialLinks({
     <nav aria-label={ariaLabel} className={`social-links ${className}`}>
       {accounts.filter(account => isPublishedSocialUrl(account.href)).map((account) => (
         <a
-          aria-label={`${account.label} · Rando d’Azur`}
+          aria-label={`Follow Rando d’Azur on ${account.label}`}
           className="social-link"
           href={account.href}
           key={account.icon}
