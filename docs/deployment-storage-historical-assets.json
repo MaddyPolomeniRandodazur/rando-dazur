@@ -1,0 +1,52 @@
+{
+  "commit": "806cda558cc8730531abdf89249c60ab58b1c942",
+  "source": "https://api.github.com/repos/MaddyPolomeniRandodazur/rando-dazur/git/trees/806cda558cc8730531abdf89249c60ab58b1c942?recursive=1",
+  "truncated": false,
+  "publicBytes": 1556809139,
+  "duplicateGroups": 173,
+  "redundantBytes": 677480764,
+  "readyDeployment": "dpl_B8F9KQTp5Y8uHRQdjYqoecq7cL2V",
+  "note": "Git blob sizes, not Vercel billed/deployment sizes. Old deployed versions have not been deleted.",
+  "largestFiles": [
+    {
+      "path": "public/images/Rando d_Azur/Photos/Mimosa/philippe_m_m 4I5A1952.jpg",
+      "size": 31712543
+    },
+    {
+      "path": "public/images/Rando d_Azur/Photos/Mimosa/philippe_m_m 4I5A1949.jpg",
+      "size": 13877401
+    },
+    {
+      "path": "public/images/Rando d_Azur/Photos/Families/IMG_20250725_132856.jpg",
+      "size": 11079080
+    },
+    {
+      "path": "public/images/experiences/family-experiences/IMG_20250725_132856.jpg",
+      "size": 11079080
+    },
+    {
+      "path": "public/images/press/Articles/LFA Mandelieu-la-Napoule_Randonnée en forêt d_or.pdf",
+      "size": 10302187
+    },
+    {
+      "path": "public/images/Rando d_Azur/Photos/Mimosa/philippe_m_m 20210114_160509.jpg",
+      "size": 10248959
+    },
+    {
+      "path": "public/images/Rando d_Azur/Photos/Mimosa/philippe_m_m 20210114_160508.jpg",
+      "size": 10162197
+    },
+    {
+      "path": "public/images/about/maddy/IMG_20250827_221125.jpg",
+      "size": 8865408
+    },
+    {
+      "path": "public/images/Rando d_Azur/Photos/Food Tour Cannes/20260903_075812.jpg",
+      "size": 8776046
+    },
+    {
+      "path": "public/images/experiences/food-tours/20260903_075812.jpg",
+      "size": 8776046
+    }
+  ]
+}

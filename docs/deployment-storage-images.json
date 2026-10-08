@@ -1,0 +1,466 @@
+{
+  "tool": "libjpeg-turbo jpegtran 2.1.5; coefficient-preserving optimize, copy all markers",
+  "files": 57,
+  "changed": 56,
+  "before": 112467533,
+  "after": 97359014,
+  "saved": 15108519,
+  "records": [
+    {
+      "path": "public/images/press/Articles/01_nicematin 04 05 21.jpg",
+      "before": 759493,
+      "after": 715460,
+      "saved": 44033,
+      "pixelsIdentical": true,
+      "pixelSha256": "19c99410c771dfcf7f714be8ccf62fe265b6b46319d1cd5427ffc741f9e5f9fa"
+    },
+    {
+      "path": "public/images/press/Articles/02_nicematin 04 05 21.jpg",
+      "before": 838572,
+      "after": 777433,
+      "saved": 61139,
+      "pixelsIdentical": true,
+      "pixelSha256": "82fde25dd2c3a383db7b8c0afd9ab2e56b814e065509da50a4a5ae5d6459217d"
+    },
+    {
+      "path": "public/images/press/Articles/03_nicematin 04 05 21.jpg",
+      "before": 1052880,
+      "after": 967067,
+      "saved": 85813,
+      "pixelsIdentical": true,
+      "pixelSha256": "04867c725e0cf0ef0d10c2f596af0996ed8c3c586a9354472d79110a6bc3bdcd"
+    },
+    {
+      "path": "public/images/press/Articles/04_nicematin 04 05 21.jpg",
+      "before": 848267,
+      "after": 793889,
+      "saved": 54378,
+      "pixelsIdentical": true,
+      "pixelSha256": "d7ef1cd55d5bad06ef656f5467b73b1a5f18175d532eb2134d3c38a5a18e9d88"
+    },
+    {
+      "path": "public/images/press/Articles/Article ELLE - Rando Ap\u00e9ro - 2017 (1).jpg",
+      "before": 169275,
+      "after": 169247,
+      "saved": 28,
+      "pixelsIdentical": true,
+      "pixelSha256": "cffe52c28362e15ebbd26f74ccda6b3c9d729fa3393515e4725a9b423260d1b4"
+    },
+    {
+      "path": "public/images/press/Articles/Article ELLE - Rando Ap\u00e9ro - 2017 (2).jpg",
+      "before": 150284,
+      "after": 150256,
+      "saved": 28,
+      "pixelsIdentical": true,
+      "pixelSha256": "00402c84c99826759671d8f1b0eec11683c9a2cd293d280cc8bf7fa403d87f82"
+    },
+    {
+      "path": "public/images/press/Articles/Article Mimosa - La France Agricole - Maddy Polomeni - F\u00e9vrier 2021.jpg",
+      "before": 117202,
+      "after": 117152,
+      "saved": 50,
+      "pixelsIdentical": true,
+      "pixelSha256": "fb1bddcbeaf33651568716ac83b20f923eb1450bb5af20438a29281bd54fe34d"
+    },
+    {
+      "path": "public/images/press/Articles/Article Mimosa en Allemand - Maddy Polomeni - F\u00e9vrier 2021.jpg",
+      "before": 240127,
+      "after": 240098,
+      "saved": 29,
+      "pixelsIdentical": true,
+      "pixelSha256": "a2bf151ddc8fd253e6858f31946259a64df829c101c8e823ecc4c5d8af33bebb"
+    },
+    {
+      "path": "public/images/press/Articles/Article Nice Matin - 4 mai 2021 - Page 1.jpg",
+      "before": 759493,
+      "after": 715460,
+      "saved": 44033,
+      "pixelsIdentical": true,
+      "pixelSha256": "19c99410c771dfcf7f714be8ccf62fe265b6b46319d1cd5427ffc741f9e5f9fa"
+    },
+    {
+      "path": "public/images/press/Articles/Article Nice Matin - 4 mai 2021 - Page 2.jpg",
+      "before": 838572,
+      "after": 777433,
+      "saved": 61139,
+      "pixelsIdentical": true,
+      "pixelSha256": "82fde25dd2c3a383db7b8c0afd9ab2e56b814e065509da50a4a5ae5d6459217d"
+    },
+    {
+      "path": "public/images/press/Articles/Article Nice Matin - 4 mai 2021 - Page 3.jpg",
+      "before": 1052880,
+      "after": 967067,
+      "saved": 85813,
+      "pixelsIdentical": true,
+      "pixelSha256": "04867c725e0cf0ef0d10c2f596af0996ed8c3c586a9354472d79110a6bc3bdcd"
+    },
+    {
+      "path": "public/images/press/Articles/Article Nice Matin - 4 mai 2021 - Page 4.jpg",
+      "before": 848267,
+      "after": 793889,
+      "saved": 54378,
+      "pixelsIdentical": true,
+      "pixelSha256": "d7ef1cd55d5bad06ef656f5467b73b1a5f18175d532eb2134d3c38a5a18e9d88"
+    },
+    {
+      "path": "public/images/press/Articles/Article Nice Matin - A Harrouis - 2018 - Marche Nordique Mandelieu (1).jpg",
+      "before": 671483,
+      "after": 591575,
+      "saved": 79908,
+      "pixelsIdentical": true,
+      "pixelSha256": "dd173b5b40a51dc4138cbd775ab45df53cfb8f79cdb7f218c3cd266dd4e0b05e"
+    },
+    {
+      "path": "public/images/press/Articles/Article Nice Matin - A Harrouis - 2018 - Marche Nordique Mandelieu (2).jpg",
+      "before": 642975,
+      "after": 542608,
+      "saved": 100367,
+      "pixelsIdentical": true,
+      "pixelSha256": "e36673f5591a856116db7f0048e4c7852cf833decab85486184c966dc9523f43"
+    },
+    {
+      "path": "public/images/press/Articles/Article Nice Matin - Rando Ap\u00e9ro - 2017 - Auribeau P\u00e9gomas.jpg",
+      "before": 174033,
+      "after": 174005,
+      "saved": 28,
+      "pixelsIdentical": true,
+      "pixelSha256": "9f3857a7a1b9b0175ae824d2034f17ee41244c4279e10e21b216cc326983b6fd"
+    },
+    {
+      "path": "public/images/press/Articles/Article mimosa - 10-02-23 - RUSTICA MAG (2).jpg",
+      "before": 74178,
+      "after": 74178,
+      "saved": 0,
+      "pixelsIdentical": true,
+      "pixelSha256": "e9b4fe758d22a732d4099dbbdf58ace92c77d318b33e968875d0c371892ec869"
+    },
+    {
+      "path": "public/images/press/Articles/Article mimosa - 10-02-23 - RUSTICA MAG.jpg",
+      "before": 88350,
+      "after": 88336,
+      "saved": 14,
+      "pixelsIdentical": true,
+      "pixelSha256": "bdfe77dfee9e83fe60c65e7320476741e86062488321843368908bcc2ee63764"
+    },
+    {
+      "path": "public/images/press/Articles/IMG_8862.jpeg",
+      "before": 193002,
+      "after": 176053,
+      "saved": 16949,
+      "pixelsIdentical": true,
+      "pixelSha256": "cb730af3710db809c51be04d9ee1a7c303f4bed29bc01ac37944aa5928b92699"
+    },
+    {
+      "path": "public/images/press/Articles/Le Figaro Magazine - Mimosa - D\u00e9cembre 2021 (1).jpg",
+      "before": 1193679,
+      "after": 1119518,
+      "saved": 74161,
+      "pixelsIdentical": true,
+      "pixelSha256": "cf2209fa0e51a3d807fd2dece609ad7664af5b1839dbe50fc8fe192cf84e0fcc"
+    },
+    {
+      "path": "public/images/press/Articles/Le Figaro Magazine - Mimosa - D\u00e9cembre 2021 (2).jpg",
+      "before": 1094659,
+      "after": 980148,
+      "saved": 114511,
+      "pixelsIdentical": true,
+      "pixelSha256": "516d8f931fc2faf9b251b9fc1b76249b3e2b56ef33b47af64a93a67878139236"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9907.jpeg",
+      "before": 249809,
+      "after": 225299,
+      "saved": 24510,
+      "pixelsIdentical": true,
+      "pixelSha256": "ef16901ecbd647e747cca96492f19df639d0e0a7848d787f940f3da67e621b02"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9922.jpeg",
+      "before": 244798,
+      "after": 221207,
+      "saved": 23591,
+      "pixelsIdentical": true,
+      "pixelSha256": "0bc8d745f9074dbb6209dbfbb8d0bb7c6862d20f512d06222eac935eb14e6a1e"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9930.jpeg",
+      "before": 108321,
+      "after": 102272,
+      "saved": 6049,
+      "pixelsIdentical": true,
+      "pixelSha256": "20181109573e6c78db45182f5dce63c33aebcabf029164917425cac245d3517d"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9934.jpeg",
+      "before": 247770,
+      "after": 223522,
+      "saved": 24248,
+      "pixelsIdentical": true,
+      "pixelSha256": "ca673a0e6d6c2d038c451bf30dee7c78f42cfffca4e2b28345c92d284b2e9f7d"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9942.jpeg",
+      "before": 224962,
+      "after": 203986,
+      "saved": 20976,
+      "pixelsIdentical": true,
+      "pixelSha256": "a3fbc6433dc2f4231020b0429ae5090927d7c8fe3df563c2174fd7d6c24b4e35"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9949.jpeg",
+      "before": 188345,
+      "after": 170818,
+      "saved": 17527,
+      "pixelsIdentical": true,
+      "pixelSha256": "ab3e930632b0b09b7bf77ea6715c2a38a61c3f08c73e772a2fbdeb2051fea7a1"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9953.jpeg",
+      "before": 227676,
+      "after": 206833,
+      "saved": 20843,
+      "pixelsIdentical": true,
+      "pixelSha256": "2b895c70d3685021fdae6ee6049ec5d090ff3e02271a81fbdddc0b0f9ece09f8"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9956.jpeg",
+      "before": 242227,
+      "after": 219275,
+      "saved": 22952,
+      "pixelsIdentical": true,
+      "pixelSha256": "c8b0c75ea5b43709ed3c4dfdef1ef2c1cc73d52a3394c82676124cebeda1c56b"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9957.jpeg",
+      "before": 241304,
+      "after": 218662,
+      "saved": 22642,
+      "pixelsIdentical": true,
+      "pixelSha256": "232e147c6f0530f8e8e9fdc94675d2d9d5371805fa54ac20d1f1be3bc6e01eda"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9964.jpeg",
+      "before": 275823,
+      "after": 247932,
+      "saved": 27891,
+      "pixelsIdentical": true,
+      "pixelSha256": "ee43a600b40f85cc5beef84571b3cfc572a7d48d663d9ca09b038fbaced95733"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9967.jpeg",
+      "before": 170802,
+      "after": 155956,
+      "saved": 14846,
+      "pixelsIdentical": true,
+      "pixelSha256": "5229413fed79ea42fb7910e85c8935843455b9a11a27ac2c9952708c5a36f3e6"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9969.jpeg",
+      "before": 233012,
+      "after": 211341,
+      "saved": 21671,
+      "pixelsIdentical": true,
+      "pixelSha256": "62b41f0b00682afb0a1702c7d5c5cd7b3ac24d38e4ef51f2b7b9356e21aa84cc"
+    },
+    {
+      "path": "public/images/press/Articles/d0e881e8fdbe410ebac7a7c9e9a0781d-0001.jpg",
+      "before": 688678,
+      "after": 652522,
+      "saved": 36156,
+      "pixelsIdentical": true,
+      "pixelSha256": "dc5c77f70132247bd018d4800d86f699c27892863c0c87ef96093dbb4b7e54c0"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150127.jpg",
+      "before": 5226059,
+      "after": 4603399,
+      "saved": 622660,
+      "pixelsIdentical": true,
+      "pixelSha256": "3703ae28d1a265990d3bdc88644cd131b214cf2f83107d29cf726ee4adac7210"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150130.jpg",
+      "before": 5930796,
+      "after": 5169182,
+      "saved": 761614,
+      "pixelsIdentical": true,
+      "pixelSha256": "1a64df410502273c937f968306ab3fe74073be87e3856841bec1ede80db22c08"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150148.jpg",
+      "before": 4930977,
+      "after": 4367685,
+      "saved": 563292,
+      "pixelsIdentical": true,
+      "pixelSha256": "1ab5c8a2b7bd0d256fccd8fcfc21632577a1c91b664cd37b4d53fa659b52db43"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150158.jpg",
+      "before": 5501484,
+      "after": 4806832,
+      "saved": 694652,
+      "pixelsIdentical": true,
+      "pixelSha256": "2f881f919d4350197380c987eadd798740ca9d156e8f609e6c8e106381ee2ca9"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150428.jpg",
+      "before": 5665310,
+      "after": 4972602,
+      "saved": 692708,
+      "pixelsIdentical": true,
+      "pixelSha256": "9132892ea863bda1f60496aca967b090703af068093389dc25760eb1c286d9e3"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150429_1.jpg",
+      "before": 5644692,
+      "after": 4954741,
+      "saved": 689951,
+      "pixelsIdentical": true,
+      "pixelSha256": "efdf156b16c449063100777ff12bcd24eb7517faae5014800eaa4fc1667f8d19"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150555.jpg",
+      "before": 5041883,
+      "after": 4465024,
+      "saved": 576859,
+      "pixelsIdentical": true,
+      "pixelSha256": "b8d9c9f8bff15eec50a11a2290318c57bd9f34fc7c432429dda5e720dff41d66"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150600.jpg",
+      "before": 4105496,
+      "after": 3691268,
+      "saved": 414228,
+      "pixelsIdentical": true,
+      "pixelSha256": "668a5265584216a20cae9a70c6b6d6b140c7a8c3fe6dce156a93a0c35d5e128a"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150606.jpg",
+      "before": 4526349,
+      "after": 4051029,
+      "saved": 475320,
+      "pixelsIdentical": true,
+      "pixelSha256": "2600b266dabf86612d7d0392b739afa5c5d2c0486baafce8b6a196934b571e72"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_151703.jpg",
+      "before": 7478296,
+      "after": 6763494,
+      "saved": 714802,
+      "pixelsIdentical": true,
+      "pixelSha256": "4c75b2911ecb631cd0c28bdb5d9950e4a1a9356c169b59191fcbddd70caa4f53"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_190652.jpg",
+      "before": 4305004,
+      "after": 3844613,
+      "saved": 460391,
+      "pixelsIdentical": true,
+      "pixelSha256": "851b1ea9bfffe6480ac9d25c09b26f243e8c30616762882c185cb74bec2488f3"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_194813.jpg",
+      "before": 5663987,
+      "after": 4986068,
+      "saved": 677919,
+      "pixelsIdentical": true,
+      "pixelSha256": "2f521ea52b366df42c7ebc15da9a7332b4f55b1104381a43f5a6c824efb15b41"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_194815.jpg",
+      "before": 6134729,
+      "after": 5341100,
+      "saved": 793629,
+      "pixelsIdentical": true,
+      "pixelSha256": "f21941b9376d8f66f91cf80dab5550fc8ac02c1f4994504318762f1a71ca6f0e"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_200332.jpg",
+      "before": 4709687,
+      "after": 4212254,
+      "saved": 497433,
+      "pixelsIdentical": true,
+      "pixelSha256": "4fdc19b9aa4948a5a5adf1baf832fe95e67a1e40e1974934235bf4bdebdfe0be"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_200404.jpg",
+      "before": 4322173,
+      "after": 3872801,
+      "saved": 449372,
+      "pixelsIdentical": true,
+      "pixelSha256": "b8616dc7988c41fbd9ed4aabdb3eba18fe102c670e241011186a83c4c15f126c"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_200449.jpg",
+      "before": 4673376,
+      "after": 4153251,
+      "saved": 520125,
+      "pixelsIdentical": true,
+      "pixelSha256": "716f28ee5d362e9ebd14613900015d74117f890af5f9fbbf8af2e90ab1aaf0f9"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_201736.jpg",
+      "before": 5562760,
+      "after": 4865077,
+      "saved": 697683,
+      "pixelsIdentical": true,
+      "pixelSha256": "0f389de51d22508397af00375c12f1d6a52f5e92715585989c4f51aa6c01fde4"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_210754.jpg",
+      "before": 3843071,
+      "after": 3556805,
+      "saved": 286266,
+      "pixelsIdentical": true,
+      "pixelSha256": "1f7ef714f7f4c93cabc29c956143bf22b35838c4ae1bd7111ad2be8e01d0cafb"
+    },
+    {
+      "path": "public/images/press/TV/Le 20 heures du 11 aout 2018 - Rando Ap\u00e9ro - Coup\u00e9_Moment5.jpg",
+      "before": 714472,
+      "after": 119407,
+      "saved": 595065,
+      "pixelsIdentical": true,
+      "pixelSha256": "203f9f8b52c6928b38c6f751048cbcac16a7aeb5026b71de03cbd7b02e45e265"
+    },
+    {
+      "path": "public/images/press/TV/Le 20 heures du 11 aout 2018 - Rando Ap\u00e9ro - Coup\u00e9_Moment6.jpg",
+      "before": 876717,
+      "after": 159086,
+      "saved": 717631,
+      "pixelsIdentical": true,
+      "pixelSha256": "c06ccaa78701b3841869f9f7c5bf5d7172ff64797fb1d5f2a11d529b9086358f"
+    },
+    {
+      "path": "public/images/press/TV/Le 20 heures du 11 aout 2018 - Rando Ap\u00e9ro_Moment 1.jpg",
+      "before": 863741,
+      "after": 102595,
+      "saved": 761146,
+      "pixelsIdentical": true,
+      "pixelSha256": "4916415e7c073dc20989eca072fcac115c61ed7a2351de3fd8ca566f4ee52a4e"
+    },
+    {
+      "path": "public/images/press/TV/Le 20 heures du 11 aout 2018 - Rando Ap\u00e9ro_Moment 2.jpg",
+      "before": 690213,
+      "after": 123663,
+      "saved": 566550,
+      "pixelsIdentical": true,
+      "pixelSha256": "55389d825d24c6a51d519f5998b897ce2dfb4c4116fc33d8231e788cf6847a8b"
+    },
+    {
+      "path": "public/images/press/TV/Le 20 heures du 11 aout 2018 - Rando Ap\u00e9ro_Moment.jpg",
+      "before": 793010,
+      "after": 79196,
+      "saved": 713814,
+      "pixelsIdentical": true,
+      "pixelSha256": "85b4998ae39f92e637b4e8417bb5518f872ff748eb07ab95d205beb7caf28199"
+    },
+    {
+      "path": "public/images/press/TV/SAVE_20180618_233419.jpeg",
+      "before": 112053,
+      "after": 107345,
+      "saved": 4708,
+      "pixelsIdentical": true,
+      "pixelSha256": "093b0573619f413fa5c33bd734ae9c95f878938b9fc2275d6b6109d369d718ac"
+    }
+  ]
+}
