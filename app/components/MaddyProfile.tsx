@@ -7,6 +7,7 @@ import ProfessionalQualifications from "./ProfessionalQualifications";
 
 export default function MaddyProfile({ locale, showProfileLink = true }: { locale: Locale; showProfileLink?: boolean }) {
   const copy = getMessages(locale).about;
+  const professional = professionalContent[locale];
   return (
         <section className="founder-section" aria-labelledby="founder-title">
           <div className="founder-copy">
@@ -18,6 +19,10 @@ export default function MaddyProfile({ locale, showProfileLink = true }: { local
                 {paragraph}
               </p>
             ))}
+            <p className="founder-role">{professional.experience}</p>
+            <p className="founder-paragraph">{professional.languages}</p>
+            <h3>{professional.teamTitle}</h3>
+            <p className="founder-paragraph">{professional.teamLanguages}</p>
             <ProfessionalQualifications locale={locale} />
             {showProfileLink && <Link className="text-link" href={localePath(locale, "/meet-maddy")}>{professionalContent[locale].profileLink} ↗</Link>}
           </div>
@@ -34,7 +39,7 @@ export default function MaddyProfile({ locale, showProfileLink = true }: { local
             </figure>
             <figure className="founder-photo founder-team">
               <Image
-                alt="The Rando d’Azur local team"
+                alt={copy.teamAlt}
                 fill
                 sizes="(max-width: 780px) 100vw, 42vw"
                 src="/images/about/rando-dazur-local-team.jpg"

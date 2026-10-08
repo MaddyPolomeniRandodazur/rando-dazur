@@ -21,7 +21,7 @@ export async function generateMetadata({
   const title =
     locale === "fr"
       ? "Presse & médias | Rando d’Azur"
-      : "Stampa & media | Rando d’Azur";
+      : "Press & media | Rando d’Azur";
 
   return getLocalizedPageMetadata({
     locale,

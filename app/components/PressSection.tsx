@@ -5,7 +5,6 @@ import { localePath } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
 import {
   formatPressDate,
-  pressArchivePlaceholders,
   pressStories,
 } from "../lib/press-content";
 
@@ -51,61 +50,37 @@ export default function PressSection({
           <article className="press-story-card scroll-reveal" key={story.id}>
             <div className="press-story-topline">
               <div className="press-publication-logo">
-                <Image
+                {story.logo ? <Image
                   alt={story.publication}
                   fill
                   sizes="(max-width: 720px) 130px, 170px"
                   src={story.logo}
-                />
+                /> : <strong className="press-publication-name">{story.publication}</strong>}
               </div>
               <span>{String(index + 1).padStart(2, "0")}</span>
             </div>
             <p className="eyebrow press-story-publication">
               {story.publication}
             </p>
-            <time dateTime={story.date}>
-              {formatPressDate(story.date, locale, story.datePrecision)}
-            </time>
-            <h3>{story.title}</h3>
+            <p className="press-coverage-kind">{story.kind === "interview" ? (locale === "fr" ? "Entretien avec Maddy" : "Interview with Maddy") : story.kind === "mention" ? (locale === "fr" ? "Mention / recommandation" : "Mention / recommendation") : (locale === "fr" ? "Reportage avec Maddy" : "Report with Maddy")}{story.reproduction && (locale === "fr" ? " · Reproduction attribuée" : " · Attributed reproduction")}</p>
+            {story.date && <time dateTime={story.date}>{formatPressDate(story.date, locale, story.datePrecision)}</time>}
+            {story.author && <p className="press-author">{story.author}</p>}
+            <h3>{story.titles?.[locale] ?? story.title}</h3>
             <p className="press-story-excerpt">{story.excerpts[locale]}</p>
             <a
               className="press-story-link"
               href={story.href}
-              rel="noreferrer"
+              rel="noopener noreferrer"
               target="_blank"
             >
-              {copy.readArticle}
+              {story.reproduction ? (locale === "fr" ? "Lire la reproduction attribuée" : "Read the attributed reproduction") : copy.readArticle}
               <span aria-hidden="true">↗</span>
             </a>
+            {story.originalHref && <a className="press-story-link" href={story.originalHref} target="_blank" rel="noopener noreferrer">{locale === "fr" ? "Référence BBC originale" : "Original BBC reference"} ↗</a>}
           </article>
         ))}
       </div>
-      {fullPage && (
-        <div className="page-width press-archive-section">
-          <div className="press-archive-heading">
-            <p className="eyebrow">{copy.archiveEyebrow}</p>
-            <p>{copy.archiveIntroduction}</p>
-          </div>
-          <div className="press-archive-grid">
-            {pressArchivePlaceholders.map((item) => (
-              <article
-                className="press-archive-card"
-                key={item.publication}
-              >
-                <span className="press-archive-mark">{item.publication}</span>
-                <p>{copy.archivePlaceholder}</p>
-                <time className="press-archive-issue" dateTime={item.date}>
-                  {formatPressDate(
-                    item.date,
-                    locale,
-                    "precision" in item ? item.precision : undefined,
-                  )}
-                </time>
-              </article>
-            ))}
-          </div>
-        </div>
-      )}
+
     </section>
   );
 }

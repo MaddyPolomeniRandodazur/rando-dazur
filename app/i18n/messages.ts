@@ -19,6 +19,7 @@ const english = {
     chooseLanguage: "Choose language",
     home: "Home",
     experiences: "Experiences",
+    groups: "Groups",
     destinations: "Destinations",
     about: "About",
     press: "Press",
@@ -253,8 +254,8 @@ const english = {
     featuredTitle: "Featured in",
     openCoverage: "Read our feature in",
     pageIntroduction:
-      "Original reporting and interviews featuring Maddy Polomeni and Rando d’Azur. Read each story on its publisher’s website.",
-    viewAll: "Explore the press archive",
+      "Reports, interviews and recommendations featuring Maddy Polomeni. Each reference identifies its source and the nature of the coverage; historical articles do not describe today’s prices or availability.",
+    viewAll: "Discover our press coverage",
     readArticle: "Read the article",
     archiveEyebrow: "FROM THE PRESS ARCHIVE",
     archiveIntroduction:
@@ -751,6 +752,7 @@ const french: Messages = {
     chooseLanguage: "Choisir la langue",
     home: "Accueil",
     experiences: "Expériences",
+    groups: "Groupes",
     destinations: "Destinations",
     about: "À propos",
     press: "Presse",
@@ -801,11 +803,11 @@ const french: Messages = {
       "Là où le littoral laisse place à la nature.",
       "Sur les routes qui donnent envie de s’attarder.",
       "Dans les villages, avec ceux qui les font vivre.",
-      "Une Riviera qui vous ressemble.",
+      "Une Côte d’Azur qui vous ressemble.",
     ],
   },
   experiences: {
-    eyebrow: "LA RIVIERA EST L’EXPÉRIENCE",
+    eyebrow: "LA CÔTE D’AZUR EST L’EXPÉRIENCE",
     headingFirst: "Goûtez-la. Parcourez-la.",
     headingSecond: "Vivez-la.",
     introduction:
@@ -819,7 +821,7 @@ const french: Messages = {
         description:
           "Marchés du matin, artisans et longues tablées aux saveurs du Sud.",
         image: "experience-food",
-        alt: "Saveurs de la Riviera",
+        alt: "Saveurs de la Côte d’Azur",
       },
       {
         id: "hiking",
@@ -839,7 +841,7 @@ const french: Messages = {
         description:
           "Une balade à votre rythme, un beau panorama et un apéritif au soleil couchant.",
         image: "experience-sunset",
-        alt: "Un coucher de soleil sur la Riviera",
+        alt: "Un coucher de soleil sur la Côte d’Azur",
       },
       {
         id: "velo",
@@ -869,7 +871,7 @@ const french: Messages = {
         description:
           "Des aventures douces et des découvertes pour toutes les générations.",
         image: "experience-family",
-        alt: "Aventures en famille sur la Riviera",
+        alt: "Aventures en famille sur la Côte d’Azur",
       },
       {
         id: "wild-provence",
@@ -897,7 +899,7 @@ const french: Messages = {
         title: "EVJF & EVG · Groupes entre amis",
         detail: "Célébrer ensemble",
         description:
-          "Réunissez votre groupe pour une célébration privée et conviviale sur la Riviera, accompagnée localement et imaginée autour des personnes au cœur de l’événement.",
+          "Réunissez votre groupe pour une célébration privée et conviviale sur la Côte d’Azur, accompagnée localement et imaginée autour des personnes au cœur de l’événement.",
         image: "experience-evjf",
         alt: "Des amis célèbrent un EVJF ou un EVG sur la Côte d’Azur",
       },
@@ -918,12 +920,12 @@ const french: Messages = {
     eyebrow: "UNE AUTRE FAÇON DE CONNAÎTRE UN LIEU",
     title: "Pourquoi Rando d’Azur ?",
     introduction:
-      "Nous sommes des experts locaux de la Riviera. Nous imaginons des expériences privées et authentiques, guidées par une connaissance intime du territoire.",
+      "Nous sommes des experts locaux de la Côte d’Azur. Nous imaginons des expériences privées et authentiques, guidées par une connaissance intime du territoire.",
     reasons: [
       {
         title: "Un regard profondément local",
         description:
-          "Nous vivons ici. Notre connaissance ouvre les portes des lieux et des rencontres qui font la vraie Riviera.",
+          "Nous vivons ici. Notre connaissance ouvre les portes des lieux et des rencontres qui font la vraie Côte d’Azur.",
       },
       {
         title: "Des expériences qui ont du sens",
@@ -945,7 +947,7 @@ const french: Messages = {
     founderTitle: "Rencontrez Maddy Polomeni",
     founderRole: "Fondatrice & responsable des expériences",
     founderParagraphs: [
-      "Maddy Polomeni, fondatrice de Rando d’Azur, partage sa connaissance locale de la Côte d’Azur à travers les randonnées, les expériences outdoor et les rencontres avec ses habitants. Une conviction simple anime cette démarche : la plus belle façon de découvrir la Riviera passe par ses habitants, ses lieux et les instants du quotidien qui la rendent unique.",
+      "Maddy Polomeni, fondatrice de Rando d’Azur, partage sa connaissance locale de la Côte d’Azur à travers les randonnées, les expériences outdoor et les rencontres avec ses habitants. Une conviction simple anime cette démarche : la plus belle façon de découvrir la Côte d’Azur passe par ses habitants, ses lieux et les instants du quotidien qui la rendent unique.",
       "Aujourd’hui, l’entreprise est devenue une équipe locale de confiance qui partage les mêmes valeurs. Cette évolution nous permet d’accueillir davantage de voyageurs tout en préservant l’authenticité, la souplesse et la qualité qui nous tiennent à cœur.",
     ],
     portraitAlt: "Maddy Polomeni, fondatrice & responsable des expériences",
@@ -969,7 +971,7 @@ const french: Messages = {
   },
   press: {
     eyebrow: "PRESSE & MÉDIAS",
-    titleFirst: "La Riviera,",
+    titleFirst: "La Côte d’Azur,",
     titleSecond: "racontée de l’intérieur.",
     introduction:
       "Une sélection de parutions dans la presse et les magazines qui célèbrent les paysages et expériences de la Côte d’Azur.",
@@ -985,8 +987,8 @@ const french: Messages = {
     featuredTitle: "Ils parlent de nous",
     openCoverage: "Lire notre parution dans",
     pageIntroduction:
-      "Reportages et entretiens consacrés à Maddy Polomeni et Rando d’Azur. Retrouvez chaque publication sur le site de son éditeur.",
-    viewAll: "Explorer les archives presse",
+      "Reportages, entretiens et recommandations citant Maddy Polomeni. Chaque référence précise sa source et la nature de la parution ; les articles historiques ne décrivent pas les tarifs ou disponibilités actuels.",
+    viewAll: "Ils parlent de nous",
     readArticle: "Lire l’article",
     archiveEyebrow: "DANS LES ARCHIVES DE PRESSE",
     archiveIntroduction:
@@ -1030,8 +1032,8 @@ const french: Messages = {
       "Ancrée sur la Côte d’Azur, chaque expérience commence par une connaissance locale et un accueil chaleureux.",
     countryAvailability:
       "Google n’affichait pas la localisation des voyageurs dans les extraits publics.",
-    ctaEyebrow: "VOTRE HISTOIRE RIVIERA",
-    ctaTitle: "Prêts à imaginer votre propre histoire sur la Riviera ?",
+    ctaEyebrow: "VOTRE HISTOIRE CÔTE D’AZUR",
+    ctaTitle: "Prêts à imaginer votre propre histoire sur la Côte d’Azur ?",
     bookExperience: "Réserver une expérience",
     contactMaddy: "Contacter Maddy",
   },
@@ -1040,7 +1042,7 @@ const french: Messages = {
     supportedTitle: "Ils nous soutiennent",
     supportedSubtitle:
       "Fiers de collaborer avec des marques outdoor et des institutions touristiques de confiance.",
-    trustedEyebrow: "NOTRE RÉSEAU SUR LA RIVIERA",
+    trustedEyebrow: "NOTRE RÉSEAU SUR LA CÔTE D’AZUR",
     trustedTitle: "Ils nous font confiance",
     trustedSubtitle:
       "Agences de voyages, DMC et partenaires qui font confiance à Rando d’Azur pour créer des expériences authentiques sur la Côte d’Azur.",
@@ -1070,7 +1072,7 @@ const french: Messages = {
   map: {
     eyebrow: "UN LITTORAL, MILLE VISAGES",
     titleFirst: "Trouvez votre",
-    titleSecond: "Riviera.",
+    titleSecond: "Côte d’Azur.",
     introduction:
       "Des roches rouges de l’Estérel aux villages perchés, chaque lieu a son caractère. Choisissez votre point de départ.",
     ariaLabel: "Carte interactive de la Côte d’Azur",
@@ -1079,7 +1081,7 @@ const french: Messages = {
     north: "Nord",
     seaLabel: "M E R  M É D I T E R R A N É E",
     franceLabel: "France",
-    rivieraLabel: "French Riviera (Côte d’Azur)",
+    rivieraLabel: "Côte d’Azur",
     regionalMapLabel: "Explorer la Côte d’Azur",
     fromAirportLabel: "Depuis l’aéroport de Nice",
     exploreDestination: "Explorer cette destination",
@@ -1093,7 +1095,7 @@ const french: Messages = {
     fayenceCta: "Découvrir le Pays de Fayence",
     discover: "Découvrir",
     availableExperiences: "Expériences sur place",
-    photoAlt: "Une expérience Rando d’Azur photographiée dans cette région de la Riviera",
+    photoAlt: "Une expérience Rando d’Azur photographiée dans cette région de la Côte d’Azur",
     destinations: [
       {
         id: "cannes",
@@ -1179,7 +1181,7 @@ const french: Messages = {
   },
   newsletter: {
     eyebrow: "UNE LETTRE DU SUD",
-    title: "Gardez le lien avec la Riviera",
+    title: "Gardez le lien avec la Côte d’Azur",
     description:
       "Recevez nos expériences de saison, lieux secrets, histoires locales et visites exclusives avant tout le monde.",
     privacy: "Aucun spam. Seulement de l’inspiration authentique.",
@@ -1197,10 +1199,10 @@ const french: Messages = {
     providerNote: "Votre adresse et votre consentement sont transmis de façon sécurisée à Brevo pour Rando d’Azur. La page de confirmation Brevo s’ouvrira ensuite. Confirmez votre adresse sous 7 jours pour terminer l’inscription.",
   },
   booking: {
-    eyebrow: "VOTRE HISTOIRE RIVIERA COMMENCE ICI",
+    eyebrow: "VOTRE HISTOIRE CÔTE D’AZUR COMMENCE ICI",
     title: "Réserver une expérience",
     introduction:
-      "Réservez en ligne ou contactez Maddy pour créer votre expérience privée sur la Riviera.",
+      "Réservez en ligne ou contactez Maddy pour créer votre expérience privée sur la Côte d’Azur.",
     onlineTitle: "Réservez en ligne avec Regiondo",
     onlineLabel: "Réservation en ligne avec Regiondo",
     onlineNote:
@@ -1222,11 +1224,11 @@ const french: Messages = {
     brandFirst: "Goûtez la",
     brandSecond: "Côte d’Azur",
     manifesto: ["Goûtez-la.", "Parcourez-la.", "Pédalez-la.", "Rencontrez-la.", "Vivez-la."],
-    cta: "Commencez votre histoire Riviera",
+    cta: "Commencez votre histoire Côte d’Azur",
     experiences: "Expériences",
     mice: "Agences & MICE",
     about: "À propos de Rando d’Azur",
-    destinations: "Explorer la Riviera",
+    destinations: "Explorer la Côte d’Azur",
     legalNotice: "Mentions légales",
     terms: "Conditions générales de vente",
     privacy: "Politique de confidentialité",
@@ -1236,7 +1238,7 @@ const french: Messages = {
     followEyebrow: "UN ART DE VIVRE À PARTAGER",
     followTitle: "Suivez nos aventures",
     followDescription:
-      "Un peu plus de Riviera, où que vous soyez.",
+      "Un peu plus de Côte d’Azur, où que vous soyez.",
     contactDetailsTitle: "Restons en contact",
     contactLinksLabel: "Coordonnées et réseaux sociaux de Rando d’Azur",
     facebookLabel: "Facebook",
@@ -1247,11 +1249,11 @@ const french: Messages = {
     partnershipsEmailLabel: "Partenariats",
   },
   experiencePage: {
-    eyebrow: "EXPÉRIENCES PRIVÉES · FRENCH RIVIERA",
+    eyebrow: "EXPÉRIENCES PRIVÉES · FRENCH CÔTE D’AZUR",
     back: "Toutes les expériences",
     enquire: "Demander cette expérience",
     chaptersEyebrow: "UN VOYAGE IMAGINÉ POUR VOUS",
-    chaptersTitleFirst: "La Riviera,",
+    chaptersTitleFirst: "La Côte d’Azur,",
     chaptersTitleSecond: "à ressentir autrement.",
     toursTitleFirst: "Choisissez votre",
     toursTitleSecond: "parcours.",
@@ -1263,7 +1265,7 @@ const french: Messages = {
         title: "Parcours gourmands",
         subtitle: "Goûtez-la.",
         description:
-          "Découvrez la Riviera à travers ses marchés, ses saveurs régionales et celles et ceux qui les font vivre.",
+          "Découvrez la Côte d’Azur à travers ses marchés, ses saveurs régionales et celles et ceux qui les font vivre.",
         imageAlt: "Cuisine et saveurs locales de la Côte d’Azur",
         points: [
           "Marchés au rythme des saisons",
@@ -1275,7 +1277,7 @@ const french: Messages = {
         title: "Randonnées",
         subtitle: "Parcourez-la.",
         description:
-          "Empruntez les sentiers côtiers et chemins confidentiels qui révèlent les multiples paysages de la Riviera.",
+          "Empruntez les sentiers côtiers et chemins confidentiels qui révèlent les multiples paysages de la Côte d’Azur.",
         imageAlt: "Sentiers et paysages de la Côte d’Azur",
         points: [
           "Balades privées adaptées à votre rythme",
@@ -1329,7 +1331,7 @@ const french: Messages = {
         title: "Expériences en famille",
         subtitle: "Vivez-la ensemble.",
         description:
-          "Partagez une Riviera plus personnelle à travers des aventures pensées pour vos âges et vos envies.",
+          "Partagez une Côte d’Azur plus personnelle à travers des aventures pensées pour vos âges et vos envies.",
         imageAlt: "Une expérience à partager en famille sur la Côte d’Azur",
         points: [
           "Un rythme adapté à votre famille",
@@ -1389,7 +1391,7 @@ const french: Messages = {
         title: "EVJF & EVG · Groupes entre amis",
         subtitle: "Une célébration à votre image.",
         description:
-          "Célébrez la future mariée ou le futur marié avec une expérience privée sur la Riviera, entre aventure en plein air et découvertes locales, imaginée pour votre groupe.",
+          "Célébrez la future mariée ou le futur marié avec une expérience privée sur la Côte d’Azur, entre aventure en plein air et découvertes locales, imaginée pour votre groupe.",
         imageAlt: "Des amis célèbrent un EVJF ou un EVG sur la Côte d’Azur",
         points: [
           "Une expérience privée adaptée à votre groupe",
@@ -1401,7 +1403,7 @@ const french: Messages = {
         title: "EVG · Groupes entre amis",
         subtitle: "Une journée qui restera.",
         description:
-          "Retrouvez vos amis pour une expérience active, accompagnée par des experts locaux, le temps d’une journée sur la Riviera.",
+          "Retrouvez vos amis pour une expérience active, accompagnée par des experts locaux, le temps d’une journée sur la Côte d’Azur.",
         imageAlt: "Des amis partagent une aventure en plein air sur la Côte d’Azur",
         points: [
           "Une sortie privée pour votre groupe",
@@ -1413,12 +1415,12 @@ const french: Messages = {
         title: "Excursions pour croisiéristes",
         subtitle: "Au-delà du port.",
         description:
-          "Profitez pleinement d’une escale sur la Riviera avec une expérience privée organisée selon votre temps à terre.",
+          "Profitez pleinement d’une escale sur la Côte d’Azur avec une expérience privée organisée selon votre temps à terre.",
         imageAlt: "Une excursion privée avec guide pendant une escale sur la Côte d’Azur",
         points: [
           "Des expériences privées pensées pour votre escale",
           "Un timing étudié et une coordination locale",
-          "Une première rencontre personnelle avec la Riviera",
+          "Une première rencontre personnelle avec la Côte d’Azur",
         ],
       },
     },

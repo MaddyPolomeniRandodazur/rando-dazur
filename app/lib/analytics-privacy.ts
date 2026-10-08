@@ -6,7 +6,7 @@ import { experienceSlugs, legalPageSlugs } from "../i18n/config";
 import { hasAnalyticsConsent } from "./analytics-consent";
 
 const publicPaths = new Set([
-  "/", "/meet-maddy", "/press", "/travel-trade", "/journal",
+  "/", "/meet-maddy", "/press", "/travel-trade", "/journal", "/kids-schools-youth-groups",
   ...legalPageSlugs.map(slug => `/${slug}`),
   ...experienceSlugs.map(slug => `/experiences/${slug}`),
   ...destinationSlugs.map(slug => `/destinations/${slug}`),

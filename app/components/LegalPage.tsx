@@ -35,6 +35,7 @@ export default function LegalPage({
   return (
     <>
       <Navbar
+        lightBackground
         contactCopy={messages.contact}
         copy={messages.navigation}
         locale={locale}

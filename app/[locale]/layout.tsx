@@ -29,7 +29,7 @@ export default async function LocalizedRootLayout({
 
   return (
     <html data-scroll-behavior="smooth" lang={locale}>
-      <body><TemporaryUpdateNotice>{children}</TemporaryUpdateNotice><SiteAnalytics locale={locale} /></body>
+      <body><TemporaryUpdateNotice locale={locale}>{children}</TemporaryUpdateNotice><SiteAnalytics locale={locale} /></body>
     </html>
   );
 }

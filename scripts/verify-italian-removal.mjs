@@ -17,10 +17,10 @@ for (const rule of redirects) {
 assert.equal((await fetch(base + '/it/not-a-real-page', { redirect: 'manual' })).status, 404);
 const sitemap = await (await fetch(base + '/sitemap.xml')).text();
 assert.ok(!sitemap.includes('/it/') && !sitemap.includes('hreflang="it"'));
-assert.equal([...sitemap.matchAll(/<loc>/g)].length, 50);
+assert.equal([...sitemap.matchAll(/<loc>/g)].length, 52);
 for (const path of [...sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)].map(match => new URL(match[1]).pathname)) {
   const html = await (await fetch(base + path)).text();
   assert.ok(!/hreflang="it"|lang="it"|it_IT|Italiano/.test(html), path);
   assert.ok(!/href="\/it(?:\/|"|#)/.test(html), path);
 }
-console.log(JSON.stringify({ redirects: redirects.length, status: 301, sitemapUrls: 50, italianPrerenders: 0, italianLinksAndMetadata: 0, unknownItalianPath: 404 }));
+console.log(JSON.stringify({ redirects: redirects.length, status: 301, sitemapUrls: 52, italianPrerenders: 0, italianLinksAndMetadata: 0, unknownItalianPath: 404 }));

@@ -1,4 +1,5 @@
 import { localePath, type Locale } from "../i18n/config";
+import { youthGroupsContent } from "../i18n/youth-groups";
 import { getTravelTradeContent } from "../i18n/travel-trade";
 import { getMessages } from "../i18n/messages";
 import { contactChannels } from "../lib/contact-channels";
@@ -28,6 +29,7 @@ export default function Footer({ locale }: { locale: Locale }) {
             <p>{copy.followDescription}</p>
           </div>
           <SocialLinks
+            locale={locale}
             ariaLabel={messages.navigation.socialNavigationLabel}
             className="follow-social-links"
             showLabels
@@ -45,6 +47,7 @@ export default function Footer({ locale }: { locale: Locale }) {
             <div className="footer-contact-details">
               <p className="eyebrow eyebrow-light">{copy.contactDetailsTitle}</p>
               <SocialLinks
+            locale={locale}
                 ariaLabel={messages.navigation.socialNavigationLabel}
                 className="footer-social-links"
                 showLabels
@@ -96,6 +99,7 @@ export default function Footer({ locale }: { locale: Locale }) {
           </div>
           <nav className="footer-links" aria-label={copy.navigationLabel}>
             <a href={`${root}#experiences`}>{copy.experiences}</a>
+            <a href={localePath(locale, "/kids-schools-youth-groups")}>{youthGroupsContent[locale].title}</a>
             <a href={`${root}#agences-mice`}>{copy.mice}</a>
             <a href={localePath(locale, "/travel-trade")}>{getTravelTradeContent(locale).linkLabel}</a>
             <a href={localePath(locale, "/meet-maddy")}>{copy.about}</a>

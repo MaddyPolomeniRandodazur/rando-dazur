@@ -12,7 +12,7 @@ export default function MeetMaddyPage({ locale }: { locale: Locale }) {
  const graph = { "@context": "https://schema.org", "@graph": [getBusinessStructuredData(locale), getWebsiteStructuredData(), getPersonStructuredData(locale), { ...getWebPageStructuredData(locale, "/meet-maddy", copy.profileTitle, copy.description), mainEntity: { "@id": getPersonStructuredData(locale)["@id"] } }, getBreadcrumbStructuredData(locale, [{ name: messages.navigation.home, path: "" }, { name: "Maddy Polomeni", path: "/meet-maddy" }])] };
  return <><Navbar locale={locale} copy={messages.navigation} contactCopy={messages.contact} /><main>
    <section className="experience-detail-hero">
-     <Image src="/images/about/maddy-polomeni-mimosa-portrait.jpg" alt="Maddy Polomeni with yellow mimosa on the French Riviera" fill preload sizes="100vw" className="experience-detail-photo" style={{ objectPosition: "45% 35%" }} />
+     <Image src="/images/about/maddy-polomeni-mimosa-portrait.jpg" alt={locale === "fr" ? "Maddy Polomeni au milieu des mimosas sur la Côte d’Azur" : "Maddy Polomeni with yellow mimosa on the French Riviera"} fill preload sizes="100vw" className="experience-detail-photo" style={{ objectPosition: "45% 35%" }} />
      <div className="hero-shade" aria-hidden="true" />
      <div className="page-width experience-detail-content"><p className="eyebrow eyebrow-light">RANDO D’AZUR · CANNES</p><h1>{copy.profileTitle}</h1><p className="hero-description">{copy.description}</p></div>
    </section>

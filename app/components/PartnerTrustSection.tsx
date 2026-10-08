@@ -81,7 +81,6 @@ function LogoWall({
             ) : (
               <span className="partner-logo-placeholder">
                 <strong>{partner.name}</strong>
-                <span>{copy.logoPlaceholder}</span>
               </span>
             )}
           </span>

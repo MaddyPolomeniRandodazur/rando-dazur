@@ -1,5 +1,7 @@
 "use client";
 
+import { localizedImageAlt } from "../i18n/image-alt";
+
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
@@ -138,7 +140,7 @@ export default function RivieraMap({
                   key={photo.fileName}
                 >
                   <Image
-                    alt={destinationGallery ? destinationGallery[index].alt : copy.photoAlt}
+                    alt={localizedImageAlt(locale, destinationGallery ? destinationGallery[index].alt : copy.photoAlt)}
                     style={destinationGallery ? { objectPosition: destinationGallery[index].objectPosition } : undefined}
                     fill
                     sizes="(max-width: 780px) 90vw, 30vw"

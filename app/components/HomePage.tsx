@@ -14,6 +14,7 @@ import PressSection from "./PressSection";
 import ReviewsSection from "./ReviewsSection";
 import RivieraMap from "./RivieraMap";
 import Testimonials from "./Testimonials";
+import YouthGroupsSection from "./YouthGroupsSection";
 import WhySection from "./WhySection";
 import ScrollReveal from "../scroll-reveal";
 import { getSiteUrl } from "../lib/site-url";
@@ -88,6 +89,7 @@ export default async function HomePage({ locale }: { locale: Locale }) {
           photos={experiencePhotos}
         />
         <WhySection locale={locale} />
+        <YouthGroupsSection locale={locale} />
         <Testimonials locale={locale} />
         <PartnerTrustSection locale={locale} />
         <FeaturedIn locale={locale} />

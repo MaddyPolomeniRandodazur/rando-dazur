@@ -1,0 +1,7 @@
+.form { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; max-width: 850px; margin-block: 28px; }
+.form label { display: grid; gap: 10px; min-width: 0; color: var(--ink); font-size: 14px; }
+.form input, .form select, .form textarea { box-sizing: border-box; width: 100%; min-width: 0; padding: 13px; border: 1px solid var(--sage-dark); border-radius: 4px; background: var(--paper); color: var(--ink); font: inherit; }
+.form :is(input, select, textarea):focus-visible { outline: 2px solid var(--sage-dark); outline-offset: 3px; }
+.wide { grid-column: 1 / -1; }
+.form button { justify-self: start; }
+@media (max-width: 600px) { .form { grid-template-columns: minmax(0, 1fr); gap: 20px; } .form button { width: 100%; white-space: normal; text-align: center; } }

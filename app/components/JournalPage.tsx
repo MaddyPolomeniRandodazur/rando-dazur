@@ -18,11 +18,11 @@ const journalCopy: Record<
     returnLink: "Explore the Riviera",
   },
   fr: {
-    eyebrow: "LA RIVIERA VUE D’ICI",
-    title: "Le Journal de la Riviera",
+    eyebrow: "LA CÔTE D’AZUR VUE D’ICI",
+    title: "Le Journal de la Côte d’Azur",
     description:
       "Un espace dédié aux saisons, aux savoirs locaux et aux histoires de la Côte d’Azur. Les premiers récits sont en préparation.",
-    returnLink: "Explorer la Riviera",
+    returnLink: "Explorer la Côte d’Azur",
   },
 };
 
@@ -33,6 +33,7 @@ export default function JournalPage({ locale }: { locale: Locale }) {
   return (
     <>
       <Navbar
+        lightBackground
         contactCopy={messages.contact}
         copy={messages.navigation}
         locale={locale}

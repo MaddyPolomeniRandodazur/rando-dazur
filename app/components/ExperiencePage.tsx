@@ -1,3 +1,4 @@
+import { localizedImageAlt } from "../i18n/image-alt";
 import { localePath, type ExperienceSlug, type Locale } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
 import Image from "next/image";
@@ -7,6 +8,7 @@ import BookingSection from "./BookingSection";
 import { RateSummary } from "./PrivateRates";
 import rateStyles from "./PrivateRates.module.css";
 import { rateContent, isCustomQuoteExperience, getGuideOffers } from "../lib/private-rates";
+import YouthGroupsSection from "./YouthGroupsSection";
 import ExperienceConnections from "./ExperienceConnections";
 import { cyclingTourImages, experienceImages } from "../lib/experience-images";
 import { getWhatsAppUrl } from "../lib/whatsapp";
@@ -89,7 +91,7 @@ export default async function ExperiencePage({
         <section className={`experience-detail-hero detail-${slug}`}>
           {photos.hero && (
             <Image
-              alt={experienceImages[slug]?.[0]?.alt ?? ""}
+              alt={localizedImageAlt(locale, experienceImages[slug]?.[0]?.alt ?? experience.imageAlt)}
               className="experience-detail-photo"
               fill
               style={{ objectPosition: experienceImages[slug]?.[0]?.objectPosition }}
@@ -146,7 +148,7 @@ export default async function ExperiencePage({
               {photos.gallery.map((photo, index) => (
                 <figure className="experience-photo-gallery-photo" key={photo.fileName}>
                   <Image
-                    alt={experienceImages[slug]?.[index + 1]?.alt ?? copy.photoGallery.photoAlt}
+                    alt={localizedImageAlt(locale, experienceImages[slug]?.[index + 1]?.alt ?? copy.photoGallery.photoAlt)}
                     fill
                     sizes={slug === "cycling-experiences" ? "(max-width: 780px) 100vw, 66vw" : "(max-width: 780px) 100vw, 33vw"}
                     style={{ objectPosition: experienceImages[slug]?.[index + 1]?.objectPosition }}
@@ -182,7 +184,7 @@ export default async function ExperiencePage({
                       <div className="cycling-tour-image">
                         {tourPhoto && (
                           <Image
-                            alt={tourPhoto.alt}
+                            alt={localizedImageAlt(locale, tourPhoto.alt)}
                             className={cyclingPhotoStyles.photo}
                             fill
                             sizes="(max-width: 780px) 100vw, 33vw"
@@ -244,6 +246,7 @@ export default async function ExperiencePage({
             </div>
           </div>
         </section>
+        {slug === "family-experiences" && <YouthGroupsSection locale={locale} />}
         <ExperienceConnections locale={locale} slug={slug} />
         <BookingSection locale={locale} customQuote={customQuote} experience={slug} />
       </main>

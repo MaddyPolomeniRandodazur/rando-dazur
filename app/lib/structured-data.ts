@@ -50,7 +50,7 @@ export function getBusinessStructuredData(locale: Locale) {
       "Pays de Fayence",
       "Antibes",
       "Îles de Lérins",
-      "French Riviera / Côte d’Azur",
+      locale === "fr" ? "Côte d’Azur" : "French Riviera",
       "Alpes-Maritimes",
       "Var",
     ].map((name) => ({
@@ -63,13 +63,13 @@ export function getBusinessStructuredData(locale: Locale) {
         contactType: "customer enquiries",
         email: contactChannels.primaryEmail,
         telephone: contactChannels.phoneInternational,
-        availableLanguage: ["English", "French"],
+        availableLanguage: ["fr", "en", "it", "es", "sv", "de"],
       },
       {
         "@type": "ContactPoint",
         contactType: "travel trade and partnerships",
         email: contactChannels.secondaryEmail,
-        availableLanguage: ["English", "French"],
+        availableLanguage: ["fr", "en", "it", "es", "sv", "de"],
       },
     ],
   };
@@ -98,6 +98,7 @@ export function getPersonStructuredData(locale: Locale) {
     "@type": "Person",
     "@id": new URL("/#maddy-polomeni", baseUrl).toString(),
     name: "Maddy Polomeni",
+    knowsLanguage: ["fr", "en", "it"],
     jobTitle: professionalContent[locale].role,
     hasCredential: maddyQualifications.map(name => ({ "@type": "EducationalOccupationalCredential", name })),
     identifier: { "@type": "PropertyValue", propertyID: "Carte professionnelle d’éducateur sportif", value: professionalDetails.card },

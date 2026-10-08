@@ -1,3 +1,4 @@
+import type { Locale } from "../i18n/config";
 import { contactChannels, isPublishedSocialUrl } from "../lib/contact-channels";
 
 const accounts = [
@@ -17,16 +18,18 @@ export default function SocialLinks({
   ariaLabel,
   className,
   showLabels = false,
+  locale = "en",
 }: {
   ariaLabel: string;
   className: string;
   showLabels?: boolean;
+  locale?: Locale;
 }) {
   return (
     <nav aria-label={ariaLabel} className={`social-links ${className}`}>
       {accounts.filter(account => isPublishedSocialUrl(account.href)).map((account) => (
         <a
-          aria-label={`Follow Rando d’Azur on ${account.label}`}
+          aria-label={locale === "fr" ? `Suivre Rando d’Azur sur ${account.label}` : `Follow Rando d’Azur on ${account.label}`}
           className="social-link"
           href={account.href}
           key={account.icon}

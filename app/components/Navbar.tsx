@@ -4,8 +4,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import type { MouseEvent } from "react";
 import { isLocale, localePath, type Locale } from "../i18n/config";
-import type { MessagesForLocale } from "../i18n/messages";
+import { getMessages, type MessagesForLocale } from "../i18n/messages";
 import { getWhatsAppUrl } from "../lib/whatsapp";
+import { youthGroupsContent } from "../i18n/youth-groups";
 import BrandLogo from "./BrandLogo";
 import SocialLinks from "./SocialLinks";
 import { regiondoShopUrl } from "../lib/regiondo";
@@ -77,6 +78,18 @@ function ExperiencesMenu({
   );
 }
 
+function GroupsMenu({ locale, mobile = false }: { locale: Locale; mobile?: boolean }) {
+  const copy = getMessages(locale);
+  return <details className={`nav-dropdown${mobile ? " nav-dropdown-mobile" : ""}`}>
+    <summary>{copy.navigation.groups} <span aria-hidden="true">⌄</span></summary>
+    <nav aria-label={copy.navigation.groups}>
+      <Link href={localePath(locale, "/kids-schools-youth-groups")} onClick={closeMenus}>{youthGroupsContent[locale].title}</Link>
+      {["family-experiences", "evjf-experiences", "corporate-incentive-travel"].map(slug => <Link key={slug} href={localePath(locale, `/experiences/${slug}`)} onClick={closeMenus}>{copy.navigation.experienceLinks.find(([id]) => id === slug)?.[1]}</Link>)}
+      <Link href={localePath(locale, "/travel-trade")} onClick={closeMenus}>{locale === "fr" ? "Agences & partenaires professionnels" : "Travel trade & DMC partners"}</Link>
+    </nav>
+  </details>;
+}
+
 function LanguageSelector({
   locale,
   copy,
@@ -142,10 +155,12 @@ export default function Navbar({
   locale,
   copy,
   contactCopy,
+  lightBackground = false,
 }: {
   locale: Locale;
   copy: MessagesForLocale["navigation"];
   contactCopy: MessagesForLocale["contact"];
+  lightBackground?: boolean;
 }) {
   const root = localePath(locale, "");
   const links = [
@@ -157,19 +172,20 @@ export default function Navbar({
   ];
 
   return (
-    <header className="site-header">
+    <header className={`site-header${lightBackground ? " site-header-light" : ""}`}>
       <Link
         className="brand"
         href={`${root}#accueil`}
         aria-label="Rando d’Azur"
       >
-        <BrandLogo priority variant="white" />
+        <BrandLogo priority variant={lightBackground ? "blue" : "white"} />
         <span className="brand-tagline">{copy.brandLine}</span>
       </Link>
 
       <nav className="desktop-nav" aria-label={copy.mainLabel}>
         <Link href={`${root}#accueil`}>{copy.home}</Link>
         <ExperiencesMenu copy={copy} locale={locale} />
+        <GroupsMenu locale={locale} />
         {links.map((link) => (
           <Link href={link.href} key={link.href}>
             {link.label}
@@ -179,6 +195,7 @@ export default function Navbar({
 
       <div className="header-tools">
         <SocialLinks
+            locale={locale}
           ariaLabel={copy.socialNavigationLabel}
           className="header-social-links"
         />
@@ -197,6 +214,7 @@ export default function Navbar({
               {copy.home}
             </Link>
             <ExperiencesMenu copy={copy} locale={locale} mobile />
+            <GroupsMenu locale={locale} mobile />
             {links.map((link) => (
               <Link href={link.href} key={link.href} onClick={closeMenus}>
                 {link.label}

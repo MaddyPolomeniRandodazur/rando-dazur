@@ -32,7 +32,7 @@ const origin = 'https://www.randodazur.com';
       scripts: [...document.querySelectorAll('script[type="application/ld+json"]')].map(x => x.textContent),
       links: [...document.querySelectorAll('a[href]')].map(x => x.getAttribute('href')),
       images: [...document.querySelectorAll('img')].map(x => ({ src: x.getAttribute('src'), alt: x.getAttribute('alt') })),
-      banner: !!document.querySelector('aside[aria-label="Website update information"]'),
+      banner: !!document.querySelector('aside[aria-label="Website update information"],aside[aria-label="Information sur la mise à jour du site"]'),
     }));
     const check = (ok, message) => { if (!ok) failures.push(`${path}: ${message}`); };
     check(response.status() === 200, `HTTP ${response.status()}`);

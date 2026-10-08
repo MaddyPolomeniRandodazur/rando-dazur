@@ -1,3 +1,5 @@
+import Link from "next/link";
+import { localePath } from "../i18n/config";
 import Image from "next/image";
 import type { Locale } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
@@ -24,18 +26,19 @@ export default function FeaturedIn({ locale }: { locale: Locale }) {
               className="featured-in-logo"
               href={publication.href}
               key={publication.publication}
-              rel="noreferrer"
+              rel="noopener noreferrer"
               target="_blank"
             >
-              <Image
+              {publication.logo ? <Image
                 alt={publication.publication}
                 fill
                 sizes="(max-width: 600px) 38vw, 170px"
                 src={publication.logo}
-              />
+              /> : <span className="press-featured-name">{publication.publication}<small>{locale === "fr" ? "Reproduction attribuée" : "Attributed reproduction"}</small></span>}
             </a>
           ))}
         </div>
+        <p className="featured-in-cta"><Link className="text-link" href={localePath(locale, "/press")}>{copy.viewAll} ↗</Link></p>
       </div>
     </section>
   );

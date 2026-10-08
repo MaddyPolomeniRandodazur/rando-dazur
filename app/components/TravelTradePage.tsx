@@ -18,7 +18,7 @@ export default function TravelTradePage({ locale }: { locale: Locale }) {
     <Navbar locale={locale} copy={messages.navigation} contactCopy={messages.contact} />
     <main>
       <section className="experience-detail-hero">
-        <Image alt="A group planning an outdoor experience above the French Riviera" src="/images/experiences/corporate-incentive-riviera-group.jpg" className="experience-detail-photo" fill preload sizes="100vw" />
+        <Image alt={locale === "fr" ? "Un groupe prépare une expérience en plein air sur la Côte d’Azur" : "A group planning an outdoor experience above the French Riviera"} src="/images/experiences/corporate-incentive-riviera-group.jpg" className="experience-detail-photo" fill preload sizes="100vw" />
         <div className="hero-shade" aria-hidden="true" />
         <div className="page-width experience-detail-content">
           <p className="eyebrow eyebrow-light">{copy.eyebrow}</p><h1>{copy.title}</h1>

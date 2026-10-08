@@ -1,3 +1,4 @@
+import { localizedImageAlt } from "../i18n/image-alt";
 import Image from "next/image";
 import Link from "next/link";
 import type { Locale } from "../i18n/config";
@@ -88,7 +89,7 @@ export default function DestinationPage({
         image: images.map(image => new URL(image.src, baseUrl).toString()),
         containedInPlace: {
           "@type": "Place",
-          name: "French Riviera",
+          name: locale === "fr" ? "Côte d’Azur" : "French Riviera",
         },
       },
       {
@@ -133,7 +134,7 @@ export default function DestinationPage({
         </nav>
         <section className={`experience-detail-hero detail-destination detail-${slug}`}>
           <Image
-            alt={images[0].alt}
+            alt={localizedImageAlt(locale, images[0].alt)}
             className="experience-detail-photo"
             fill
             style={{ objectPosition: images[0].objectPosition }}
@@ -179,7 +180,7 @@ export default function DestinationPage({
               {images.slice(1).map((photo) => (
                 <figure className="destination-photo" key={photo.src}>
                   <Image
-                    alt={photo.alt}
+                    alt={localizedImageAlt(locale, photo.alt)}
                     fill
                     sizes="(max-width: 780px) 100vw, 50vw"
                     src={photo.src}

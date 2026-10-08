@@ -24,7 +24,7 @@ try {
   }));
   assert.equal(data.socials.length,2,path+' duplicate/missing footer socials');
   assert.deepEqual(data.socials.map(a=>a.url).sort(),accounts.toSorted(),path);
-  for (const a of data.socials) { assert.match(a.label,/^Follow Rando d’Azur on (Instagram|Facebook)$/); assert.equal(a.target,'_blank');assert.match(a.rel,/noopener/);assert.match(a.rel,/noreferrer/); }
+  for (const a of data.socials) { assert.match(a.label,path.startsWith("/fr") ? /^Suivre Rando d’Azur sur (Instagram|Facebook)$/ : /^Follow Rando d’Azur on (Instagram|Facebook)$/); assert.equal(a.target,'_blank');assert.match(a.rel,/noopener/);assert.match(a.rel,/noreferrer/); }
   assert.ok(data.booking.length>=3,path+' missing booking access');
   for(const a of data.booking){assert.equal(a.url,shop,path);assert.equal(a.target,'_blank');assert.match(a.rel,/noopener/);assert.match(a.rel,/noreferrer/);}
   assert.ok(!data.hasWidget && data.whatsapp && data.email,path);
