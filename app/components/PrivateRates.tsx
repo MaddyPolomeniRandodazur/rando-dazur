@@ -9,7 +9,7 @@ export default function PrivateRates({ locale, customQuote = false }: { locale: 
    {customQuote && <p className={styles.note}>{copy.reference}</p>}
    <div className={styles.grid}>{privateRates.map(rate => <div className={styles.card} key={rate.key}><span>{copy[rate.key]}</span><strong className={styles.price}>€{rate.price}</strong><span>{copy.unit}</span></div>)}</div>
    <p className={styles.note}>{copy.travel}<br />{copy.options}</p>
-   <a className={styles.link} href={`mailto:${contactChannels.primaryEmail}`}>{copy.request} ↗</a>
+   <a data-conversion="booking_request" className={styles.link} href={`mailto:${contactChannels.primaryEmail}`}>{copy.request} ↗</a>
  </div>;
 }
 export function RateSummary({ locale, customQuote = false, href = "#private-rates" }: { locale: Locale; customQuote?: boolean; href?: string }) {

@@ -3,6 +3,7 @@ import { getTravelTradeContent } from "../i18n/travel-trade";
 import { getMessages } from "../i18n/messages";
 import { contactChannels, isPublishedSocialUrl } from "../lib/contact-channels";
 import { getWhatsAppUrl } from "../lib/whatsapp";
+import { AnalyticsSettingsLink } from "./SiteAnalytics";
 import BrandLogo from "./BrandLogo";
 import BackToTop from "./BackToTop";
 import SocialLinks from "./SocialLinks";
@@ -113,6 +114,7 @@ export default function Footer({ locale }: { locale: Locale }) {
             <a href={localePath(locale, "/terms-and-conditions")}>{copy.terms}</a>
             <a href={localePath(locale, "/privacy-policy")}>{copy.privacy}</a>
             <a href={localePath(locale, "/cookie-policy")}>{copy.cookies}</a>
+            <AnalyticsSettingsLink locale={locale} />
           </nav>
         </div>
         <div className="page-width footer-bottom">

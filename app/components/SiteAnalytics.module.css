@@ -1,0 +1,9 @@
+.settings { color: rgb(255 255 255 / 72%); font: inherit; font-size: 11px; text-align: left; padding: 0; border: 0; background: none; cursor: pointer; }
+.settings:hover { color: var(--white); }
+.dialog { margin: auto; max-width: min(520px, calc(100vw - 32px)); padding: 28px; border: 1px solid var(--sage-pale); border-radius: 8px; background: var(--cream, #f8f7f2); color: var(--ink, #26362f); }
+.dialog::backdrop { background: rgb(0 0 0 / 35%); }
+.dialog h2 { font-size: 26px; margin: 0 0 16px; }
+.dialog p { font-size: 14px; line-height: 1.7; }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-block: 20px; }
+.actions button { flex: 1; min-width: 145px; border: 1px solid var(--sage-dark); padding: 12px; background: transparent; color: inherit; cursor: pointer; font: inherit; font-size: 13px; }
+.close { display: block; margin-top: 16px; border: 0; background: transparent; color: inherit; text-decoration: underline; cursor: pointer; }

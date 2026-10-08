@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import SiteAnalytics from "../components/SiteAnalytics";
 import TemporaryUpdateNotice from "../components/TemporaryUpdateNotice";
 import { notFound } from "next/navigation";
 import "../globals.css";
@@ -28,7 +29,7 @@ export default async function LocalizedRootLayout({
 
   return (
     <html data-scroll-behavior="smooth" lang={locale}>
-      <body><TemporaryUpdateNotice>{children}</TemporaryUpdateNotice></body>
+      <body><TemporaryUpdateNotice>{children}</TemporaryUpdateNotice><SiteAnalytics locale={locale} /></body>
     </html>
   );
 }

@@ -1,3 +1,5 @@
+> Audit historique du 7 octobre 2026. La mesure d’audience a depuis été ajoutée avec consentement préalable : voir [analytics-audit.md](analytics-audit.md) pour le fonctionnement actuel.
+
 # Mise à jour juridique — 7 octobre 2026
 
 ## Informations utilisées

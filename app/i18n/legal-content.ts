@@ -99,7 +99,16 @@ const documents: Record<Locale, Record<LegalPageSlug, LegalDocument>> = {
           "paragraphs": [
             "Responding to quotation requests and handling bookings is based on pre-contractual steps at your request and performance of the contract.",
             "Accounting and other legally required processing is based on legal obligations. Website operation and security are based on the legitimate interest in providing a reliable, secure service while respecting your rights.",
-            "No advertising processing or audience measurement tool requiring your consent is currently integrated into the website."
+            "Optional audience measurement and contact or booking-request click measurement are based on your prior consent (Article 6(1)(a) GDPR). They remain disabled until you allow them. You can refuse or withdraw via “Audience measurement settings” in the footer without losing access to the website."
+          ]
+        },
+        {
+          "title": "Optional Vercel Web Analytics",
+          "paragraphs": [
+            "After your consent, Vercel Web Analytics measures page visits and four click categories: WhatsApp, telephone, email and booking requests. Custom events have fixed names only, with no contact details, link destination, message content, form values or customer identifier. A click indicates an intention to contact us, not a completed booking.",
+            "Vercel processes technical request data to create aggregated statistics, including device/browser information, approximate location and a short-lived visit hash. According to Vercel, the visit identifier is discarded after 24 hours; this is not the retention period of aggregate statistics. No identify/group feature or analytics cookie is enabled. Page URLs are limited to public routes and stripped of queries and fragments. Events with potentially identifying referrers are filtered out.",
+            "The provider is Vercel Inc. Processing can involve transfers outside the EEA; its data processing agreement and transfer safeguards are described at https://vercel.com/legal/dpa. Analytics privacy details: https://vercel.com/docs/analytics/privacy-policy. Aggregate statistics are retained according to the applicable Vercel plan and project retention settings; they are not added to customer or booking records.",
+            "The first-party local storage entry rando-analytics-consent-v1 contains only your allow/refuse choice and its expiry, valid for a maximum of 180 days and removed on your next visit after expiry. It is used solely to respect your privacy preference, not to identify or track you. No preference is stored until you make a choice. If browser storage is unavailable, the choice lasts only for the current page session."
           ]
         },
         {
@@ -133,24 +142,24 @@ const documents: Record<Locale, Record<LegalPageSlug, LegalDocument>> = {
       "introduction": "Cookies and similar technologies in the current Rando d’Azur website.",
       "sections": [
         {
-          "title": "Technical audit",
+          "title": "Optional Vercel Web Analytics",
           "paragraphs": [
-            "The code and browsing audit detected no cookies, local or session storage, iframes, analytics or advertising tools. Observed resources originate from the website’s own domain.",
-            "The website currently integrates no advertising trackers, marketing pixels or audience analytics tools. The map is part of the website without an embedded external mapping service. External links do not load their services until opened."
+            "Vercel Web Analytics is integrated but its script and events load only after explicit consent. No advertising pixels or external booking widget are integrated. The map remains local; external services such as WhatsApp load only when you open them.",
+            "After your consent, Vercel Web Analytics measures page visits and four click categories: WhatsApp, telephone, email and booking requests. Custom events have fixed names only, with no contact details, link destination, message content, form values or customer identifier. A click indicates an intention to contact us, not a completed booking.",
+            "Vercel processes technical request data to create aggregated statistics, including device/browser information, approximate location and a short-lived visit hash. According to Vercel, the visit identifier is discarded after 24 hours; this is not the retention period of aggregate statistics. No identify/group feature or analytics cookie is enabled. Page URLs are limited to public routes and stripped of queries and fragments. Events with potentially identifying referrers are filtered out."
           ]
         },
         {
-          "title": "Consent and future changes",
+          "title": "Your choice and local storage",
           "paragraphs": [
-            "A tracker consent banner is not required for the features currently integrated and audited.",
-            "If non-essential trackers are added, this policy must be updated and prior consent obtained where required by law, with the ability to refuse and withdraw consent."
+            "The first-party local storage entry rando-analytics-consent-v1 contains only your allow/refuse choice and its expiry, valid for a maximum of 180 days and removed on your next visit after expiry. It is used solely to respect your privacy preference, not to identify or track you. No preference is stored until you make a choice. If browser storage is unavailable, the choice lasts only for the current page session."
           ]
         },
         {
-          "title": "Browser settings and external services",
+          "title": "Consent and withdrawal",
           "paragraphs": [
-            "You can manage or remove cookies and website data in your browser settings.",
-            "External services you choose to open, including WhatsApp, apply their own cookie and privacy policies. Questions about this website: bonjour@maddypolomeni.com."
+            "We do not assume that being cookie-free exempts audience or conversion measurement from consent. Use the footer settings to allow, refuse or withdraw. Analytics is off by default. Allowing and refusing are presented equally; closing the panel is not consent.",
+            "External services opened voluntarily apply their own privacy and cookie policies. You can also manage website storage in your browser. Questions or privacy requests: bonjour@maddypolomeni.com."
           ]
         }
       ]
@@ -246,7 +255,16 @@ const documents: Record<Locale, Record<LegalPageSlug, LegalDocument>> = {
           "paragraphs": [
             "La réponse aux demandes de devis et la gestion des réservations reposent sur les mesures précontractuelles prises à votre demande et l’exécution du contrat.",
             "Les traitements imposés par la comptabilité ou d’autres obligations légales reposent sur ces obligations. Le fonctionnement et la sécurité du site reposent sur l’intérêt légitime à fournir un service fiable et sécurisé, dans le respect de vos droits.",
-            "Aucun traitement publicitaire ni outil de mesure d’audience nécessitant votre consentement n’est actuellement intégré au site."
+            "La mesure facultative d’audience et des clics de contact ou de demande de réservation repose sur votre consentement préalable (article 6, paragraphe 1, a du RGPD). Elle reste désactivée tant que vous ne l’autorisez pas. Vous pouvez refuser ou retirer votre accord via « Préférences de mesure d’audience » dans le footer sans perdre l’accès au site."
+          ]
+        },
+        {
+          "title": "Vercel Web Analytics facultatif",
+          "paragraphs": [
+            "Après votre consentement, Vercel Web Analytics mesure les visites et quatre catégories de clics : WhatsApp, téléphone, email et demandes de réservation. Les événements personnalisés portent uniquement des noms fixes, sans coordonnées, destination du lien, contenu de message, valeurs de formulaire ni identifiant client. Un clic indique une intention de contact, pas une réservation confirmée.",
+            "Vercel traite des données techniques de requête pour produire des statistiques agrégées : appareil et navigateur, localisation approximative et empreinte de visite éphémère. Selon Vercel, l’identifiant de visite est supprimé après 24 heures ; ce délai n’est pas la durée de conservation des statistiques agrégées. Aucune fonctionnalité identify/group ni aucun cookie Analytics n’est activé. Les URLs sont limitées aux routes publiques, sans paramètres ni fragments. Les événements dont le référent peut contenir des informations identifiantes sont filtrés.",
+            "Le prestataire est Vercel Inc. Le traitement peut impliquer des transferts hors EEE ; son accord de traitement des données et les garanties de transfert sont décrits sur https://vercel.com/legal/dpa. Informations Analytics : https://vercel.com/docs/analytics/privacy-policy. Les statistiques agrégées sont conservées selon le plan Vercel et les paramètres de rétention applicables au projet ; elles ne sont pas ajoutées aux dossiers clients ou de réservation.",
+            "L’entrée de stockage local propriétaire rando-analytics-consent-v1 contient uniquement votre choix autoriser/refuser et son échéance, valable pendant 180 jours au maximum et supprimée lors de votre prochaine visite après expiration. Elle sert exclusivement à respecter votre préférence, pas à vous identifier ou vous suivre. Aucun choix n’est enregistré avant votre décision. Si le stockage du navigateur est indisponible, le choix ne dure que pendant la session de la page."
           ]
         },
         {
@@ -280,24 +298,24 @@ const documents: Record<Locale, Record<LegalPageSlug, LegalDocument>> = {
       "introduction": "Informations sur les cookies et technologies similaires dans la version actuelle du site Rando d’Azur.",
       "sections": [
         {
-          "title": "Résultat de l’audit technique",
+          "title": "Vercel Web Analytics facultatif",
           "paragraphs": [
-            "L’audit du code et de la navigation du site n’a détecté aucun cookie, stockage local ou stockage de session, aucun iframe et aucun chargement d’outil de mesure d’audience ou de publicité. Les ressources observées proviennent du domaine du site.",
-            "Le site n’intègre actuellement aucun traceur publicitaire, pixel marketing ou outil d’analyse d’audience. La carte est intégrée au site sans service cartographique tiers. Les liens externes ne chargent pas ces services avant que vous ne les ouvriez."
+            "Vercel Web Analytics est intégré, mais son script et ses événements ne sont chargés qu’après consentement explicite. Aucun pixel publicitaire ni widget externe de réservation n’est intégré. La carte reste locale ; les services externes comme WhatsApp ne se chargent que si vous les ouvrez.",
+            "Après votre consentement, Vercel Web Analytics mesure les visites et quatre catégories de clics : WhatsApp, téléphone, email et demandes de réservation. Les événements personnalisés portent uniquement des noms fixes, sans coordonnées, destination du lien, contenu de message, valeurs de formulaire ni identifiant client. Un clic indique une intention de contact, pas une réservation confirmée.",
+            "Vercel traite des données techniques de requête pour produire des statistiques agrégées : appareil et navigateur, localisation approximative et empreinte de visite éphémère. Selon Vercel, l’identifiant de visite est supprimé après 24 heures ; ce délai n’est pas la durée de conservation des statistiques agrégées. Aucune fonctionnalité identify/group ni aucun cookie Analytics n’est activé. Les URLs sont limitées aux routes publiques, sans paramètres ni fragments. Les événements dont le référent peut contenir des informations identifiantes sont filtrés."
           ]
         },
         {
-          "title": "Consentement et évolution du site",
+          "title": "Votre choix et le stockage local",
           "paragraphs": [
-            "Aucun bandeau de consentement aux traceurs n’est nécessaire pour les fonctionnalités actuellement intégrées et auditées.",
-            "Si des traceurs non strictement nécessaires sont ajoutés, cette politique devra être mise à jour et leur dépôt ou leur lecture soumis au consentement préalable lorsque la loi l’exige, avec la possibilité de refuser et de retirer ce consentement."
+            "L’entrée de stockage local propriétaire rando-analytics-consent-v1 contient uniquement votre choix autoriser/refuser et son échéance, valable pendant 180 jours au maximum et supprimée lors de votre prochaine visite après expiration. Elle sert exclusivement à respecter votre préférence, pas à vous identifier ou vous suivre. Aucun choix n’est enregistré avant votre décision. Si le stockage du navigateur est indisponible, le choix ne dure que pendant la session de la page."
           ]
         },
         {
-          "title": "Votre navigateur et les services externes",
+          "title": "Consentement et retrait",
           "paragraphs": [
-            "Vous pouvez gérer ou supprimer les cookies et données de sites depuis les paramètres de votre navigateur.",
-            "Les services externes ouverts volontairement, notamment WhatsApp, appliquent leurs propres politiques relatives aux cookies et à la confidentialité. Pour toute question concernant ce site : bonjour@maddypolomeni.com."
+            "Nous ne présumons pas que l’absence de cookies dispense la mesure d’audience ou de conversion de consentement. Les préférences du footer permettent d’autoriser, de refuser ou de retirer votre accord. La mesure est désactivée par défaut. L’autorisation et le refus sont présentés à égalité ; fermer le panneau ne vaut pas consentement.",
+            "Les services externes ouverts volontairement appliquent leurs propres politiques de confidentialité et de cookies. Vous pouvez aussi gérer le stockage du site dans votre navigateur. Questions ou demandes relatives à vos droits : bonjour@maddypolomeni.com."
           ]
         }
       ]
@@ -393,7 +411,16 @@ const documents: Record<Locale, Record<LegalPageSlug, LegalDocument>> = {
           "paragraphs": [
             "Le richieste di preventivo e le prenotazioni si basano sulle misure precontrattuali richieste dall’interessato e sull’esecuzione del contratto.",
             "I trattamenti contabili e gli altri trattamenti imposti dalla legge si basano sugli obblighi legali. Il funzionamento e la sicurezza del sito si basano sull’interesse legittimo a fornire un servizio affidabile e sicuro, nel rispetto dei tuoi diritti.",
-            "Il sito non integra attualmente trattamenti pubblicitari o strumenti di analisi dell’audience che richiedano il consenso."
+            "La misurazione facoltativa delle visite e dei clic di contatto o richiesta di prenotazione si basa sul consenso preventivo (articolo 6(1)(a) GDPR). Rimane disattivata finché non la autorizzi. Puoi rifiutare o revocare tramite le preferenze nel footer senza perdere accesso al sito."
+          ]
+        },
+        {
+          "title": "Vercel Web Analytics facoltativo",
+          "paragraphs": [
+            "Dopo il consenso, Vercel Web Analytics misura visite e quattro categorie di clic: WhatsApp, telefono, email e richieste di prenotazione. Gli eventi personalizzati hanno solo nomi fissi, senza recapiti, destinazioni dei link, contenuti dei messaggi, valori dei moduli o identificativi dei clienti. Un clic indica un’intenzione di contatto, non una prenotazione confermata.",
+            "Vercel tratta dati tecnici delle richieste per statistiche aggregate, inclusi dispositivo e browser, posizione approssimativa e un hash di visita temporaneo. Secondo Vercel, l’identificatore viene eliminato dopo 24 ore; questo non è il periodo di conservazione delle statistiche aggregate. Non sono abilitate funzioni identify/group o cookie Analytics. Gli URL sono limitati alle pagine pubbliche, senza query o frammenti; gli eventi con referenti potenzialmente identificativi vengono esclusi.",
+            "Il fornitore è Vercel Inc. Il trattamento può comportare trasferimenti fuori dallo SEE; l’accordo sul trattamento e le garanzie sono descritti su https://vercel.com/legal/dpa. Informazioni Analytics: https://vercel.com/docs/analytics/privacy-policy. Le statistiche aggregate vengono conservate secondo il piano Vercel e le impostazioni applicabili al progetto, senza essere aggiunte ai dati dei clienti o delle prenotazioni.",
+            "La voce locale di prima parte rando-analytics-consent-v1 contiene solo la scelta di consenso/rifiuto e la scadenza, valida per un massimo di 180 giorni ed eliminata alla visita successiva dopo la scadenza. Serve esclusivamente a rispettare la preferenza, non a identificarti o seguirti. Non viene salvata prima della tua scelta. Se lo storage non è disponibile, la scelta dura solo per la sessione della pagina."
           ]
         },
         {
@@ -427,24 +454,24 @@ const documents: Record<Locale, Record<LegalPageSlug, LegalDocument>> = {
       "introduction": "Cookie e tecnologie simili nella versione attuale del sito Rando d’Azur.",
       "sections": [
         {
-          "title": "Audit tecnico",
+          "title": "Vercel Web Analytics facoltativo",
           "paragraphs": [
-            "L’audit del codice e della navigazione non ha rilevato cookie, archiviazione locale o di sessione, iframe, strumenti pubblicitari o di analisi dell’audience. Le risorse osservate provengono dal dominio del sito.",
-            "Il sito non integra attualmente tracker pubblicitari, pixel di marketing o strumenti di analisi dell’audience. La mappa è interna e non incorpora un servizio cartografico esterno. I collegamenti esterni non caricano i servizi prima dell’apertura."
+            "Vercel Web Analytics è integrato, ma script ed eventi si caricano solo dopo consenso esplicito. Non sono integrati pixel pubblicitari o widget esterni di prenotazione. La mappa è locale e i servizi esterni come WhatsApp si caricano solo quando li apri.",
+            "Dopo il consenso, Vercel Web Analytics misura visite e quattro categorie di clic: WhatsApp, telefono, email e richieste di prenotazione. Gli eventi personalizzati hanno solo nomi fissi, senza recapiti, destinazioni dei link, contenuti dei messaggi, valori dei moduli o identificativi dei clienti. Un clic indica un’intenzione di contatto, non una prenotazione confermata.",
+            "Vercel tratta dati tecnici delle richieste per statistiche aggregate, inclusi dispositivo e browser, posizione approssimativa e un hash di visita temporaneo. Secondo Vercel, l’identificatore viene eliminato dopo 24 ore; questo non è il periodo di conservazione delle statistiche aggregate. Non sono abilitate funzioni identify/group o cookie Analytics. Gli URL sono limitati alle pagine pubbliche, senza query o frammenti; gli eventi con referenti potenzialmente identificativi vengono esclusi."
           ]
         },
         {
-          "title": "Consenso e modifiche future",
+          "title": "Scelta e archiviazione locale",
           "paragraphs": [
-            "Le funzionalità attualmente integrate e verificate non richiedono un banner di consenso ai tracker.",
-            "Se vengono aggiunti tracker non strettamente necessari, questa politica dovrà essere aggiornata e il consenso preventivo richiesto quando previsto dalla legge, con possibilità di rifiutarlo e revocarlo."
+            "La voce locale di prima parte rando-analytics-consent-v1 contiene solo la scelta di consenso/rifiuto e la scadenza, valida per un massimo di 180 giorni ed eliminata alla visita successiva dopo la scadenza. Serve esclusivamente a rispettare la preferenza, non a identificarti o seguirti. Non viene salvata prima della tua scelta. Se lo storage non è disponibile, la scelta dura solo per la sessione della pagina."
           ]
         },
         {
-          "title": "Browser e servizi esterni",
+          "title": "Consenso e revoca",
           "paragraphs": [
-            "Puoi gestire o cancellare cookie e dati dei siti dalle impostazioni del browser.",
-            "I servizi esterni aperti volontariamente, incluso WhatsApp, applicano le proprie politiche sui cookie e sulla privacy. Per domande su questo sito: bonjour@maddypolomeni.com."
+            "Non presumiamo che l’assenza di cookie esenti dal consenso la misurazione delle visite o delle conversioni. Le preferenze nel footer consentono di autorizzare, rifiutare o revocare. La misurazione è disattivata per impostazione predefinita. Consenso e rifiuto hanno pari visibilità; chiudere il pannello non è consenso.",
+            "I servizi esterni aperti volontariamente applicano le proprie politiche sulla privacy e sui cookie. Puoi gestire lo storage del sito nel browser. Domande o richieste: bonjour@maddypolomeni.com."
           ]
         }
       ]
