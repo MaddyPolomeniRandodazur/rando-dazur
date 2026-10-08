@@ -1,0 +1,1852 @@
+{
+  "source_bytes": 130096769,
+  "tracked_files": 283,
+  "public_bytes": 129196031,
+  "videos": [],
+  "files": [
+    {
+      "path": "public/logo.png",
+      "bytes": 16805,
+      "sha256": "89c902f340876c313a84c5e2bbc8837fad3ee5c86fa10603c424a1a3230b77d3",
+      "format": "PNG",
+      "width": 740,
+      "height": 210,
+      "mode": "RGBA",
+      "after_bytes": 16805,
+      "sha256_after": "89c902f340876c313a84c5e2bbc8837fad3ee5c86fa10603c424a1a3230b77d3"
+    },
+    {
+      "path": "public/window.svg",
+      "bytes": 385,
+      "sha256": "644768c4aaeb4767bce293344eeb0c125fb804a94d801440424072202d85e3a1",
+      "after_bytes": 385,
+      "sha256_after": "644768c4aaeb4767bce293344eeb0c125fb804a94d801440424072202d85e3a1"
+    },
+    {
+      "path": "public/next.svg",
+      "bytes": 1375,
+      "sha256": "55995dfad6ecb4945a1e856ddca03c5e16aa5bf13fd21b4df6a74ae79357bcfc",
+      "after_bytes": 1375,
+      "sha256_after": "55995dfad6ecb4945a1e856ddca03c5e16aa5bf13fd21b4df6a74ae79357bcfc"
+    },
+    {
+      "path": "public/media-placeholder.svg",
+      "bytes": 441,
+      "sha256": "7329d18764650ffcbcfcef7bc6996ea00a1fa252b5e87f910e0367b2217d3781",
+      "after_bytes": 441,
+      "sha256_after": "7329d18764650ffcbcfcef7bc6996ea00a1fa252b5e87f910e0367b2217d3781"
+    },
+    {
+      "path": "public/file.svg",
+      "bytes": 391,
+      "sha256": "2b67812c325c199a02536cdbeea0c593a72f707d323b72ee3e08dbab06753bd4",
+      "after_bytes": 391,
+      "sha256_after": "2b67812c325c199a02536cdbeea0c593a72f707d323b72ee3e08dbab06753bd4"
+    },
+    {
+      "path": "public/globe.svg",
+      "bytes": 1035,
+      "sha256": "b614b9bf183925957661ac851498fe1d8029fd43a62fbfed86f9e2624a57e7cf",
+      "after_bytes": 1035,
+      "sha256_after": "b614b9bf183925957661ac851498fe1d8029fd43a62fbfed86f9e2624a57e7cf"
+    },
+    {
+      "path": "public/vercel.svg",
+      "bytes": 128,
+      "sha256": "f081337b2fee635b455b63275406a3e7f39d6a014e25ad90dab5a67e62a12ac4",
+      "after_bytes": 128,
+      "sha256_after": "f081337b2fee635b455b63275406a3e7f39d6a014e25ad90dab5a67e62a12ac4"
+    },
+    {
+      "path": "public/images/partners/decathlon.svg",
+      "bytes": 6898,
+      "sha256": "e6ef83e9344a4674b818880c0eb123764a33d25c71ff3c1e3791f46d623acdcb",
+      "after_bytes": 6898,
+      "sha256_after": "e6ef83e9344a4674b818880c0eb123764a33d25c71ff3c1e3791f46d623acdcb"
+    },
+    {
+      "path": "public/images/partners/columbia-sportswear.svg",
+      "bytes": 8231,
+      "sha256": "a8df4825d0558665db0ea80255988a924d412c1be47a57c7f2f33998e81ae050",
+      "after_bytes": 8231,
+      "sha256_after": "a8df4825d0558665db0ea80255988a924d412c1be47a57c7f2f33998e81ae050"
+    },
+    {
+      "path": "public/images/partners/family-twist.svg",
+      "bytes": 8445,
+      "sha256": "e0ff836c0f3fe8efe3ee575ebb7952dee4699b549692451e7ca94d70f6e0b93f",
+      "after_bytes": 8445,
+      "sha256_after": "e0ff836c0f3fe8efe3ee575ebb7952dee4699b549692451e7ca94d70f6e0b93f"
+    },
+    {
+      "path": "public/images/partners/pays-de-fayence.png",
+      "bytes": 34088,
+      "sha256": "b80e67d3282fbc1ec5847f0bf10840cefee8772dc61968b32e28d39d5a32b51f",
+      "format": "PNG",
+      "width": 200,
+      "height": 86,
+      "mode": "RGBA",
+      "after_bytes": 34088,
+      "sha256_after": "b80e67d3282fbc1ec5847f0bf10840cefee8772dc61968b32e28d39d5a32b51f"
+    },
+    {
+      "path": "public/images/partners/andy-swann-voyage.png",
+      "bytes": 13473,
+      "sha256": "ab15f1b9e977fa041a6256c7c2271b85e8896427732a47c43fe95348176bbef1",
+      "format": "PNG",
+      "width": 876,
+      "height": 331,
+      "mode": "RGBA",
+      "after_bytes": 13473,
+      "sha256_after": "ab15f1b9e977fa041a6256c7c2271b85e8896427732a47c43fe95348176bbef1"
+    },
+    {
+      "path": "public/images/partners/esterel-cote-d-azur.png",
+      "bytes": 23492,
+      "sha256": "de5f3b50972c540c139f339f70a2bd352fe7fb1bc46a48e1cbe826172b95c888",
+      "format": "PNG",
+      "width": 300,
+      "height": 195,
+      "mode": "RGBA",
+      "after_bytes": 23492,
+      "sha256_after": "de5f3b50972c540c139f339f70a2bd352fe7fb1bc46a48e1cbe826172b95c888"
+    },
+    {
+      "path": "public/images/partners/my-events-organisation.png",
+      "bytes": 6316,
+      "sha256": "252410f8fd184c7294ba54db7079d868730c9d7321a588bd9614ded08423a4e8",
+      "format": "PNG",
+      "width": 237,
+      "height": 172,
+      "mode": "RGBA",
+      "after_bytes": 6316,
+      "sha256_after": "252410f8fd184c7294ba54db7079d868730c9d7321a588bd9614ded08423a4e8"
+    },
+    {
+      "path": "public/images/partners/artoo-travel.png",
+      "bytes": 9493,
+      "sha256": "e942cb7b6bc35644a6ddf76aa1536d0d35a1a7a045a788fa7fae82aedd549ff6",
+      "format": "PNG",
+      "width": 251,
+      "height": 119,
+      "mode": "RGBA",
+      "after_bytes": 9493,
+      "sha256_after": "e942cb7b6bc35644a6ddf76aa1536d0d35a1a7a045a788fa7fae82aedd549ff6"
+    },
+    {
+      "path": "public/images/partners/trip-my-france.png",
+      "bytes": 64663,
+      "sha256": "aa4d0dfc7c793dccdf64016223692df5d2fef888374236304a379475bf08b8e5",
+      "format": "PNG",
+      "width": 1302,
+      "height": 254,
+      "mode": "RGBA",
+      "after_bytes": 64663,
+      "sha256_after": "aa4d0dfc7c793dccdf64016223692df5d2fef888374236304a379475bf08b8e5"
+    },
+    {
+      "path": "public/images/partners/palais-des-festivals.svg",
+      "bytes": 14014,
+      "sha256": "8256b8967ff6d4908dd07932e7a563069669473929fd4b2be74fd2b89316046f",
+      "after_bytes": 14014,
+      "sha256_after": "8256b8967ff6d4908dd07932e7a563069669473929fd4b2be74fd2b89316046f"
+    },
+    {
+      "path": "public/images/partners/vivi-dmc.png",
+      "bytes": 339656,
+      "sha256": "2ef13ba9f9569fbbc17f7013b5b373d65ad5416ed34bc464f7f5324ae83dbe30",
+      "format": "PNG",
+      "width": 1765,
+      "height": 766,
+      "mode": "RGBA",
+      "after_bytes": 339656,
+      "sha256_after": "2ef13ba9f9569fbbc17f7013b5b373d65ad5416ed34bc464f7f5324ae83dbe30"
+    },
+    {
+      "path": "public/images/experiences/cycling-three-friends-mediterranean.webp",
+      "bytes": 136916,
+      "sha256": "7c311277ac0ecae2213ba8d2258896af4546bbdf65f3cfbc6b2d4639736a972b",
+      "format": "WEBP",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGB",
+      "after_bytes": 136916,
+      "sha256_after": "7c311277ac0ecae2213ba8d2258896af4546bbdf65f3cfbc6b2d4639736a972b"
+    },
+    {
+      "path": "public/images/experiences/mimosa-season-cycling-tour.jpg",
+      "bytes": 307564,
+      "sha256": "2d41463d76ef701c16fdd8e05f80489457bcfd569dfc1db6aa537728d6f97e87",
+      "format": "JPEG",
+      "width": 960,
+      "height": 1280,
+      "mode": "RGB",
+      "after_bytes": 307564,
+      "sha256_after": "2d41463d76ef701c16fdd8e05f80489457bcfd569dfc1db6aa537728d6f97e87"
+    },
+    {
+      "path": "public/images/experiences/esterel-mountain-bike-four-cyclists.jpg",
+      "bytes": 204364,
+      "sha256": "d6acf35ca962180e9de9e210a9fa02de8c605586a01e8f206d584a51b28411ca",
+      "format": "JPEG",
+      "width": 853,
+      "height": 1280,
+      "mode": "RGB",
+      "after_bytes": 204364,
+      "sha256_after": "d6acf35ca962180e9de9e210a9fa02de8c605586a01e8f206d584a51b28411ca"
+    },
+    {
+      "path": "public/images/experiences/family-experiences-coastal-hike.jpg",
+      "bytes": 180635,
+      "sha256": "f4282040ce2720e6fe79896ab48310f71716b0d72c901618a12c16eb4943b85e",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 960,
+      "mode": "RGB",
+      "after_bytes": 180635,
+      "sha256_after": "f4282040ce2720e6fe79896ab48310f71716b0d72c901618a12c16eb4943b85e"
+    },
+    {
+      "path": "public/images/experiences/evjf-sunset-hiking-celebration.jpg",
+      "bytes": 148953,
+      "sha256": "5933ad6212b860022d5d7ceef10c3c0655c5aae8d0d9a0402a852fddacbf56b4",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 721,
+      "mode": "RGB",
+      "after_bytes": 148953,
+      "sha256_after": "5933ad6212b860022d5d7ceef10c3c0655c5aae8d0d9a0402a852fddacbf56b4"
+    },
+    {
+      "path": "public/images/experiences/escape-game-outdoor-riviera-map.jpg",
+      "bytes": 107737,
+      "sha256": "b15e5cb8d27033f20f7bf94d1799d6ee08b05e8ab0f195c2971bda2a928a2cd8",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 721,
+      "mode": "RGB",
+      "after_bytes": 107737,
+      "sha256_after": "b15e5cb8d27033f20f7bf94d1799d6ee08b05e8ab0f195c2971bda2a928a2cd8"
+    },
+    {
+      "path": "public/images/experiences/wild-provence-hikers-turquoise-river.jpg",
+      "bytes": 236906,
+      "sha256": "a6f606eaf5a3e48eb8ea1c7af5987785bdb759f7153a4b9c0735e649f832c55f",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 719,
+      "mode": "RGB",
+      "after_bytes": 236906,
+      "sha256_after": "a6f606eaf5a3e48eb8ea1c7af5987785bdb759f7153a4b9c0735e649f832c55f"
+    },
+    {
+      "path": "public/images/experiences/corporate-incentive-riviera-group.jpg",
+      "bytes": 159648,
+      "sha256": "d38b18805967ff15500a6edbb2a63dd1d5625c0deb9386fca83dee9e255ee6f5",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGB",
+      "after_bytes": 159648,
+      "sha256_after": "d38b18805967ff15500a6edbb2a63dd1d5625c0deb9386fca83dee9e255ee6f5"
+    },
+    {
+      "path": "public/images/experiences/food-tour-tasting-cannes.jpg",
+      "bytes": 181285,
+      "sha256": "929ca7f2b9d9707278b332c325a43ada960fa548677248cbc2f9bda5f9216efd",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGB",
+      "after_bytes": 181285,
+      "sha256_after": "929ca7f2b9d9707278b332c325a43ada960fa548677248cbc2f9bda5f9216efd"
+    },
+    {
+      "path": "public/images/experiences/sunset-apero-hikes-picnic.jpg",
+      "bytes": 183990,
+      "sha256": "00077d45d061b00633e88418a9c10f3b3fdb14daa55fd55ccfec040362ae7e2c",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 721,
+      "mode": "RGB",
+      "after_bytes": 183990,
+      "sha256_after": "00077d45d061b00633e88418a9c10f3b3fdb14daa55fd55ccfec040362ae7e2c"
+    },
+    {
+      "path": "public/images/experiences/cycling-experiences-riviera-promenade.jpg",
+      "bytes": 176302,
+      "sha256": "a59a6ccc8f0271594d362663a70fa0c56f7aa291e9f6cc1f0694c27d2ca39cb4",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 962,
+      "mode": "RGB",
+      "after_bytes": 176302,
+      "sha256_after": "a59a6ccc8f0271594d362663a70fa0c56f7aa291e9f6cc1f0694c27d2ca39cb4"
+    },
+    {
+      "path": "public/images/experiences/hiking-young-hikers-sunset.jpg",
+      "bytes": 201044,
+      "sha256": "1fdba919856a88b151417bef9e4c4e01b77b12789c78cb44713743e02467d9fa",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 721,
+      "mode": "RGB",
+      "after_bytes": 201044,
+      "sha256_after": "1fdba919856a88b151417bef9e4c4e01b77b12789c78cb44713743e02467d9fa"
+    },
+    {
+      "path": "public/images/experiences/food-tour-cannes-seaview.jpg",
+      "bytes": 161713,
+      "sha256": "feee205f276cdf547599cd53602f0b45aaebabcc030408522e42a4c5e3289256",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGB",
+      "after_bytes": 161713,
+      "sha256_after": "feee205f276cdf547599cd53602f0b45aaebabcc030408522e42a4c5e3289256"
+    },
+    {
+      "path": "public/images/experiences/cruise-guests-cannes-port.jpg",
+      "bytes": 191892,
+      "sha256": "de162fb192f291a0c95fb4f0021858646baf3a15ca44f2a95922ca5092f12831",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGB",
+      "after_bytes": 191892,
+      "sha256_after": "de162fb192f291a0c95fb4f0021858646baf3a15ca44f2a95922ca5092f12831"
+    },
+    {
+      "path": "public/images/about/rando-dazur-local-team.jpg",
+      "bytes": 271610,
+      "sha256": "9ee52d9445747e135529874e535b6b6c15a11fc40c35a4580e5339fef145668e",
+      "format": "JPEG",
+      "width": 960,
+      "height": 1280,
+      "mode": "RGB",
+      "after_bytes": 271610,
+      "sha256_after": "9ee52d9445747e135529874e535b6b6c15a11fc40c35a4580e5339fef145668e"
+    },
+    {
+      "path": "public/images/about/maddy-polomeni-mimosa-portrait.jpg",
+      "bytes": 185975,
+      "sha256": "1aae0f6f3dd60f8d3ae621e98d191c60e1e60941d84758c3664cf14943f7c0f8",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGB",
+      "after_bytes": 185975,
+      "sha256_after": "1aae0f6f3dd60f8d3ae621e98d191c60e1e60941d84758c3664cf14943f7c0f8"
+    },
+    {
+      "path": "public/images/hero/french-riviera-panoramic-picnic.jpg",
+      "bytes": 162898,
+      "sha256": "4e88c714d562be6aded3422b41c92f058b7911fface7eae3a797d6354d9240b8",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGB",
+      "after_bytes": 162898,
+      "sha256_after": "4e88c714d562be6aded3422b41c92f058b7911fface7eae3a797d6354d9240b8"
+    },
+    {
+      "path": "public/images/manifesto/cycle-tour-french-riviera.jpg",
+      "bytes": 148810,
+      "sha256": "334f2dc1af9f395c7ab132103a2e078f92a05c7e0c80dd2ad30e2ca8bf083efc",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGB",
+      "after_bytes": 148810,
+      "sha256_after": "334f2dc1af9f395c7ab132103a2e078f92a05c7e0c80dd2ad30e2ca8bf083efc"
+    },
+    {
+      "path": "public/images/manifesto/eat-it-retouched.jpg",
+      "bytes": 174270,
+      "sha256": "fa101e1cf6b9c7dbbb5c9ecd9d3605cb0c8018fc88267f3b3f415f936ef3b012",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 960,
+      "mode": "RGB",
+      "after_bytes": 174270,
+      "sha256_after": "fa101e1cf6b9c7dbbb5c9ecd9d3605cb0c8018fc88267f3b3f415f936ef3b012"
+    },
+    {
+      "path": "public/images/manifesto/walk-it-forest-hike.jpg",
+      "bytes": 273458,
+      "sha256": "21c6b4f9cd3b7d82c8a763adca40759853ba8b4f7008ba71f49331ba20d7f052",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 720,
+      "mode": "RGB",
+      "after_bytes": 273458,
+      "sha256_after": "21c6b4f9cd3b7d82c8a763adca40759853ba8b4f7008ba71f49331ba20d7f052"
+    },
+    {
+      "path": "public/images/manifesto/meet-it-socca-cannes-market.jpg",
+      "bytes": 152823,
+      "sha256": "db77fc4ea0719060273304f3b3a1237ae15392e9604f0b2eeb898dd5cd3d9eae",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 721,
+      "mode": "RGB",
+      "after_bytes": 152823,
+      "sha256_after": "db77fc4ea0719060273304f3b3a1237ae15392e9604f0b2eeb898dd5cd3d9eae"
+    },
+    {
+      "path": "public/images/manifesto/live-it-shared-hiking-picnic.jpg",
+      "bytes": 164631,
+      "sha256": "8fdfaeecec34776c599c38d1e50c8687435bb51f68b56877eee8eac6e08d50f7",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 722,
+      "mode": "RGB",
+      "after_bytes": 164631,
+      "sha256_after": "8fdfaeecec34776c599c38d1e50c8687435bb51f68b56877eee8eac6e08d50f7"
+    },
+    {
+      "path": "public/images/destinations/.gitkeep",
+      "bytes": 84,
+      "sha256": "38c130dd790b06c89bf903a9bb32e718361bf106801b92eb72020afa09cf3896",
+      "after_bytes": 84,
+      "sha256_after": "38c130dd790b06c89bf903a9bb32e718361bf106801b92eb72020afa09cf3896"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9967.jpeg",
+      "bytes": 155956,
+      "sha256": "b0632697d35ec927970290353edf82f990ba6baee2dcd4680a1ad1b0af3c616c",
+      "format": "JPEG",
+      "width": 640,
+      "height": 426,
+      "mode": "RGB",
+      "after_bytes": 155956,
+      "sha256_after": "b0632697d35ec927970290353edf82f990ba6baee2dcd4680a1ad1b0af3c616c"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9969.jpeg",
+      "bytes": 211341,
+      "sha256": "50278e922013a8ffb9a90cbbe7c8eec71321ca501a2a30f69807827a01b0439c",
+      "format": "JPEG",
+      "width": 640,
+      "height": 427,
+      "mode": "RGB",
+      "after_bytes": 211341,
+      "sha256_after": "50278e922013a8ffb9a90cbbe7c8eec71321ca501a2a30f69807827a01b0439c"
+    },
+    {
+      "path": "public/images/press/Articles/Capture d_écran 2025-04-15 174105.png",
+      "bytes": 58999,
+      "sha256": "b7358fd66e9c14955c551efa93ecfb84aeaed98487665816a2df32ec42f9000e",
+      "format": "PNG",
+      "width": 1377,
+      "height": 323,
+      "mode": "RGBA",
+      "after_bytes": 58999,
+      "sha256_after": "b7358fd66e9c14955c551efa93ecfb84aeaed98487665816a2df32ec42f9000e"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9907.jpeg",
+      "bytes": 225299,
+      "sha256": "58bc1f9e36a45ec22e7e4a7b81c4a9c9d200a7cfe6d2bf49c27650ab6990991e",
+      "format": "JPEG",
+      "width": 640,
+      "height": 427,
+      "mode": "RGB",
+      "after_bytes": 225299,
+      "sha256_after": "58bc1f9e36a45ec22e7e4a7b81c4a9c9d200a7cfe6d2bf49c27650ab6990991e"
+    },
+    {
+      "path": "public/images/press/Articles/Sans titrenfjh.png",
+      "bytes": 812953,
+      "sha256": "20a18acebb77f748bbe076fc3eab0338dcae9b9c4d8a8a164ab580f48055d630",
+      "format": "PNG",
+      "width": 628,
+      "height": 766,
+      "mode": "RGB",
+      "after_bytes": 614005,
+      "sha256_after": "c38278ccffde8e50c009f0b62089fd74fc5017136372813903b7d36e6cb3b2ad"
+    },
+    {
+      "path": "public/images/press/Articles/Le Figaro Magazine - Mimosa - Décembre 2021 (2).jpg",
+      "bytes": 980148,
+      "sha256": "8e6fbf6915489117916b11baec17bdc80a1509a982558f96b248a4af195e83c3",
+      "format": "JPEG",
+      "width": 2481,
+      "height": 3213,
+      "mode": "RGB",
+      "after_bytes": 980148,
+      "sha256_after": "8e6fbf6915489117916b11baec17bdc80a1509a982558f96b248a4af195e83c3"
+    },
+    {
+      "path": "public/images/press/Articles/Article Estérel Mag - Juin 2021 - Page 3-3.png",
+      "bytes": 444398,
+      "sha256": "145ad3513ad5221ac1b6b7063c0fe77ddeb87fb2eddb5400022085d9ec7ed7c9",
+      "format": "PNG",
+      "width": 463,
+      "height": 599,
+      "mode": "RGB",
+      "after_bytes": 444398,
+      "sha256_after": "145ad3513ad5221ac1b6b7063c0fe77ddeb87fb2eddb5400022085d9ec7ed7c9"
+    },
+    {
+      "path": "public/images/press/Articles/Article Nice Matin - 4 mai 2021 - Page 2.jpg",
+      "bytes": 777433,
+      "sha256": "24ff88af54ef8a1022aa04b978b593b028782f1d7d389b7c3a92cf3b3cf286f6",
+      "format": "JPEG",
+      "width": 2550,
+      "height": 3300,
+      "mode": "RGB",
+      "after_bytes": 777433,
+      "sha256_after": "24ff88af54ef8a1022aa04b978b593b028782f1d7d389b7c3a92cf3b3cf286f6"
+    },
+    {
+      "path": "public/images/press/Articles/Article mimosa - 10-02-23 - RUSTICA MAG (2).jpg",
+      "bytes": 74178,
+      "sha256": "7e39f514b2e82dd30da39a2112137ece14986082bd8305e55b1a9ff9dbc0a750",
+      "format": "JPEG",
+      "width": 620,
+      "height": 753,
+      "mode": "RGB",
+      "after_bytes": 74178,
+      "sha256_after": "7e39f514b2e82dd30da39a2112137ece14986082bd8305e55b1a9ff9dbc0a750"
+    },
+    {
+      "path": "public/images/press/Articles/Article Mimosa - La France Agricole - Maddy Polomeni - Février 2021.jpg",
+      "bytes": 117152,
+      "sha256": "0de7e9fceebf89c6b362639421e39ef5e90bef09d4afbfc7592e6516c6b1ea5c",
+      "format": "JPEG",
+      "width": 784,
+      "height": 568,
+      "mode": "RGB",
+      "after_bytes": 117152,
+      "sha256_after": "0de7e9fceebf89c6b362639421e39ef5e90bef09d4afbfc7592e6516c6b1ea5c"
+    },
+    {
+      "path": "public/images/press/Articles/Article mimosa - 10-02-23 - RUSTICA MAG.jpg",
+      "bytes": 88336,
+      "sha256": "5cb89ca73980b079677e2de39759326f99f01006000668211f1aad31f789e292",
+      "format": "JPEG",
+      "width": 617,
+      "height": 739,
+      "mode": "RGB",
+      "after_bytes": 88336,
+      "sha256_after": "5cb89ca73980b079677e2de39759326f99f01006000668211f1aad31f789e292"
+    },
+    {
+      "path": "public/images/press/Articles/03_nicematin 04 05 21.jpg",
+      "bytes": 967067,
+      "sha256": "7e505e37186a124b3dc0c67a21c72bddf6878e237882eae61964f9a9be5e7aea",
+      "format": "JPEG",
+      "width": 2550,
+      "height": 3300,
+      "mode": "RGB",
+      "after_bytes": 967067,
+      "sha256_after": "7e505e37186a124b3dc0c67a21c72bddf6878e237882eae61964f9a9be5e7aea"
+    },
+    {
+      "path": "public/images/press/Articles/IMG_8862.jpeg",
+      "bytes": 176053,
+      "sha256": "cbe228f80eea66a37ce3865debde7d63b7d787a38dfda11a7f001dac1da85514",
+      "format": "JPEG",
+      "width": 640,
+      "height": 480,
+      "mode": "RGB",
+      "after_bytes": 176053,
+      "sha256_after": "cbe228f80eea66a37ce3865debde7d63b7d787a38dfda11a7f001dac1da85514"
+    },
+    {
+      "path": "public/images/press/Articles/Capture d_écran 2025-04-15 174824.png",
+      "bytes": 905953,
+      "sha256": "1221cc7be85690c0d1d42170efc2343d758925f0b7211dc9a8ceb2802ec109a4",
+      "format": "PNG",
+      "width": 933,
+      "height": 864,
+      "mode": "RGBA",
+      "after_bytes": 881893,
+      "sha256_after": "6637662d263d8251ebb8e2c41f903c08160b26f3d6c93828a675f52c19127c4f"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9949.jpeg",
+      "bytes": 170818,
+      "sha256": "754df76a09ed5881ce1a607f62a8af76bda5d79a91210bf2af21dbdbd7fad7c3",
+      "format": "JPEG",
+      "width": 640,
+      "height": 441,
+      "mode": "RGB",
+      "after_bytes": 170818,
+      "sha256_after": "754df76a09ed5881ce1a607f62a8af76bda5d79a91210bf2af21dbdbd7fad7c3"
+    },
+    {
+      "path": "public/images/press/Articles/Le Figaro Magazine - Mimosa - Décembre 2021 (1).jpg",
+      "bytes": 1119518,
+      "sha256": "586101e758fc31a358aef3a6be6ceeeef55727ed36c4d26bc0d987d2f7715603",
+      "format": "JPEG",
+      "width": 2481,
+      "height": 3213,
+      "mode": "RGB",
+      "after_bytes": 1119518,
+      "sha256_after": "586101e758fc31a358aef3a6be6ceeeef55727ed36c4d26bc0d987d2f7715603"
+    },
+    {
+      "path": "public/images/press/Articles/04_nicematin 04 05 21.jpg",
+      "bytes": 793889,
+      "sha256": "8ccfe864b44cdf954add8ad58ea52eb33c5e68c5ee3c9f9c1cb9e299f155e45e",
+      "format": "JPEG",
+      "width": 2550,
+      "height": 3300,
+      "mode": "RGB",
+      "after_bytes": 793889,
+      "sha256_after": "8ccfe864b44cdf954add8ad58ea52eb33c5e68c5ee3c9f9c1cb9e299f155e45e"
+    },
+    {
+      "path": "public/images/press/Articles/Le Figaro Magazine - Mimosa - Décembre 2021.pdf",
+      "bytes": 3528990,
+      "sha256": "b1c84092cd70f0c147f80cabfb89fb2b615d007056f697996c0ac4e7b2faffe1",
+      "after_bytes": 3528990,
+      "sha256_after": "b1c84092cd70f0c147f80cabfb89fb2b615d007056f697996c0ac4e7b2faffe1"
+    },
+    {
+      "path": "public/images/press/Articles/Article Mimosa en Allemand - Maddy Polomeni - Février 2021.jpg",
+      "bytes": 240098,
+      "sha256": "ddc317b5bf3b80b0436522a586b4c292bc0f9b52ec21533cc04a5d8ec068a8f5",
+      "format": "JPEG",
+      "width": 666,
+      "height": 881,
+      "mode": "RGB",
+      "after_bytes": 240098,
+      "sha256_after": "ddc317b5bf3b80b0436522a586b4c292bc0f9b52ec21533cc04a5d8ec068a8f5"
+    },
+    {
+      "path": "public/images/press/Articles/Article Nice Matin - 4 mai 2021 - PDF.pdf",
+      "bytes": 2740987,
+      "sha256": "db1d87b810617fa9b089d60de857680babad4890a4bd3594d1cef65f8b581792",
+      "after_bytes": 2740987,
+      "sha256_after": "db1d87b810617fa9b089d60de857680babad4890a4bd3594d1cef65f8b581792"
+    },
+    {
+      "path": "public/images/press/Articles/Article Estérel Mag - Juin 2021 - Page 1-3.png",
+      "bytes": 642103,
+      "sha256": "63c0e9c9ba9b6e2fa1074d7ffe6724044bb3b1216b5011a1d133177ae0085a49",
+      "format": "PNG",
+      "width": 465,
+      "height": 603,
+      "mode": "RGB",
+      "after_bytes": 524277,
+      "sha256_after": "8cc02f056771421b8650ee02b5ef3a69ec307c3617ad2c2274c6269b835045f1"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9953.jpeg",
+      "bytes": 206833,
+      "sha256": "6b65e19da6cff43ac924549bf1fe55ba10fded1fd16ca02860943026ebe2b314",
+      "format": "JPEG",
+      "width": 640,
+      "height": 427,
+      "mode": "RGB",
+      "after_bytes": 206833,
+      "sha256_after": "6b65e19da6cff43ac924549bf1fe55ba10fded1fd16ca02860943026ebe2b314"
+    },
+    {
+      "path": "public/images/press/Articles/Article Nice Matin - A Harrouis - 2018 - Marche Nordique Mandelieu (1).jpg",
+      "bytes": 591575,
+      "sha256": "688210111285e207b32434efb6b43c9ca2e9045e2bff188eacd4b5e0f274a991",
+      "format": "JPEG",
+      "width": 2409,
+      "height": 3437,
+      "mode": "RGB",
+      "after_bytes": 591575,
+      "sha256_after": "688210111285e207b32434efb6b43c9ca2e9045e2bff188eacd4b5e0f274a991"
+    },
+    {
+      "path": "public/images/press/Articles/d0e881e8fdbe410ebac7a7c9e9a0781d-0001.jpg",
+      "bytes": 652522,
+      "sha256": "986acba4a54bc217323a1b2246c41ce638ebfdaf0610d84b97c046742c5f1f9e",
+      "format": "JPEG",
+      "width": 2363,
+      "height": 1441,
+      "mode": "RGB",
+      "after_bytes": 652522,
+      "sha256_after": "986acba4a54bc217323a1b2246c41ce638ebfdaf0610d84b97c046742c5f1f9e"
+    },
+    {
+      "path": "public/images/press/Articles/Article ELLE - Rando Apéro - 2017 (2).jpg",
+      "bytes": 150256,
+      "sha256": "29096b39eb2212a8ef75a8e3110be40d04d4f8cf66de2ab5f9e215c3c92d9621",
+      "format": "JPEG",
+      "width": 698,
+      "height": 960,
+      "mode": "RGB",
+      "after_bytes": 150256,
+      "sha256_after": "29096b39eb2212a8ef75a8e3110be40d04d4f8cf66de2ab5f9e215c3c92d9621"
+    },
+    {
+      "path": "public/images/press/Articles/02_nicematin 04 05 21.jpg",
+      "bytes": 777433,
+      "sha256": "24ff88af54ef8a1022aa04b978b593b028782f1d7d389b7c3a92cf3b3cf286f6",
+      "format": "JPEG",
+      "width": 2550,
+      "height": 3300,
+      "mode": "RGB",
+      "after_bytes": 777433,
+      "sha256_after": "24ff88af54ef8a1022aa04b978b593b028782f1d7d389b7c3a92cf3b3cf286f6"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9934.jpeg",
+      "bytes": 223522,
+      "sha256": "7ab2c2dd6a2186c9409fd8b3c0bc07fa2d4b05d3bec83e4e8e46066df9004a4b",
+      "format": "JPEG",
+      "width": 640,
+      "height": 427,
+      "mode": "RGB",
+      "after_bytes": 223522,
+      "sha256_after": "7ab2c2dd6a2186c9409fd8b3c0bc07fa2d4b05d3bec83e4e8e46066df9004a4b"
+    },
+    {
+      "path": "public/images/press/Articles/Article ELLE - Rando Apéro - 2017 (1).jpg",
+      "bytes": 169247,
+      "sha256": "b750ecd24578f187237017fd2bd9b7bc86bcdb1adf2a56bfda02c8e0de8c6c95",
+      "format": "JPEG",
+      "width": 698,
+      "height": 960,
+      "mode": "RGB",
+      "after_bytes": 169247,
+      "sha256_after": "b750ecd24578f187237017fd2bd9b7bc86bcdb1adf2a56bfda02c8e0de8c6c95"
+    },
+    {
+      "path": "public/images/press/Articles/Article Nice Matin - Rando Apéro - 2017 - Auribeau Pégomas.jpg",
+      "bytes": 174005,
+      "sha256": "950adb9032be949b166567327a0b2e69be1c479c4c04ce8a4d1f65227335379b",
+      "format": "JPEG",
+      "width": 899,
+      "height": 960,
+      "mode": "RGB",
+      "after_bytes": 174005,
+      "sha256_after": "950adb9032be949b166567327a0b2e69be1c479c4c04ce8a4d1f65227335379b"
+    },
+    {
+      "path": "public/images/press/Articles/LFA Mandelieu-la-Napoule_Randonnée en forêt d_or.pdf",
+      "bytes": 10302187,
+      "sha256": "ff0657d079eee24b4c7a3f76d980f1258e277697f3f104868dd5efc468d38472",
+      "after_bytes": 10302187,
+      "sha256_after": "ff0657d079eee24b4c7a3f76d980f1258e277697f3f104868dd5efc468d38472"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9930.jpeg",
+      "bytes": 102272,
+      "sha256": "600fea5859f88a9fe65fb6e45becf4572e4f1ecc01e3300e558d71f95416d66d",
+      "format": "JPEG",
+      "width": 640,
+      "height": 427,
+      "mode": "RGB",
+      "after_bytes": 102272,
+      "sha256_after": "600fea5859f88a9fe65fb6e45becf4572e4f1ecc01e3300e558d71f95416d66d"
+    },
+    {
+      "path": "public/images/press/Articles/Article Estérel Mag - Juin 2021 - Page 2-3.png",
+      "bytes": 153031,
+      "sha256": "9599f58024aedb25a796bc7a9afdfe09958f5b92350ce98fb232ef2ba7204d9e",
+      "format": "PNG",
+      "width": 461,
+      "height": 599,
+      "mode": "RGB",
+      "after_bytes": 153031,
+      "sha256_after": "9599f58024aedb25a796bc7a9afdfe09958f5b92350ce98fb232ef2ba7204d9e"
+    },
+    {
+      "path": "public/images/press/Articles/Capture d_écran 2025-04-15 174137.png",
+      "bytes": 373345,
+      "sha256": "3218b23ee8000182f045517b80030fdc691a73fe248d1c9a557495851dd1acd7",
+      "format": "PNG",
+      "width": 950,
+      "height": 640,
+      "mode": "RGBA",
+      "after_bytes": 373345,
+      "sha256_after": "3218b23ee8000182f045517b80030fdc691a73fe248d1c9a557495851dd1acd7"
+    },
+    {
+      "path": "public/images/press/Articles/01_nicematin 04 05 21.jpg",
+      "bytes": 715460,
+      "sha256": "c65759dab9bbefeb3804b590861417124a195c6f4b082282ce32a90edd5289d2",
+      "format": "JPEG",
+      "width": 2550,
+      "height": 3300,
+      "mode": "RGB",
+      "after_bytes": 715460,
+      "sha256_after": "c65759dab9bbefeb3804b590861417124a195c6f4b082282ce32a90edd5289d2"
+    },
+    {
+      "path": "public/images/press/Articles/Article Nice Matin - 4 mai 2021 - Page 3.jpg",
+      "bytes": 967067,
+      "sha256": "7e505e37186a124b3dc0c67a21c72bddf6878e237882eae61964f9a9be5e7aea",
+      "format": "JPEG",
+      "width": 2550,
+      "height": 3300,
+      "mode": "RGB",
+      "after_bytes": 967067,
+      "sha256_after": "7e505e37186a124b3dc0c67a21c72bddf6878e237882eae61964f9a9be5e7aea"
+    },
+    {
+      "path": "public/images/press/Articles/Article Estérel Mag - Juin 2021.pdf",
+      "bytes": 1043114,
+      "sha256": "3feed08e625a1019484b8ba730adbb4d58f887941fa41e2cca8cadb83d99ccba",
+      "after_bytes": 1043114,
+      "sha256_after": "3feed08e625a1019484b8ba730adbb4d58f887941fa41e2cca8cadb83d99ccba"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9957.jpeg",
+      "bytes": 218662,
+      "sha256": "7ba84f11abe03e3b856255738e25a142d669ae12f374876a1eae3e8b3eea91f9",
+      "format": "JPEG",
+      "width": 640,
+      "height": 427,
+      "mode": "RGB",
+      "after_bytes": 218662,
+      "sha256_after": "7ba84f11abe03e3b856255738e25a142d669ae12f374876a1eae3e8b3eea91f9"
+    },
+    {
+      "path": "public/images/press/Articles/Capture d_écran 2025-04-15 174216.png",
+      "bytes": 660099,
+      "sha256": "15bd4001a6dfe8fd0107251088d2a5e04c6e1e9b2279718f414dbb0f6ee9fc38",
+      "format": "PNG",
+      "width": 910,
+      "height": 867,
+      "mode": "RGBA",
+      "after_bytes": 630731,
+      "sha256_after": "d3e522de4f4fed0011aff1f9dbf9a96bd724f73593167ec046259127773d9307"
+    },
+    {
+      "path": "public/images/press/Articles/Article Nice Matin - 4 mai 2021 - Page 4.jpg",
+      "bytes": 793889,
+      "sha256": "8ccfe864b44cdf954add8ad58ea52eb33c5e68c5ee3c9f9c1cb9e299f155e45e",
+      "format": "JPEG",
+      "width": 2550,
+      "height": 3300,
+      "mode": "RGB",
+      "after_bytes": 793889,
+      "sha256_after": "8ccfe864b44cdf954add8ad58ea52eb33c5e68c5ee3c9f9c1cb9e299f155e45e"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9956.jpeg",
+      "bytes": 219275,
+      "sha256": "0b157b6b281a8d82af0e15f442caa02bd46176732b1228b2047397cb07035927",
+      "format": "JPEG",
+      "width": 640,
+      "height": 427,
+      "mode": "RGB",
+      "after_bytes": 219275,
+      "sha256_after": "0b157b6b281a8d82af0e15f442caa02bd46176732b1228b2047397cb07035927"
+    },
+    {
+      "path": "public/images/press/Articles/Capture d_écran 2025-04-15 174035.png",
+      "bytes": 1119328,
+      "sha256": "7e9722166dc84e24862907ba99eb82e383add919331ec20d62d27b4d5ca183b2",
+      "format": "PNG",
+      "width": 1752,
+      "height": 818,
+      "mode": "RGBA",
+      "after_bytes": 1094675,
+      "sha256_after": "89448e54622945eaf212d66c846e73994fea3063ec9c65f4175330959f524762"
+    },
+    {
+      "path": "public/images/press/Articles/Article Nice Matin - 4 mai 2021 - Page 1.jpg",
+      "bytes": 715460,
+      "sha256": "c65759dab9bbefeb3804b590861417124a195c6f4b082282ce32a90edd5289d2",
+      "format": "JPEG",
+      "width": 2550,
+      "height": 3300,
+      "mode": "RGB",
+      "after_bytes": 715460,
+      "sha256_after": "c65759dab9bbefeb3804b590861417124a195c6f4b082282ce32a90edd5289d2"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9942.jpeg",
+      "bytes": 203986,
+      "sha256": "505c00cc0e32452b36be3dec8da83cdbb881cf35d61e8615067d979aa5a979b5",
+      "format": "JPEG",
+      "width": 640,
+      "height": 427,
+      "mode": "RGB",
+      "after_bytes": 203986,
+      "sha256_after": "505c00cc0e32452b36be3dec8da83cdbb881cf35d61e8615067d979aa5a979b5"
+    },
+    {
+      "path": "public/images/press/Articles/Article Nice Matin - A Harrouis - 2018 - Marche Nordique Mandelieu (2).jpg",
+      "bytes": 542608,
+      "sha256": "0a4abe421f4c18f7c16a97c96c09867bb669007b59c19f557aed0ee9132656bb",
+      "format": "JPEG",
+      "width": 2409,
+      "height": 3437,
+      "mode": "RGB",
+      "after_bytes": 542608,
+      "sha256_after": "0a4abe421f4c18f7c16a97c96c09867bb669007b59c19f557aed0ee9132656bb"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9922.jpeg",
+      "bytes": 221207,
+      "sha256": "14179a7c9d5f1b726f2302c30cf99841fa63e03d2f70b66211c6256d6134b564",
+      "format": "JPEG",
+      "width": 640,
+      "height": 427,
+      "mode": "RGB",
+      "after_bytes": 221207,
+      "sha256_after": "14179a7c9d5f1b726f2302c30cf99841fa63e03d2f70b66211c6256d6134b564"
+    },
+    {
+      "path": "public/images/press/Articles/_MG_9964.jpeg",
+      "bytes": 247932,
+      "sha256": "c8e8b24e83ff3a6d047b3a223715f15a7223ee4ab1aef76e3d0e78fb6ff0ca99",
+      "format": "JPEG",
+      "width": 640,
+      "height": 427,
+      "mode": "RGB",
+      "after_bytes": 247932,
+      "sha256_after": "c8e8b24e83ff3a6d047b3a223715f15a7223ee4ab1aef76e3d0e78fb6ff0ca99"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150606.jpg",
+      "bytes": 4051029,
+      "sha256": "9642efdec3221863c84fc179b401c14aea9ec695e12647e7271aee000aee5cc5",
+      "format": "JPEG",
+      "width": 4000,
+      "height": 2250,
+      "mode": "RGB",
+      "after_bytes": 2827425,
+      "sha256_after": "78f5c8723c503c967aeb9764716f121afdc7e2d5e4ccd417a7834033e174b538"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_190652.jpg",
+      "bytes": 3844613,
+      "sha256": "4fc91eab8c5c7a5bfbdb725a0378da0d243dc50160a9ef44081bbc9826af2d5c",
+      "format": "JPEG",
+      "width": 4000,
+      "height": 2250,
+      "mode": "RGB",
+      "after_bytes": 2660607,
+      "sha256_after": "4bcc017cec488904ff19ad8c113398cd95d00a108a9bf44443e33e7165881cc4"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150148.jpg",
+      "bytes": 4367685,
+      "sha256": "b5d771ad0c3748e20265f6fe2a4c97c36d62b859cbecac46cf773bfde4c48711",
+      "format": "JPEG",
+      "width": 4000,
+      "height": 2250,
+      "mode": "RGB",
+      "after_bytes": 2996494,
+      "sha256_after": "4675f09994a016051a777df965e78db0944703c20bc819bce416f8bbe248802c"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_200332.jpg",
+      "bytes": 4212254,
+      "sha256": "13a79204cd7be725205c2a5dbf068dd9c0c265d42ce4df00e8f7550892eb4c4a",
+      "format": "JPEG",
+      "width": 4000,
+      "height": 2250,
+      "mode": "RGB",
+      "after_bytes": 2943977,
+      "sha256_after": "ffeaaef4a6ffed4d18f78af3fe4a3a688df869ec74ee51b0cdca52cbb39b733a"
+    },
+    {
+      "path": "public/images/press/TV/Le 20 heures du 11 aout 2018 - Rando Apéro - Coupé_Moment5.jpg",
+      "bytes": 119407,
+      "sha256": "09b520ddc322e7907490f4ddacce464768a911f372543dab44f692e76ecf4977",
+      "format": "JPEG",
+      "width": 1024,
+      "height": 576,
+      "mode": "RGB",
+      "after_bytes": 119407,
+      "sha256_after": "09b520ddc322e7907490f4ddacce464768a911f372543dab44f692e76ecf4977"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150130.jpg",
+      "bytes": 5169182,
+      "sha256": "dd5bb25ede2c6cae8a0d82de156219962b66e35b9e321bc1aac0eb68afc47eb4",
+      "format": "JPEG",
+      "width": 4000,
+      "height": 2250,
+      "mode": "RGB",
+      "after_bytes": 3621626,
+      "sha256_after": "6b8e546f2abf5c8dcdf6ac5266a2094538a96feced31793fca26ee53d9a9b01a"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150428.jpg",
+      "bytes": 4972602,
+      "sha256": "f9daa4342d92265dd8a2ef98a6a5d5fe8471b4f43f63e26a39f202684b483753",
+      "format": "JPEG",
+      "width": 4000,
+      "height": 2250,
+      "mode": "RGB",
+      "after_bytes": 3468287,
+      "sha256_after": "652b02c2f376b4bd13c7e13a6fe11266c0e97d677a997dc0b000a8edab8a9aae"
+    },
+    {
+      "path": "public/images/press/TV/SAVE_20180618_233419.jpeg",
+      "bytes": 107345,
+      "sha256": "69867a918dea8c51cf81d161c42bd4ec8cc9a447d5a70664a1e7feb42e144e55",
+      "format": "JPEG",
+      "width": 640,
+      "height": 480,
+      "mode": "RGB",
+      "after_bytes": 107345,
+      "sha256_after": "69867a918dea8c51cf81d161c42bd4ec8cc9a447d5a70664a1e7feb42e144e55"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_210754.jpg",
+      "bytes": 3556805,
+      "sha256": "05ce2f2a3b8a420dc3f102e1dab7b333017ed61c33eccfee6d25b6821e482db6",
+      "format": "JPEG",
+      "width": 4000,
+      "height": 2250,
+      "mode": "RGB",
+      "after_bytes": 2367002,
+      "sha256_after": "c91982e83adb2ca106bc45288536d6e33f7cdb560d0677c0d91f8f1902494184"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_151703.jpg",
+      "bytes": 6763494,
+      "sha256": "f35d85dcf221a451db1f37e646c3323baa6f7582c062f061c707051ea8884f9a",
+      "format": "JPEG",
+      "width": 4160,
+      "height": 3120,
+      "mode": "RGB",
+      "after_bytes": 4453094,
+      "sha256_after": "b0d9fb2f5bf7a5309ce90a9ee1a8874c2a5ea29fa9babf17fd651949144a9af1"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150555.jpg",
+      "bytes": 4465024,
+      "sha256": "d20a66ee818e0cc915ea84593eb85f4dd3ccea2b110e3c54ba79057f52917d20",
+      "format": "JPEG",
+      "width": 4000,
+      "height": 2250,
+      "mode": "RGB",
+      "after_bytes": 3075039,
+      "sha256_after": "a94c24ee3eb1542753f7da4e9ed5455720f4eeabb1f52b38746233d7c41a1a84"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150158.jpg",
+      "bytes": 4806832,
+      "sha256": "e1818fd546871cb7e4093ccbb8cd82be616df3ca33f0e935cdf817fb34604c4d",
+      "format": "JPEG",
+      "width": 4000,
+      "height": 2250,
+      "mode": "RGB",
+      "after_bytes": 3418383,
+      "sha256_after": "214288da4595f8e66211eac28f4c174e63790e2b82ae755bb0f3a00cc2707c78"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_200404.jpg",
+      "bytes": 3872801,
+      "sha256": "395eba5ecbdcda3e2809852f77b0629d57a7a3818ec49265adad2ced5e43d692",
+      "format": "JPEG",
+      "width": 4000,
+      "height": 2250,
+      "mode": "RGB",
+      "after_bytes": 2674036,
+      "sha256_after": "f299e9a017385abbf8a73c19ba5fb13db68311e6d53487202e0d7b81328eb40f"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_201736.jpg",
+      "bytes": 4865077,
+      "sha256": "4b6d9ad9bc133813e5573513c335ce2219cbd2c61655e01867cf3e870b991fdf",
+      "format": "JPEG",
+      "width": 4000,
+      "height": 2250,
+      "mode": "RGB",
+      "after_bytes": 3416543,
+      "sha256_after": "ccaa6d95b87de17b10da7248153f613a087f5dd12a0f17d0b991add37a02e702"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150429_1.jpg",
+      "bytes": 4954741,
+      "sha256": "4569ef7c13655b78247e4e54ab8c578650c0c05b6191bc309cd163611fcdde0a",
+      "format": "JPEG",
+      "width": 4000,
+      "height": 2250,
+      "mode": "RGB",
+      "after_bytes": 3451070,
+      "sha256_after": "7d653f0539c4ddfe0929bf177e8e0bcbbe37d3bd7ab0cdedc43322533de22466"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150600.jpg",
+      "bytes": 3691268,
+      "sha256": "fbefd261bb67701b482c77551eb2ebcfe9348083f09c0ee3a17ac7916f415cdc",
+      "format": "JPEG",
+      "width": 4000,
+      "height": 2250,
+      "mode": "RGB",
+      "after_bytes": 2594254,
+      "sha256_after": "9707d0adfbb7734c5ca706e19e7b641758e967b66cb78db79de0530b0f2975aa"
+    },
+    {
+      "path": "public/images/press/TV/Le 20 heures du 11 aout 2018 - Rando Apéro - Coupé_Moment6.jpg",
+      "bytes": 159086,
+      "sha256": "89b35d236868ece456273eccba527e0f53c7e2d67ebb83387f5162196429f4ab",
+      "format": "JPEG",
+      "width": 1024,
+      "height": 576,
+      "mode": "RGB",
+      "after_bytes": 159086,
+      "sha256_after": "89b35d236868ece456273eccba527e0f53c7e2d67ebb83387f5162196429f4ab"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150127.jpg",
+      "bytes": 4603399,
+      "sha256": "9a6f1569f3f546e97d13139b53ea693e882be361180b7fdfb642d0bec74fe6cb",
+      "format": "JPEG",
+      "width": 4000,
+      "height": 2250,
+      "mode": "RGB",
+      "after_bytes": 3164201,
+      "sha256_after": "8b132e073e797bb564e8c1693e546fe52cac1736deac534cc59acc72270809d7"
+    },
+    {
+      "path": "public/images/press/TV/Le 20 heures du 11 aout 2018 - Rando Apéro_Moment.jpg",
+      "bytes": 79196,
+      "sha256": "939208f7641d72dfd31830653ff342b2dd95fe20bee3dee2e04bbf50894384c4",
+      "format": "JPEG",
+      "width": 1024,
+      "height": 576,
+      "mode": "RGB",
+      "after_bytes": 79196,
+      "sha256_after": "939208f7641d72dfd31830653ff342b2dd95fe20bee3dee2e04bbf50894384c4"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_194813.jpg",
+      "bytes": 4986068,
+      "sha256": "d9b4fe45a2e4384842ba538679cd7a7f7c148f1c58d10ccbe9c1de7d4f1dbf5d",
+      "format": "JPEG",
+      "width": 4000,
+      "height": 2250,
+      "mode": "RGB",
+      "after_bytes": 3484846,
+      "sha256_after": "147d81abc4240afff00ea2e3dbcd755f1c646b3fde9dd1fa881afd3798f095ab"
+    },
+    {
+      "path": "public/images/press/TV/Le 20 heures du 11 aout 2018 - Rando Apéro_Moment 2.jpg",
+      "bytes": 123663,
+      "sha256": "d951f2c23f9c5573f55d95336de1e9ec8328df57985b5f478012f1a3960c343f",
+      "format": "JPEG",
+      "width": 1024,
+      "height": 576,
+      "mode": "RGB",
+      "after_bytes": 123663,
+      "sha256_after": "d951f2c23f9c5573f55d95336de1e9ec8328df57985b5f478012f1a3960c343f"
+    },
+    {
+      "path": "public/images/press/TV/Le 20 heures du 11 aout 2018 - Rando Apéro_Moment 1.jpg",
+      "bytes": 102595,
+      "sha256": "2350e739892244a702df3b1778e3193e289056242297b715b556d420fafeab53",
+      "format": "JPEG",
+      "width": 1024,
+      "height": 576,
+      "mode": "RGB",
+      "after_bytes": 102595,
+      "sha256_after": "2350e739892244a702df3b1778e3193e289056242297b715b556d420fafeab53"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_194815.jpg",
+      "bytes": 5341100,
+      "sha256": "c24a08ab10fcaeb25ffb1fe98a7a472eb46e17d3e41c7fa4cef63cb7ea362ff1",
+      "format": "JPEG",
+      "width": 4000,
+      "height": 2250,
+      "mode": "RGB",
+      "after_bytes": 3769231,
+      "sha256_after": "1eb1d94917589d53cd2342ac51dbcfc15c676c4414aa2cff2f0c2d4d3a14a056"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_200449.jpg",
+      "bytes": 4153251,
+      "sha256": "9b2a3d62ee8bd22fe74029b85a57ce6a3ff7bb78a83168c67ac4f9be1f1a14b7",
+      "format": "JPEG",
+      "width": 4000,
+      "height": 2250,
+      "mode": "RGB",
+      "after_bytes": 2907112,
+      "sha256_after": "f0193f2ed4586369407b7acc06d025131a2b903387053e81e3265e4d8d70f55c"
+    },
+    {
+      "path": "public/images/press/Logos/marie-celine.webp",
+      "bytes": 9956,
+      "sha256": "33343b0e2bcfbc482132f4bb5d4ac56f2e993143b768e0ddf47ff1e4a04fd3a3",
+      "format": "WEBP",
+      "width": 320,
+      "height": 160,
+      "mode": "RGBA",
+      "after_bytes": 9956,
+      "sha256_after": "33343b0e2bcfbc482132f4bb5d4ac56f2e993143b768e0ddf47ff1e4a04fd3a3"
+    },
+    {
+      "path": "public/images/press/Logos/franceinfo.svg",
+      "bytes": 3161,
+      "sha256": "b1c40d9bd4ce5d821d5edbac092d2335c86e75dde65e2b60622911fa371a432e",
+      "after_bytes": 3161,
+      "sha256_after": "b1c40d9bd4ce5d821d5edbac092d2335c86e75dde65e2b60622911fa371a432e"
+    },
+    {
+      "path": "public/images/press/Logos/actu.svg",
+      "bytes": 5859,
+      "sha256": "79bdeb4b088c0fbfac49dc7cd43f5c495e8165546c5d65b863274b8b8e6fe84a",
+      "after_bytes": 5859,
+      "sha256_after": "79bdeb4b088c0fbfac49dc7cd43f5c495e8165546c5d65b863274b8b8e6fe84a"
+    },
+    {
+      "path": "public/images/press/Logos/rcf.webp",
+      "bytes": 2982,
+      "sha256": "ab169151bab95c98bf77b36375f37e90428e4363bb3b2c6b63ed9b59520b155b",
+      "format": "WEBP",
+      "width": 100,
+      "height": 100,
+      "mode": "RGB",
+      "after_bytes": 2982,
+      "sha256_after": "ab169151bab95c98bf77b36375f37e90428e4363bb3b2c6b63ed9b59520b155b"
+    },
+    {
+      "path": "public/images/experiences/cruise-guests/.gitkeep",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "after_bytes": 0,
+      "sha256_after": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "public/images/about/brand/Logo Rando d_Azur réduit Maddy Polomeni.png",
+      "bytes": 8153,
+      "sha256": "f386c72fa2bf6367379dde5ea1d0a8d6a6489e2be491b757333f63284467c441",
+      "format": "PNG",
+      "width": 500,
+      "height": 276,
+      "mode": "RGBA",
+      "after_bytes": 8153,
+      "sha256_after": "f386c72fa2bf6367379dde5ea1d0a8d6a6489e2be491b757333f63284467c441"
+    },
+    {
+      "path": "public/images/about/brand/version bleu.png",
+      "bytes": 72664,
+      "sha256": "332caca1ad5860d9b9261489b890734e22fcd8ec4904543c0b97d446f470496b",
+      "format": "PNG",
+      "width": 2233,
+      "height": 1515,
+      "mode": "RGBA",
+      "after_bytes": 72664,
+      "sha256_after": "332caca1ad5860d9b9261489b890734e22fcd8ec4904543c0b97d446f470496b"
+    },
+    {
+      "path": "public/images/about/brand/logo maddy.ai",
+      "bytes": 67736,
+      "sha256": "b245de644f6183807d6027d2eaf6f8ff3ca4d29a615d21dee90d9dd1940abb5e",
+      "after_bytes": 67736,
+      "sha256_after": "b245de644f6183807d6027d2eaf6f8ff3ca4d29a615d21dee90d9dd1940abb5e"
+    },
+    {
+      "path": "public/images/about/brand/version blanche.png",
+      "bytes": 67080,
+      "sha256": "3e255f022aade3b5df1db59b8947f3e3798d74a4692cf11247d70929dc88ac8f",
+      "format": "PNG",
+      "width": 2233,
+      "height": 1515,
+      "mode": "RGBA",
+      "after_bytes": 67080,
+      "sha256_after": "3e255f022aade3b5df1db59b8947f3e3798d74a4692cf11247d70929dc88ac8f"
+    },
+    {
+      "path": "public/images/about/brand/logo fb maddy.png",
+      "bytes": 95882,
+      "sha256": "ba33fadd0f19637f3a39edbe6355b953d16dbebb6d8ecea6940535f6b004bdc7",
+      "format": "PNG",
+      "width": 2403,
+      "height": 2278,
+      "mode": "RGBA",
+      "after_bytes": 95882,
+      "sha256_after": "ba33fadd0f19637f3a39edbe6355b953d16dbebb6d8ecea6940535f6b004bdc7"
+    },
+    {
+      "path": "public/images/destinations/iles-de-lerins/mediterranean-coastal-trail.jpg",
+      "bytes": 236487,
+      "sha256": "97b07c9373d02a35a86bda35e78e0c712bdb547d4ee0e3b6387a31c6486aa2a1",
+      "format": "JPEG",
+      "width": 646,
+      "height": 468,
+      "mode": "RGB",
+      "after_bytes": 236487,
+      "sha256_after": "97b07c9373d02a35a86bda35e78e0c712bdb547d4ee0e3b6387a31c6486aa2a1"
+    },
+    {
+      "path": "public/images/destinations/iles-de-lerins/boat-arrival.jpg",
+      "bytes": 243840,
+      "sha256": "88038d1e45e840b087d41fd623c44c4d550d3b67eaaed56c7db876e1619e0353",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 376,
+      "mode": "RGB",
+      "after_bytes": 243840,
+      "sha256_after": "88038d1e45e840b087d41fd623c44c4d550d3b67eaaed56c7db876e1619e0353"
+    },
+    {
+      "path": "public/images/destinations/iles-de-lerins/saint-honorat-monastery.jpg",
+      "bytes": 156652,
+      "sha256": "01f2ab479798296f12bb3bf735f69234cd5c8c617936cf20fa59e77e8b912736",
+      "format": "JPEG",
+      "width": 625,
+      "height": 468,
+      "mode": "RGB",
+      "after_bytes": 156652,
+      "sha256_after": "01f2ab479798296f12bb3bf735f69234cd5c8c617936cf20fa59e77e8b912736"
+    },
+    {
+      "path": "public/images/destinations/cannes/la-croisette.jpg",
+      "bytes": 229933,
+      "sha256": "2fc5251d96b9273a60ae009602adf8c4d4ffc21d357e23b6339f0d2aeadfa082",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 400,
+      "mode": "RGB",
+      "after_bytes": 229933,
+      "sha256_after": "2fc5251d96b9273a60ae009602adf8c4d4ffc21d357e23b6339f0d2aeadfa082"
+    },
+    {
+      "path": "public/images/destinations/cannes/le-suquet.jpg",
+      "bytes": 169799,
+      "sha256": "376dcd4c45873570ceab940e40a80ce413e9e683848753337204c06942f0bc62",
+      "format": "JPEG",
+      "width": 636,
+      "height": 446,
+      "mode": "RGB",
+      "after_bytes": 169799,
+      "sha256_after": "376dcd4c45873570ceab940e40a80ce413e9e683848753337204c06942f0bc62"
+    },
+    {
+      "path": "public/images/destinations/cannes/marche-forville.jpg",
+      "bytes": 177606,
+      "sha256": "3b40f4a4a5a0a875211276a1d14a53b9e70ead09146cc1beb2e87996096b70a3",
+      "format": "JPEG",
+      "width": 636,
+      "height": 446,
+      "mode": "RGB",
+      "after_bytes": 177606,
+      "sha256_after": "3b40f4a4a5a0a875211276a1d14a53b9e70ead09146cc1beb2e87996096b70a3"
+    },
+    {
+      "path": "public/images/destinations/antibes/old-antibes-ramparts.jpg",
+      "bytes": 268401,
+      "sha256": "4250f6545d5ce78b51aa059e41128db70452375477f8432b76df16621ae762e3",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 392,
+      "mode": "RGB",
+      "after_bytes": 268401,
+      "sha256_after": "4250f6545d5ce78b51aa059e41128db70452375477f8432b76df16621ae762e3"
+    },
+    {
+      "path": "public/images/destinations/antibes/cap-antibes-cycling.jpg",
+      "bytes": 196324,
+      "sha256": "a05c10a7e0983c47dedb89ff849484582b834d98bfcc44556670b4c1a3c5ade3",
+      "format": "JPEG",
+      "width": 636,
+      "height": 455,
+      "mode": "RGB",
+      "after_bytes": 196324,
+      "sha256_after": "a05c10a7e0983c47dedb89ff849484582b834d98bfcc44556670b4c1a3c5ade3"
+    },
+    {
+      "path": "public/images/destinations/antibes/baie-des-milliardaires-coastal-trail.jpg",
+      "bytes": 204881,
+      "sha256": "831913ff17c37614471979ea909e554f6088e9cfa0bcc489b48302e22364fd98",
+      "format": "JPEG",
+      "width": 637,
+      "height": 455,
+      "mode": "RGB",
+      "after_bytes": 204881,
+      "sha256_after": "831913ff17c37614471979ea909e554f6088e9cfa0bcc489b48302e22364fd98"
+    },
+    {
+      "path": "public/images/destinations/esterel/pic-du-cap-roux.jpg",
+      "bytes": 169448,
+      "sha256": "e4b362650ed3c68b683991e865df7c79f8f3f47e610ce612045b7ae004dcfb98",
+      "format": "JPEG",
+      "width": 631,
+      "height": 438,
+      "mode": "RGB",
+      "after_bytes": 169448,
+      "sha256_after": "e4b362650ed3c68b683991e865df7c79f8f3f47e610ce612045b7ae004dcfb98"
+    },
+    {
+      "path": "public/images/destinations/esterel/la-napoule-coastal-trail.jpg",
+      "bytes": 330337,
+      "sha256": "81fc23c04e2aa682769938030307dfeaa9c19169194c54620ffe73dd437a4348",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 407,
+      "mode": "RGB",
+      "after_bytes": 330337,
+      "sha256_after": "81fc23c04e2aa682769938030307dfeaa9c19169194c54620ffe73dd437a4348"
+    },
+    {
+      "path": "public/images/destinations/esterel/cap-dramont-coastal-trail.jpg",
+      "bytes": 194975,
+      "sha256": "36f4e8d84a0a1b28c76f2887a61d5a4fbbbb5291075f6d1e8d42179211e74d88",
+      "format": "JPEG",
+      "width": 639,
+      "height": 438,
+      "mode": "RGB",
+      "after_bytes": 194975,
+      "sha256_after": "36f4e8d84a0a1b28c76f2887a61d5a4fbbbb5291075f6d1e8d42179211e74d88"
+    },
+    {
+      "path": "public/images/destinations/pays-de-fayence/tanneron-mimosa-eucalyptus.jpg",
+      "bytes": 213411,
+      "sha256": "4ad2aa25bb65e6bf2cc765942ad5bdf846d1aec5e179b526670ee6c13a1967ee",
+      "format": "JPEG",
+      "width": 636,
+      "height": 422,
+      "mode": "RGB",
+      "after_bytes": 213411,
+      "sha256_after": "4ad2aa25bb65e6bf2cc765942ad5bdf846d1aec5e179b526670ee6c13a1967ee"
+    },
+    {
+      "path": "public/images/destinations/pays-de-fayence/mons-hilltop-village.jpg",
+      "bytes": 211518,
+      "sha256": "8c2d69a80333ec062035facfceaf8cbe1b681c91a235af0ff4471903d480d3b5",
+      "format": "JPEG",
+      "width": 636,
+      "height": 422,
+      "mode": "RGB",
+      "after_bytes": 211518,
+      "sha256_after": "8c2d69a80333ec062035facfceaf8cbe1b681c91a235af0ff4471903d480d3b5"
+    },
+    {
+      "path": "public/images/destinations/pays-de-fayence/pont-des-tuves-siagne.jpg",
+      "bytes": 392523,
+      "sha256": "f489814296e9da6cda5c2cc7cfb9750355eb782fbd91f71dbec5baa99a7e1b0e",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 422,
+      "mode": "RGB",
+      "after_bytes": 392523,
+      "sha256_after": "f489814296e9da6cda5c2cc7cfb9750355eb782fbd91f71dbec5baa99a7e1b0e"
+    },
+    {
+      "path": "public/images/destinations/grasse/traditional-perfume-making.jpg",
+      "bytes": 161651,
+      "sha256": "7556348a2761bd373f67069ad71b6fccaa4401ed77e642ab251587542266a60c",
+      "format": "JPEG",
+      "width": 531,
+      "height": 467,
+      "mode": "RGB",
+      "after_bytes": 161651,
+      "sha256_after": "7556348a2761bd373f67069ad71b6fccaa4401ed77e642ab251587542266a60c"
+    },
+    {
+      "path": "public/images/destinations/grasse/historic-streets-pink-umbrellas.jpg",
+      "bytes": 274952,
+      "sha256": "4e6986dd71afc343fd0bfef737967d30f12132150e357bc975b720e3d7d7ac92",
+      "format": "JPEG",
+      "width": 1280,
+      "height": 379,
+      "mode": "RGB",
+      "after_bytes": 274952,
+      "sha256_after": "4e6986dd71afc343fd0bfef737967d30f12132150e357bc975b720e3d7d7ac92"
+    },
+    {
+      "path": "public/images/destinations/grasse/panoramic-french-riviera-view.jpg",
+      "bytes": 222482,
+      "sha256": "ef506fd3f7aabab3ea22f2d9353b991619e0add8b81045d45dd9731c8e53ec62",
+      "format": "JPEG",
+      "width": 741,
+      "height": 467,
+      "mode": "RGB",
+      "after_bytes": 222482,
+      "sha256_after": "ef506fd3f7aabab3ea22f2d9353b991619e0add8b81045d45dd9731c8e53ec62"
+    }
+  ],
+  "optimized": [
+    {
+      "path": "public/images/press/Articles/Sans titrenfjh.png",
+      "before": 812953,
+      "after": 614005,
+      "saved": 198948,
+      "method": "Lossless PNG recompression, identical decoded RGBA pixels",
+      "width": 628,
+      "height": 766,
+      "sha256_after": "c38278ccffde8e50c009f0b62089fd74fc5017136372813903b7d36e6cb3b2ad"
+    },
+    {
+      "path": "public/images/press/Articles/Capture d_écran 2025-04-15 174824.png",
+      "before": 905953,
+      "after": 881893,
+      "saved": 24060,
+      "method": "Lossless PNG recompression, identical decoded RGBA pixels",
+      "width": 933,
+      "height": 864,
+      "sha256_after": "6637662d263d8251ebb8e2c41f903c08160b26f3d6c93828a675f52c19127c4f"
+    },
+    {
+      "path": "public/images/press/Articles/Article Estérel Mag - Juin 2021 - Page 1-3.png",
+      "before": 642103,
+      "after": 524277,
+      "saved": 117826,
+      "method": "Lossless PNG recompression, identical decoded RGBA pixels",
+      "width": 465,
+      "height": 603,
+      "sha256_after": "8cc02f056771421b8650ee02b5ef3a69ec307c3617ad2c2274c6269b835045f1"
+    },
+    {
+      "path": "public/images/press/Articles/Capture d_écran 2025-04-15 174216.png",
+      "before": 660099,
+      "after": 630731,
+      "saved": 29368,
+      "method": "Lossless PNG recompression, identical decoded RGBA pixels",
+      "width": 910,
+      "height": 867,
+      "sha256_after": "d3e522de4f4fed0011aff1f9dbf9a96bd724f73593167ec046259127773d9307"
+    },
+    {
+      "path": "public/images/press/Articles/Capture d_écran 2025-04-15 174035.png",
+      "before": 1119328,
+      "after": 1094675,
+      "saved": 24653,
+      "method": "Lossless PNG recompression, identical decoded RGBA pixels",
+      "width": 1752,
+      "height": 818,
+      "sha256_after": "89448e54622945eaf212d66c846e73994fea3063ec9c65f4175330959f524762"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150606.jpg",
+      "before": 4051029,
+      "after": 2827425,
+      "saved": 1223604,
+      "method": "JPEG high-quality recompression, dimensions and EXIF/ICC preserved",
+      "quality": 95,
+      "psnr_db": 43.314,
+      "width": 4000,
+      "height": 2250,
+      "sha256_after": "78f5c8723c503c967aeb9764716f121afdc7e2d5e4ccd417a7834033e174b538"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_190652.jpg",
+      "before": 3844613,
+      "after": 2660607,
+      "saved": 1184006,
+      "method": "JPEG high-quality recompression, dimensions and EXIF/ICC preserved",
+      "quality": 95,
+      "psnr_db": 43.613,
+      "width": 4000,
+      "height": 2250,
+      "sha256_after": "4bcc017cec488904ff19ad8c113398cd95d00a108a9bf44443e33e7165881cc4"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150148.jpg",
+      "before": 4367685,
+      "after": 2996494,
+      "saved": 1371191,
+      "method": "JPEG high-quality recompression, dimensions and EXIF/ICC preserved",
+      "quality": 95,
+      "psnr_db": 42.453,
+      "width": 4000,
+      "height": 2250,
+      "sha256_after": "4675f09994a016051a777df965e78db0944703c20bc819bce416f8bbe248802c"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_200332.jpg",
+      "before": 4212254,
+      "after": 2943977,
+      "saved": 1268277,
+      "method": "JPEG high-quality recompression, dimensions and EXIF/ICC preserved",
+      "quality": 95,
+      "psnr_db": 43.254,
+      "width": 4000,
+      "height": 2250,
+      "sha256_after": "ffeaaef4a6ffed4d18f78af3fe4a3a688df869ec74ee51b0cdca52cbb39b733a"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150130.jpg",
+      "before": 5169182,
+      "after": 3621626,
+      "saved": 1547556,
+      "method": "JPEG high-quality recompression, dimensions and EXIF/ICC preserved",
+      "quality": 95,
+      "psnr_db": 41.522,
+      "width": 4000,
+      "height": 2250,
+      "sha256_after": "6b8e546f2abf5c8dcdf6ac5266a2094538a96feced31793fca26ee53d9a9b01a"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150428.jpg",
+      "before": 4972602,
+      "after": 3468287,
+      "saved": 1504315,
+      "method": "JPEG high-quality recompression, dimensions and EXIF/ICC preserved",
+      "quality": 95,
+      "psnr_db": 41.851,
+      "width": 4000,
+      "height": 2250,
+      "sha256_after": "652b02c2f376b4bd13c7e13a6fe11266c0e97d677a997dc0b000a8edab8a9aae"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_210754.jpg",
+      "before": 3556805,
+      "after": 2367002,
+      "saved": 1189803,
+      "method": "JPEG high-quality recompression, dimensions and EXIF/ICC preserved",
+      "quality": 95,
+      "psnr_db": 44.806,
+      "width": 4000,
+      "height": 2250,
+      "sha256_after": "c91982e83adb2ca106bc45288536d6e33f7cdb560d0677c0d91f8f1902494184"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_151703.jpg",
+      "before": 6763494,
+      "after": 4453094,
+      "saved": 2310400,
+      "method": "JPEG high-quality recompression, dimensions and EXIF/ICC preserved",
+      "quality": 95,
+      "psnr_db": 41.646,
+      "width": 4160,
+      "height": 3120,
+      "sha256_after": "b0d9fb2f5bf7a5309ce90a9ee1a8874c2a5ea29fa9babf17fd651949144a9af1"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150555.jpg",
+      "before": 4465024,
+      "after": 3075039,
+      "saved": 1389985,
+      "method": "JPEG high-quality recompression, dimensions and EXIF/ICC preserved",
+      "quality": 95,
+      "psnr_db": 42.034,
+      "width": 4000,
+      "height": 2250,
+      "sha256_after": "a94c24ee3eb1542753f7da4e9ed5455720f4eeabb1f52b38746233d7c41a1a84"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150158.jpg",
+      "before": 4806832,
+      "after": 3418383,
+      "saved": 1388449,
+      "method": "JPEG high-quality recompression, dimensions and EXIF/ICC preserved",
+      "quality": 95,
+      "psnr_db": 42.271,
+      "width": 4000,
+      "height": 2250,
+      "sha256_after": "214288da4595f8e66211eac28f4c174e63790e2b82ae755bb0f3a00cc2707c78"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_200404.jpg",
+      "before": 3872801,
+      "after": 2674036,
+      "saved": 1198765,
+      "method": "JPEG high-quality recompression, dimensions and EXIF/ICC preserved",
+      "quality": 95,
+      "psnr_db": 43.737,
+      "width": 4000,
+      "height": 2250,
+      "sha256_after": "f299e9a017385abbf8a73c19ba5fb13db68311e6d53487202e0d7b81328eb40f"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_201736.jpg",
+      "before": 4865077,
+      "after": 3416543,
+      "saved": 1448534,
+      "method": "JPEG high-quality recompression, dimensions and EXIF/ICC preserved",
+      "quality": 95,
+      "psnr_db": 42.432,
+      "width": 4000,
+      "height": 2250,
+      "sha256_after": "ccaa6d95b87de17b10da7248153f613a087f5dd12a0f17d0b991add37a02e702"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150429_1.jpg",
+      "before": 4954741,
+      "after": 3451070,
+      "saved": 1503671,
+      "method": "JPEG high-quality recompression, dimensions and EXIF/ICC preserved",
+      "quality": 95,
+      "psnr_db": 41.865,
+      "width": 4000,
+      "height": 2250,
+      "sha256_after": "7d653f0539c4ddfe0929bf177e8e0bcbbe37d3bd7ab0cdedc43322533de22466"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150600.jpg",
+      "before": 3691268,
+      "after": 2594254,
+      "saved": 1097014,
+      "method": "JPEG high-quality recompression, dimensions and EXIF/ICC preserved",
+      "quality": 95,
+      "psnr_db": 43.779,
+      "width": 4000,
+      "height": 2250,
+      "sha256_after": "9707d0adfbb7734c5ca706e19e7b641758e967b66cb78db79de0530b0f2975aa"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150127.jpg",
+      "before": 4603399,
+      "after": 3164201,
+      "saved": 1439198,
+      "method": "JPEG high-quality recompression, dimensions and EXIF/ICC preserved",
+      "quality": 95,
+      "psnr_db": 42.29,
+      "width": 4000,
+      "height": 2250,
+      "sha256_after": "8b132e073e797bb564e8c1693e546fe52cac1736deac534cc59acc72270809d7"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_194813.jpg",
+      "before": 4986068,
+      "after": 3484846,
+      "saved": 1501222,
+      "method": "JPEG high-quality recompression, dimensions and EXIF/ICC preserved",
+      "quality": 95,
+      "psnr_db": 42.254,
+      "width": 4000,
+      "height": 2250,
+      "sha256_after": "147d81abc4240afff00ea2e3dbcd755f1c646b3fde9dd1fa881afd3798f095ab"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_194815.jpg",
+      "before": 5341100,
+      "after": 3769231,
+      "saved": 1571869,
+      "method": "JPEG high-quality recompression, dimensions and EXIF/ICC preserved",
+      "quality": 95,
+      "psnr_db": 41.784,
+      "width": 4000,
+      "height": 2250,
+      "sha256_after": "1eb1d94917589d53cd2342ac51dbcfc15c676c4414aa2cff2f0c2d4d3a14a056"
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_200449.jpg",
+      "before": 4153251,
+      "after": 2907112,
+      "saved": 1246139,
+      "method": "JPEG high-quality recompression, dimensions and EXIF/ICC preserved",
+      "quality": 95,
+      "psnr_db": 43.472,
+      "width": 4000,
+      "height": 2250,
+      "sha256_after": "f0193f2ed4586369407b7acc06d025131a2b903387053e81e3265e4d8d70f55c"
+    }
+  ],
+  "public_after_bytes": 103417178,
+  "source_after_bytes_before_audit_documents": 104317916,
+  "saved_bytes": 25778853,
+  "video_scan": {
+    "roots": [
+      "public"
+    ],
+    "files_scanned": 139,
+    "video_mime_files": [],
+    "uncertain_octet_streams": []
+  },
+  "videos_removed": [],
+  "videos_removed_bytes": 0,
+  "files_removed": [],
+  "source_baseline_commit": "204bae14d020f37c9c2538b50c5f5b71cade36e2",
+  "measurement_scope": "Tracked repository files only, excluding .git, node_modules, .next, local caches and separately preserved historical offer PDFs.",
+  "verification": {
+    "media_urls_tested": 137,
+    "media_url_failures": 0,
+    "directory_markers_excluded": 2,
+    "routes": 52,
+    "internal_links": 68,
+    "rendered_images": 58,
+    "route_failures": 0,
+    "build": "passed",
+    "lint": "passed",
+    "jpeg_min_psnr_db": 41.522,
+    "jpeg_dimensions_preserved": true,
+    "jpeg_exif_icc_preserved": true,
+    "png_decoded_pixels_identical": true
+  },
+  "large_files_remaining": [
+    {
+      "path": "public/images/press/Articles/LFA Mandelieu-la-Napoule_Randonnée en forêt d_or.pdf",
+      "bytes": 10302187
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_151703.jpg",
+      "bytes": 4453094
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_194815.jpg",
+      "bytes": 3769231
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150130.jpg",
+      "bytes": 3621626
+    },
+    {
+      "path": "public/images/press/Articles/Le Figaro Magazine - Mimosa - Décembre 2021.pdf",
+      "bytes": 3528990
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_194813.jpg",
+      "bytes": 3484846
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150428.jpg",
+      "bytes": 3468287
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150429_1.jpg",
+      "bytes": 3451070
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150158.jpg",
+      "bytes": 3418383
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_201736.jpg",
+      "bytes": 3416543
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150127.jpg",
+      "bytes": 3164201
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150555.jpg",
+      "bytes": 3075039
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150148.jpg",
+      "bytes": 2996494
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_200332.jpg",
+      "bytes": 2943977
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_200449.jpg",
+      "bytes": 2907112
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150606.jpg",
+      "bytes": 2827425
+    },
+    {
+      "path": "public/images/press/Articles/Article Nice Matin - 4 mai 2021 - PDF.pdf",
+      "bytes": 2740987
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_200404.jpg",
+      "bytes": 2674036
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_190652.jpg",
+      "bytes": 2660607
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180618_150600.jpg",
+      "bytes": 2594254
+    },
+    {
+      "path": "public/images/press/TV/IMG_20180803_210754.jpg",
+      "bytes": 2367002
+    }
+  ],
+  "quota": {
+    "access": "project readable; team/usage permission denied 403; no authenticated Vercel CLI",
+    "current_usage": "unknown",
+    "deployment": "prepared, not triggered without current quota confirmation",
+    "cloud_storage_saved": "not measured; existing deployments unchanged"
+  }
+}
