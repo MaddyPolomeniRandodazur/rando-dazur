@@ -9,6 +9,7 @@ import { RateSummary } from "./PrivateRates";
 import rateStyles from "./PrivateRates.module.css";
 import { rateContent, isCustomQuoteExperience, getGuideOffers } from "../lib/private-rates";
 import YouthGroupsSection from "./YouthGroupsSection";
+import CyclingLessons from "./CyclingLessons";
 import ExperienceConnections from "./ExperienceConnections";
 import { cyclingTourImages, experienceImages } from "../lib/experience-images";
 import { getWhatsAppUrl } from "../lib/whatsapp";
@@ -161,6 +162,7 @@ export default async function ExperiencePage({
             </div>
           </section>
         )}
+        {slug === "cycling-experiences" && <CyclingLessons locale={locale} />}
         {"tours" in experience && experience.tours && (
           <section
             aria-labelledby="cycling-tours-title"
