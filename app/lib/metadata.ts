@@ -1,4 +1,5 @@
 import { localizedImageAlt } from "../i18n/image-alt";
+import { ediblePlantsPhoto, ediblePlantsAlt } from "./editorial-photos";
 import type { Metadata } from "next";
 import { imageDimensions } from "./image-dimensions";
 import { homeSeo, frenchExperienceSeo } from "./seo-content";
@@ -57,8 +58,8 @@ export function getLocalizedPageMetadata({
   const pagePhoto = path.startsWith("/destinations/")
     ? destinationImages[slug]?.[0]
     : path.startsWith("/experiences/") ? experienceImages[slug]?.[0] : undefined;
-  const socialImage = image ?? pagePhoto?.src ?? "/images/hero/french-riviera-panoramic-picnic.jpg";
-  const socialImageAlt = localizedImageAlt(locale, path === "/meet-maddy" ? "Maddy Polomeni with yellow mimosa on the French Riviera" : pagePhoto?.alt ?? "A Provençal picnic overlooking the French Riviera");
+  const socialImage = image ?? (path === "/travel-trade" ? "/images/travel-trade/cannes-terrace-collaboration.jpg" : pagePhoto?.src ?? "/images/hero/french-riviera-panoramic-picnic.jpg");
+  const socialImageAlt = path === "/experiences/edible-plants" ? ediblePlantsAlt[locale] : path === "/travel-trade" ? (locale === "fr" ? "Trois personnes collaborent sur une terrasse face à Cannes et à la Méditerranée" : "Three people collaborating on a terrace overlooking Cannes and the Mediterranean") : localizedImageAlt(locale, path === "/meet-maddy" ? "Maddy Polomeni with yellow mimosa on the French Riviera" : pagePhoto?.alt ?? "A Provençal picnic overlooking the French Riviera");
 
   return {
     metadataBase: baseUrl,
@@ -184,6 +185,7 @@ export async function getExperienceMetadata(
     locale,
     path,
     title,
+    ...(slug === "edible-plants" ? { image: ediblePlantsPhoto.src } : {}),
     description:
       locale === "en"
         ? englishMetadata.description

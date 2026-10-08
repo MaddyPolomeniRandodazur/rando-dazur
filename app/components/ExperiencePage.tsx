@@ -1,4 +1,6 @@
 import { localizedImageAlt } from "../i18n/image-alt";
+import { ediblePlantsPhoto, ediblePlantsAlt } from "../lib/editorial-photos";
+import editorialStyles from "./EditorialHero.module.css";
 import { localePath, type ExperienceSlug, type Locale } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
 import Image from "next/image";
@@ -35,6 +37,7 @@ export default async function ExperiencePage({
   const copy = getMessages(locale);
   const experience = copy.experiencePage.pages[slug];
   const photos = await getExperiencePhotoCollection(slug);
+  const heroPhoto = slug === "edible-plants" ? ediblePlantsPhoto : photos.hero;
   const baseUrl = getSiteUrl();
   const customQuote = isCustomQuoteExperience(slug);
   const structuredData = {
@@ -52,7 +55,7 @@ export default async function ExperiencePage({
         name: experience.title,
         serviceType: experience.title,
         ...(!customQuote ? { offers: getGuideOffers(locale, new URL(localePath(locale, `/experiences/${slug}`), baseUrl).toString()) } : {}),
-        ...(experienceImages[slug]?.[0] ? { image: new URL(experienceImages[slug][0].src, baseUrl).toString() } : {}),
+        ...(slug === "edible-plants" ? { image: new URL(ediblePlantsPhoto.src, baseUrl).toString() } : experienceImages[slug]?.[0] ? { image: new URL(experienceImages[slug][0].src, baseUrl).toString() } : {}),
         description: experience.description,
         url: new URL(
           localePath(locale, `/experiences/${slug}`),
@@ -89,16 +92,16 @@ export default async function ExperiencePage({
         locale={locale}
       />
       <main>
-        <section className={`experience-detail-hero detail-${slug}`}>
-          {photos.hero && (
+        <section className={`experience-detail-hero detail-${slug} ${slug === "edible-plants" ? editorialStyles.plants : ""}`}>
+          {heroPhoto && (
             <Image
-              alt={localizedImageAlt(locale, experienceImages[slug]?.[0]?.alt ?? experience.imageAlt)}
+              alt={slug === "edible-plants" ? ediblePlantsAlt[locale] : localizedImageAlt(locale, experienceImages[slug]?.[0]?.alt ?? experience.imageAlt)}
               className="experience-detail-photo"
               fill
               style={{ objectPosition: experienceImages[slug]?.[0]?.objectPosition }}
               preload
               sizes="100vw"
-              src={photos.hero.src}
+              src={heroPhoto.src}
             />
           )}
           <div className="hero-shade" aria-hidden="true" />

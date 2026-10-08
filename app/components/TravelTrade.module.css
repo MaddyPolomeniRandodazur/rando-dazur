@@ -1,0 +1,30 @@
+.hero img{object-position:center}
+.hero :global(.hero-shade){background:linear-gradient(90deg,rgb(20 30 23 / 76%),rgb(20 30 23 / 43%) 55%,rgb(20 30 23 / 12%))}
+.hero :global(.experience-detail-content h1){max-width:850px;font-size:clamp(44px,6.2vw,86px);line-height:1.08}
+.hero :global(.hero-description){max-width:640px;font-size:15px;line-height:1.8}
+.section{padding-block:56px;background:var(--paper)}
+.heading{font-family:var(--serif);font-size:clamp(32px,3.5vw,46px);font-weight:400;line-height:1.2;margin:0 0 24px}
+.introduction{max-width:880px;font-size:16px;color:var(--ink-soft);line-height:1.9;margin-bottom:32px}
+.services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.service{padding:28px;background:var(--sage-pale);border-radius:4px}
+.service h3{font-family:var(--serif);font-size:26px;line-height:1.25;font-weight:400;margin:18px 0}
+.service p{font-size:14px;line-height:1.85;color:var(--ink-soft);margin:0}
+.experiences,.destinations{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.card{display:block;overflow:hidden;background:var(--white);border:1px solid #e1e1d9;border-radius:4px;transition:box-shadow .2s ease,transform .2s ease}
+.card:hover{box-shadow:0 8px 24px rgb(35 42 36 / 9%);transform:translateY(-3px)}
+.card:focus-visible{outline:2px solid var(--sage-dark);outline-offset:4px}
+.cardPhoto{position:relative;aspect-ratio:16/9;overflow:hidden}
+.cardPhoto img{object-fit:cover}
+.cardTitle{display:flex;justify-content:space-between;gap:16px;padding:22px;font-family:var(--serif);font-size:24px;line-height:1.25}
+.cardTitle>span{color:var(--sage-dark);flex-shrink:0}
+@media(max-width:1000px){.experiences,.destinations{grid-template-columns:repeat(2,minmax(0,1fr))}.services{grid-template-columns:1fr}}
+@media(max-width:800px){
+.hero:global(.experience-detail-hero){display:block}
+.hero :global(.experience-detail-photo){position:relative!important;width:100%!important;height:auto!important;aspect-ratio:16/9;margin-top:130px;object-fit:cover}
+.hero :global(.hero-shade){display:none}
+.hero :global(.experience-detail-content){padding-top:32px;padding-bottom:56px}
+.hero :global(.experience-detail-content h1){font-size:clamp(38px,8vw,58px);line-height:1.12}
+.hero :global(.experience-detail-content .button){max-width:100%;white-space:normal;line-height:1.5}
+.section{padding-block:36px}}
+@media(max-width:600px){.experiences,.destinations{grid-template-columns:1fr}.cardTitle{font-size:25px}.service{padding:24px}}
+@media(prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}

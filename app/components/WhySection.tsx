@@ -52,7 +52,7 @@ export default function WhySection({ locale }: { locale: Locale }) {
             </article>
           ))}
         </div>
-        <MaddyProfile locale={locale} />
+        <MaddyProfile locale={locale} compact />
       </div>
     </section>
   );

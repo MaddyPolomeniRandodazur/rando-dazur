@@ -4,10 +4,28 @@ import { localePath, type Locale } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
 import { professionalContent } from "../i18n/professional-content";
 import ProfessionalQualifications from "./ProfessionalQualifications";
+import styles from "./HomeMaddy.module.css";
 
-export default function MaddyProfile({ locale, showProfileLink = true }: { locale: Locale; showProfileLink?: boolean }) {
+export default function MaddyProfile({ locale, showProfileLink = true, compact = false }: { locale: Locale; showProfileLink?: boolean; compact?: boolean }) {
   const copy = getMessages(locale).about;
   const professional = professionalContent[locale];
+  if (compact) return <section className={styles.section} aria-labelledby="founder-title">
+    <div className={styles.intro}>
+      <figure className={styles.portrait}><Image src="/images/about/maddy-polomeni-mimosa-portrait.jpg" alt={copy.portraitAlt} fill sizes="(max-width: 800px) 100vw, 45vw" style={{ objectPosition: "45% 40%" }} /></figure>
+      <div className={styles.copy}>
+        <p className="eyebrow">{copy.founderEyebrow}</p><h2 id="founder-title">{copy.founderTitle}</h2>
+        <p className={styles.role}>{copy.founderRole}</p>
+        {copy.founderParagraphs.map(paragraph => <p key={paragraph}>{paragraph}</p>)}
+        <p className={styles.experience}>{professional.experience}</p><p>{professional.languages}</p>
+        {showProfileLink && <Link className="text-link" href={localePath(locale, "/meet-maddy")}>{professional.profileLink} ↗</Link>}
+      </div>
+    </div>
+    <div className={styles.team}>
+      <figure className={styles.teamPhoto}><Image src="/images/about/rando-dazur-local-team.jpg" alt={copy.teamAlt} width={960} height={1280} sizes="(max-width: 800px) 100vw, 35vw" /></figure>
+      <div><h3>{professional.teamTitle}</h3><p>{professional.teamLanguages}</p></div>
+    </div>
+    <details className={styles.credentials}><summary>{professional.eyebrow}<span>{professional.title}</span></summary><ProfessionalQualifications locale={locale} /></details>
+  </section>;
   return (
         <section className="founder-section" aria-labelledby="founder-title">
           <div className="founder-copy">
