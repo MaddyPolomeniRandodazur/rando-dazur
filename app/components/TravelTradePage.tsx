@@ -1,3 +1,4 @@
+import MimosaLink from "./MimosaLink";
 import Image from "next/image";
 import styles from "./TravelTrade.module.css";
 import { experienceImages } from "../lib/experience-images";
@@ -32,6 +33,7 @@ export default function TravelTradePage({ locale }: { locale: Locale }) {
         </div>
       </section>
       <section className={styles.section}><div className="page-width">
+        <MimosaLink locale={locale} />
         <PrivateRates locale={locale} customQuote />
         <h2 className={styles.heading}>{copy.sections[0].title}</h2><p className={styles.introduction}>{copy.sections[0].text}</p>
         <div className={styles.services}>{copy.sections.slice(1).map((section, index) => <article className={styles.service} key={section.title}><span className="eyebrow">0{index + 1}</span><h3>{section.title}</h3><p>{section.text}</p></article>)}</div>

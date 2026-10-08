@@ -1,3 +1,4 @@
+import MimosaLink from "./MimosaLink";
 import { localizedImageAlt } from "../i18n/image-alt";
 import Image from "next/image";
 import Link from "next/link";
@@ -251,6 +252,7 @@ export default function DestinationPage({
               {labels.contact}
               <span aria-hidden="true">↗</span>
             </a>
+            {["cannes", "esterel", "pays-de-fayence"].includes(slug) && <MimosaLink locale={locale} />}
             <Link className="text-link" href={localePath(locale, "/travel-trade")}>{getTravelTradeContent(locale).linkLabel} ↗</Link>
             <Link className="text-link" href={`${localePath(locale)}#riviera-map`}>
               {labels.map}

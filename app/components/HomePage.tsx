@@ -1,3 +1,4 @@
+import MimosaLink from "./MimosaLink";
 import { localePath, type Locale } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
 import BookingSection from "./BookingSection";
@@ -88,6 +89,7 @@ export default async function HomePage({ locale }: { locale: Locale }) {
           locale={locale}
           photos={experiencePhotos}
         />
+        <section className="page-width"><MimosaLink locale={locale} /></section>
         <WhySection locale={locale} />
         <YouthGroupsSection locale={locale} illustrated />
         <Testimonials locale={locale} />

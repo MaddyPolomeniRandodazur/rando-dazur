@@ -1,3 +1,4 @@
+import MimosaBanner from "../components/MimosaBanner";
 import type { Metadata } from "next";
 import SiteAnalytics from "../components/SiteAnalytics";
 import TemporaryUpdateNotice from "../components/TemporaryUpdateNotice";
@@ -15,7 +16,7 @@ export default function EnglishRootLayout({
 }>) {
   return (
     <html data-scroll-behavior="smooth" lang="en">
-      <body><TemporaryUpdateNotice>{children}</TemporaryUpdateNotice><SiteAnalytics locale={"en"} /></body>
+      <body><TemporaryUpdateNotice>{children}</TemporaryUpdateNotice><SiteAnalytics locale={"en"} /><MimosaBanner locale={"en"} /></body>
     </html>
   );
 }
