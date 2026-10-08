@@ -103,7 +103,7 @@ export default async function HomePage({ locale }: { locale: Locale }) {
           locale={locale}
         />
         <BookingSection locale={locale} />
-        <Newsletter copy={copy.newsletter} />
+        <Newsletter copy={copy.newsletter} locale={locale} />
       </main>
       <Footer locale={locale} />
       <script

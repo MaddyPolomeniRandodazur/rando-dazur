@@ -454,7 +454,14 @@ const english = {
     emailPlaceholder: "Your email address",
     submit: "Join the Newsletter",
     pending:
-      "Newsletter sign-up is not connected yet, so your email has not been sent.",
+      "Opening the secure Brevo form. Once Brevo confirms your request, check your inbox and spam folder and confirm within 7 days. Your subscription starts only after confirmation.",
+    invalidEmail: "Please enter a valid email address.",
+    consentRequired: "Please agree to receive the newsletter before continuing.",
+    sendError: "We could not send your request. Please try again or contact Maddy.",
+    consent: "I agree to receive the Rando d’Azur newsletter and have read the",
+    privacyLink: "Privacy Policy",
+    withdraw: "You can unsubscribe at any time using the link in our emails.",
+    providerNote: "Your email and consent are sent securely to Brevo for Rando d’Azur. You will be taken to Brevo’s confirmation page (currently in French). Please confirm your email within 7 days to complete sign-up.",
   },
   booking: {
     eyebrow: "YOUR RIVIERA STORY BEGINS HERE",
@@ -1180,7 +1187,14 @@ const french: Messages = {
     emailPlaceholder: "Votre adresse e-mail",
     submit: "S’inscrire à la lettre",
     pending:
-      "L’inscription à la newsletter n’est pas encore connectée. Votre adresse n’a pas été envoyée.",
+      "Ouverture du formulaire sécurisé Brevo. Après validation de votre demande par Brevo, vérifiez votre boîte de réception et vos courriers indésirables et confirmez sous 7 jours. L’inscription ne commence qu’après confirmation.",
+    invalidEmail: "Veuillez saisir une adresse e-mail valide.",
+    consentRequired: "Veuillez accepter de recevoir la newsletter avant de continuer.",
+    sendError: "Votre demande n’a pas pu être envoyée. Réessayez ou contactez Maddy.",
+    consent: "J’accepte de recevoir la newsletter Rando d’Azur et j’ai lu la",
+    privacyLink: "Politique de confidentialité",
+    withdraw: "Vous pouvez vous désinscrire à tout moment via le lien dans nos e-mails.",
+    providerNote: "Votre adresse et votre consentement sont transmis de façon sécurisée à Brevo pour Rando d’Azur. La page de confirmation Brevo s’ouvrira ensuite. Confirmez votre adresse sous 7 jours pour terminer l’inscription.",
   },
   booking: {
     eyebrow: "VOTRE HISTOIRE RIVIERA COMMENCE ICI",

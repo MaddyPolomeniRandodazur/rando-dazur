@@ -1,0 +1,50 @@
+.form > input[type="email"] {
+  grid-column: 1;
+  grid-row: 1;
+}
+.form > button {
+  grid-column: 2;
+  grid-row: 1;
+}
+.consent {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: var(--ink-soft);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.form .consent input {
+  flex: 0 0 16px;
+  width: 16px;
+  height: 16px;
+  min-height: 16px;
+  margin: 3px 0 0;
+  padding: 0;
+  accent-color: var(--sage-dark);
+}
+.consent a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.notice {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 10px;
+  line-height: 1.6;
+}
+.form > button:disabled {
+  cursor: wait;
+  opacity: 0.75;
+}
+@media (max-width: 520px) {
+  .form > button {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .consent {
+    grid-row: 2;
+  }
+}

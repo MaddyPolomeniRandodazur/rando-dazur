@@ -91,7 +91,15 @@ const documents: Record<Locale, Record<LegalPageSlug, LegalDocument>> = {
           "paragraphs": [
             "When you contact Maddy by email, telephone or WhatsApp, the contact details and information you provide are used to answer your enquiry, prepare a quotation and, where applicable, arrange and follow up your booking. Only share information relevant to your request.",
             "Website hosting involves technical information needed to deliver and secure pages, including the IP address and technical request information.",
-            "In the current website, the newsletter form does not send the entered email address or register a subscription. Online booking links open the external Regiondo shop (https://randodazur.regiondo.fr/categories). No booking or payment widget loads on this website. Instagram and Facebook links also open external sites; their own privacy and cookie choices apply after you open them."
+            "The newsletter form sends your email address and express consent to Brevo via its official secure form. A confirmation email is requested; you join the newsletter only after clicking the confirmation link within 7 days. Submitting the form alone does not complete your subscription. Online booking links open the external Regiondo shop (https://randodazur.regiondo.fr/categories). No booking or payment widget loads on this website. Instagram and Facebook links also open external sites; their own privacy and cookie choices apply after you open them."
+          ]
+        },
+        {
+          "title": "Newsletter and consent",
+          "paragraphs": [
+            "Rando d’Azur uses Brevo as its newsletter processor to manage email addresses, consent and confirmation records and send the newsletter. This processing is based on your explicit consent (Article 6(1)(a) GDPR). The checkbox is not preselected. You can withdraw consent at any time through the unsubscribe link in newsletter emails or by writing to bonjour@maddypolomeni.com.",
+            "Newsletter data is used while your subscription is active. Consent and suppression records may be retained where necessary to respect withdrawal or demonstrate consent; the 7-day confirmation window does not by itself mean unconfirmed records are deleted. Unconfirmed requests are not treated as active newsletter subscriptions. Brevo’s data protection information is available at https://www.brevo.com/legal/privacypolicy/.",
+            "This website submits directly to Brevo and then displays the provider’s response page. No embedded Brevo widget, tracking pixel or marketing script loads on this website. Brevo’s external form applies its own privacy and cookie information."
           ]
         },
         {
@@ -144,7 +152,7 @@ const documents: Record<Locale, Record<LegalPageSlug, LegalDocument>> = {
         {
           "title": "Optional Vercel Web Analytics",
           "paragraphs": [
-            "Vercel Web Analytics is integrated but its script and events load only after explicit consent. No advertising pixels or external booking widget are integrated. The map remains local; external services such as WhatsApp, Instagram, Facebook and the Regiondo booking shop load only when you open their links. Those links themselves do not set third-party cookies on this website.",
+            "Vercel Web Analytics is integrated but its script and events load only after explicit consent. No advertising pixels or external booking widget are integrated. The map remains local; external services such as WhatsApp, Instagram, Facebook and the Regiondo booking shop load only when you open their links. Those links themselves do not set third-party cookies on this website. The newsletter uses a native form submission to Brevo; no Brevo script or widget loads before submission. The external response page is governed by Brevo’s cookie information.",
             "After your consent, Vercel Web Analytics measures page visits and four click categories: WhatsApp, telephone, email and booking requests. Custom events have fixed names only, with no contact details, link destination, message content, form values or customer identifier. A click indicates an intention to contact us, not a completed booking.",
             "Vercel processes technical request data to create aggregated statistics, including device/browser information, approximate location and a short-lived visit hash. According to Vercel, the visit identifier is discarded after 24 hours; this is not the retention period of aggregate statistics. No identify/group feature or analytics cookie is enabled. Page URLs are limited to public routes and stripped of queries and fragments. Events with potentially identifying referrers are filtered out."
           ]
@@ -247,7 +255,15 @@ const documents: Record<Locale, Record<LegalPageSlug, LegalDocument>> = {
           "paragraphs": [
             "Lorsque vous contactez Maddy par e-mail, téléphone ou WhatsApp, les coordonnées et informations que vous communiquez servent à répondre à votre demande, préparer un devis et, le cas échéant, organiser et suivre votre réservation. Ne transmettez que les informations utiles à votre demande.",
             "L’hébergement du site implique le traitement de données techniques nécessaires à la délivrance des pages et à leur sécurité, notamment l’adresse IP et les informations techniques de la requête.",
-            "Dans la version actuelle du site, le formulaire de newsletter ne transmet pas l’adresse saisie et ne procède à aucune inscription. Les liens de réservation ouvrent la boutique externe Regiondo (https://randodazur.regiondo.fr/categories). Aucun widget de paiement ou de réservation ne se charge sur ce site. Les liens Instagram et Facebook ouvrent également des sites externes, soumis à leurs propres politiques et choix de confidentialité et de cookies."
+            "Le formulaire de newsletter transmet votre adresse e-mail et votre consentement explicite à Brevo via son formulaire officiel sécurisé. Un e-mail de confirmation est demandé ; l’inscription à la newsletter ne prend effet qu’après clic sur le lien de confirmation sous 7 jours. La seule soumission du formulaire ne vaut pas inscription confirmée. Les liens de réservation ouvrent la boutique externe Regiondo (https://randodazur.regiondo.fr/categories). Aucun widget de paiement ou de réservation ne se charge sur ce site. Les liens Instagram et Facebook ouvrent également des sites externes, soumis à leurs propres politiques et choix de confidentialité et de cookies."
+          ]
+        },
+        {
+          "title": "Newsletter et consentement",
+          "paragraphs": [
+            "Rando d’Azur utilise Brevo comme sous-traitant pour gérer les adresses e-mail, les preuves de consentement et de confirmation, et envoyer la newsletter. Ce traitement repose sur votre consentement explicite (article 6(1)(a) du RGPD). La case n’est pas précochée. Vous pouvez retirer votre consentement via le lien de désinscription dans nos newsletters ou en écrivant à bonjour@maddypolomeni.com.",
+            "Les données de newsletter sont utilisées pendant votre abonnement. Les preuves de consentement et les données de suppression peuvent être conservées si nécessaire pour respecter le retrait ou démontrer le consentement. Le délai de confirmation de 7 jours ne signifie pas automatiquement que les fiches non confirmées sont supprimées. Les demandes non confirmées ne sont pas traitées comme des inscriptions actives à la newsletter. Informations de Brevo : https://www.brevo.com/legal/privacypolicy/.",
+            "Le formulaire est soumis directement à Brevo et sa page de réponse est ensuite affichée. Aucun widget intégré, pixel ou script marketing Brevo ne se charge sur ce site. Le formulaire externe applique ses propres informations de confidentialité et cookies."
           ]
         },
         {
@@ -315,7 +331,7 @@ const documents: Record<Locale, Record<LegalPageSlug, LegalDocument>> = {
           "title": "Consentement et retrait",
           "paragraphs": [
             "Nous ne présumons pas que l’absence de cookies dispense la mesure d’audience ou de conversion de consentement. Les préférences du footer permettent d’autoriser, de refuser ou de retirer votre accord. La mesure est désactivée par défaut. L’autorisation et le refus sont présentés à égalité ; fermer le panneau ne vaut pas consentement.",
-            "Les services externes ouverts volontairement appliquent leurs propres politiques de confidentialité et de cookies. Vous pouvez aussi gérer le stockage du site dans votre navigateur. Questions ou demandes relatives à vos droits : bonjour@maddypolomeni.com."
+            "La newsletter est soumise directement à Brevo : aucun script ni widget Brevo ne se charge avant l’envoi. La page de réponse externe applique les informations de cookies de Brevo. Les services externes ouverts volontairement appliquent leurs propres politiques de confidentialité et de cookies. Vous pouvez aussi gérer le stockage du site dans votre navigateur. Questions ou demandes relatives à vos droits : bonjour@maddypolomeni.com."
           ]
         }
       ]
