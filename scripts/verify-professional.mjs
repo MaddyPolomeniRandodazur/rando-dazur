@@ -8,7 +8,7 @@ const context = await browser.newContext({ reducedMotion: 'reduce' });
 const page = await context.newPage();
 const failures = [], report = [];
 const check = (ok, message) => { if (!ok) failures.push(message); };
-for (const path of ['/', '/fr', '/it', '/meet-maddy', '/fr/meet-maddy', '/it/meet-maddy', '/experiences/hiking-experiences', '/fr/experiences/cycling-experiences', '/experiences/food-tours', '/experiences/corporate-incentive-travel', '/travel-trade', '/fr/travel-trade']) {
+for (const path of ['/', '/fr', '/meet-maddy', '/fr/meet-maddy', '/experiences/hiking-experiences', '/fr/experiences/cycling-experiences', '/experiences/food-tours', '/experiences/corporate-incentive-travel', '/travel-trade', '/fr/travel-trade']) {
  for (const width of [360, 430, 820, 1440]) {
   await page.setViewportSize({ width, height: 1000 });
   const response = await page.goto(base + path, { waitUntil: "domcontentloaded" }); await page.waitForTimeout(450);

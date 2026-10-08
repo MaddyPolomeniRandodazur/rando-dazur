@@ -63,13 +63,13 @@ export function getBusinessStructuredData(locale: Locale) {
         contactType: "customer enquiries",
         email: contactChannels.primaryEmail,
         telephone: contactChannels.phoneInternational,
-        availableLanguage: ["English", "French", "Italian"],
+        availableLanguage: ["English", "French"],
       },
       {
         "@type": "ContactPoint",
         contactType: "travel trade and partnerships",
         email: contactChannels.secondaryEmail,
-        availableLanguage: ["English", "French", "Italian"],
+        availableLanguage: ["English", "French"],
       },
     ],
   };
@@ -122,5 +122,5 @@ export function getWebPageStructuredData(locale: Locale, path: string, name: str
 
 export function getWebsiteStructuredData() {
   const baseUrl = getSiteUrl();
-  return { "@type": "WebSite", "@id": new URL("/#website", baseUrl).toString(), name: "Rando d’Azur", url: baseUrl.toString(), inLanguage: ["en", "fr", "it"], publisher: { "@id": new URL("/#organization", baseUrl).toString() } };
+  return { "@type": "WebSite", "@id": new URL("/#website", baseUrl).toString(), name: "Rando d’Azur", url: baseUrl.toString(), inLanguage: ["en", "fr"], publisher: { "@id": new URL("/#organization", baseUrl).toString() } };
 }

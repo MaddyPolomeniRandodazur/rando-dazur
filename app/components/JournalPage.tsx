@@ -24,13 +24,6 @@ const journalCopy: Record<
       "Un espace dédié aux saisons, aux savoirs locaux et aux histoires de la Côte d’Azur. Les premiers récits sont en préparation.",
     returnLink: "Explorer la Riviera",
   },
-  it: {
-    eyebrow: "LA RIVIERA, VISTA DA QUI",
-    title: "Il Journal della Riviera",
-    description:
-      "Uno spazio dedicato alle stagioni, alle conoscenze locali e alle storie della Costa Azzurra. I primi racconti sono in preparazione.",
-    returnLink: "Esplora la Riviera",
-  },
 };
 
 export default function JournalPage({ locale }: { locale: Locale }) {

@@ -22,7 +22,7 @@ export const experienceImages: Record<string, { src: string; alt: string; object
   ],
   "cycling-experiences": [
     { src: "/images/experiences/cycling-experiences-riviera-promenade.jpg", alt: "Cyclists riding beside the Mediterranean on the Riviera promenade", objectPosition: "60% 70%" },
-    { src: "/images/manifesto/cycle-tour-french-riviera.jpg", alt: "A group cycling along the French Riviera waterfront" },
+    { src: "/images/experiences/cycling-three-friends-mediterranean.webp", alt: "Three happy cyclists enjoying a sunny ride overlooking the Mediterranean coast", objectPosition: "0% 35%" },
   ],
   "wild-provence": [{ src: "/images/experiences/wild-provence-hikers-turquoise-river.jpg", alt: "Two hikers resting above a turquoise river in Provence" }],
   "family-experiences": [{ src: "/images/experiences/family-experiences-coastal-hike.jpg", alt: "A family hiking above the Mediterranean at sunset" }],

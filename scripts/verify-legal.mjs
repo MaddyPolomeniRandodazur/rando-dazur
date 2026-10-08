@@ -7,7 +7,7 @@ const base = process.argv[2] || 'http://localhost:3028';
   let checks = 0;
   for (const width of [360, 430, 820, 1440]) {
     const context = await browser.newContext({ viewport: { width, height: 1000 }, reducedMotion: 'reduce' });
-    for (const prefix of ['', '/fr', '/it']) {
+    for (const prefix of ['', '/fr']) {
       for (const slug of ['legal-notice', 'terms-and-conditions', 'privacy-policy', 'cookie-policy']) {
         const page = await context.newPage();
         const response = await page.goto(`${base}${prefix}/${slug}`);
@@ -18,7 +18,7 @@ const base = process.argv[2] || 'http://localhost:3028';
         if (slug !== 'cookie-policy') for (const value of ['22 avenue des Broussailles', 'Les Chênes A', '06400 Cannes', '818 711 764 00048', 'FR50818711764', '9329Z']) if (!content.includes(value)) throw Error(`Missing ${value}`);
         if (slug === 'terms-and-conditions') {
           if (!/25\s?%/.test(content) || !/100\s?%/.test(content) || !content.includes('48') || !content.includes('7') || !/No-show/.test(content)) throw Error('Missing cancellation bands');
-          if (/acompte|deposit|acconto|non-refundable|non remboursables|non rimborsabili/i.test(content)) throw Error('Unapproved payment/cancellation condition');
+          if (/acompte|deposit|non-refundable|non remboursables/i.test(content)) throw Error('Unapproved payment/cancellation condition');
         }
         const info = await page.evaluate(() => ({ width: innerWidth, scrollWidth: document.documentElement.scrollWidth, h1: document.querySelector('h1').getBoundingClientRect().right, emails: [...document.querySelectorAll('.legal-content a[href^="mailto:"]')].map(a => a.getAttribute('href')), telephone: [...document.querySelectorAll('.legal-content a[href^="tel:"]')].map(a => a.getAttribute('href')) }));
         if (info.scrollWidth > info.width || info.h1 > info.width + 1) throw Error(`Responsive overflow ${width} ${prefix}/${slug}`);
@@ -34,7 +34,7 @@ const base = process.argv[2] || 'http://localhost:3028';
     const business = await page.locator('script[type="application/ld+json"]').evaluateAll(scripts => scripts.flatMap(script => JSON.parse(script.textContent)['@graph'] || []).find(node => node['@id']?.endsWith('#organization')));
     if (business.address.addressLocality !== 'Cannes' || business.address.postalCode !== '06400' || business.vatID !== 'FR50818711764' || business.identifier.value !== '81871176400048' || business.email.join() !== 'bonjour@maddypolomeni.com') throw Error('Inconsistent structured business identity');
     if ((await context.cookies()).length || await page.evaluate(() => Object.keys(localStorage).length || Object.keys(sessionStorage).length || document.querySelectorAll('iframe').length)) throw Error('Unexpected tracker/storage');
-    await context.close(); console.log(`${width}px: 12 legal routes, footer contacts and business schema verified`);
+    await context.close(); console.log(`${width}px: 8 legal routes, footer contacts and business schema verified`);
   }
   await browser.close(); console.log(`${checks} responsive legal-page checks passed`);
 })().catch(error => { console.error(error); process.exitCode = 1; });

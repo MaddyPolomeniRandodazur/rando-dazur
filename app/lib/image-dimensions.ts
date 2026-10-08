@@ -1,5 +1,6 @@
 // Dimensions of existing originals; no image files are modified.
 export const imageDimensions: Record<string, { width: number; height: number }> = {
+  "/images/experiences/cycling-three-friends-mediterranean.webp": { width: 1280, height: 720 },
   "/images/partners/pays-de-fayence.png": {
     "width": 200,
     "height": 86

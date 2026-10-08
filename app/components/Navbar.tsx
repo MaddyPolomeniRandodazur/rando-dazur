@@ -93,7 +93,7 @@ function LanguageSelector({
         {locale.toUpperCase()} <span aria-hidden="true">⌄</span>
       </summary>
       <div className="language-options">
-        {copy.languages.filter(([language]) => currentPath !== "/travel-trade" || language !== "it").map(([language, label]) => {
+        {copy.languages.map(([language, label]) => {
           const targetLocale = language as Locale;
           const href = localePath(targetLocale, currentPath);
 

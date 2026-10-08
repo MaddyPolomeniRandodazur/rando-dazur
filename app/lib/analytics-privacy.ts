@@ -13,7 +13,7 @@ const publicPaths = new Set([
 ]);
 
 function isPublicPath(path: string) {
-  return publicPaths.has(path.replace(/^\/(fr|it)(?=\/|$)/, "") || "/");
+  return publicPaths.has(path.replace(/^\/(fr)(?=\/|$)/, "") || "/");
 }
 
 export function filterAnalyticsEvent(event: BeforeSendEvent): BeforeSendEvent | null {

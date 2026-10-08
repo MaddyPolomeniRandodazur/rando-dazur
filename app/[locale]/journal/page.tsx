@@ -16,11 +16,6 @@ const localizedJournal: Record<
     description:
       "Saisons, savoirs locaux et histoires de la Côte d’Azur. Les premiers récits du Journal Rando d’Azur sont en préparation.",
   },
-  it: {
-    title: "Il Journal della Riviera | Rando d’Azur",
-    description:
-      "Stagioni, conoscenze locali e storie della Costa Azzurra. I primi racconti del Journal Rando d’Azur sono in preparazione.",
-  },
 };
 
 export function generateStaticParams() {

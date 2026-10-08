@@ -26,7 +26,6 @@ export const pressStories: PressStory[] = [
     excerpts: {
       en: "A week of guided walks in the Var and Alpes-Maritimes introduces participants to Mediterranean wild plants and their uses, with Maddy Polomeni sharing her field knowledge.",
       fr: "Une semaine de randonnées dans le Var et les Alpes-Maritimes initie les participants aux plantes sauvages méditerranéennes et à leurs usages, avec les connaissances de terrain de Maddy Polomeni.",
-      it: "Una settimana di escursioni nel Var e nelle Alpes-Maritimes fa conoscere ai partecipanti le piante selvatiche mediterranee e i loro usi, con le conoscenze sul campo di Maddy Polomeni.",
     },
   },
   {
@@ -40,7 +39,6 @@ export const pressStories: PressStory[] = [
     excerpts: {
       en: "In this radio feature on the growing appeal of walking, RCF gives Maddy Polomeni and Rando d’Azur a voice to share what hiking means in everyday life.",
       fr: "Dans ce sujet consacré à l’essor de la marche, RCF donne la parole à Maddy Polomeni et à Rando d’Azur pour raconter la place de la randonnée au quotidien.",
-      it: "In questo servizio radiofonico sul crescente interesse per il cammino, RCF dà voce a Maddy Polomeni e Rando d’Azur per raccontare il valore quotidiano dell’escursionismo.",
     },
   },
   {
@@ -54,7 +52,6 @@ export const pressStories: PressStory[] = [
     excerpts: {
       en: "A local feature follows Maddy Polomeni’s apéro hikes in the Estérel, where a guided walk leads to a tasting at the summit.",
       fr: "Ce reportage local suit les randonnées apéro de Maddy Polomeni dans l’Estérel, où une marche guidée mène à une dégustation au sommet.",
-      it: "Un servizio locale segue le escursioni aperitivo di Maddy Polomeni nell’Estérel, dove una passeggiata guidata conduce a una degustazione in vetta.",
     },
   },
   {
@@ -70,7 +67,6 @@ export const pressStories: PressStory[] = [
     excerpts: {
       en: "A winter report from Tanneron explores the mimosa forest and follows a guided walk led by Maddy Poloméni near Cannes.",
       fr: "Un reportage hivernal à Tanneron fait découvrir la forêt de mimosas et suit une randonnée guidée par Maddy Poloméni près de Cannes.",
-      it: "Un servizio invernale da Tanneron racconta la foresta di mimose e segue un’escursione guidata da Maddy Poloméni vicino a Cannes.",
     },
   },
 ];

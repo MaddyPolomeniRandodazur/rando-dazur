@@ -57,18 +57,6 @@ const destinationLabels: Record<
     questions: ["01", "02"],
     answer: ["Un itinéraire imaginé pour vous", "Le territoire vu d’ici"],
   },
-  it: {
-    home: "Home",
-    destinations: "Destinazioni",
-    localPerspective: "Uno sguardo locale",
-    highlights: "Un luogo da esplorare",
-    experiences: "Esperienze in questa destinazione",
-    faq: "Qualche nota locale",
-    contact: "Organizza un’esperienza privata",
-    map: "Esplora tutte le destinazioni",
-    questions: ["01", "02"],
-    answer: ["Un itinerario pensato per te", "Conoscenza del territorio"],
-  },
 };
 
 export default function DestinationPage({
@@ -262,7 +250,7 @@ export default function DestinationPage({
               {labels.contact}
               <span aria-hidden="true">↗</span>
             </a>
-            <Link className="text-link" href={localePath(locale === "it" ? "en" : locale, "/travel-trade")}>{getTravelTradeContent(locale).linkLabel} ↗</Link>
+            <Link className="text-link" href={localePath(locale, "/travel-trade")}>{getTravelTradeContent(locale).linkLabel} ↗</Link>
             <Link className="text-link" href={`${localePath(locale)}#riviera-map`}>
               {labels.map}
               <span aria-hidden="true">↗</span>

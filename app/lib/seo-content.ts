@@ -9,10 +9,6 @@ export const homeSeo: Record<Locale, { title: string; description: string }> = {
     title: "Rando d’Azur | Guide local & expériences privées sur la Côte d’Azur",
     description: "Découvrez la Côte d’Azur avec un guide local : randonnées, food tours, vélo et expériences privées sur mesure à Cannes, Antibes, dans l’Estérel et au-delà.",
   },
-  it: {
-    title: "Rando d’Azur | Guide locali ed esperienze private in Costa Azzurra",
-    description: "Scopri la Costa Azzurra con guide locali: escursioni, tour gastronomici, bici ed esperienze private a Cannes, Antibes, nell’Estérel e oltre.",
-  },
 };
 
 export const frenchExperienceSeo: Record<string, { title: string; description: string }> = {

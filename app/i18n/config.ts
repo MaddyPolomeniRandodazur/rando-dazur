@@ -1,4 +1,4 @@
-export const locales = ["en", "fr", "it"] as const;
+export const locales = ["en", "fr"] as const;
 
 export type Locale = (typeof locales)[number];
 
@@ -44,8 +44,8 @@ export function isExperienceSlug(value: string): value is ExperienceSlug {
   return experienceSlugs.includes(value as ExperienceSlug);
 }
 
-export function canonicalExperiencePath(locale: Locale, path: string) {
-  return locale !== "it" && path === "/experiences/evg-experiences"
+export function canonicalExperiencePath(_locale: Locale, path: string) {
+  return path === "/experiences/evg-experiences"
     ? "/experiences/evjf-experiences"
     : path;
 }

@@ -45,7 +45,7 @@ const origin = 'https://www.randodazur.com';
     check(new URL(data.og).href === new URL(url).href && data.ogImage && data.twitter === 'summary_large_image', 'social metadata');
     check(data.banner, 'missing banner');
     check(data.links.every(h => !h.includes('REPLACE-')), 'unpublished social link');
-    check(path === '/it/experiences/evg-experiences' ? data.alternates.every(a => ['it', 'x-default'].includes(a.lang)) : data.alternates.some(a => a.lang === 'en') && data.alternates.some(a => a.lang === 'fr'), 'missing or mismatched language alternatives');
+    check(data.alternates.some(a => a.lang === 'en') && data.alternates.some(a => a.lang === 'fr'), 'missing or mismatched language alternatives');
     for (const script of data.scripts) {
       try { const json = JSON.parse(script); check(json['@context'] === 'https://schema.org', 'schema context');
         for (const node of json['@graph'] || [json]) {
@@ -56,7 +56,7 @@ const origin = 'https://www.randodazur.com';
         }
       } catch (error) { failures.push(`${path}: invalid JSON-LD ${error.message}`); }
     }
-    if (path.includes('/experiences/') || path.includes('/destinations/') || path.endsWith('/travel-trade') || path.endsWith('/meet-maddy') || ['/', '/fr', '/it'].includes(path)) check(data.scripts.length > 0, 'missing structured data');
+    if (path.includes('/experiences/') || path.includes('/destinations/') || path.endsWith('/travel-trade') || path.endsWith('/meet-maddy') || ['/', '/fr'].includes(path)) check(data.scripts.length > 0, 'missing structured data');
     if (path.endsWith('/destinations/iles-de-lerins')) {
       const activityLinks = await page.locator('.destination-experience-list a').evaluateAll(a => a.map(x => x.getAttribute('href')));
       check(activityLinks.length === 3 && activityLinks.every(h => !/food-tours|cycling|cruise-guests/.test(h)), 'incorrect Lerins activities');
@@ -87,7 +87,7 @@ const origin = 'https://www.randodazur.com';
     const response = await context.request.get(`${base}${path}`, { maxRedirects: 0 });
     if (response.status() !== 308 || !response.headers().location?.includes('evjf-experiences')) failures.push(`Incorrect redirect ${path}`);
   }
-  for (const path of ['/journal', '/fr/journal', '/it/journal']) {
+  for (const path of ['/journal', '/fr/journal']) {
     const response = await context.request.get(`${base}${path}`);
     const html = await response.text();
     if (response.status() !== 200 || !html.includes('noindex') || urls.includes(origin + path)) failures.push(`Journal indexing policy ${path}`);

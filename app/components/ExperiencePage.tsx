@@ -148,7 +148,8 @@ export default async function ExperiencePage({
                   <Image
                     alt={experienceImages[slug]?.[index + 1]?.alt ?? copy.photoGallery.photoAlt}
                     fill
-                    sizes="(max-width: 780px) 100vw, 33vw"
+                    sizes={slug === "cycling-experiences" ? "(max-width: 780px) 100vw, 66vw" : "(max-width: 780px) 100vw, 33vw"}
+                    style={{ objectPosition: experienceImages[slug]?.[index + 1]?.objectPosition }}
                     src={photo.src}
                   />
                   <figcaption>{String(index + 1).padStart(2, "0")}</figcaption>

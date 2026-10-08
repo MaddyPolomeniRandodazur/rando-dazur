@@ -11,7 +11,6 @@ import { isExperienceSlug } from "../i18n/config";
 const localeOpenGraph: Record<Locale, string> = {
   en: "en_GB",
   fr: "fr_FR",
-  it: "it_IT",
 };
 
 export function getLocalizedPageMetadata({
@@ -33,7 +32,7 @@ export function getLocalizedPageMetadata({
   const localizedPath = localePath(locale, path);
   const absoluteUrl = new URL(localizedPath, baseUrl).toString();
   const languages = Object.fromEntries(
-    (path === "/travel-trade" ? locales.filter(language => language !== "it") : path === "/experiences/evg-experiences" && locale === "it" ? [locale] : locales).map((language) => [
+    locales.map((language) => [
       language,
       new URL(
         localePath(language, canonicalExperiencePath(language, path)),
@@ -69,7 +68,7 @@ export function getLocalizedPageMetadata({
       languages: {
         ...languages,
         "x-default": new URL(
-          localePath(path === "/experiences/evg-experiences" && locale === "it" ? "it" : "en", canonicalExperiencePath(path === "/experiences/evg-experiences" && locale === "it" ? "it" : "en", path)),
+          localePath("en", canonicalExperiencePath("en", path)),
           baseUrl,
         ).toString(),
       },

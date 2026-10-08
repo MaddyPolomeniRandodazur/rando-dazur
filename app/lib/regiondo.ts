@@ -34,5 +34,4 @@ export function getRegiondoBookingUrl(experience?: ExperienceSlug, tour?: string
 export const bookingLabels: Record<Locale, { book: string; experience: string }> = {
   en: { book: "Book online", experience: "Book this experience" },
   fr: { book: "Réserver en ligne", experience: "Réserver cette expérience" },
-  it: { book: "Prenota online", experience: "Prenota questa esperienza" },
 };
