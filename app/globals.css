@@ -3808,6 +3808,63 @@ a {
   background: var(--paper);
 }
 
+.home-youth-section {
+  background: var(--paper);
+  padding-block: clamp(40px, 5vw, 72px);
+}
+
+.home-youth-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(28px, 4vw, 64px);
+  border-top: 1px solid #d9d8d0;
+  padding-top: clamp(40px, 5vw, 64px);
+}
+
+.home-youth-photo {
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.home-youth-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center;
+}
+
+.home-youth-copy {
+  min-width: 0;
+}
+
+.home-youth-copy h2 {
+  margin: 16px 0 24px;
+  font-family: var(--serif);
+  font-size: clamp(30px, 3vw, 44px);
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+.home-youth-copy .section-intro {
+  max-width: none;
+  margin: 0 0 20px;
+}
+
+.home-youth-copy .text-link {
+  display: inline-block;
+  line-height: 1.6;
+}
+
+@media (max-width: 800px) {
+  .home-youth-inner {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 28px;
+  }
+}
+
 .experience-detail-points {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

@@ -89,7 +89,7 @@ export default async function HomePage({ locale }: { locale: Locale }) {
           photos={experiencePhotos}
         />
         <WhySection locale={locale} />
-        <YouthGroupsSection locale={locale} />
+        <YouthGroupsSection locale={locale} illustrated />
         <Testimonials locale={locale} />
         <PartnerTrustSection locale={locale} />
         <FeaturedIn locale={locale} />
