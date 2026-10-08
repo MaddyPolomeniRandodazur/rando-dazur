@@ -6,7 +6,7 @@ export const mimosaCampaign = {
   season: 2027,
   start: "2027-01-15",
   end: "2027-02-28",
-  promotionStart: "2026-11-01",
+  promotionStart: "2026-10-08",
   promotionEnd: "2027-02-28",
   price: 250,
   minParticipants: 2,
