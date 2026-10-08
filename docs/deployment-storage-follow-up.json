@@ -1,0 +1,140 @@
+{
+  "auditedDeployments": 53,
+  "auditedHistoricalCommits": 51,
+  "currentDeploymentAtFollowUp": "dpl_E6bc4cR8B5e8M7bipxhtYcNEizzz",
+  "currentAlsoExcluded": true,
+  "candidates": [],
+  "heavyHistoricalSources": [
+    {
+      "id": "dpl_B8F9KQTp5Y8uHRQdjYqoecq7cL2V",
+      "state": "READY",
+      "dateUTC": "2026-10-07T13:29:37.092000+00:00",
+      "commit": "806cda558cc8730531abdf89249c60ab58b1c942",
+      "sourcePublicBytes": 1556809139,
+      "actualDeploymentStorageBytes": null,
+      "estimatedReclaimBytes": null,
+      "approvedCandidate": false
+    },
+    {
+      "id": "dpl_BrjbQow25okXaRKxje9cKtTkAXGt",
+      "state": "ERROR",
+      "dateUTC": "2026-10-07T13:19:14.428000+00:00",
+      "commit": "806cda558cc8730531abdf89249c60ab58b1c942",
+      "sourcePublicBytes": 1556809139,
+      "actualDeploymentStorageBytes": null,
+      "estimatedReclaimBytes": null,
+      "approvedCandidate": false
+    },
+    {
+      "id": "dpl_2CkrsC53CDWnqqjspJMSYWNAVBBs",
+      "state": "ERROR",
+      "dateUTC": "2026-10-07T12:23:26.747000+00:00",
+      "commit": "806cda558cc8730531abdf89249c60ab58b1c942",
+      "sourcePublicBytes": 1556809139,
+      "actualDeploymentStorageBytes": null,
+      "estimatedReclaimBytes": null,
+      "approvedCandidate": false
+    },
+    {
+      "id": "dpl_AyXNQFWXtmAhYX8zL49ii7btQCxy",
+      "state": "ERROR",
+      "dateUTC": "2026-10-07T11:00:25.174000+00:00",
+      "commit": "68cbfe78768e2aea5c00f0ce14384672c8773d01",
+      "sourcePublicBytes": 2806766578,
+      "actualDeploymentStorageBytes": null,
+      "estimatedReclaimBytes": null,
+      "approvedCandidate": false
+    },
+    {
+      "id": "dpl_8zG8uHUeSgNfdCXGCxWU75UdWfBP",
+      "state": "ERROR",
+      "dateUTC": "2026-10-07T09:42:50.224000+00:00",
+      "commit": "e82b8d697ce095ba37147c05911bf920e8b82496",
+      "sourcePublicBytes": 2176682310,
+      "actualDeploymentStorageBytes": null,
+      "estimatedReclaimBytes": null,
+      "approvedCandidate": false
+    },
+    {
+      "id": "dpl_BvjUuVGhQsMsbYYnWhEy6HEXQJ96",
+      "state": "ERROR",
+      "dateUTC": "2026-10-07T09:42:20.154000+00:00",
+      "commit": "e1ca69d624b7a0fe1a64a6f7ef33f7c5aa61dd8d",
+      "sourcePublicBytes": 2176682310,
+      "actualDeploymentStorageBytes": null,
+      "estimatedReclaimBytes": null,
+      "approvedCandidate": false
+    },
+    {
+      "id": "dpl_3HBLmZtnDkAbFiR2eTGxTT2JCVjN",
+      "state": "ERROR",
+      "dateUTC": "2026-10-07T09:41:36.573000+00:00",
+      "commit": "61469367ee3e07d99509f7ebe194569b5a6d4593",
+      "sourcePublicBytes": 1987497772,
+      "actualDeploymentStorageBytes": null,
+      "estimatedReclaimBytes": null,
+      "approvedCandidate": false
+    },
+    {
+      "id": "dpl_32Jxj3YTrob28vZ7kjxDic6Pkq4a",
+      "state": "ERROR",
+      "dateUTC": "2026-10-07T09:39:51.199000+00:00",
+      "commit": "13a2f154f73dc8775d6639ed6bf3cf7cf428f4c4",
+      "sourcePublicBytes": 1779348798,
+      "actualDeploymentStorageBytes": null,
+      "estimatedReclaimBytes": null,
+      "approvedCandidate": false
+    },
+    {
+      "id": "dpl_5JWnZgbfjQrSnJbBVjHnotNkGCpP",
+      "state": "ERROR",
+      "dateUTC": "2026-10-07T09:38:41.366000+00:00",
+      "commit": "dd8924864fd8b9eae3d8291755af19059be445e3",
+      "sourcePublicBytes": 1571553132,
+      "actualDeploymentStorageBytes": null,
+      "estimatedReclaimBytes": null,
+      "approvedCandidate": false
+    },
+    {
+      "id": "dpl_Bbkzo7kCew2yh9ugCSpJSCzaWE5w",
+      "state": "ERROR",
+      "dateUTC": "2026-10-07T09:36:48.164000+00:00",
+      "commit": "76b7d613154349d9600fd1956701c755049cc618",
+      "sourcePublicBytes": 1365438177,
+      "actualDeploymentStorageBytes": null,
+      "estimatedReclaimBytes": null,
+      "approvedCandidate": false
+    },
+    {
+      "id": "dpl_AjpBwjDXjmcrkXuTL9S5uj4gripS",
+      "state": "ERROR",
+      "dateUTC": "2026-10-07T09:35:30.263000+00:00",
+      "commit": "1932d332bd7db344bc06352d7ef65729cd9dee82",
+      "sourcePublicBytes": 1162633156,
+      "actualDeploymentStorageBytes": null,
+      "estimatedReclaimBytes": null,
+      "approvedCandidate": false
+    }
+  ],
+  "note": "Source Git bytes are not Vercel Storage metrics. No deletion performed or approved. Per-deployment pins and measured storage unavailable.",
+  "protectionChecks": [
+    {
+      "id": "dpl_B8F9KQTp5Y8uHRQdjYqoecq7cL2V",
+      "status": "302",
+      "redirectHost": "vercel.com",
+      "error": null
+    },
+    {
+      "id": "dpl_BrjbQow25okXaRKxje9cKtTkAXGt",
+      "status": "302",
+      "redirectHost": "vercel.com",
+      "error": null
+    },
+    {
+      "id": "dpl_2CkrsC53CDWnqqjspJMSYWNAVBBs",
+      "status": "302",
+      "redirectHost": "vercel.com",
+      "error": null
+    }
+  ]
+}

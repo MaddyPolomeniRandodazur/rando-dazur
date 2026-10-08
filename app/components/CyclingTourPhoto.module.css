@@ -1,0 +1,9 @@
+.photo {
+  object-position: var(--tour-position, 50% 50%);
+}
+
+@media (max-width: 780px) {
+  .photo {
+    object-position: var(--tour-mobile-position, var(--tour-position, 50% 50%));
+  }
+}

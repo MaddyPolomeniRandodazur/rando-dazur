@@ -1,12 +1,15 @@
 import { localePath, type ExperienceSlug, type Locale } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
 import Image from "next/image";
+import type { CSSProperties } from "react";
+import cyclingPhotoStyles from "./CyclingTourPhoto.module.css";
 import BookingSection from "./BookingSection";
 import { RateSummary } from "./PrivateRates";
 import rateStyles from "./PrivateRates.module.css";
 import { rateContent, isCustomQuoteExperience, getGuideOffers } from "../lib/private-rates";
 import ExperienceConnections from "./ExperienceConnections";
-import { experienceImages } from "../lib/experience-images";
+import { cyclingTourImages, experienceImages } from "../lib/experience-images";
+import { getWhatsAppUrl } from "../lib/whatsapp";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 import { getSiteUrl } from "../lib/site-url";
@@ -166,17 +169,21 @@ export default async function ExperiencePage({
               </div>
               <div className="cycling-tour-grid">
                 {experience.tours.map((tour, index) => {
-                  const tourPhoto =
-                    photos.gallery[index] ?? photos.hero;
+                  const tourPhoto = cyclingTourImages[index];
                   return (
                     <article className="cycling-tour-card" key={tour.title}>
                       <div className="cycling-tour-image">
                         {tourPhoto && (
                           <Image
-                            alt=""
+                            alt={tourPhoto.alt}
+                            className={cyclingPhotoStyles.photo}
                             fill
                             sizes="(max-width: 780px) 100vw, 33vw"
                             src={tourPhoto.src}
+                            style={{
+                              "--tour-position": tourPhoto.objectPosition,
+                              "--tour-mobile-position": tourPhoto.mobileObjectPosition ?? tourPhoto.objectPosition,
+                            } as CSSProperties}
                           />
                         )}
                       </div>
@@ -184,6 +191,15 @@ export default async function ExperiencePage({
                         <span>0{index + 1}</span>
                         <h3>{tour.title}</h3>
                         <p>{tour.description}</p>
+                        {"seasonality" in tour && <p>{tour.seasonality}</p>}
+                        <a
+                          className="text-link"
+                          href={getWhatsAppUrl(`${copy.contact.whatsappMessage}\n\n${tour.title}`)}
+                          rel="noopener noreferrer"
+                          target="_blank"
+                        >
+                          {copy.experiencePage.enquire} <span aria-hidden="true">↗</span>
+                        </a>
                       </div>
                     </article>
                   );

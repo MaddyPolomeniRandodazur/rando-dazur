@@ -579,9 +579,10 @@ const english = {
               "Ride the red-rock landscapes and forest trails of the Estérel with a local guide.",
           },
           {
-            title: "Private Bike Tours",
+            title: "Mimosa Season Cycling Tour",
             description:
-              "A private route adapted to your group, pace and interests.",
+              "Cycle through golden mimosa forests and peaceful trails of the French Riviera. A seasonal guided cycling experience surrounded by nature, colour and the scents of winter.",
+            seasonality: "Winter flowering season; subject to natural conditions.",
           },
         ],
       },
@@ -1305,9 +1306,10 @@ const french: Messages = {
               "Parcourez les roches rouges et les pistes forestières de l’Estérel avec un guide local.",
           },
           {
-            title: "Private Bike Tours",
+            title: "Mimosa Season Cycling Tour",
             description:
-              "Un itinéraire privé adapté à votre groupe, à votre rythme et à vos envies.",
+              "Pédalez à travers les forêts de mimosa doré et les sentiers paisibles de la Côte d’Azur. Une sortie guidée saisonnière au cœur de la nature, des couleurs et des parfums de l’hiver.",
+            seasonality: "Floraison hivernale, sous réserve des conditions naturelles.",
           },
         ],
       },
@@ -2002,9 +2004,10 @@ const italian: Messages = {
               "Pedala tra le rocce rosse e i sentieri forestali dell’Estérel con una guida locale.",
           },
           {
-            title: "Private Bike Tours",
+            title: "Mimosa Season Cycling Tour",
             description:
-              "Un itinerario privato creato secondo il tuo gruppo, il tuo ritmo e i tuoi interessi.",
+              "Pedala tra foreste di mimosa dorata e sentieri tranquilli della Costa Azzurra. Un’esperienza guidata stagionale tra natura, colori e profumi dell’inverno.",
+            seasonality: "Fioritura invernale, soggetta alle condizioni naturali.",
           },
         ],
       },

@@ -1,4 +1,11 @@
 // Existing originals only; Next Image handles responsive sizes and web delivery.
+// Explicit assignments avoid gallery/hero fallbacks reusing the wrong tour image.
+export const cyclingTourImages = [
+  { src: "/images/manifesto/cycle-tour-french-riviera.jpg", alt: "Cyclists exploring the Cannes waterfront beside the Mediterranean", objectPosition: "50% 50%" },
+  { src: "/images/experiences/esterel-mountain-bike-four-cyclists.jpg", alt: "Four helmeted mountain bikers with backpacks riding through the red rocks of the Estérel above the Mediterranean", objectPosition: "50% 78%", mobileObjectPosition: "50% 70%" },
+  { src: "/images/experiences/mimosa-season-cycling-tour.jpg", alt: "A mountain biker riding a peaceful trail surrounded by golden yellow mimosa blossoms", objectPosition: "50% 85%" },
+];
+
 export const experienceImages: Record<string, { src: string; alt: string; objectPosition?: string }[]> = {
   "food-tours": [
     { src: "/images/experiences/food-tour-tasting-cannes.jpg", alt: "A local guide sharing a tasting with visitors in a Cannes shop" },
