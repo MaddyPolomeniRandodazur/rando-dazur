@@ -4,7 +4,7 @@
 
 Next.js 16 App Router, deux root layouts alternatifs (anglais et FR/IT). Aucun SDK, Analytics component, script ou traceur d’audience existant dans le dépôt. Le HTML public ne contient aucun script Analytics ; `https://www.randodazur.com/_vercel/insights/script.js` répond 404 avant modification.
 
-Le connecteur Vercel liste le projet `rando-dazur` (prj_GQ58pyUUlU7CbHXOhQf9Wro44xtH), mais sa lecture détaillée sous l’équipe team_GqxCAPnEbSbE82iPPMtN4Wfj est refusée HTTP 403. Aucun CLI authentifié disponible pour le repli. Ni activation Analytics, ni forfait, ni rétention, ni contrat/DPA validé dans le tableau de bord depuis cette session. Aucun achat ou changement de forfait effectué.
+Le connecteur Vercel liste le projet `rando-dazur` (prj_GQ58pyUUlU7CbHXOhQf9Wro44xtH). La lecture avec le paramètre d’équipe explicite est refusée HTTP 403 ; la lecture par le même ID de projet, sans ce paramètre, fonctionne et confirme le déploiement de production READY et www.randodazur.com. Aucun CLI authentifié disponible. Les outils exposent le statut du projet mais pas le tableau de bord Analytics, le forfait ou la rétention. Aucun achat, changement de forfait ou modification des paramètres Analytics/DPA effectué depuis cette session.
 
 ## Intégration et données
 
@@ -27,7 +27,7 @@ beforeSend vérifie le consentement à chaque événement, n’autorise que les 
 
 Ne pas confondre absence de cookies et exemption automatique. Vercel décrit un hash de visite issu de la requête, supprimé après 24 h, et des informations techniques (appareil/navigateur, localisation approximative). Les données de requête/empreinte peuvent relever de données personnelles ou pseudonymes même si les statistiques accessibles sont agrégées. L’intégration ne prétend pas à une certification CNIL ni à une exemption d’audience : elle demande le consentement préalable pour la mesure d’audience et de conversion. Le stockage du choix sert exclusivement à respecter cette préférence.
 
-Les politiques confidentialité et cookies FR/EN/IT décrivent le SDK, les finalités, les clics anonymes côté payload, les données techniques traitées par Vercel, la base consentement, le refus/retrait, le stockage, le prestataire et les transferts éventuels hors EEE. La durée de vie du hash (24 h) n’est pas présentée comme la durée de conservation des statistiques : celle-ci dépend du forfait/paramétrage Vercel non accessible ici. Le propriétaire doit confirmer la rétention et les garanties contractuelles/DPA avant activation et préciser la durée exacte dans la politique si nécessaire.
+Les politiques confidentialité et cookies FR/EN/IT décrivent le SDK, les finalités, les clics anonymes côté payload, les données techniques traitées par Vercel, la base consentement, le refus/retrait, le stockage, le prestataire et les transferts éventuels hors EEE. La durée de vie du hash (24 h) n’est pas présentée comme la durée de conservation des statistiques : celle-ci dépend du forfait/paramétrage Vercel non accessible ici. Le propriétaire doit confirmer la rétention et les garanties contractuelles/DPA dans les paramètres du service et préciser la durée exacte dans la politique si nécessaire.
 
 Sources consultées :
 - https://vercel.com/docs/analytics/quickstart
@@ -38,7 +38,7 @@ Sources consultées :
 
 ## Actions manuelles Vercel
 
-1. Ouvrir le projet rando-dazur dans la bonne équipe, onglet **Analytics**, activer **Web Analytics** si ce n’est pas déjà actif. Ne pas ajouter de deuxième SDK.
+1. Ouvrir le projet rando-dazur dans la bonne équipe, onglet **Analytics**, confirmer que les statistiques apparaissent. Activer **Web Analytics** uniquement si le tableau de bord le demande : le transport du SDK et des événements est déjà vérifié HTTP 200 en production. Ne pas ajouter de deuxième SDK.
 2. Confirmer que le déploiement main contenant cette intégration est Ready, et que www.randodazur.com lui est associé. Après activation, redéployer si Vercel le demande pour les routes/configurations d’intake.
 3. Vérifier l’accès aux événements personnalisés du forfait actuel (documentation : Pro/Enterprise). Ne pas souscrire/acheter automatiquement ; sans cette fonctionnalité, les pages vues peuvent fonctionner mais les conversions ne seront pas disponibles dans le tableau de bord.
 4. Vérifier le DPA Vercel, les garanties de transfert, les accès autorisés et la rétention du forfait/projet. Choisir la durée minimale utile permise et mettre à jour la durée précise dans les politiques si elle est confirmée. L’intégration reste soumise au choix des visiteurs.
@@ -49,3 +49,15 @@ Sources consultées :
 `scripts/verify-analytics.mjs` utilise le vrai script public Vercel téléchargé pour le test, avec intake intercepté localement : aucune donnée de test envoyée à Vercel. Contrôles à 360/430/820/1440 px : aucun SDK/stockage avant choix, fermeture/refus inactifs, un seul script après accord, pageview expurgée, quatre événements sans propriétés identifiantes, filtrage du référent sensible, retrait, consentement expiré, absence de cookies et dialogue responsive. Les tests d’intake local ne prouvent pas l’activation du service dans Vercel ; le contrôle public réel est consigné séparément après push.
 
 Build et lint réussis. Tests du SDK réel/intercepté réussis aux quatre largeurs, y compris arrêt après effacement du choix et consentement expiré. 48 contrôles responsive des 12 pages juridiques FR/EN/IT réussis. Les photos, CTA et animations existants sont conservés ; seul le contrôle de préférence est ajouté au footer.
+
+## Vérification réelle de production après push
+
+Commit applicatif `41b7fdb`, déploiement de production identifié READY via le projet Vercel. Contrôle Chromium sur https://www.randodazur.com le 8 octobre 2026 :
+
+- Page HTTP 200 ; panneau de préférence présent.
+- Avant consentement : aucun script Analytics, aucun intake.
+- Après accord : un seul script du SDK officiel, HTTP 200.
+- Pageview et événements whatsapp_click, phone_click, email_click, booking_request_click : chaque requête intake répond HTTP 200. Aucun champ de données personnelles/propriétés ajouté aux événements ; URL publique canonique.
+- Après retrait/rechargement : aucun script Analytics.
+
+Le SDK 2 utilise ici des chemins de collecte générés (Resilient Intake). Ne pas diagnostiquer l’état actuel uniquement par `/_vercel/insights/script.js`, qui peut rester 404 : inspecter le script portant data-sdkn et ses requêtes réelles. L’acceptation HTTP 200 prouve le fonctionnement du transport, pas la présence des événements dans le tableau de bord ni leur durée de rétention. Ces deux contrôles restent manuels. Les clics de contact du test ont été empêchés de naviguer : aucun message ni réservation envoyé.
