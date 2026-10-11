@@ -66,6 +66,7 @@ export default function PressSection({
             {story.date && <time dateTime={story.date}>{formatPressDate(story.date, locale, story.datePrecision)}</time>}
             {story.author && <p className="press-author">{story.author}</p>}
             <h3>{story.titles?.[locale] ?? story.title}</h3>
+            {story.originalTitle && <p className="press-author">{locale === "fr" ? "Titre original : " : "Original title: "}<span lang={story.originalLanguage}>{story.originalTitle}</span></p>}
             <p className="press-story-excerpt">{story.excerpts[locale]}</p>
             <a
               className="press-story-link"

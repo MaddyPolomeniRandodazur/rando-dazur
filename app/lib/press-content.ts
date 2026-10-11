@@ -9,6 +9,8 @@ export type PressStory = {
   date?: string;
   datePrecision?: "month" | "year";
   title: string;
+  originalTitle?: string;
+  originalLanguage?: string;
   excerpts: Record<Locale, string>;
   titles?: Record<Locale, string>;
   kind?: "report" | "interview" | "mention";
@@ -18,6 +20,25 @@ export type PressStory = {
 };
 
 export const pressStories: PressStory[] = [
+  {
+    id: "szeretunkutazni-cannes-2026",
+    publication: "SzeretünkUtazni.hu",
+    kind: "mention",
+    href: "https://szeretunkutazni.hu/2026/10/11/cannes-masik-arca-a-filmcsillagok-varosaban-egy-egeszen-mas-vilag-is-rejtozik/",
+    date: "2026-10-11",
+    author: "Máté Koczka",
+    title: "Cannes másik arca – A filmcsillagok városában egy egészen más világ is rejtőzik",
+    originalTitle: "Cannes másik arca – A filmcsillagok városában egy egészen más világ is rejtőzik",
+    originalLanguage: "hu",
+    titles: {
+      fr: "L’autre visage de Cannes : un autre monde se cache dans la ville des stars de cinéma.",
+      en: "Another side of Cannes: a different world hidden in the city of film stars",
+    },
+    excerpts: {
+      fr: "Dans ce reportage du média hongrois sur un Cannes moins connu, Máté Koczka présente Maddy Polomeni, fondatrice de Rando d’Azur, guide et éducatrice sportive. Il évoque la promenade culturelle et gourmande à Cannes ainsi que les randonnées apéro dans l’Estérel, entre découverte locale, nature et gastronomie.",
+      en: "In this Hungarian travel feature exploring a lesser-known side of Cannes, Máté Koczka introduces Maddy Polomeni, founder of Rando d’Azur, guide and sports educator. The article highlights the Cultural & Gourmet Walk in Cannes and apéro hikes in the Estérel, combining local discovery, nature and gastronomy.",
+    },
+  },
   {
     titles: { en: "Wild plants in the Estérel, with Maddy", fr: "Les plantes sauvages de l’Estérel, avec Maddy" },
     id: "france3-wild-plants",
