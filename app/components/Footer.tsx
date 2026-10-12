@@ -100,7 +100,7 @@ export default function Footer({ locale }: { locale: Locale }) {
           <nav className="footer-links" aria-label={copy.navigationLabel}>
             <a href={`${root}#experiences`}>{copy.experiences}</a>
             <a href={localePath(locale, "/kids-schools-youth-groups")}>{youthGroupsContent[locale].title}</a>
-            <a href={`${root}#agences-mice`}>{copy.mice}</a>
+            <a href={localePath(locale, "/travel-trade")}>{copy.mice}</a>
             <a href={localePath(locale, "/travel-trade")}>{getTravelTradeContent(locale).linkLabel}</a>
             <a href={localePath(locale, "/meet-maddy")}>{copy.about}</a>
             <a href={`${root}#riviera-map`}>{copy.destinations}</a>

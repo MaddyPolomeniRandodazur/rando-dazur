@@ -1,9 +1,9 @@
+import Link from "next/link";
+import MaddyProfile from "./MaddyProfile";
 import MimosaLink from "./MimosaLink";
 import { localePath, type Locale } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
 import BookingSection from "./BookingSection";
-import ClientsSection from "./ClientsSection";
-import ExperienceSection from "./ExperienceSection";
 import FeaturedIn from "./FeaturedIn";
 import Footer from "./Footer";
 import Hero from "./Hero";
@@ -14,9 +14,6 @@ import PartnerTrustSection from "./PartnerTrustSection";
 import PressSection from "./PressSection";
 import ReviewsSection from "./ReviewsSection";
 import RivieraMap from "./RivieraMap";
-import Testimonials from "./Testimonials";
-import YouthGroupsSection from "./YouthGroupsSection";
-import WhySection from "./WhySection";
 import ScrollReveal from "../scroll-reveal";
 import { getSiteUrl } from "../lib/site-url";
 import {
@@ -85,22 +82,16 @@ export default async function HomePage({ locale }: { locale: Locale }) {
           photo={{ ...heroPhoto, src: "/images/hero/french-riviera-panoramic-picnic.jpg" }}
         />
         <Manifesto locale={locale} photos={experiencePhotos} />
-        <ExperienceSection
-          locale={locale}
-          photos={experiencePhotos}
-        />
         <section className="page-width"><MimosaLink locale={locale} /></section>
-        <WhySection locale={locale} />
-        <YouthGroupsSection locale={locale} illustrated />
-        <Testimonials locale={locale} />
+        <section className="section" id="about"><div className="page-width"><MaddyProfile locale={locale} compact /></div></section>
+        <section className="page-width home-shortcuts" aria-label={locale === "fr" ? "Pour aller plus loin" : "Explore more"}>
+          <Link className="text-link" href={localePath(locale, "/kids-schools-youth-groups")}>{locale === "fr" ? "Enfants, écoles & groupes jeunesse" : "Kids, Schools & Youth Groups"} ↗</Link>
+          <Link className="text-link" href={localePath(locale, "/travel-trade")}>{locale === "fr" ? "Agences & partenaires professionnels" : "Travel Trade & DMC"} ↗</Link>
+        </section>
         <PartnerTrustSection locale={locale} />
         <FeaturedIn locale={locale} />
         <PressSection locale={locale} />
         <ReviewsSection locale={locale} />
-        <ClientsSection
-          locale={locale}
-          corporatePhoto={experiencePhotos["corporate-incentive-travel"].hero}
-        />
         <RivieraMap
           copy={copy.map}
           destinationPhotos={destinationPhotos}

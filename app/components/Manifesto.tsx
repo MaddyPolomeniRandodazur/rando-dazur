@@ -1,35 +1,30 @@
 import Image from "next/image";
-import type { ExperienceSlug, Locale } from "../i18n/config";
+import { localePath, type ExperienceSlug, type Locale } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
 import type { ExperiencePhotoCollection } from "../lib/experience-photos";
 
 const moments = [
   {
     image: "manifesto-food",
-    href: "#food-tours",
     slug: "food-tours",
   },
   {
     image: "manifesto-walk",
-    href: "#hiking",
     slug: "hiking-experiences",
   },
   {
     image: "manifesto-cycle",
-    href: "#velo",
     slug: "cycling-experiences",
   },
   {
     image: "manifesto-meet",
-    href: "#corporate-experiences",
     slug: "corporate-incentive-travel",
   },
   {
     image: "manifesto-live",
-    href: "#familles",
     slug: "family-experiences",
   },
-] satisfies { image: string; href: string; slug: ExperienceSlug }[];
+] satisfies { image: string; slug: ExperienceSlug }[];
 
 export default function Manifesto({
   locale,
@@ -41,7 +36,7 @@ export default function Manifesto({
   const copy = getMessages(locale).manifesto;
 
   return (
-    <section className="manifesto-section">
+    <section className="manifesto-section" id="experiences">
       <div className="page-width">
         <div className="manifesto-heading">
           <p className="eyebrow">{copy.eyebrow}</p>
@@ -65,7 +60,7 @@ export default function Manifesto({
             return (
               <a
                 className={`manifesto-card ${moment.image}`}
-                href={moment.href}
+                href={localePath(locale, `/experiences/${moment.slug}`)}
                 key={moment.image}
               >
                 {photoSrc && (

@@ -5051,3 +5051,5 @@ a {
 
 .site-header-light .desktop-nav > a, .site-header-light .desktop-nav > .nav-dropdown > summary, .site-header-light .header-actions > .language-selector > summary, .site-header-light .header-social-links { color: var(--ink); }
 .site-header-light .desktop-nav > a::after { background: var(--ink); }
+
+.home-shortcuts { display: flex; flex-wrap: wrap; gap: 20px 40px; padding-bottom: 40px; }

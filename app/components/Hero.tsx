@@ -36,7 +36,7 @@ export default function Hero({
             {copy.discover}
             <span aria-hidden="true">↗</span>
           </a>
-          <a className="button button-quiet" href="#agences-mice">
+          <a className="button button-quiet" href="#booking">
             {copy.create}
           </a>
         </div>
