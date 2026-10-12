@@ -76,13 +76,13 @@ export default async function HomePage({ locale }: { locale: Locale }) {
         locale={locale}
       />
       <ScrollReveal />
-      <main>
+      <main className="home-page">
         <Hero
           locale={locale}
           photo={{ ...heroPhoto, src: "/images/hero/french-riviera-panoramic-picnic.jpg" }}
         />
         <Manifesto locale={locale} photos={experiencePhotos} />
-        <section className="page-width"><MimosaLink locale={locale} /></section>
+        <section className="page-width home-seasonal"><MimosaLink locale={locale} /></section>
         <section className="section" id="about"><div className="page-width"><MaddyProfile locale={locale} compact /></div></section>
         <section className="page-width home-shortcuts" aria-label={locale === "fr" ? "Pour aller plus loin" : "Explore more"}>
           <Link className="text-link" href={localePath(locale, "/kids-schools-youth-groups")}>{locale === "fr" ? "Enfants, écoles & groupes jeunesse" : "Kids, Schools & Youth Groups"} ↗</Link>
@@ -100,7 +100,7 @@ export default async function HomePage({ locale }: { locale: Locale }) {
         <BookingSection locale={locale} />
         <Newsletter copy={copy.newsletter} locale={locale} />
       </main>
-      <Footer locale={locale} />
+      <Footer locale={locale} homeVisual />
       <script
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }}
         type="application/ld+json"

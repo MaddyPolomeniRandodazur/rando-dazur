@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { localePath, type Locale } from "../i18n/config";
 import { youthGroupsContent } from "../i18n/youth-groups";
 import { getTravelTradeContent } from "../i18n/travel-trade";
@@ -10,7 +11,7 @@ import BrandLogo from "./BrandLogo";
 import BackToTop from "./BackToTop";
 import SocialLinks from "./SocialLinks";
 
-export default function Footer({ locale }: { locale: Locale }) {
+export default function Footer({ locale, homeVisual = false }: { locale: Locale; homeVisual?: boolean }) {
   const messages = getMessages(locale);
   const copy = messages.footer;
   const contactCopy = messages.contact;
@@ -20,9 +21,10 @@ export default function Footer({ locale }: { locale: Locale }) {
     <>
       <section
         aria-labelledby="social-follow-title"
-        className="social-follow-section"
+        className={`social-follow-section${homeVisual ? " home-social-follow" : ""}`}
       >
         <div className="page-width social-follow-inner">
+          {homeVisual && <div className="home-social-photo"><Image src="/images/destinations/esterel/cap-dramont-coastal-trail.jpg" alt={locale === "fr" ? "Sentier côtier du cap Dramont, roches rouges et mer Méditerranée" : "Cap Dramont coastal trail, red rocks and the Mediterranean Sea"} width={639} height={438} sizes="(max-width: 720px) 100vw, 220px" /></div>}
           <div className="social-follow-copy">
             <p className="eyebrow">{copy.followEyebrow}</p>
             <h2 id="social-follow-title">{copy.followTitle}</h2>
