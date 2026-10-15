@@ -915,7 +915,7 @@ a {
     display: block;
   }
 
-  .mobile-nav summary {
+  .mobile-nav > summary {
     display: flex;
     width: 43px;
     height: 43px;
@@ -928,11 +928,11 @@ a {
     list-style: none;
   }
 
-  .mobile-nav summary::-webkit-details-marker {
+  .mobile-nav > summary::-webkit-details-marker {
     display: none;
   }
 
-  .mobile-nav summary span {
+  .mobile-nav > summary span {
     width: 17px;
     height: 1px;
     background: var(--white);
@@ -5087,3 +5087,23 @@ a {
 .partner-discovery-link { text-align: center; margin: 25px 0 0; }
 .youth-programmes .experience-detail-point > p { font-family: var(--sans); font-size: 17px; line-height: 1.65; }
 .youth-programmes .section-intro { max-width: 760px; font-size: 14px; }
+
+/* Keep hamburger styling scoped to the top-level toggle on mobile. */
+@media (max-width: 1120px) {
+  .mobile-nav .nav-dropdown > summary,
+  .mobile-nav .language-selector > summary {
+    width: 100%; height: auto; min-height: 48px;
+    flex-direction: row; align-items: center; justify-content: space-between;
+    gap: 12px; border: 0; background: transparent;
+  }
+  .mobile-nav .nav-dropdown > summary span,
+  .mobile-nav .language-selector > summary span {
+    display: block; width: 8px; height: 8px; flex: 0 0 8px;
+    background: transparent; border: solid currentColor; border-width: 0 1.5px 1.5px 0;
+    transform: rotate(45deg); font-size: 0; line-height: 0; margin-right: 3px;
+  }
+  .mobile-nav .nav-dropdown[open] > summary span,
+  .mobile-nav .language-selector[open] > summary span { transform: rotate(225deg); }
+  .mobile-nav > nav { overscroll-behavior: contain; }
+  .mobile-nav .nav-dropdown > nav a { display: block; line-height: 1.5; }
+}

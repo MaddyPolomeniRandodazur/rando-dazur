@@ -6,9 +6,9 @@ export interface PartnerLogo {
 }
 
 export const supportingOrganizations: PartnerLogo[] = [
-  { name: "Confiserie Florian", href: "https://www.confiserieflorian.com/", caption: "supportedBy" },
+  { name: "Confiserie Florian", href: "https://www.confiserieflorian.com/", logo: "/images/partners/confiserie-florian.png", caption: "supportedBy" },
   { name: "Brasserie du Comté", href: "https://www.brasserieducomte.fr/", logo: "/images/partners/brasserie-du-comte.png", caption: "supportedBy" },
-  { name: "Isotoner", href: "https://www.isotoner.fr/", caption: "equipment" },
+  { name: "Isotoner", href: "https://www.isotoner.fr/", logo: "/images/partners/isotoner.svg", caption: "equipment" },
   {
     name: "Columbia Sportswear",
     href: "https://www.columbia.com/",
