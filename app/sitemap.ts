@@ -44,6 +44,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return locales.flatMap((locale) => [
     localizedSitemapEntry(locale, "", 1),
     localizedSitemapEntry(locale, "/press", 0.5),
+    localizedSitemapEntry(locale, "/partners-on-the-trail", 0.6),
     localizedSitemapEntry(locale, "/experiences/route-du-mimosa", 0.8),
     localizedSitemapEntry(locale, "/meet-maddy", 0.8),
     localizedSitemapEntry(locale, "/travel-trade", 0.8),

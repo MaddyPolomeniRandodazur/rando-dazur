@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+import { localePath } from "../i18n/config";
 import type { Locale } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
 import {
@@ -30,6 +32,7 @@ export default function PartnerTrustSection({ locale }: { locale: Locale }) {
             items={supportingOrganizations}
             variant="supporters"
           />
+          <p className="partner-discovery-link"><Link className="text-link" href={localePath(locale, "/partners-on-the-trail")}>{locale === "fr" ? "Mes partenaires sur le terrain" : "My partners on the trail"} <span aria-hidden="true">↗</span></Link></p>
         </section>
 
         <section

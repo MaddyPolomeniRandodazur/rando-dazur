@@ -6,6 +6,9 @@ export interface PartnerLogo {
 }
 
 export const supportingOrganizations: PartnerLogo[] = [
+  { name: "Confiserie Florian", href: "https://www.confiserieflorian.com/", caption: "supportedBy" },
+  { name: "Brasserie du Comté", href: "https://www.brasserieducomte.fr/", logo: "/images/partners/brasserie-du-comte.png", caption: "supportedBy" },
+  { name: "Isotoner", href: "https://www.isotoner.fr/", caption: "equipment" },
   {
     name: "Columbia Sportswear",
     href: "https://www.columbia.com/",
@@ -27,6 +30,7 @@ export const supportingOrganizations: PartnerLogo[] = [
 ];
 
 export const trustedPartners: PartnerLogo[] = [
+  { name: "Expérience Côte d’Azur", href: "https://www.experiencecotedazur.com/", logo: "/images/partners/experience-cote-d-azur.svg" },
   {
     name: "Family Twist",
     href: "https://family-twist.com/",

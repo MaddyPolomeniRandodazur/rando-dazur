@@ -4109,7 +4109,7 @@ a {
   position: fixed;
   z-index: 30;
   right: 24px;
-  bottom: 91px;
+  bottom: 151px;
   display: inline-flex;
   min-height: 43px;
   align-items: center;
@@ -4288,7 +4288,7 @@ a {
   position: fixed;
   z-index: 1000;
   right: 24px;
-  bottom: 24px;
+  bottom: 88px;
   display: inline-flex;
   min-height: 49px;
   align-items: center;
@@ -4445,7 +4445,7 @@ a {
 @media (max-width: 520px) {
   .whatsapp-floating {
     right: 16px;
-    bottom: 16px;
+    bottom: 80px;
     min-height: 45px;
     gap: 8px;
     padding-inline: 13px;
@@ -5080,3 +5080,10 @@ a {
   .home-social-photo img { height: 180px; }
   .home-page .home-shortcuts { gap: 12px; }
 }
+
+/* Keep the destination action readable in every interaction state. */
+.map-detail-cta:hover, .map-detail-cta:focus-visible { background: #273b30; color: #fff; }
+.map-detail-cta:focus-visible { outline: 2px solid #22647b; outline-offset: 4px; }
+.partner-discovery-link { text-align: center; margin: 25px 0 0; }
+.youth-programmes .experience-detail-point > p { font-family: var(--sans); font-size: 17px; line-height: 1.65; }
+.youth-programmes .section-intro { max-width: 760px; font-size: 14px; }

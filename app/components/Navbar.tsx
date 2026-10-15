@@ -73,6 +73,7 @@ function ExperiencesMenu({
             </Link>
           );
         })}
+        <Link href={localePath(locale, "/partners-on-the-trail")} onClick={closeMenus}>{locale === "fr" ? "Mes partenaires sur le terrain" : "My partners on the trail"}</Link>
       </nav>
     </details>
   );

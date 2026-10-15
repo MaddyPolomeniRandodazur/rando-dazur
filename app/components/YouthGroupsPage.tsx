@@ -19,7 +19,7 @@ export default function YouthGroupsPage({ locale }: { locale: Locale }) {
       <div className="hero-shade" aria-hidden="true" />
       <div className="page-width experience-detail-content"><p className="eyebrow eyebrow-light">{copy.eyebrow}</p><h1>{copy.title}</h1><p className="hero-description">{copy.introduction}</p><a className="button button-light" href="#group-enquiry">{copy.schoolCta} <span aria-hidden="true">↗</span></a></div>
     </section>
-    <section className="experience-detail-section"><div className="page-width">
+    <section className="experience-detail-section youth-programmes"><div className="page-width">
       <div className="experience-detail-points">{copy.cards.map((card, i) => <article className="experience-detail-point" key={card.title}><span>0{i + 1}</span><h2>{card.title}</h2><p>{card.text}</p></article>)}</div>
       <p className="section-intro">{copy.quote}</p><p className="section-intro">{copy.safety}</p>
       <a className="text-link" href={getWhatsAppUrl(`${copy.birthdayCta}\n${copy.type}: ${copy.types[2]}\n${copy.age}:\n${copy.count}:\n${copy.date}:\n${copy.goals}:`)} target="_blank" rel="noopener noreferrer">{copy.birthdayCta} ↗</a>
