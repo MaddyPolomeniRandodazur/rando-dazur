@@ -3,7 +3,7 @@ import { createRequire } from 'node:module';
 const { chromium } = createRequire(import.meta.url)('playwright');
 import fs from 'node:fs';
 const base = process.argv[2] || 'http://localhost:3024';
-const origin = 'https://www.randodazur.com';
+const origin = 'https://randodazur.com';
 (async () => {
   const browser = await chromium.launch({ headless: true, executablePath: process.env.CHROMIUM_PATH || '/home/agent/.cache/ms-playwright/chromium-1243/chrome-linux64/chrome' });
   const context = await browser.newContext({ reducedMotion: 'reduce' });

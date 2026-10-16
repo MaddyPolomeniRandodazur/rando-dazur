@@ -785,7 +785,7 @@ const french: Messages = {
     titleFirst: "Goûtez la",
     titleSecond: "Côte d’Azur",
     description:
-      "Des expériences privées et authentiques, imaginées autour du meilleur de la Côte d’Azur.",
+      "Randonnées guidées, balades gourmandes et sorties privées pour groupes dans les Alpes-Maritimes, à Cannes, Mandelieu et dans l’Estérel.",
     discover: "Découvrir nos expériences",
     create: "Créer un voyage privé",
     scroll: "Défiler pour découvrir",
@@ -1274,10 +1274,10 @@ const french: Messages = {
         ],
       },
       "hiking-experiences": {
-        title: "Randonnées",
-        subtitle: "Parcourez-la.",
+        title: "Randonnées guidées dans les Alpes-Maritimes",
+        subtitle: "Avec votre guide local.",
         description:
-          "Empruntez les sentiers côtiers et chemins confidentiels qui révèlent les multiples paysages de la Côte d’Azur.",
+          "De Cannes et Mandelieu aux roches rouges de l’Estérel, au cap d’Antibes et aux îles de Lérins : une randonnée privée, adaptée au rythme de votre groupe.",
         imageAlt: "Sentiers et paysages de la Côte d’Azur",
         points: [
           "Balades privées adaptées à votre rythme",

@@ -4,6 +4,7 @@ import editorialStyles from "./EditorialHero.module.css";
 import { localePath, type ExperienceSlug, type Locale } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
 import Image from "next/image";
+import HikingLocalGuide from "./HikingLocalGuide";
 import type { CSSProperties } from "react";
 import cyclingPhotoStyles from "./CyclingTourPhoto.module.css";
 import BookingSection from "./BookingSection";
@@ -165,6 +166,7 @@ export default async function ExperiencePage({
             </div>
           </section>
         )}
+        {slug === "hiking-experiences" && <HikingLocalGuide locale={locale} />}
         {slug === "cycling-experiences" && <CyclingLessons locale={locale} />}
         {"tours" in experience && experience.tours && (
           <section

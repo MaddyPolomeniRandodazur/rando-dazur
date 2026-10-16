@@ -1,0 +1,15 @@
+.section { padding: 55px 0; background: #eef0e7; }
+.section h2 { font-family: var(--serif); font-size: clamp(27px, 3vw, 42px); font-weight: 400; }
+.intro { max-width: 780px; margin: 18px 0 28px; line-height: 1.7; }
+.places { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.places h3 { font-family: var(--serif); font-size: 25px; font-weight: 400; margin-bottom: 12px; }
+.places a { color: var(--sage-dark); }
+.places p, .faqs p { font-size: 15px; line-height: 1.7; }
+.faqTitle { margin-top: 36px; }
+.faqs { margin-top: 18px; }
+.faqs details { border-bottom: 1px solid #cbd1c2; }
+.faqs summary { padding: 17px 0; cursor: pointer; font-size: 16px; line-height: 1.5; }
+.faqs p { padding: 0 0 18px; max-width: 850px; }
+.links { display: flex; flex-wrap: wrap; gap: 18px 28px; margin: 28px 0; }
+.section a:focus-visible, .faqs summary:focus-visible { outline: 2px solid var(--sage-dark); outline-offset: 5px; }
+@media (max-width: 760px) { .places { grid-template-columns: 1fr; gap: 22px; } .links { flex-direction: column; align-items: flex-start; } }

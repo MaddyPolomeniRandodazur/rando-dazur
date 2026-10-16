@@ -6,14 +6,14 @@ export const homeSeo: Record<Locale, { title: string; description: string }> = {
     description: "Discover the French Riviera with local guides: private hiking, food tours, cycling and outdoor experiences in Cannes, Antibes, Estérel and beyond.",
   },
   fr: {
-    title: "Rando d’Azur | Guide local & expériences privées sur la Côte d’Azur",
-    description: "Découvrez la Côte d’Azur avec un guide local : randonnées, food tours, vélo et expériences privées sur mesure à Cannes, Antibes, dans l’Estérel et au-delà.",
+    title: "Rando d’Azur | Randonnées guidées & sorties privées Côte d’Azur",
+    description: "Randonnées guidées dans les Alpes-Maritimes et l’Estérel, balades gourmandes et sorties privées pour groupes à Cannes, Mandelieu et sur la Côte d’Azur.",
   },
 };
 
 export const frenchExperienceSeo: Record<string, { title: string; description: string }> = {
   "food-tours": { title: "Food tour Cannes | Visite gourmande privée", description: "Découvrez Cannes avec un guide local : marché Forville, spécialités provençales et rencontres avec les artisans lors d’un food tour privé sur mesure." },
-  "hiking-experiences": { title: "Guide randonnée Cannes & Côte d’Azur | Randonnées privées", description: "Randonnez avec un guide local autour de Cannes, dans l’Estérel, au Cap d’Antibes ou aux îles de Lérins. Un itinéraire privé adapté à votre rythme." },
+  "hiking-experiences": { title: "Guide randonnée Alpes-Maritimes & Estérel", description: "Une randonnée guidée pour votre groupe dans les Alpes-Maritimes : Cannes, Mandelieu, Estérel, cap d’Antibes et îles de Lérins. Itinéraire sur mesure." },
   "sunset-apero-hikes": { title: "Randonnée apéro sur la Côte d’Azur | Coucher de soleil", description: "Partagez une randonnée privée avec un guide local et un apéro provençal au coucher du soleil sur la Côte d’Azur. Un moment convivial dans la nature." },
   "cycling-experiences": { title: "Vélo à Cannes & sur la Côte d’Azur | Balades privées", description: "Explorez Cannes, le littoral de la Côte d’Azur ou les pistes de l’Estérel à vélo avec un guide local. Des sorties privées adaptées à votre groupe." },
   "wild-provence": { title: "Provence sauvage | Randonnées et nature dans le Var", description: "Explorez les plantes sauvages et les paysages de Provence avec un guide local autour de Grasse et du Pays de Fayence. Une expérience privée de nature." },

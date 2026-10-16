@@ -85,6 +85,7 @@ export default async function HomePage({ locale }: { locale: Locale }) {
         <section className="page-width home-seasonal"><MimosaLink locale={locale} /></section>
         <section className="section" id="about"><div className="page-width"><MaddyProfile locale={locale} compact /></div></section>
         <section className="page-width home-shortcuts" aria-label={locale === "fr" ? "Pour aller plus loin" : "Explore more"}>
+          <Link className="text-link" href={localePath(locale, "/experiences/hiking-experiences")}>{locale === "fr" ? "Guide randonnée dans les Alpes-Maritimes" : "Private hiking guides in the Alpes-Maritimes"} ↗</Link>
           <Link className="text-link" href={localePath(locale, "/kids-schools-youth-groups")}>{locale === "fr" ? "Enfants, écoles & groupes jeunesse" : "Kids, Schools & Youth Groups"} ↗</Link>
           <Link className="text-link" href={localePath(locale, "/travel-trade")}>{locale === "fr" ? "Agences & partenaires professionnels" : "Travel Trade & DMC"} ↗</Link>
         </section>

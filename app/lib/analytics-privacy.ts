@@ -35,7 +35,7 @@ export function filterAnalyticsEvent(event: BeforeSendEvent): BeforeSendEvent | 
     }
     const url = new URL(event.url);
     if (url.origin !== location.origin || !isPublicPath(url.pathname)) return null;
-    return { ...event, url: `https://www.randodazur.com${url.pathname}` };
+    return { ...event, url: `https://randodazur.com${url.pathname}` };
   } catch { return null; }
 }
 

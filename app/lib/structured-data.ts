@@ -104,7 +104,7 @@ export function getPersonStructuredData(locale: Locale) {
     identifier: { "@type": "PropertyValue", propertyID: "Carte professionnelle d’éducateur sportif", value: professionalDetails.card },
     description: professionalContent[locale].description,
     url: new URL(localePath(locale, "/meet-maddy"), baseUrl).toString(),
-    sameAs: [locale === "en" ? "https://maddypolomeni.com/en/who-i-am" : "https://maddypolomeni.com/qui-suis-je"],
+    sameAs: [contactChannels.instagramUrl],
     image: new URL("/images/about/maddy-polomeni-mimosa-portrait.jpg", baseUrl).toString(),
     worksFor: { "@id": new URL("/#organization", baseUrl).toString() },
   };

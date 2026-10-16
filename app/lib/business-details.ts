@@ -10,5 +10,5 @@ export const businessDetails = {
   siret: "818 711 764 00048",
   vatID: "FR50818711764",
   naf: "9329Z",
-  website: "https://www.randodazur.com",
+  website: "https://randodazur.com",
 };
