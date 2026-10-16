@@ -28,3 +28,8 @@
 .section{padding-block:36px}}
 @media(max-width:600px){.experiences,.destinations{grid-template-columns:1fr}.cardTitle{font-size:25px}.service{padding:24px}}
 @media(prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
+
+.pressContact{padding-block:32px 8px}
+.brief{max-width:850px;font-size:15px;line-height:1.8;margin:28px 0;color:var(--ink-soft)}
+.professionalLinks{display:flex;flex-wrap:wrap;gap:20px 32px;margin-block:28px 44px}
+.pressContact :global(.button){white-space:normal;max-width:100%;line-height:1.5}

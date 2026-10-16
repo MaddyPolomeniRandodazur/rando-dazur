@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 import PressPage from "../../components/PressPage";
-import { getMessages } from "../../i18n/messages";
+import { pressMedia } from "../../i18n/press-media";
 import { getLocalizedPageMetadata } from "../../lib/metadata";
 
 export function generateMetadata(): Metadata {
-  const copy = getMessages("en").press;
+  const copy = pressMedia.en;
 
   return getLocalizedPageMetadata({
     locale: "en",
     path: "/press",
-    title: "Press & Media | Rando d’Azur",
-    description: copy.pageIntroduction,
+    title: copy.seoTitle,
+    description: copy.description,
   });
 }
 

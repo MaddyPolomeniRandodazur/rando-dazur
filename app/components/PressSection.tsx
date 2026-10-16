@@ -1,4 +1,6 @@
 import Image from "next/image";
+import PressContact from "./PressContact";
+import { pressMedia } from "../i18n/press-media";
 import Link from "next/link";
 import type { Locale } from "../i18n/config";
 import { localePath } from "../i18n/config";
@@ -28,7 +30,7 @@ export default function PressSection({
           <p className="eyebrow">{copy.eyebrow}</p>
           {fullPage ? (
             <h1>
-              {copy.titleFirst} <em>{copy.titleSecond}</em>
+              {pressMedia[locale].title}
             </h1>
           ) : (
             <h2>
@@ -45,6 +47,7 @@ export default function PressSection({
           )}
         </div>
       </div>
+      {fullPage && <PressContact locale={locale} />}
       <div className="page-width press-story-grid">
         {stories.map((story, index) => (
           <article className="press-story-card scroll-reveal" key={story.id}>

@@ -87,7 +87,7 @@ export default async function HomePage({ locale }: { locale: Locale }) {
         <section className="page-width home-shortcuts" aria-label={locale === "fr" ? "Pour aller plus loin" : "Explore more"}>
           <Link className="text-link" href={localePath(locale, "/experiences/hiking-experiences")}>{locale === "fr" ? "Guide randonnée dans les Alpes-Maritimes" : "Private hiking guides in the Alpes-Maritimes"} ↗</Link>
           <Link className="text-link" href={localePath(locale, "/kids-schools-youth-groups")}>{locale === "fr" ? "Enfants, écoles & groupes jeunesse" : "Kids, Schools & Youth Groups"} ↗</Link>
-          <Link className="text-link" href={localePath(locale, "/travel-trade")}>{locale === "fr" ? "Agences & partenaires professionnels" : "Travel Trade & DMC"} ↗</Link>
+          <Link className="text-link" href={localePath(locale, "/travel-trade")}>{locale === "fr" ? "Agences réceptives & partenaires DMC" : "Private tours for travel agencies & DMCs"} ↗</Link>
         </section>
         <PartnerTrustSection locale={locale} />
         <FeaturedIn locale={locale} />

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import PressPage from "../../components/PressPage";
 import { isLocale, locales } from "../../i18n/config";
-import { getMessages } from "../../i18n/messages";
+import { pressMedia } from "../../i18n/press-media";
 import { getLocalizedPageMetadata } from "../../lib/metadata";
 
 export function generateStaticParams() {
@@ -16,18 +16,13 @@ export async function generateMetadata({
 }: PageProps<"/[locale]/press">): Promise<Metadata> {
   const { locale } = await params;
   if (!isLocale(locale)) return {};
-  const copy = getMessages(locale).press;
-
-  const title =
-    locale === "fr"
-      ? "Presse & médias | Rando d’Azur"
-      : "Press & media | Rando d’Azur";
+  const copy = pressMedia[locale];
 
   return getLocalizedPageMetadata({
     locale,
     path: "/press",
-    title,
-    description: copy.pageIntroduction,
+    title: copy.seoTitle,
+    description: copy.description,
   });
 }
 
