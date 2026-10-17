@@ -2,7 +2,7 @@ import { professionalContent } from "../i18n/professional-content";
 import { maddyQualifications, professionalDetails } from "./professional-qualifications";
 import { businessDetails } from "./business-details";
 import type { Locale } from "../i18n/config";
-import { localePath } from "../i18n/config";
+import { localePath, experienceSlugs } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
 import { contactChannels } from "./contact-channels";
 import { publicAssetUrl } from "./public-assets";
@@ -42,6 +42,20 @@ export function getBusinessStructuredData(locale: Locale) {
       addressCountry: "FR",
     },
     hasMap: googleBusinessProfile,
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: locale === "fr" ? "Expériences privées sur la Côte d’Azur" : "Private French Riviera experiences",
+      itemListElement: experienceSlugs.filter(slug => slug !== "evg-experiences").map(slug => ({
+        "@type": "Offer",
+        url: new URL(localePath(locale, `/experiences/${slug}`), baseUrl).toString(),
+        itemOffered: {
+          "@type": "Service",
+          name: copy.experiencePage.pages[slug].title,
+          url: new URL(localePath(locale, `/experiences/${slug}`), baseUrl).toString(),
+          provider: { "@id": businessUrl },
+        },
+      })),
+    },
     sameAs: [contactChannels.instagramUrl, contactChannels.facebookUrl],
     areaServed: [
       "Cannes",
@@ -116,6 +130,7 @@ export function getWebPageStructuredData(locale: Locale, path: string, name: str
   return {
     "@type": "WebPage", "@id": `${url}#webpage`, url, name, description,
     inLanguage: locale,
+    about: [{ "@id": new URL("/#organization", baseUrl).toString() }, { "@id": new URL("/#maddy-polomeni", baseUrl).toString() }],
     isPartOf: { "@id": new URL("/#website", baseUrl).toString() },
     publisher: { "@id": new URL("/#organization", baseUrl).toString() },
   };
@@ -124,4 +139,21 @@ export function getWebPageStructuredData(locale: Locale, path: string, name: str
 export function getWebsiteStructuredData() {
   const baseUrl = getSiteUrl();
   return { "@type": "WebSite", "@id": new URL("/#website", baseUrl).toString(), name: "Rando d’Azur", url: baseUrl.toString(), inLanguage: ["en", "fr"], publisher: { "@id": new URL("/#organization", baseUrl).toString() } };
+}
+
+// The answers are supplied by the same content used in the visible page.
+export function getFaqStructuredData(locale: Locale, path: string, faqs: readonly { question: string; answer: string }[]) {
+  const url = new URL(localePath(locale, path), getSiteUrl()).toString();
+  return {
+    "@type": "FAQPage",
+    "@id": `${url}#faq`,
+    url: `${url}#faq`,
+    inLanguage: locale,
+    isPartOf: { "@id": `${url}#webpage` },
+    mainEntity: faqs.map(faq => ({
+      "@type": "Question",
+      name: faq.question,
+      acceptedAnswer: { "@type": "Answer", text: faq.answer },
+    })),
+  };
 }

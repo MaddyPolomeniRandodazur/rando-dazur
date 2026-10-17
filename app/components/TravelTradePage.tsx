@@ -11,7 +11,7 @@ import { destinationSlugs, getDestinationContent } from "../i18n/destination-con
 import { getMessages } from "../i18n/messages";
 import { getTravelTradeContent } from "../i18n/travel-trade";
 import { contactChannels } from "../lib/contact-channels";
-import { getBusinessStructuredData, getBreadcrumbStructuredData, getWebPageStructuredData, getWebsiteStructuredData, getPersonStructuredData } from "../lib/structured-data";
+import { getBusinessStructuredData, getBreadcrumbStructuredData, getWebPageStructuredData, getWebsiteStructuredData, getPersonStructuredData, getFaqStructuredData } from "../lib/structured-data";
 import Navbar from "./Navbar";
 import PrivateRates from "./PrivateRates";
 import Footer from "./Footer";
@@ -20,7 +20,7 @@ import { getSiteUrl } from "../lib/site-url";
 export default function TravelTradePage({ locale }: { locale: Locale }) {
   const messages = getMessages(locale);
   const copy = getTravelTradeContent(locale);
-  const graph = { "@context": "https://schema.org", "@graph": [getBusinessStructuredData(locale), getPersonStructuredData(locale), getWebsiteStructuredData(), { "@type": "Service", "@id": new URL(`${localePath(locale, "/travel-trade")}#service`, getSiteUrl()).toString(), name: copy.title, description: copy.description, serviceType: locale === "fr" ? "Expériences privées pour agences réceptives et DMC" : "Private experiences for travel agencies and DMCs", provider: { "@id": new URL("/#organization", getSiteUrl()).toString() }, areaServed: ["Cannes", "Antibes", "Estérel", "Grasse", "Îles de Lérins", "Pays de Fayence"].map(name => ({ "@type": "Place", name })), url: new URL(localePath(locale, "/travel-trade"), getSiteUrl()).toString() }, getWebPageStructuredData(locale, "/travel-trade", copy.title, copy.description), getBreadcrumbStructuredData(locale, [{ name: messages.navigation.home, path: "" }, { name: copy.linkLabel, path: "/travel-trade" }])] };
+  const graph = { "@context": "https://schema.org", "@graph": [getBusinessStructuredData(locale), getPersonStructuredData(locale), getWebsiteStructuredData(), getFaqStructuredData(locale, "/travel-trade", copy.faqs), { "@type": "Service", "@id": new URL(`${localePath(locale, "/travel-trade")}#service`, getSiteUrl()).toString(), name: copy.title, description: copy.description, serviceType: locale === "fr" ? "Expériences privées pour agences réceptives et DMC" : "Private experiences for travel agencies and DMCs", provider: { "@id": new URL("/#organization", getSiteUrl()).toString() }, areaServed: ["Cannes", "Antibes", "Estérel", "Grasse", "Îles de Lérins", "Pays de Fayence"].map(name => ({ "@type": "Place", name })), url: new URL(localePath(locale, "/travel-trade"), getSiteUrl()).toString() }, getWebPageStructuredData(locale, "/travel-trade", copy.title, copy.description), getBreadcrumbStructuredData(locale, [{ name: messages.navigation.home, path: "" }, { name: copy.linkLabel, path: "/travel-trade" }])] };
   return <>
     <Navbar locale={locale} copy={messages.navigation} contactCopy={messages.contact} />
     <main>
@@ -61,7 +61,7 @@ export default function TravelTradePage({ locale }: { locale: Locale }) {
           </Link>; })}
         </div>
       </div></section>
-      <section className="experience-detail-section"><div className="page-width destination-faq-inner"><h2>{copy.faqTitle}</h2><div className="destination-faq-list">
+      <section className="experience-detail-section" id="faq"><div className="page-width destination-faq-inner"><h2>{copy.faqTitle}</h2><div className="destination-faq-list">
         {copy.faqs.map(faq => <details key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}
       </div></div></section>
     </main><Footer locale={locale} />

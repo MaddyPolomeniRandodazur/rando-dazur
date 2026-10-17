@@ -14,6 +14,7 @@ const en = {
   ],
   faqTitle: "Planning with Rando d’Azur",
   faqs: [
+    { question: "Where is Rando d’Azur based and which destinations do you cover?", answer: "Rando d’Azur is based in Cannes, France. Private experiences are arranged in Cannes, Mandelieu-la-Napoule, Antibes, the Estérel, Grasse, the Lérins Islands and the Pays de Fayence, including Tanneron. The destination is chosen according to the activity and your guests’ schedule." },
     { question: "Does Rando d’Azur work with agencies and DMCs?", answer: "Yes. Rando d’Azur works as a local experience partner for travel professionals, creating private activities on the French Riviera. Contact Maddy to discuss your guests and itinerary." },
     { question: "Can you guide our American clients in English?", answer: "Yes. Our team includes four qualified, English-speaking guides. Tell Maddy about your guests’ interests, walking ability and schedule, including any dietary requirements for a food tour, so the proposal can reflect their needs." },
     { question: "Are experiences private and tailored to the group?", answer: "Private experiences are shaped around the group’s interests, pace and available time. The activity, destination and practical arrangements are agreed before booking." },
@@ -36,6 +37,7 @@ const fr: typeof en = {
   ],
   faqTitle: "Préparer votre projet avec Rando d’Azur",
   faqs: [
+    { question: "Où se trouve Rando d’Azur et quelles destinations proposez-vous ?", answer: "Rando d’Azur est basé à Cannes. Les expériences privées se déroulent à Cannes, Mandelieu-la-Napoule, Antibes, dans l’Estérel, à Grasse, sur les îles de Lérins et dans le Pays de Fayence, notamment à Tanneron. La destination dépend de l’activité et des horaires de vos voyageurs." },
     { question: "Rando d’Azur travaille-t-elle avec les agences et les DMC ?", answer: "Oui. Rando d’Azur intervient comme partenaire local d’expériences pour les professionnels du voyage sur la Côte d’Azur. Contactez Maddy pour discuter de vos voyageurs et de leur itinéraire." },
     { question: "Pouvez-vous accompagner nos clients américains en anglais ?", answer: "Oui. Notre équipe réunit quatre guides diplômés et anglophones. Précisez à Maddy les centres d’intérêt, le niveau de marche et les horaires de vos clients, ainsi que les contraintes alimentaires pour un parcours gourmand, afin d’adapter la proposition." },
     { question: "Les expériences sont-elles privées et sur mesure ?", answer: "Les expériences privées sont imaginées selon les envies, le rythme et le temps disponible du groupe. L’activité, la destination et les modalités pratiques sont convenues avant la réservation." },
