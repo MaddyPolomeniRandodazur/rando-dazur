@@ -1,6 +1,6 @@
 # Fiche Regiondo publiée — randonnée mimosa individuelle 2027
 
-Statut au 18 octobre 2026 : produit distinct 373775 publié, actif à 35 €, traductions FR/EN/IT. Les pages publiques françaises et anglaises ont été ouvertes et leur contenu vérifié. Le calendrier public affiche les sept dates, à 09:00. Le calendrier opérateur affiche 0/15 au premier départ. Confirmation des demandes manuelle afin de vérifier le seuil de 6 ; aucun automatisme de seuil n’a été trouvé/configuré. Vérification Stripe toujours demandée par Regiondo, aucun paiement réel de test effectué. Le sélecteur public ne propose actuellement qu’une place par commande malgré un maximum paramétré de 15 ; à vérifier avec Regiondo avant communication commerciale large.
+Statut au 18 octobre 2026 : produit distinct 373775 actif à 35 €, traductions FR/EN/IT corrigées. Sept samedis 09:00–11:00. Capacité totale et quota vendable par date réglés à 15. Réservation dès une place ; seuil de réalisation du départ de 6 participants à contrôler par Maddy. Inscriptions acceptées automatiquement, sans automatisme de seuil ni de remboursement configuré. Vérification Stripe toujours demandée par Regiondo ; aucun paiement réel de test effectué. Panier de test à une place retiré. Les départs exacts ne figurent plus dans les pages publiques ; communiquer les informations pratiques après réservation et paiement. Demander aux clients sans véhicule de prévenir Maddy avant réservation.
 
 FR : https://randodazur.regiondo.fr/cannes-mimosa-walk-snack-saturday-mornings
 EN : https://randodazur.regiondo.com/cannes-mimosa-walk-snack-saturday-mornings
@@ -10,7 +10,7 @@ Alerte Regiondo après publication : certaines options ne sont plus connectées 
 ## Paramétrage confirmé par Maddy le 18 octobre
 
 - Produit distinct des offres privées ; randonnée à pied uniquement.
-- Cannes, Croix des Gardes ; rendez-vous déjà communiqué pour Cannes : 98 avenue Jean de Noailles.
+- Cannes, Croix des Gardes ; repère public : office de tourisme de Cannes. Le départ exact reste communiqué après réservation et paiement.
 - 35 € par personne, guide et goûter au mimosa inclus.
 - 09:00–11:00, Europe/Paris, durée 2 h.
 - Dates : 16, 23, 30 janvier ; 6, 13, 20, 27 février 2027.
@@ -29,7 +29,7 @@ Résumé : Une matinée au milieu des paysages du mimosa à Cannes, ouverte aux 
 
 Description : Retrouvez Rando d’Azur à la Croix des Gardes pour une parenthèse nature autour du mimosa. Pendant deux heures, prenez le temps d’observer les paysages, de découvrir les plantes avec votre guide et de partager un goûter au mimosa. Une sortie collective pour découvrir la Côte d’Azur en hiver, sans constituer votre propre groupe privé.
 
-Dates : tous les samedis du 16 janvier au 27 février 2027, de 9 h à 11 h. Rendez-vous : 98 avenue Jean de Noailles, Cannes.
+Dates : tous les samedis du 16 janvier au 27 février 2027, de 9 h à 11 h. Repère générique : office de tourisme de Cannes. Départ exact communiqué après réservation et paiement. Sans véhicule, prévenir Maddy avant réservation.
 
 Tarif : 35 € par personne. Guide et goûter au mimosa inclus. Le départ nécessite au moins 6 participants au total ; 15 participants maximum. La floraison dépend des conditions naturelles. Signalez vos allergies avant réservation pour vérifier la composition du goûter et la possibilité d’adaptation.
 
@@ -43,7 +43,7 @@ Summary: Join a shared winter walk in Cannes as a solo traveller, couple or with
 
 Description: Meet Rando d’Azur at Croix des Gardes for a nature break around the yellow mimosa landscape. Over two hours, take time to observe the surroundings, discover plants with your guide and share a mimosa-themed snack. This shared departure lets you join other walkers without arranging your own private group.
 
-Dates: Saturdays from 16 January to 27 February 2027, 9–11 am. Meeting point: 98 avenue Jean de Noailles, Cannes.
+Dates: Saturdays from 16 January to 27 February 2027, 9–11 am. General reference point: Cannes tourist office. Exact starting point shared after booking and payment. Tell Maddy before booking if you have no vehicle.
 
 Price: €35 per person, including the guide and mimosa-themed snack. A minimum of 6 participants in total is required for the departure to run; maximum 15. Blossom depends on natural conditions. Tell us about allergies before booking so snack suitability can be checked.
 
