@@ -20,7 +20,7 @@ export const journalArticles: JournalArticle[] = [
     sources: [
       { name: "Mandelieu Tourisme — le massif du Tanneron", url: "https://www.mandelieu-tourisme.com/evenementiel/mimosa/immersion-dans-le-tanneron/" },
       { name: "Cannes Tourisme — la Croix des Gardes", url: "https://www.cannes-france.com/decouvrir-visiter/quartiers/la-croix-des-gardes/" },
-      { name: "Pays de Fayence — floraison du mimosa à Tanneron", url: "https://provence-alpes-cotedazur.com/decouvrir/espaces-naturels/patrimoine-naturel/la-floraison-du-mimosa-a-tanneron-pays-de-fayence-tanneron-fr-3394698/" },
+      { name: "Pays de Fayence — paysages du mimosa à Tanneron", url: "https://www.paysdefayence.com/itineraires/circuit-balade-coeur-des-mimosa/" },
     ],
     copy: {
       fr: {
@@ -32,28 +32,28 @@ export const journalArticles: JournalArticle[] = [
           { title: "Cannes : les paysages de la Croix des Gardes", paragraphs: ["La Croix des Gardes associe des sentiers, des mimosas et des vues sur la baie de Cannes. C’est une piste pour une parenthèse nature pendant un séjour en ville. Le relief mérite toutefois d’être pris en compte : choisissez un parcours adapté à votre aisance à la marche, pas uniquement à sa proximité du centre."] },
           { title: "Mandelieu : une porte vers les collines", paragraphs: ["Mandelieu-la-Napoule permet de rapprocher un séjour sur le littoral des paysages du Tanneron. Pour organiser une balade, distinguez bien le point de départ, le dénivelé et le retour. Un rendez-vous en forêt n’est pas nécessairement desservi comme une adresse en centre-ville."] },
           { title: "Tanneron : prendre le temps dans le massif", paragraphs: ["Autour du village de Tanneron, les paysages mêlent mimosa cultivé et végétation du massif. Avant de partir, vérifiez les accès et respectez les propriétés et cultures. Pour profiter des fleurs, observez-les sur place et photographiez-les sans prélever de branches."] },
-          { title: "Avec Rando d’Azur : deux façons de participer", paragraphs: ["Les groupes constitués peuvent demander une expérience privée. Des randonnées ouvertes aux individuels seront également proposées à dates précises : 35 € par personne, goûter au mimosa inclus. Ces sorties auront lieu à Cannes Croix des Gardes les samedis du 16 janvier au 27 février 2027, de 9 h à 11 h, avec 6 à 15 participants. La réservation Regiondo est en préparation."] },
+          { title: "Avec Rando d’Azur : deux façons de participer", paragraphs: ["Les groupes constitués peuvent demander une expérience privée. Des randonnées ouvertes aux individuels sont également proposées à dates précises : 35 € par personne, goûter au mimosa inclus. Ces sorties auront lieu à Cannes Croix des Gardes les samedis du 16 janvier au 27 février 2027, de 9 h à 11 h, avec 6 à 15 participants. Réservation sur Regiondo, sous réserve de confirmation du départ."] },
         ],
         faqs: [
           { question: "Faut-il un guide pour voir le mimosa ?", answer: "Pas nécessairement. Une promenade autonome se prépare avec un parcours autorisé, la météo et des informations d’accès à jour. Une sortie guidée apporte des explications et un parcours organisé pour le groupe." },
-          { question: "Peut-on venir seul à une randonnée mimosa ?", answer: "Oui, sur les futures dates ouvertes aux individuels à 35 € par personne, goûter au mimosa inclus. Les sept samedis du 16 janvier au 27 février 2027 sont programmés à Cannes, de 9 h à 11 h, pour 6 à 15 participants. Les réservations Regiondo ne sont pas encore ouvertes." },
+          { question: "Peut-on venir seul à une randonnée mimosa ?", answer: "Oui, sur les dates ouvertes aux individuels à 35 € par personne, goûter au mimosa inclus. Les sept samedis du 16 janvier au 27 février 2027 sont programmés à Cannes, de 9 h à 11 h, pour 6 à 15 participants. La réservation se fait sur Regiondo ; le départ est soumis au minimum de six inscrits." },
           { question: "La floraison est-elle garantie ?", answer: "Non. La météo, les variétés et le secteur modifient le calendrier. Le parcours est adapté aux conditions locales lorsque c’est possible." },
         ],
       },
       en: {
         title: "Where to see mimosa blossom: Cannes, Mandelieu and Tanneron",
-        description: "Plan a French Riviera mimosa flower walk: flowering season, Cannes, Mandelieu and Tanneron, plus private walks and upcoming shared departures.",
+        description: "Plan a French Riviera mimosa flower walk: flowering season, Cannes, Mandelieu and Tanneron, plus private walks and shared departures.",
         intro: "On the French Riviera, a mimosa walk means yellow flowering trees and winter landscapes. If you are searching for mimosa blossom rather than the brunch cocktail, start with the area, the conditions and the kind of walk you enjoy.",
         sections: [
           { title: "When is mimosa flowering season?", paragraphs: ["The Tanneron’s blossom season runs through winter into early spring, with January and February worth considering. Different varieties, exposures and weather mean that flowering does not happen everywhere at once. A calendar date cannot guarantee hills covered in yellow.", "Ask for a recent local observation before planning a blossom-focused trip. Photographs from previous outings show the landscape’s possibilities, not the conditions on your travel date."] },
           { title: "Cannes: Croix des Gardes", paragraphs: ["Croix des Gardes offers trails, mimosa trees and views towards Cannes Bay. It can make a nature break during a city stay. Check the route’s slopes and footing: being close to town does not automatically make a walk suitable for everyone."] },
           { title: "Mandelieu: between coast and hills", paragraphs: ["Mandelieu-la-Napoule is a starting point for exploring the Tanneron landscape from the coast. Confirm the actual meeting point, elevation and return journey. A forest departure may require different transport arrangements from a central hotel."] },
           { title: "Tanneron: a walk in the massif", paragraphs: ["Around Tanneron village, cultivated mimosa and the wider hillside landscape meet. Check access before setting off, stay on permitted paths and respect growers’ land. Leave branches on the trees and take photographs instead."] },
-          { title: "Private groups and shared walks", paragraphs: ["Rando d’Azur offers private enquiries for existing groups. Selected shared walking departures are also planned at €35 per person, including a mimosa-themed snack. The walks are scheduled at Cannes Croix des Gardes on Saturdays from 16 January to 27 February 2027, 9–11 am, for 6–15 participants. Regiondo booking is being prepared."] },
+          { title: "Private groups and shared walks", paragraphs: ["Rando d’Azur offers private enquiries for existing groups. Shared walking departures are available at €35 per person, including a mimosa-themed snack. The walks are scheduled at Cannes Croix des Gardes on Saturdays from 16 January to 27 February 2027, 9–11 am, for 6–15 participants. Book through Regiondo, subject to departure confirmation."] },
         ],
         faqs: [
           { question: "Is this about mimosa flowers or a cocktail?", answer: "This guide is about the yellow flowering mimosa trees of the French Riviera, especially around Cannes, Mandelieu and Tanneron." },
-          { question: "Can a solo traveller join?", answer: "Selected shared departures are planned at €35 per person, with a mimosa-themed snack included. The seven Saturdays from 16 January to 27 February 2027 are scheduled in Cannes, 9–11 am, for 6–15 participants. Regiondo booking has not yet opened." },
+          { question: "Can a solo traveller join?", answer: "Shared departures are available at €35 per person, with a mimosa-themed snack included. The seven Saturdays from 16 January to 27 February 2027 are scheduled in Cannes, 9–11 am, for 6–15 participants. Book through Regiondo; a minimum of six participants is required for departure." },
           { question: "Do I need a guide?", answer: "An independent walk is possible on permitted routes with up-to-date access and weather information. A guided outing adds local explanations and a route organised for your group." },
         ],
       },
@@ -62,20 +62,18 @@ export const journalArticles: JournalArticle[] = [
   {
     slug: "produits-au-mimosa", image: "/images/mimosa/mimosa-outdoor-break.webp", alt: { fr: "Fleurs de mimosa et tasse lors d’une pause en plein air", en: "Mimosa flowers and a cup during an outdoor break" },
     sources: [
-      { name: "Mandelieu Tourisme — shopping mimosa", url: "https://www.mandelieu-tourisme.com/evenementiel/mimosa/shopping-mimosa/" },
-      { name: "Boutique officielle — épicerie fine", url: "https://boutique.mandelieu-tourisme.com/epicerie-fine.html" },
       { name: "Confiserie Florian — spécialités aux fleurs", url: "https://www.confiserieflorian.com/fleurs.html" },
     ],
     copy: {
       fr: {
         title: "Produits au mimosa : gourmandises, parfums et souvenirs de la Côte d’Azur",
-        description: "Où chercher sirop, confit et souvenirs au mimosa à Mandelieu ? Des pistes vérifiées et une découverte gourmande avec Rando d’Azur.",
+        description: "Découvrez les saveurs florales de la Côte d’Azur, la Confiserie Florian, partenaire de Rando d’Azur, et nos balades avec goûter au mimosa.",
         intro: "Le mimosa se découvre aussi à travers les savoir-faire et les boutiques. Pour choisir un cadeau ou prolonger une balade, commencez par distinguer une spécialité alimentaire, un parfum de mimosa et un objet inspiré de ses fleurs : ils ne se choisissent pas de la même façon.",
         sections: [
-          { title: "Où chercher des spécialités au mimosa ?", paragraphs: ["La boutique de l’office de tourisme de Mandelieu référence une sélection autour du mimosa, notamment sirop et confit, ainsi que des souvenirs parfumés. Consultez sa boutique officielle pour les compositions, les stocks et les modalités de retrait ou d’expédition : ce guide ne constitue pas une boutique Rando d’Azur."] },
+          { title: "Où chercher des spécialités au mimosa ?", paragraphs: ["La Confiserie Florian, partenaire de Rando d’Azur, fait découvrir les saveurs du territoire avec ses spécialités aux fleurs et ses gels de fruits assortis, que Maddy fait goûter lors de certaines sorties. Pour une recherche précise autour du mimosa, vérifiez le parfum et les ingrédients de chaque référence : toute gourmandise florale n’est pas au mimosa."] },
           { title: "Bien lire l’étiquette", paragraphs: ["Pour une gourmandise, vérifiez les ingrédients, les allergènes et les indications du fabricant. Une évocation du mimosa dans le nom ou sur l’emballage ne suffit pas à décrire sa composition. Pour un cadeau, pensez aussi au transport et à la conservation.", "Ne préparez pas de recette à partir de fleurs cueillies lors d’une promenade sans identification et conseil adaptés. Une spécialité fabriquée pour l’alimentation ne doit pas être confondue avec une plante récoltée au hasard."] },
           { title: "Et les autres gourmandises florales ?", paragraphs: ["La Confiserie Florian, partenaire de Rando d’Azur, présente aussi des spécialités aux fleurs. Cela ne signifie pas que toutes sont au mimosa. La gamme et la composition de chaque référence doivent être vérifiées sur sa fiche : une dégustation florale peut faire découvrir d’autres parfums du territoire."] },
-          { title: "Une pause gourmande après la balade", paragraphs: ["Le goûter au mimosa fait partie des futures randonnées individuelles à 35 € et de l’expérience privée mimosa présentée sur ce site. La composition précise dépend des disponibilités. Prévenez Maddy de vos allergies avant de réserver pour vérifier ce qui peut être proposé."] },
+          { title: "Une pause gourmande après la balade", paragraphs: ["Le goûter au mimosa fait partie des randonnées individuelles à 35 € et de l’expérience privée mimosa présentée sur ce site. La composition précise dépend des disponibilités. Prévenez Maddy de vos allergies avant de réserver pour vérifier ce qui peut être proposé."] },
         ],
         faqs: [
           { question: "Rando d’Azur vend-il des produits au mimosa ?", answer: "Pas de vente de produits sur cette page. Elle indique des pistes de découverte et renvoie vers les boutiques concernées." },
@@ -85,13 +83,13 @@ export const journalArticles: JournalArticle[] = [
       },
       en: {
         title: "Mimosa-flower products and gifts on the French Riviera",
-        description: "Discover mimosa-flower specialities, syrups and scented gifts around Mandelieu, with verified shop links and Rando d’Azur’s snack-inclusive walks.",
+        description: "Discover French Riviera floral treats, Rando d’Azur partner Confiserie Florian, and guided mimosa walks with a seasonal snack.",
         intro: "Looking for a gift inspired by the Riviera’s yellow mimosa flowers? Food specialities, scented products and floral souvenirs are different categories. This guide helps you find the right shop and check what a product actually contains.",
         sections: [
-          { title: "Where to look", paragraphs: ["Mandelieu’s tourist-office shop lists a mimosa selection, including syrup and confit as well as scented souvenirs. Check its official shop for ingredients, current stock and collection or shipping conditions. Rando d’Azur does not sell those products on this page."] },
+          { title: "Where to look", paragraphs: ["Rando d’Azur partner Confiserie Florian offers floral confectionery and assorted fruit jellies, which Maddy shares on selected outings. If you are looking specifically for mimosa, check each product’s flavour and ingredients: floral confectionery is not always mimosa-flavoured."] },
           { title: "Check the label", paragraphs: ["For food, read the ingredients, allergen information and storage instructions. A flower pictured on packaging does not explain the recipe. If you are taking a gift home, check whether it is suitable for your journey.", "Do not treat flowers collected on a walk as ready-to-eat ingredients. A food product made for consumption is different from a wild plant that has not been properly identified and assessed."] },
           { title: "Other floral specialities", paragraphs: ["Rando d’Azur partner Confiserie Florian also offers floral confectionery. Not every flower-based product is mimosa-flavoured. Check the manufacturer’s individual product information rather than assuming a flavour from the range’s name."] },
-          { title: "A snack on the trail", paragraphs: ["A mimosa-themed snack is included in the planned €35 shared walks and in the private mimosa experience described on this site. The exact selection depends on availability. Tell Maddy about allergies before booking so that suitability can be checked."] },
+          { title: "A snack on the trail", paragraphs: ["A mimosa-themed snack is included in the €35 shared walks and in the private mimosa experience described on this site. The exact selection depends on availability. Tell Maddy about allergies before booking so that suitability can be checked."] },
         ],
         faqs: [
           { question: "Can I buy mimosa products from Rando d’Azur?", answer: "This is a discovery guide, not an online product shop. Follow the retailer links for purchases and availability." },
