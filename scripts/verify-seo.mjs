@@ -90,7 +90,7 @@ const origin = 'https://randodazur.com';
   for (const path of ['/journal', '/fr/journal']) {
     const response = await context.request.get(`${base}${path}`);
     const html = await response.text();
-    if (response.status() !== 200 || !html.includes('noindex') || urls.includes(origin + path)) failures.push(`Journal indexing policy ${path}`);
+    if (response.status() !== 200 || /<meta[^>]*name="robots"[^>]*content="[^"]*noindex/.test(html) || !urls.includes(origin + path)) failures.push(`Journal indexing policy ${path}`);
   }
   // Language annotations must point to real canonical, indexable sitemap entries.
   for (const match of sitemap.matchAll(/hreflang="[^"]+" href="([^"]+)"/g)) {

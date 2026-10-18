@@ -14,7 +14,7 @@ const localizedJournal: Record<
   fr: {
     title: "Le Journal de la Riviera | Rando d’Azur",
     description:
-      "Saisons, savoirs locaux et histoires de la Côte d’Azur. Les premiers récits du Journal Rando d’Azur sont en préparation.",
+      "Mimosa, fleurs, balades d’hiver, Carnaval de Nice et Fête du Citron : les guides locaux de Rando d’Azur pour préparer votre séjour sur la Côte d’Azur.",
   },
 };
 
@@ -33,7 +33,6 @@ export async function generateMetadata({ params }: PageParameters) {
     locale,
     path: "/journal",
     ...copy,
-    noIndex: true,
   });
 }
 

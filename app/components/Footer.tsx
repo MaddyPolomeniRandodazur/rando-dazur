@@ -106,6 +106,7 @@ export default function Footer({ locale, homeVisual = false }: { locale: Locale;
             <a href={localePath(locale, "/travel-trade")}>{getTravelTradeContent(locale).linkLabel}</a>
             <a href={localePath(locale, "/meet-maddy")}>{copy.about}</a>
             <a href={localePath(locale, "/partners-on-the-trail")}>{locale === "fr" ? "Mes partenaires sur le terrain" : "My partners on the trail"}</a>
+            <a href={localePath(locale, "/journal")}>{locale === "fr" ? "Journal : mimosa, fleurs & hiver" : "Journal: mimosa, flowers & winter"}</a>
             <a href={`${root}#riviera-map`}>{copy.destinations}</a>
             <a href={localePath(locale, "/legal-notice")}>{copy.legalNotice}</a>
             <a href={localePath(locale, "/terms-and-conditions")}>{copy.terms}</a>

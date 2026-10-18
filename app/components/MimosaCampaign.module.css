@@ -33,3 +33,5 @@
 .banner{left:16px;bottom:144px;width:min(400px,calc(100vw - 32px));padding:14px 34px 14px 12px;gap:10px;grid-template-columns:48px minmax(0,1fr)}.banner>img{width:48px;height:64px}.banner strong{font-size:18px}.banner p{font-size:11px;margin:6px 0}.banner a{font-size:12px}}
 @media(max-width:600px){.gallery{grid-template-columns:minmax(0,1fr);gap:28px}.gallery figure{grid-column:auto;max-width:440px;width:100%;margin-inline:auto}.gallery .galleryPhoto{height:auto!important;aspect-ratio:4/3}.gallery .moment1 .galleryPhoto,.gallery .moment2 .galleryPhoto{aspect-ratio:4/5}.gallery figcaption{font-size:17px}.heroPrice{justify-content:flex-start}}
 @media(prefers-reduced-motion:no-preference){.card{transition:box-shadow 180ms ease}.card:hover{box-shadow:0 8px 24px rgba(28,37,31,.08)}}
+
+.faq{padding:20px 0;border-bottom:1px solid #bcc9b9}.faq summary{cursor:pointer;font-weight:600;line-height:1.6}.faq p{line-height:1.8;margin:14px 0}

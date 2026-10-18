@@ -59,7 +59,7 @@ export const mimosaCopy: Record<Locale, {
     title: "La Riviera en jaune — Une expérience Mimosa inoubliable",
     intro: "Des collines dorées, des parfums enivrants, des éclats de rire et un goûter gourmand. Découvrez le mimosa autrement, à pied ou à vélo, entre Cannes, Mandelieu et Tanneron.",
     seoTitle: "Route du Mimosa 2027 : randonnée & vélo privés | Rando d’Azur",
-    description: "Découvrez le mimosa à Cannes, Mandelieu ou Tanneron avec un guide local : randonnée ou vélo, environ 2 h, goûter offert. 250 € pour votre groupe privé de 2 à 12.",
+    description: "Randonnée mimosa à Cannes le samedi, 9 h–11 h : 35 €/personne, goûter inclus. Aussi en groupe privé à Cannes, Mandelieu ou Tanneron.",
     dates: "15 janvier – 28 février 2027",
     facts: ["2 à 12 participants", "Environ 2 heures", "250 € / groupe privé", "Goûter au mimosa offert", "Vélo : location non comprise"],
     discover: "Découvrir et réserver", request: "Demander une réservation", message: "Bonjour Maddy, je souhaite demander une réservation pour La Riviera en jaune — Expérience Mimosa 2027. Date souhaitée : … Nombre de participants : … À pied ou à vélo : … Secteur préféré : Cannes, Mandelieu ou Tanneron.",
@@ -82,7 +82,7 @@ export const mimosaCopy: Record<Locale, {
   en: {
     name: "The Golden Riviera — Private Mimosa Experience 2027", title: "The Golden Riviera — An unforgettable mimosa experience",
     intro: "Golden hills, fragrant flowers, shared laughter and a little mimosa treat. Explore a different side of the French Riviera on foot or by bike, around Cannes, Mandelieu and Tanneron.",
-    seoTitle: "Private Mimosa Route Walks & Cycling 2027 | Rando d’Azur", description: "Explore the Mimosa Route around Cannes, Mandelieu or Tanneron with a local guide. Around 2 hours, a mimosa treat included: €250 for your private group of 2–12.",
+    seoTitle: "Private Mimosa Route Walks & Cycling 2027 | Rando d’Azur", description: "Join a Saturday mimosa blossom walk in Cannes, 9–11 am: €35 per person, snack included. Private walks also available around Cannes, Mandelieu and Tanneron.",
     dates: "15 January – 28 February 2027", facts: ["2–12 participants", "Around 2 hours", "€250 / private group", "A little mimosa treat included", "Cycling: bicycle rental excluded"],
     discover: "Explore and enquire", request: "Request a booking", message: "Hello Maddy, I would like to request The Golden Riviera — Private Mimosa Experience 2027. Preferred date: … Participants: … Walking or cycling: … Preferred area: Cannes, Mandelieu or Tanneron.",
     experiences: "Two ways to discover the golden hills", walk: "Mimosa Guided Walk", walkText: "A friendly guided walk through flowering landscapes, fragrant air and French Riviera views. Your guide adapts the location and route to your group’s level and local conditions.", cycle: "Mimosa by Bike", cycleText: "Explore mimosa landscapes by bike on a route adapted to your group’s level and local conditions. Bicycle rental is not included and must be arranged and charged separately if needed.",

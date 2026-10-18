@@ -7,8 +7,7 @@ export function generateMetadata() {
     path: "/journal",
     title: "The Riviera Journal | Rando d’Azur",
     description:
-      "Seasonal notes, local knowledge and stories from the French Riviera. The first Rando d’Azur journal pieces are in preparation.",
-    noIndex: true,
+      "Mimosa blossom, gardens, winter walks, Nice Carnival and Menton’s Lemon Festival: local guides for your French Riviera stay with Rando d’Azur.",
   });
 }
 
