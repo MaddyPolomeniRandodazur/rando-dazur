@@ -41,6 +41,16 @@ const nextConfig: NextConfig = {
         destination: "/fr/experiences/evjf-experiences",
         permanent: true,
       },
+      {
+        source: "/presse",
+        destination: "/fr/press",
+        permanent: true,
+      },
+      {
+        source: "/reserver-une-activite",
+        destination: "/fr#booking",
+        permanent: true,
+      },
     ];
   },
 };
