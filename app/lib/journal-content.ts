@@ -413,6 +413,7 @@ export const journalArticles: JournalArticle[] = [
   },
   {
     slug: "randonnee-raclette-esterel",
+    coverCaption: { fr: "Le pique-nique raclette avec vue sur les reliefs de l’Estérel.", en: "A raclette picnic with a view across the Estérel hills." },
     lastModified: "2026-11-05",
     image: "/images/journal/raclette-esterel-repas.jpg",
     alt: {
