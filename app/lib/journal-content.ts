@@ -261,26 +261,34 @@ export const journalArticles: JournalArticle[] = [
     },
   },
   {
-    slug: "fete-du-mimosa-mandelieu",
+    slug: "fetes-du-mimosa-mandelieu-tanneron",
     lastModified: "2026-11-05",
     image: mimosaImage,
     alt: flowerAlt,
     sources: [
       { name: "Mandelieu Tourisme — Fête du Mimosa 2027", url: "https://www.mandelieu-tourisme.com/evenementiel/mimosa/fete-mimosa/" },
+      { name: "Pays de Fayence — Fête du Mimosa à Tanneron 2027", url: "https://www.paysdefayence.com/evenements/fete-du-mimosa/" },
       { name: "Côte d’Azur France — découvrir le mimosa à Mandelieu", url: "https://cotedazurfrance.fr/a-faire/fleurs-et-parfums/mandelieu-capitale-mimosa/" },
       { name: "Route du Mimosa — randonnée mimosa privée à Tanneron", url: "https://routedumimosa.com/fr/animation/sports/tanneron/randonnee-mimosa-privee-a-tanneron-8040528/" },
     ],
     copy: {
       fr: {
-        title: "Fête du Mimosa 2027 à Mandelieu : dates, programme et randonnées",
-        description: "Fête du Mimosa à Mandelieu du 10 au 14 février 2027 : programme officiel, randonnées mimosa à Cannes, Mandelieu et Tanneron et conseils pratiques.",
-        intro: "Vous venez à la Fête du Mimosa à Mandelieu-la-Napoule ? Voici les dates annoncées par l’Office de Tourisme, des repères pour organiser votre séjour et des idées de randonnée pour prolonger la découverte des collines fleuries. La fête et les sorties guidées sont deux activités distinctes : vérifiez leurs lieux, horaires et réservations séparément.",
+        title: "Fêtes du Mimosa 2027 : Mandelieu et Tanneron, dates et randonnées",
+        description: "Fête du Mimosa à Mandelieu du 10 au 14 février et à Tanneron le 31 janvier 2027 : programmes officiels, randonnées mimosa et conseils pratiques.",
+        intro: "Deux fêtes du Mimosa ont lieu dans des communes différentes en 2027 : Tanneron le 31 janvier et Mandelieu-la-Napoule du 10 au 14 février. Voici les dates annoncées par les offices de tourisme, des repères pour organiser votre séjour et des idées de randonnée dans les collines fleuries. Les fêtes et les sorties guidées sont distinctes : vérifiez leurs lieux, horaires et réservations séparément.",
         sections: [
           {
             title: "Quelles sont les dates de la Fête du Mimosa 2027 ?",
             paragraphs: [
               "L’Office de Tourisme de Mandelieu annonce la Fête du Mimosa du 10 au 14 février 2027, sur le thème « Le mimosa entre en jeux ». Le programme prévoit cinq jours d’animations dans la ville, avec notamment des défilés et corsos. Les chars sont annoncés le samedi 13 au soir et le dimanche 14 après-midi. Consultez la page officielle pour le programme détaillé, les horaires et les éventuelles mises à jour avant votre venue.",
               "La Fête du Mimosa célèbre Mandelieu en février, tandis que la floraison s’observe sur une période plus large et varie selon les secteurs, les variétés et la météo. Une date de fête ne garantit donc pas que chaque sentier soit en pleine floraison."
+            ]
+          },
+          {
+            title: "À Tanneron : la fête du Mimosa le 31 janvier",
+            paragraphs: [
+              "La Fête du Mimosa de Tanneron est annoncée le dimanche 31 janvier 2027, de 9 h à 17 h, et peut être annulée en cas de mauvais temps. Le programme publié prévoit un marché, une procession, un concours des producteurs de mimosa, un apéritif offert par la municipalité et un corso fleuri de 14 h à 16 h. Vérifiez les informations officielles avant le départ, notamment en cas de météo incertaine.",
+              "Le stationnement et la circulation sont aménagés pour l’événement ; certains accès au village sont fermés aux véhicules pendant la journée. Consultez les consignes de l’Office de Tourisme du Pays de Fayence pour choisir votre parking et vérifier les navettes ou accès à pied."
             ]
           },
           {
@@ -307,6 +315,10 @@ export const journalArticles: JournalArticle[] = [
         ],
         faqs: [
           {
+            question: "Quand a lieu la Fête du Mimosa à Tanneron en 2027 ?",
+            answer: "L’Office de Tourisme du Pays de Fayence annonce le dimanche 31 janvier 2027, de 9 h à 17 h, avec une annulation possible en cas de mauvais temps. Vérifiez les dernières informations avant de partir."
+          },
+          {
             question: "Quand a lieu la Fête du Mimosa à Mandelieu en 2027 ?",
             answer: "L’Office de Tourisme annonce l’édition du 10 au 14 février 2027. Le programme détaillé et ses mises à jour sont à consulter sur le site officiel de Mandelieu Tourisme."
           },
@@ -329,15 +341,22 @@ export const journalArticles: JournalArticle[] = [
         ]
       },
       en: {
-        title: "Mandelieu Mimosa Festival 2027: dates, walks and local tips",
-        description: "Mandelieu’s Mimosa Festival runs from 10 to 14 February 2027. Find official programme details, guided mimosa walks and practical planning tips.",
-        intro: "Visiting Mandelieu-la-Napoule for the Mimosa Festival? Find the dates announced by the local tourist office, practical planning notes and guided walk ideas for exploring the flowering hills. Festival events and guided walks are separate activities; check their locations, times and bookings independently.",
+        title: "2027 Mimosa Festivals in Mandelieu and Tanneron: dates and walks",
+        description: "Mandelieu’s Mimosa Festival runs 10–14 February and Tanneron’s is on 31 January 2027. Find official details, mimosa walks and local tips.",
+        intro: "Two Mimosa Festivals take place in different towns in 2027: Tanneron on 31 January and Mandelieu-la-Napoule from 10 to 14 February. Find dates announced by the local tourist offices, practical planning notes and guided walk ideas for the flowering hills. Festival events and guided walks are separate activities; check their locations, times and bookings independently.",
         sections: [
           {
             title: "When is the 2027 Mimosa Festival?",
             paragraphs: [
               "Mandelieu’s tourist office announces the Mimosa Festival for 10–14 February 2027, with the theme “Mimosa in Play”. The five-day programme includes town events and parades. Floats are announced for Saturday evening, 13 February, and Sunday afternoon, 14 February. Check the official page for the detailed programme, times and updates before travelling.",
               "The festival takes place in February, while mimosa flowering spans a broader season and varies by area, variety and weather. Festival dates do not guarantee that every trail will be in full bloom."
+            ]
+          },
+          {
+            title: "In Tanneron: Mimosa Festival on 31 January",
+            paragraphs: [
+              "Tanneron’s Mimosa Festival is announced for Sunday, 31 January 2027, from 9 am to 5 pm. It may be cancelled in bad weather. The published programme includes a market, a procession, a mimosa-growers’ competition, a municipal aperitif and a flower-covered parade from 2 to 4 pm. Check the official information before travelling, especially if the weather is uncertain.",
+              "Traffic and parking arrangements apply during the festival, and some village access is closed to vehicles during the day. Consult the Pays de Fayence tourist office for current parking, shuttle and walking-access instructions."
             ]
           },
           {
@@ -363,6 +382,10 @@ export const journalArticles: JournalArticle[] = [
           }
         ],
         faqs: [
+          {
+            question: "When is Tanneron’s Mimosa Festival in 2027?",
+            answer: "The Pays de Fayence tourist office announces Sunday, 31 January 2027, from 9 am to 5 pm; the event may be cancelled in bad weather. Check for updates before travelling."
+          },
           {
             question: "When is the Mandelieu Mimosa Festival in 2027?",
             answer: "The tourist office announces 10–14 February 2027. Check Mandelieu Tourisme’s official page for the detailed programme and updates."
