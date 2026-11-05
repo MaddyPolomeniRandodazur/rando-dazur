@@ -7,7 +7,7 @@ export type JournalCopy = {
   faqs: { question: string; answer: string }[];
 };
 export type JournalArticle = {
-  slug: string; image: string; alt: Record<Locale, string>;
+  slug: string; lastModified?: string; image: string; alt: Record<Locale, string>;
   sources: { name: string; url: string }[];
   copy: Record<Locale, JournalCopy>;
 };
@@ -259,6 +259,156 @@ export const journalArticles: JournalArticle[] = [
         ],
       },
     },
+  },
+  {
+    slug: "fetes-du-mimosa-mandelieu-tanneron",
+    lastModified: "2026-11-05",
+    image: mimosaImage,
+    alt: flowerAlt,
+    sources: [
+      { name: "Mandelieu Tourisme — Fête du Mimosa 2027", url: "https://www.mandelieu-tourisme.com/evenementiel/mimosa/fete-mimosa/" },
+      { name: "Pays de Fayence — Fête du Mimosa à Tanneron 2027", url: "https://www.paysdefayence.com/evenements/fete-du-mimosa/" },
+      { name: "Côte d’Azur France — découvrir le mimosa à Mandelieu", url: "https://cotedazurfrance.fr/a-faire/fleurs-et-parfums/mandelieu-capitale-mimosa/" },
+      { name: "Route du Mimosa — randonnée mimosa privée à Tanneron", url: "https://routedumimosa.com/fr/animation/sports/tanneron/randonnee-mimosa-privee-a-tanneron-8040528/" },
+    ],
+    copy: {
+      fr: {
+        title: "Fêtes du Mimosa 2027 : Mandelieu et Tanneron, dates et randonnées",
+        description: "Fête du Mimosa à Mandelieu du 10 au 14 février et à Tanneron le 31 janvier 2027 : programmes officiels, randonnées mimosa et conseils pratiques.",
+        intro: "Deux fêtes du Mimosa ont lieu dans des communes différentes en 2027 : Tanneron le 31 janvier et Mandelieu-la-Napoule du 10 au 14 février. Voici les dates annoncées par les offices de tourisme, des repères pour organiser votre séjour et des idées de randonnée dans les collines fleuries. Les fêtes et les sorties guidées sont distinctes : vérifiez leurs lieux, horaires et réservations séparément.",
+        sections: [
+          {
+            title: "Quelles sont les dates de la Fête du Mimosa 2027 ?",
+            paragraphs: [
+              "L’Office de Tourisme de Mandelieu annonce la Fête du Mimosa du 10 au 14 février 2027, sur le thème « Le mimosa entre en jeux ». Le programme prévoit cinq jours d’animations dans la ville, avec notamment des défilés et corsos. Les chars sont annoncés le samedi 13 au soir et le dimanche 14 après-midi. Consultez la page officielle pour le programme détaillé, les horaires et les éventuelles mises à jour avant votre venue.",
+              "La Fête du Mimosa célèbre Mandelieu en février, tandis que la floraison s’observe sur une période plus large et varie selon les secteurs, les variétés et la météo. Une date de fête ne garantit donc pas que chaque sentier soit en pleine floraison."
+            ]
+          },
+          {
+            title: "À Tanneron : la fête du Mimosa le 31 janvier",
+            paragraphs: [
+              "La Fête du Mimosa de Tanneron est annoncée le dimanche 31 janvier 2027, de 9 h à 17 h, et peut être annulée en cas de mauvais temps. Le programme publié prévoit un marché, une procession, un concours des producteurs de mimosa, un apéritif offert par la municipalité et un corso fleuri de 14 h à 16 h. Vérifiez les informations officielles avant le départ, notamment en cas de météo incertaine.",
+              "Le stationnement et la circulation sont aménagés pour l’événement ; certains accès au village sont fermés aux véhicules pendant la journée. Consultez les consignes de l’Office de Tourisme du Pays de Fayence pour choisir votre parking et vérifier les navettes ou accès à pied."
+            ]
+          },
+          {
+            title: "Où randonner dans le mimosa autour de Mandelieu ?",
+            paragraphs: [
+              "Mandelieu-la-Napoule est une porte d’entrée vers les paysages du Tanneron. Selon votre hébergement et votre moyen de transport, vous pouvez aussi envisager la Croix des Gardes à Cannes ou les environs du village de Tanneron. Le meilleur secteur dépend de l’état de floraison, des conditions d’accès et du niveau de marche de votre groupe.",
+              "Pour une randonnée mimosa, prévoyez de bonnes chaussures, de l’eau et des vêtements adaptés à la météo. Vérifiez le point de rendez-vous et le retour avant de réserver : les départs en forêt ne se trouvent pas nécessairement près d’une gare ou d’un centre-ville. Restez sur les chemins autorisés et admirez les fleurs sans couper de branches."
+            ]
+          },
+          {
+            title: "Prolonger la fête par une randonnée guidée",
+            paragraphs: [
+              "Rando d’Azur propose des expériences mimosa privées sur demande, à pied ou à vélo, autour de Cannes, Mandelieu et Tanneron. Pour la saison 2027, l’offre privée est annoncée du 15 janvier au 28 février, pour 2 à 12 personnes, environ deux heures, au tarif de 250 € pour le groupe. Le lieu, le parcours et la disponibilité doivent être confirmés avec Maddy selon votre date, votre niveau et les conditions locales ; la location de vélo n’est pas comprise.",
+              "Des randonnées à pied ouvertes aux individuels sont également programmées à la Croix des Gardes, à Cannes, les samedis du 16 janvier au 27 février 2027, de 9 h à 11 h : 35 € par personne, goûter au mimosa inclus, de 6 à 15 participants. Le samedi 13 février tombe pendant la Fête du Mimosa, mais la randonnée a lieu à Cannes et constitue une activité séparée du programme de Mandelieu. Le départ est confirmé manuellement selon les inscriptions."
+            ]
+          },
+          {
+            title: "Organiser votre séjour sans courir",
+            paragraphs: [
+              "La Fête du Mimosa attire des visiteurs dans plusieurs quartiers de Mandelieu. Prévoyez du temps pour rejoindre les animations et vérifiez les informations de circulation et de stationnement publiées par la ville. Si vous ajoutez une randonnée, gardez-lui un créneau distinct et confirmez les déplacements entre votre hébergement, le lieu de départ et les événements.",
+              "Si vous séjournez à Cannes, vous pouvez choisir une balade à la Croix des Gardes et rejoindre Mandelieu séparément pour la fête. Pour une sortie dans le massif du Tanneron, demandez à l’avance les modalités de transport et le point de rendez-vous exact. Aucun transfert n’est inclus par défaut dans les expériences Rando d’Azur."
+            ]
+          }
+        ],
+        faqs: [
+          {
+            question: "Quand a lieu la Fête du Mimosa à Tanneron en 2027 ?",
+            answer: "L’Office de Tourisme du Pays de Fayence annonce le dimanche 31 janvier 2027, de 9 h à 17 h, avec une annulation possible en cas de mauvais temps. Vérifiez les dernières informations avant de partir."
+          },
+          {
+            question: "Quand a lieu la Fête du Mimosa à Mandelieu en 2027 ?",
+            answer: "L’Office de Tourisme annonce l’édition du 10 au 14 février 2027. Le programme détaillé et ses mises à jour sont à consulter sur le site officiel de Mandelieu Tourisme."
+          },
+          {
+            question: "Peut-on faire une randonnée mimosa pendant la Fête du Mimosa ?",
+            answer: "Oui, une sortie guidée peut se prévoir séparément, sous réserve de disponibilité, d’accès et de conditions météo. Rando d’Azur programme notamment une randonnée ouverte aux individuels à Cannes le samedi 13 février 2027, de 9 h à 11 h ; elle ne fait pas partie du programme officiel de la fête à Mandelieu."
+          },
+          {
+            question: "La randonnée est-elle au départ de Mandelieu ?",
+            answer: "Pas pour la randonnée ouverte aux individuels, qui est prévue à la Croix des Gardes, à Cannes. Une sortie privée peut être demandée autour de Cannes, Mandelieu ou Tanneron ; le point de départ exact doit être confirmé avant la réservation."
+          },
+          {
+            question: "La floraison du mimosa est-elle garantie pendant la fête ?",
+            answer: "Non. La floraison dépend des variétés, de la météo et du secteur. Le parcours d’une sortie privée est choisi selon les conditions observées, sans garantie que tous les mimosas soient en fleurs."
+          },
+          {
+            question: "La randonnée inclut-elle les animations ou le transport ?",
+            answer: "Non. Les activités Rando d’Azur sont distinctes de la Fête du Mimosa, et aucun transfert n’est inclus par défaut. Consultez le programme officiel de Mandelieu et confirmez séparément les déplacements."
+          }
+        ]
+      },
+      en: {
+        title: "2027 Mimosa Festivals in Mandelieu and Tanneron: dates and walks",
+        description: "Mandelieu’s Mimosa Festival runs 10–14 February and Tanneron’s is on 31 January 2027. Find official details, mimosa walks and local tips.",
+        intro: "Two Mimosa Festivals take place in different towns in 2027: Tanneron on 31 January and Mandelieu-la-Napoule from 10 to 14 February. Find dates announced by the local tourist offices, practical planning notes and guided walk ideas for the flowering hills. Festival events and guided walks are separate activities; check their locations, times and bookings independently.",
+        sections: [
+          {
+            title: "When is the 2027 Mimosa Festival?",
+            paragraphs: [
+              "Mandelieu’s tourist office announces the Mimosa Festival for 10–14 February 2027, with the theme “Mimosa in Play”. The five-day programme includes town events and parades. Floats are announced for Saturday evening, 13 February, and Sunday afternoon, 14 February. Check the official page for the detailed programme, times and updates before travelling.",
+              "The festival takes place in February, while mimosa flowering spans a broader season and varies by area, variety and weather. Festival dates do not guarantee that every trail will be in full bloom."
+            ]
+          },
+          {
+            title: "In Tanneron: Mimosa Festival on 31 January",
+            paragraphs: [
+              "Tanneron’s Mimosa Festival is announced for Sunday, 31 January 2027, from 9 am to 5 pm. It may be cancelled in bad weather. The published programme includes a market, a procession, a mimosa-growers’ competition, a municipal aperitif and a flower-covered parade from 2 to 4 pm. Check the official information before travelling, especially if the weather is uncertain.",
+              "Traffic and parking arrangements apply during the festival, and some village access is closed to vehicles during the day. Consult the Pays de Fayence tourist office for current parking, shuttle and walking-access instructions."
+            ]
+          },
+          {
+            title: "Where can you walk among mimosa near Mandelieu?",
+            paragraphs: [
+              "Mandelieu-la-Napoule is a gateway to the Tanneron landscapes. Depending on where you stay and how you travel, you could also consider Croix des Gardes in Cannes or the hills around Tanneron village. The right area depends on current flowering, access conditions and your group’s walking level.",
+              "For a mimosa walk, bring sturdy shoes, water and clothing suited to the weather. Confirm the meeting point and return journey before booking: a forest trailhead may not be close to a train station or town centre. Stay on permitted paths and enjoy the flowers without cutting branches."
+            ]
+          },
+          {
+            title: "Add a guided walk to your festival visit",
+            paragraphs: [
+              "Rando d’Azur takes private mimosa experience enquiries for walking or cycling around Cannes, Mandelieu and Tanneron. For the 2027 season, the private experience is listed from 15 January to 28 February for 2–12 people, lasts around two hours and costs €250 for the group. The date, location and route must be confirmed with Maddy based on availability, your group’s level and local conditions. Bicycle rental is not included.",
+              "Shared guided walks on foot are also scheduled at Croix des Gardes in Cannes on Saturdays from 16 January to 27 February 2027, 9–11 am: €35 per person, including a mimosa-themed snack, for 6–15 participants. Saturday, 13 February falls during the festival, but the walk takes place in Cannes and is separate from Mandelieu’s official programme. Departures are manually confirmed according to registrations."
+            ]
+          },
+          {
+            title: "Plan a relaxed stay",
+            paragraphs: [
+              "The Mimosa Festival brings visitors to several parts of Mandelieu. Leave time to reach events and check the town’s current traffic and parking information. If you add a walk, give it a separate time slot and confirm travel between your accommodation, the trailhead and festival events.",
+              "If you are staying in Cannes, you can walk at Croix des Gardes and travel separately to Mandelieu for the festival. For a Tanneron outing, ask in advance about transport and the exact meeting point. Rando d’Azur experiences do not include a transfer by default."
+            ]
+          }
+        ],
+        faqs: [
+          {
+            question: "When is Tanneron’s Mimosa Festival in 2027?",
+            answer: "The Pays de Fayence tourist office announces Sunday, 31 January 2027, from 9 am to 5 pm; the event may be cancelled in bad weather. Check for updates before travelling."
+          },
+          {
+            question: "When is the Mandelieu Mimosa Festival in 2027?",
+            answer: "The tourist office announces 10–14 February 2027. Check Mandelieu Tourisme’s official page for the detailed programme and updates."
+          },
+          {
+            question: "Can I go on a mimosa walk during the festival?",
+            answer: "A guided outing can be arranged separately, subject to availability, access and weather. Rando d’Azur has a shared walk scheduled in Cannes on Saturday, 13 February 2027, from 9–11 am; it is not part of Mandelieu’s official festival programme."
+          },
+          {
+            question: "Does the shared walk start in Mandelieu?",
+            answer: "No. The shared walk is scheduled at Croix des Gardes in Cannes. A private outing can be requested around Cannes, Mandelieu or Tanneron; confirm its exact meeting point before booking."
+          },
+          {
+            question: "Is mimosa flowering guaranteed during the festival?",
+            answer: "No. Flowering varies with the weather, variety and location. A private route is chosen according to observed conditions, but full bloom cannot be guaranteed."
+          },
+          {
+            question: "Does a guided walk include festival events or transport?",
+            answer: "No. Rando d’Azur experiences are separate from the festival programme, and transfers are not included by default. Check the official Mandelieu programme and arrange travel separately."
+          }
+        ]
+      }
+    }
   },
 ];
 
