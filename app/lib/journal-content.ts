@@ -9,6 +9,7 @@ export type JournalCopy = {
 export type JournalArticle = {
   slug: string; lastModified?: string; image: string; alt: Record<Locale, string>;
   sources: { name: string; url: string }[];
+  photos?: { image: string; alt: Record<Locale, string>; caption: Record<Locale, string> }[];
   copy: Record<Locale, JournalCopy>;
 };
 
@@ -406,6 +407,110 @@ export const journalArticles: JournalArticle[] = [
             question: "Does a guided walk include festival events or transport?",
             answer: "No. Rando d’Azur experiences are separate from the festival programme, and transfers are not included by default. Check the official Mandelieu programme and arrange travel separately."
           }
+        ]
+      }
+    }
+  },
+  {
+    slug: "randonnee-raclette-esterel",
+    lastModified: "2026-11-05",
+    image: "/images/journal/raclette-esterel-repas.jpg",
+    alt: {
+      fr: "Fromages, pommes de terre et charcuterie pour une raclette au cœur de l’Estérel",
+      en: "Cheese, potatoes and cured meat for a raclette break in the Estérel"
+    },
+    photos: [
+      {
+        image: "/images/journal/randonneuses-esterel.jpg",
+        alt: { fr: "Deux randonneuses poursuivent leur chemin dans le massif de l’Estérel", en: "Two hikers continue along a trail in the Estérel hills" },
+        caption: { fr: "On prend de la hauteur dans l’Estérel… et on garde un peu d’énergie pour la suite.", en: "Up into the Estérel hills… with a little energy saved for what comes next." }
+      },
+      {
+        image: "/images/journal/raclette-esterel-service.jpg",
+        alt: { fr: "Du fromage fondu servi pendant la pause raclette dans l’Estérel", en: "Melted cheese being served during a raclette break in the Estérel" },
+        caption: { fr: "Au sommet, à mi-parcours : la pause raclette. Oui, le fromage fondu a aussi mérité sa montée.", en: "At the summit, halfway through: raclette break. The melted cheese earned that climb too." }
+      }
+    ],
+    sources: [],
+    copy: {
+      fr: {
+        title: "La vie est plus chouette quand on mange de la raclette !",
+        description: "Une randonnée dans l’Estérel, une raclette au sommet à mi-parcours, puis on repart : l’idée anti-grisaille de novembre signée Rando d’Azur.",
+        intro: "En novembre, quand le moral hésite entre « petite balade » et « plaid jusqu’au printemps », nous avons trouvé un compromis très sérieux : mettre les chaussures de rando… et emporter de quoi faire une raclette. Parce que la vie est plus chouette quand on mange de la raclette !",
+        sections: [
+          {
+            title: "D’abord, on marche. Le fromage attend sagement.",
+            paragraphs: [
+              "Direction les sentiers et les roches rouges de l’Estérel. On avance, on profite du paysage, on prend l’air… et on peut commencer à se demander si le sac ne sent pas délicieusement le fromage.",
+              "L’idée n’est pas de remplacer la randonnée par un pique-nique. C’est de donner à la randonnée une excellente raison de continuer."
+            ]
+          },
+          {
+            title: "Raclette au sommet… à mi-parcours !",
+            paragraphs: [
+              "La pause a lieu au sommet, à mi-chemin. Le fromage fond, les pommes de terre et la charcuterie sortent du sac, et tout le monde se rappelle soudain pourquoi novembre peut être un très bon mois pour randonner.",
+              "Et non, ce n’est pas la ligne d’arrivée : après cette parenthèse fondante avec vue, on reprend le sentier. Il reste de la marche — mais, avouons-le, les jambes repartent avec un peu plus d’enthousiasme."
+            ]
+          },
+          {
+            title: "Un remède très scientifique à la grisaille ?",
+            paragraphs: [
+              "Nous n’avons pas mené d’essai clinique. En revanche, nous avons observé des sourires, des paysages de l’Estérel et du fromage fondu au milieu de la randonnée. La méthode reste à confirmer par les autorités compétentes en raclette.",
+              "Blague à part, c’est surtout une sortie conviviale pour prendre l’air et partager un bon moment. La randonnée, le lieu de pause et l’organisation se définissent selon le groupe, les conditions et les disponibilités."
+            ]
+          },
+          {
+            title: "On vous organise une randonnée raclette ?",
+            paragraphs: [
+              "Cette randonnée raclette peut s’imaginer pour un groupe sur demande avec Rando d’Azur. Écris à Maddy pour parler de votre groupe et de vos envies ; le parcours et les modalités seront confirmés ensemble selon la saison, les conditions et les disponibilités.",
+              "En attendant, voici notre conseil de novembre : si la journée semble un peu grise, ajoutez une balade… et éventuellement du fromage fondu."
+            ]
+          }
+        ],
+        faqs: [
+          { question: "À quel moment a lieu la pause raclette ?", answer: "Au sommet, à mi-parcours. Après le repas, la randonnée continue : la raclette n’est pas le point d’arrivée !" },
+          { question: "Peut-on réserver une randonnée raclette ?", answer: "Vous pouvez contacter Maddy pour envisager une sortie de groupe. Le parcours, les dates et les modalités sont à confirmer selon les disponibilités et les conditions." },
+          { question: "La raclette est-elle toujours au programme ?", answer: "Cette idée dépend de l’organisation convenue pour la sortie. Contactez Rando d’Azur pour discuter du format et des modalités avant de réserver." }
+        ]
+      },
+      en: {
+        title: "Life is better with melted cheese: a raclette hike in the Estérel",
+        description: "A November hike in the Estérel, melted cheese at the summit halfway through, then back on the trail: a cheerful raclette idea from Rando d’Azur.",
+        intro: "In November, when your mood is choosing between “a little walk” and “blanket until spring”, we have a very serious compromise: hiking boots on, raclette in the bag. Because life is better with melted cheese!",
+        sections: [
+          {
+            title: "First, we hike. The cheese can wait.",
+            paragraphs: [
+              "We head for the trails and red rocks of the Estérel. We walk, enjoy the scenery and get some fresh air… while wondering whether the backpack smells deliciously of cheese.",
+              "The idea is not to replace the hike with a picnic. It is to give the hike an excellent reason to keep going."
+            ]
+          },
+          {
+            title: "Raclette at the summit… halfway through!",
+            paragraphs: [
+              "The break is at the summit, halfway along the hike. The cheese melts, potatoes and cured meat come out of the bags, and suddenly everyone remembers why November can be a very good month to hike.",
+              "And no, this is not the finish line: after this scenic, cheesy pause, we set off again. There is still walking to do — though, admittedly, everyone’s legs seem a little more enthusiastic."
+            ]
+          },
+          {
+            title: "A scientifically proven cure for November blues?",
+            paragraphs: [
+              "We have not conducted a clinical trial. We have, however, observed smiles, Estérel scenery and melted cheese in the middle of a hike. The method is awaiting review by the relevant raclette authorities.",
+              "Jokes aside, it is a sociable outing to enjoy the outdoors and share a good moment. The hike, break location and arrangements depend on the group, conditions and availability."
+            ]
+          },
+          {
+            title: "Would you like us to organise a raclette hike?",
+            paragraphs: [
+              "Rando d’Azur can discuss a raclette hike for your group on request. Contact Maddy to talk about your group and ideas; the route and arrangements will be confirmed together based on the season, conditions and availability.",
+              "Until then, our November advice is simple: if the day looks a little grey, add a walk… and perhaps some melted cheese."
+            ]
+          }
+        ],
+        faqs: [
+          { question: "When does the raclette break happen?", answer: "At the summit, halfway through the hike. The walk continues afterwards: raclette is not the finish line!" },
+          { question: "Can we book a raclette hike?", answer: "Contact Maddy to discuss an outing for your group. The route, dates and arrangements must be confirmed based on availability and conditions." },
+          { question: "Is raclette always included?", answer: "The food and format depend on the arrangements agreed for the outing. Contact Rando d’Azur to discuss the details before booking." }
         ]
       }
     }
