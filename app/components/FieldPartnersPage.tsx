@@ -27,7 +27,7 @@ export default function FieldPartnersPage({ locale }: { locale: Locale }) {
           <p className={styles.disclosure}>{copy.disclosure}</p>
           <div className={styles.grid}>
             {copy.items.map((item, index) => <article className={styles.card} key={item.id} id={item.id}>
-              <div className={`${styles.brand} ${styles[item.id]}`}>
+              <div className={`${styles.brand} ${styles[item.id] ?? ""}`}>
                 <span className={styles.number}>0{index + 1}</span>
                 {item.logo ? <Image src={item.logo} alt={item.brand} width={300} height={150} sizes="(max-width: 600px) 65vw, 240px" /> : <span className={styles.wordmark}>{item.brand}</span>}
               </div>

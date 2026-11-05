@@ -13,11 +13,11 @@ import { regiondoShopUrl } from "../lib/regiondo";
 
 function closeMenus(event: MouseEvent<HTMLAnchorElement>) {
   const link = event.currentTarget;
-  const dropdown = link.closest("details");
-  if (dropdown instanceof HTMLDetailsElement) dropdown.open = false;
-
-  const mobileMenu = link.closest(".mobile-nav");
-  if (mobileMenu instanceof HTMLDetailsElement) mobileMenu.open = false;
+  let dropdown = link.closest("details");
+  while (dropdown instanceof HTMLDetailsElement) {
+    dropdown.open = false;
+    dropdown = dropdown.parentElement?.closest("details") ?? null;
+  }
 }
 
 function getUnlocalizedPath(pathname: string) {
@@ -37,7 +37,6 @@ function ExperiencesMenu({
   copy: MessagesForLocale["navigation"];
   mobile?: boolean;
 }) {
-  const root = localePath(locale, "");
   const experiencePages: Record<string, string> = {
     "food-tours": "food-tours",
     "hiking-experiences": "hiking-experiences",
@@ -52,6 +51,45 @@ function ExperiencesMenu({
     "corporate-incentive-travel": "corporate-incentive-travel",
     "cruise-guests": "cruise-guests",
   };
+  const experienceLabels = new Map(copy.experienceLinks);
+  const groups = [
+    {
+      id: "on-foot",
+      label: copy.experienceCategories.onFoot,
+      items: ["hiking-experiences", "sunset-apero-hikes", "wild-provence", "edible-plants", "route-du-mimosa"],
+    },
+    {
+      id: "by-bike",
+      label: copy.experienceCategories.byBike,
+      items: ["cycling-experiences"],
+    },
+    {
+      id: "in-town",
+      label: copy.experienceCategories.inTown,
+      items: ["food-tours", "outdoor-escape-games", "cruise-guests"],
+    },
+    {
+      id: "family",
+      label: copy.experienceCategories.family,
+      items: ["family-experiences"],
+    },
+    {
+      id: "groups",
+      label: copy.experienceCategories.groups,
+      items: ["evjf-experiences", "corporate-incentive-travel"],
+    },
+  ];
+
+  function itemHref(slug: string) {
+    if (slug === "route-du-mimosa") {
+      return localePath(locale, "/experiences/route-du-mimosa");
+    }
+    return localePath(locale, `/experiences/${experiencePages[slug]}`);
+  }
+
+  function itemLabel(slug: string) {
+    return slug === "route-du-mimosa" ? copy.mimosaExperience : experienceLabels.get(slug);
+  }
 
   return (
     <details className={`nav-dropdown${mobile ? " nav-dropdown-mobile" : ""}`}>
@@ -59,20 +97,18 @@ function ExperiencesMenu({
         {copy.experiences} <span aria-hidden="true">⌄</span>
       </summary>
       <nav aria-label={copy.experiencesLabel}>
-        {copy.experienceLinks.map(([slug, label]) => {
-          const pageSlug = experiencePages[slug];
-          const href = pageSlug
-            ? localePath(locale, `/experiences/${pageSlug}`)
-            : slug === "private-experiences"
-              ? `${root}#booking`
-              : `${root}#${slug}`;
-
-          return (
-            <Link href={href} key={slug} onClick={closeMenus}>
-              {label}
-            </Link>
-          );
-        })}
+        {groups.map((group) => (
+          <details className="nav-submenu" key={group.id}>
+            <summary>{group.label}<span aria-hidden="true">⌄</span></summary>
+            <div className="nav-submenu-links">
+              {group.items.map((slug) => (
+                <Link href={itemHref(slug)} key={slug} onClick={closeMenus}>
+                  {itemLabel(slug)}
+                </Link>
+              ))}
+            </div>
+          </details>
+        ))}
         <Link href={localePath(locale, "/partners-on-the-trail")} onClick={closeMenus}>{locale === "fr" ? "Mes partenaires sur le terrain" : "My partners on the trail"}</Link>
       </nav>
     </details>

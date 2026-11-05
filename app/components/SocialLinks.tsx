@@ -31,6 +31,7 @@ export default function SocialLinks({
         <a
           aria-label={locale === "fr" ? `Suivre Rando d’Azur sur ${account.label}` : `Follow Rando d’Azur on ${account.label}`}
           className="social-link"
+          data-social-network={account.icon}
           href={account.href}
           key={account.icon}
           rel="noopener noreferrer"
