@@ -5,6 +5,7 @@ import { localePath } from "../i18n/config";
 import { getMessages } from "../i18n/messages";
 import { journalArticles, journalDate, type JournalArticle } from "../lib/journal-content";
 import { getSiteUrl } from "../lib/site-url";
+import { contactChannels } from "../lib/contact-channels";
 import { getBreadcrumbStructuredData, getFaqStructuredData, getPersonStructuredData, getWebPageStructuredData } from "../lib/structured-data";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -15,12 +16,14 @@ export default function JournalArticlePage({ locale, article }: { locale: Locale
   const messages = getMessages(locale);
   const path = `/journal/${article.slug}`;
   const url = new URL(localePath(locale, path), getSiteUrl()).toString();
+  const articleDate = article.lastModified ?? journalDate;
+  const formattedArticleDate = new Intl.DateTimeFormat(locale === "fr" ? "fr-FR" : "en-GB", { day: "numeric", month: "long", year: "numeric" }).format(new Date(`${articleDate}T12:00:00`));
   const graph = { "@context": "https://schema.org", "@graph": [
     getPersonStructuredData(locale), getWebPageStructuredData(locale, path, copy.title, copy.description),
     getBreadcrumbStructuredData(locale, [{ name: messages.navigation.home, path: "" }, { name: "Journal", path: "/journal" }, { name: copy.title, path }]),
     getFaqStructuredData(locale, path, copy.faqs),
     { "@type": "Article", "@id": `${url}#article`, mainEntityOfPage: url, headline: copy.title, description: copy.description,
-      image: new URL(article.image, getSiteUrl()).toString(), datePublished: journalDate, dateModified: journalDate,
+      image: new URL(article.image, getSiteUrl()).toString(), datePublished: articleDate, dateModified: articleDate,
       inLanguage: locale, author: { "@id": new URL("/#maddy-polomeni", getSiteUrl()).toString() },
       publisher: { "@type": "Organization", name: "Rando d’Azur", url: getSiteUrl().toString() }, citation: article.sources.map(source => source.url) },
   ] };
@@ -30,20 +33,17 @@ export default function JournalArticlePage({ locale, article }: { locale: Locale
         <Link className="text-link" href={localePath(locale, "/journal")}>← {locale === "fr" ? "Le Journal de la Côte d’Azur" : "The Riviera Journal"}</Link>
         <p className="eyebrow">{locale === "fr" ? "LES REPÈRES RANDO D’AZUR" : "RANDO D’AZUR FIELD NOTES"}</p>
         <h1>{copy.title}</h1><p className={styles.intro}>{copy.intro}</p>
-        <p className={styles.byline}>{locale === "fr" ? "Par" : "By"} <Link href={localePath(locale, "/meet-maddy")}>Maddy Polomeni</Link> · {locale === "fr" ? "Mis à jour le 18 octobre 2026" : "Updated 18 October 2026"}</p>
+        <p className={styles.byline}>{locale === "fr" ? "Par" : "By"} <Link href={localePath(locale, "/meet-maddy")}>Maddy Polomeni</Link> · {locale === "fr" ? `Mis à jour le ${formattedArticleDate}` : `Updated ${formattedArticleDate}`}</p>
       </header>
       <div className={`page-width ${styles.layout}`}>
         <article className={styles.body}>
-          <figure className={styles.cover}><Image src={article.image} alt={article.alt[locale]} fill sizes="(max-width: 800px) 100vw, 65vw" preload /><figcaption>{locale === "fr" ? "Photographie d’archive Rando d’Azur — paysage ou sortie sur la Côte d’Azur." : "Rando d’Azur archive photograph — French Riviera landscape or outing."}</figcaption></figure>
+          <figure className={styles.cover}><Image src={article.image} alt={article.alt[locale]} fill sizes="(max-width: 800px) 100vw, 65vw" preload /><figcaption>{article.coverCaption?.[locale] ?? (locale === "fr" ? "Photographie d’archive Rando d’Azur — paysage ou sortie sur la Côte d’Azur." : "Rando d’Azur archive photograph — French Riviera landscape or outing.")}</figcaption></figure>
+          {article.photos && <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: "1rem", margin: "1.5rem 0 2rem" }}>{article.photos.map(photo => <figure key={photo.image} style={{ margin: 0 }}><div style={{ position: "relative", aspectRatio: "4 / 5", overflow: "hidden", borderRadius: "0.75rem" }}><Image src={photo.image} alt={photo.alt[locale]} fill sizes="(max-width: 800px) 100vw, 32vw" style={{ objectFit: "cover" }} /></div><figcaption>{photo.caption[locale]}</figcaption></figure>)}</div>}
           {copy.sections.map((section, i) => <section key={section.title} id={`section-${i}`}><h2>{section.title}</h2>{section.paragraphs.map(text => <p key={text}>{text}</p>)}</section>)}
           <section aria-labelledby="article-faq"><h2 id="article-faq">{locale === "fr" ? "Questions fréquentes" : "Frequently asked questions"}</h2>{copy.faqs.map(faq => <details className={styles.faq} key={faq.question}><summary>{faq.question}</summary><p>{faq.answer}</p></details>)}</section>
-          <section className={styles.sources}><h2>{locale === "fr" ? "Pour préparer votre visite" : "Plan your visit"}</h2><p>{locale === "fr" ? "Sources consultées le 18 octobre 2026. Vérifiez les dernières informations de programme et d’accès auprès des sites officiels." : "Sources checked on 18 October 2026. Check official sites for the latest programme and access information."}</p><ul>{article.sources.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.name} ↗</a></li>)}</ul></section>
+          {article.sources.length > 0 && <section className={styles.sources}><h2>{locale === "fr" ? "Pour préparer votre visite" : "Plan your visit"}</h2><p>{locale === "fr" ? "Sources consultées le 18 octobre 2026. Vérifiez les dernières informations de programme et d’accès auprès des sites officiels." : "Sources checked on 18 October 2026. Check official sites for the latest programme and access information."}</p><ul>{article.sources.map(source => <li key={source.url}><a href={source.url} target="_blank" rel="noopener noreferrer">{source.name} ↗</a></li>)}</ul></section>}
         </article>
-        <aside className={styles.aside}><p className="eyebrow">{locale === "fr" ? "VIVRE LA RIVIERA" : "EXPERIENCE THE RIVIERA"}</p><h2>{locale === "fr" ? "Une découverte avec Maddy" : "Explore with Maddy"}</h2><p>{locale === "fr" ? "Mimosa, plantes et paysages : choisissez une expérience adaptée à votre groupe." : "Mimosa blossom, plants and landscapes: find an experience for your group."}</p>
-          <Link className="button button-dark" href={`${localePath(locale, "/experiences/route-du-mimosa")}#individuals`}>{locale === "fr" ? "Mimosa : individuel ou privé" : "Mimosa: shared or private"} ↗</Link>
-          <Link className="text-link" href={localePath(locale, "/experiences/edible-plants")}>{locale === "fr" ? "Découvrir les plantes" : "Discover local plants"} ↗</Link>
-          <Link className="text-link" href={localePath(locale, "/travel-trade")}>{locale === "fr" ? "Agences & DMC" : "Travel agencies & DMCs"} ↗</Link>
-        </aside>
+        <aside className={styles.aside}>{article.slug === "randonnee-raclette-esterel" ? <><p className="eyebrow">{locale === "fr" ? "UNE SORTIE QUI CHANGE" : "A DIFFERENT KIND OF HIKE"}</p><h2>{locale === "fr" ? "On remet ça ?" : "Shall we do it again?"}</h2><p>{locale === "fr" ? "Une randonnée raclette pour votre groupe ? Écrivez à Maddy pour imaginer une sortie selon vos envies, les conditions et les disponibilités." : "A raclette hike for your group? Email Maddy to discuss an outing that fits your ideas, conditions and availability."}</p><a className="button button-dark" href={`mailto:${contactChannels.primaryEmail}?subject=${encodeURIComponent(locale === "fr" ? "Demande de randonnée raclette" : "Raclette hike enquiry")}`}>{locale === "fr" ? "Parler de votre projet" : "Ask about your outing"} ↗</a></> : <><p className="eyebrow">{locale === "fr" ? "VIVRE LA RIVIERA" : "EXPERIENCE THE RIVIERA"}</p><h2>{locale === "fr" ? "Une découverte avec Maddy" : "Explore with Maddy"}</h2><p>{locale === "fr" ? "Mimosa, plantes et paysages : choisissez une expérience adaptée à votre groupe." : "Mimosa blossom, plants and landscapes: find an experience for your group."}</p><Link className="button button-dark" href={`${localePath(locale, "/experiences/route-du-mimosa")}#individuals`}>{locale === "fr" ? "Mimosa : individuel ou privé" : "Mimosa: shared or private"} ↗</Link><Link className="text-link" href={localePath(locale, "/experiences/edible-plants")}>{locale === "fr" ? "Découvrir les plantes" : "Discover local plants"} ↗</Link><Link className="text-link" href={localePath(locale, "/travel-trade")}>{locale === "fr" ? "Agences & DMC" : "Travel agencies & DMCs"} ↗</Link></>}</aside>
       </div>
       <section className={`page-width ${styles.related}`}><h2>{locale === "fr" ? "À lire aussi" : "Read next"}</h2><div className={styles.grid}>{journalArticles.filter(item => item.slug !== article.slug).map(item => <Link className={styles.relatedLink} href={localePath(locale, `/journal/${item.slug}`)} key={item.slug}>{item.copy[locale].title}<span aria-hidden="true">↗</span></Link>)}</div></section>
     </main><Footer locale={locale} /><script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(graph).replace(/</g, "\\u003c") }} /></>;
