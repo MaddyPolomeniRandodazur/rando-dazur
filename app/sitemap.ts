@@ -8,7 +8,7 @@ import {
 } from "./i18n/config";
 import { destinationSlugs } from "./i18n/destination-content";
 import { getSiteUrl } from "./lib/site-url";
-import { journalArticles } from "./lib/journal-content";
+import { journalArticles, journalDate } from "./lib/journal-content";
 
 function localizedSitemapEntry(
   locale: (typeof locales)[number],
@@ -46,7 +46,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     localizedSitemapEntry(locale, "", 1),
     localizedSitemapEntry(locale, "/press", 0.5),
     localizedSitemapEntry(locale, "/journal", 0.7),
-    ...journalArticles.map(article => ({ ...localizedSitemapEntry(locale, `/journal/${article.slug}`, 0.7), lastModified: new Date("2026-10-18T12:00:00Z") })),
+    ...journalArticles.map(article => ({ ...localizedSitemapEntry(locale, `/journal/${article.slug}`, 0.7), lastModified: new Date(`${article.lastModified ?? journalDate}T12:00:00Z`) })),
     localizedSitemapEntry(locale, "/partners-on-the-trail", 0.6),
     localizedSitemapEntry(locale, "/experiences/route-du-mimosa", 0.8),
     localizedSitemapEntry(locale, "/meet-maddy", 0.8),
