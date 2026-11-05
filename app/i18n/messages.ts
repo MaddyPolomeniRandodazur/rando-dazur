@@ -1,6 +1,3 @@
-Warning: truncated output (original token count: 15720)
-Total output lines: 1455
-
 import type { ExperienceSlug, Locale } from "./config";
 
 const english = {
@@ -479,7 +476,562 @@ const english = {
     eyebrow: "YOUR RIVIERA STORY BEGINS HERE",
     title: "Book an Experience",
     introduction:
- …5720 tokens truncated…   googleTranslationNote:
+      "Book online, or contact Maddy to create a private Riviera journey.",
+    onlineTitle: "Book online with Regiondo",
+    onlineLabel: "Online booking with Regiondo",
+    onlineNote:
+      "Explore available experiences in our booking shop. For a tailor-made experience, contact Maddy.",
+  },
+  photoGallery: {
+    eyebrow: "A CLOSER LOOK",
+    title: "The experience, in moments.",
+    description:
+      "Explore the places, people and details captured across this experience.",
+    photoAlt: "A moment from this Rando d’Azur experience",
+  },
+  footer: {
+    brandLine: "DESTINATION MANAGEMENT · FRENCH RIVIERA",
+    navigationLabel: "Footer navigation",
+    descriptor:
+      "Private experiences, shaped by local knowledge and a deep love of place.",
+    eyebrow: "YOUR STORY, STARTS HERE",
+    brandFirst: "Taste the",
+    brandSecond: "French Riviera",
+    manifesto: ["Eat it.", "Walk it.", "Cycle it.", "Meet it.", "Live it."],
+    cta: "Start your Riviera Story",
+    experiences: "Experiences",
+    mice: "Agencies & MICE",
+    about: "About Rando d’Azur",
+    destinations: "Explore the Riviera",
+    legalNotice: "Legal notice",
+    terms: "Terms & conditions of sale",
+    privacy: "Privacy policy",
+    cookies: "Cookie policy",
+    copyright: "All rights reserved.",
+    backToTop: "Back to top",
+    followEyebrow: "A LIFE WELL LIVED, SHARED",
+    followTitle: "Follow our adventures",
+    followDescription:
+      "A little more of the Riviera, wherever you are.",
+    contactDetailsTitle: "Stay in touch",
+    contactLinksLabel: "Rando d’Azur contact and social links",
+    facebookLabel: "Facebook",
+    instagramLabel: "Instagram",
+    whatsappLabel: "WhatsApp",
+    phoneLabel: "Phone",
+    emailLabel: "Email",
+    partnershipsEmailLabel: "Partnerships",
+  },
+  experiencePage: {
+    eyebrow: "PRIVATE EXPERIENCES · FRENCH RIVIERA",
+    back: "Discover all experiences",
+    enquire: "Enquire about this experience",
+    chaptersEyebrow: "A JOURNEY, SHAPED AROUND YOU",
+    chaptersTitleFirst: "The Riviera,",
+    chaptersTitleSecond: "felt differently.",
+    toursTitleFirst: "Find your",
+    toursTitleSecond: "ride.",
+    note:
+      "Each experience is shaped with local care and adapted to the people sharing it. Details are confirmed with you before your journey.",
+    booking: "Make it yours",
+    pages: {
+      "food-tours": {
+        title: "Food Tours",
+        subtitle: "Eat it.",
+        description:
+          "Discover the Riviera through its markets, regional flavours and the people who bring them to the table.",
+        imageAlt: "Food and local flavours of the French Riviera",
+        points: [
+          "Market visits shaped around the season",
+          "Meet local food artisans and producers",
+          "A private itinerary, adapted to your tastes",
+        ],
+      },
+      "hiking-experiences": {
+        title: "Hiking Experiences",
+        subtitle: "Walk it.",
+        description:
+          "Follow coastal paths and quieter trails through the landscapes that give the Riviera its many moods.",
+        imageAlt: "Walking paths and landscapes of the French Riviera",
+        points: [
+          "Private walks matched to your pace",
+          "Coastal, countryside and hilltop routes",
+          "Local insight along the way",
+        ],
+      },
+      "sunset-apero-hikes": {
+        title: "Rando Apéro Hike",
+        subtitle: "A golden-hour ritual.",
+        description:
+          "Set out on a guided evening walk, then pause for a generous apéro picnic as the sun settles over the Riviera.",
+        imageAlt: "Guests taking a nature break on the French Riviera",
+        points: [
+          "A relaxed guided walk through the local landscape",
+          "A picnic apéro with regional flavours",
+          "A private experience timed around the evening light",
+        ],
+      },
+      "cycling-experiences": {
+        title: "Cycling Experiences",
+        subtitle: "Cycle it.",
+        description:
+          "Take in the coast and its hinterland at your own rhythm, with a cycling experience shaped around your day.",
+        imageAlt: "Cycling routes along the French Riviera",
+        points: [
+          "Private rides adapted to your group",
+          "Coast and countryside itineraries",
+          "Time to pause, explore and take it in",
+        ],
+        tours: [
+          {
+            title: "Cannes City Discovery",
+            description:
+              "Discover the city’s waterfront, neighbourhoods and local stories by bike.",
+          },
+          {
+            title: "Estérel Mountain Bike Adventure",
+            description:
+              "Ride the red-rock landscapes and forest trails of the Estérel with a local guide.",
+          },
+          {
+            title: "Mimosa Season Cycling Tour",
+            description:
+              "Cycle through golden mimosa forests and peaceful trails of the French Riviera. A seasonal guided cycling experience surrounded by nature, colour and the scents of winter.",
+            seasonality: "Winter flowering season; subject to natural conditions.",
+          },
+        ],
+      },
+      "family-experiences": {
+        title: "Family Experiences",
+        subtitle: "Live it together.",
+        description:
+          "Share a more personal side of the Riviera through thoughtful adventures for different ages and interests.",
+        imageAlt: "A shared family experience on the French Riviera",
+        points: [
+          "A pace that works for your family",
+          "Outdoor discovery and local encounters",
+          "A private plan shaped around your day",
+        ],
+      },
+      "corporate-incentive-travel": {
+        title: "Corporate & Incentive Travel",
+        subtitle: "Meet it. Live it.",
+        description:
+          "Bring people together with locally rooted experiences and considered support for your Riviera programme.",
+        imageAlt: "A private corporate gathering on the French Riviera",
+        points: [
+          "Tailor-made programmes for your objectives",
+          "Local coordination and multilingual guides",
+          "Experiences for corporate and incentive groups",
+        ],
+      },
+      "wild-provence": {
+        title: "Wild Provence",
+        subtitle: "A closer relationship with the land.",
+        description:
+          "Discover edible and wild plants through a guided exploration of Provence’s generous landscapes and seasonal flavours.",
+        imageAlt: "Edible and wild plants gathered in Provence",
+        points: [
+          "A guided introduction to local wild plants",
+          "Seasonal knowledge rooted in the landscape",
+          "A respectful approach to nature and gathering",
+        ],
+      },
+      "edible-plants": {
+        title: "Edible Plants of Provence",
+        subtitle: "A taste of the wild.",
+        description:
+          "Learn about Provence’s seasonal edible plants on a locally guided walk rooted in careful observation and respect for nature.",
+        imageAlt: "Seasonal edible plants growing in the Provençal landscape",
+        points: [
+          "Recognise selected local plants with an experienced guide",
+          "Explore seasonal knowledge shaped by the landscape",
+          "Discover responsible, sustainable foraging practices",
+        ],
+      },
+      "outdoor-escape-games": {
+        title: "Escape Games Outdoor",
+        subtitle: "The landscape is your gameboard.",
+        description:
+          "Bring your group together for a playful outdoor challenge shaped by clues, local surroundings and shared discovery.",
+        imageAlt: "A team collaborating during an outdoor escape game",
+        points: [
+          "Outdoor team challenges for private groups",
+          "Shared clues, discovery and problem-solving",
+          "A lively format for celebrations and events",
+        ],
+      },
+      "evjf-experiences": {
+        title: "EVJF & EVG · Bachelorette & Bachelor Groups",
+        subtitle: "A celebration, made personal.",
+        description:
+          "Celebrate the bride- or groom-to-be with a private Riviera experience, from outdoor adventures to local discoveries, thoughtfully tailored to your group.",
+        imageAlt: "Friends celebrating together on the French Riviera",
+        points: [
+          "A private experience tailored to your group",
+          "Outdoor discovery and local touches",
+          "Flexible planning around your celebration",
+        ],
+      },
+      "evg-experiences": {
+        title: "EVG · Bachelor Groups",
+        subtitle: "A day worth remembering.",
+        description:
+          "Gather your friends for an active, locally guided experience that makes the most of your time on the Riviera.",
+        imageAlt: "Friends sharing an outdoor adventure on the French Riviera",
+        points: [
+          "A private outing for your group",
+          "Active experiences shaped around your plans",
+          "Local coordination from start to finish",
+        ],
+      },
+      "cruise-guests": {
+        title: "Cruise Guests",
+        subtitle: "Beyond the port.",
+        description:
+          "Make the most of a Riviera port call with a private shore experience carefully planned around your time ashore.",
+        imageAlt: "A privately guided French Riviera shore excursion",
+        points: [
+          "Private shore experiences for your port call",
+          "Thoughtful timing and local coordination",
+          "A personal introduction to the Riviera",
+        ],
+      },
+    },
+  },
+} as const;
+
+type Widen<T> = T extends string
+  ? string
+  : T extends number
+    ? number
+    : T extends boolean
+      ? boolean
+      : T extends readonly unknown[]
+        ? { readonly [Index in keyof T]: Widen<T[Index]> }
+        : T extends object
+          ? { [Key in keyof T]: Widen<T[Key]> }
+          : T;
+
+type Destination = {
+  id: string;
+  name: string;
+  x: number;
+  y: number;
+  detail: string;
+  region: string;
+  driveTime: string;
+  photos: readonly string[];
+  experiences: readonly ExperienceSlug[];
+  photosFrom: readonly ExperienceSlug[];
+  subtitle?: string;
+  cta?: string;
+};
+
+type EnglishMessages = Widen<typeof english>;
+type Messages = Omit<EnglishMessages, "map" | "navigation" | "experiences"> & {
+  navigation: Omit<EnglishMessages["navigation"], "experienceLinks"> & {
+    experienceLinks: readonly (readonly [string, string])[];
+  };
+  experiences: Omit<EnglishMessages["experiences"], "items"> & {
+    items: readonly EnglishMessages["experiences"]["items"][number][];
+  };
+  map: Omit<EnglishMessages["map"], "destinations"> & {
+    destinations: readonly Destination[];
+  };
+};
+
+const french: Messages = {
+  seo: {
+    areaName: "Côte d’Azur, France",
+  },
+  contact: {
+    maddyButton: "Contacter Maddy",
+    whatsappMessage:
+      "Bonjour Maddy, j’aimerais en savoir plus sur vos expériences.",
+  },
+  navigation: {
+    brandLine: "LA CÔTE D’AZUR, AUTREMENT",
+    mainLabel: "Navigation principale",
+    mobileLabel: "Navigation mobile",
+    socialNavigationLabel: "Réseaux sociaux de Rando d’Azur",
+    openMenu: "Ouvrir le menu de navigation",
+    experiencesLabel: "Expériences",
+    experienceCategories: {
+      onFoot: "À pied",
+      byBike: "À vélo",
+      inTown: "En ville & en escale",
+      family: "En famille et avec les enfants",
+      groups: "Groupes privés",
+    },
+    mimosaExperience: "Randonnées mimosa",
+    chooseLanguage: "Choisir la langue",
+    home: "Accueil",
+    experiences: "Expériences",
+    groups: "Groupes",
+    destinations: "Destinations",
+    about: "À propos",
+    press: "Presse",
+    reviews: "Avis",
+    contact: "Contact",
+    book: "Réserver une expérience",
+    language: "Langue",
+    current: "Actuelle",
+    languageComingSoon: "Bientôt disponible",
+    languages: [
+      ["en", "English"],
+      ["fr", "Français"],
+    ],
+    experienceLinks: [
+      ["food-tours", "Food Tour"],
+      ["hiking-experiences", "Randonnées"],
+      ["sunset-apero-hikes", "Randonnées apéro au coucher du soleil"],
+      ["cycling-experiences", "Expériences à vélo"],
+      ["wild-provence", "Provence sauvage"],
+      ["edible-plants", "Plantes comestibles de Provence"],
+      ["outdoor-escape-games", "Escape games outdoor"],
+      ["family-experiences", "Expériences en famille"],
+      ["evjf-experiences", "EVJF & EVG · Groupes entre amis"],
+      ["corporate-incentive-travel", "Voyages d’entreprise & incentive"],
+      ["cruise-guests", "Excursions pour croisiéristes"],
+    ],
+  },
+  hero: {
+    eyebrow: "VOYAGES PRIVÉS · CÔTE D’AZUR",
+    titleFirst: "Goûtez la",
+    titleSecond: "Côte d’Azur",
+    description:
+      "Randonnées guidées, balades gourmandes et sorties privées pour groupes dans les Alpes-Maritimes, à Cannes, Mandelieu et dans l’Estérel.",
+    discover: "Découvrir nos expériences",
+    create: "Créer un voyage privé",
+    scroll: "Défiler pour découvrir",
+    imageAlt: "Une expérience privée en plein air sur la Côte d’Azur",
+  },
+  manifesto: {
+    eyebrow: "BIEN PLUS QU’UNE DESTINATION",
+    titleFirst: "Goûtez la",
+    titleSecond: "Côte d’Azur",
+    words: ["Goûtez-la.", "Parcourez-la.", "Pédalez-la.", "Rencontrez-la.", "Vivez-la."],
+    introduction:
+      "Un lieu à savourer, à explorer et à ressentir, dans tout ce qui compte vraiment.",
+    stories: [
+      "Au marché, avant que la matinée ne s’échappe.",
+      "Là où le littoral laisse place à la nature.",
+      "Sur les routes qui donnent envie de s’attarder.",
+      "Dans les villages, avec ceux qui les font vivre.",
+      "Une Côte d’Azur qui vous ressemble.",
+    ],
+  },
+  experiences: {
+    eyebrow: "LA CÔTE D’AZUR EST L’EXPÉRIENCE",
+    headingFirst: "Goûtez-la. Parcourez-la.",
+    headingSecond: "Vivez-la.",
+    introduction:
+      "Rando d’Azur est une agence réceptive qui imagine des expériences privées et sur mesure dans toute la Côte d’Azur. Découvrez-la à votre manière.",
+    items: [
+      {
+        id: "food-tours",
+        slug: "food-tours",
+        title: "Food Tour",
+        detail: "Goûtez-la",
+        description:
+          "Marchés du matin, artisans et longues tablées aux saveurs du Sud.",
+        image: "experience-food",
+        alt: "Saveurs de la Côte d’Azur",
+      },
+      {
+        id: "hiking",
+        slug: "hiking-experiences",
+        title: "Randonnées",
+        detail: "Parcourez-la",
+        description:
+          "Sentiers côtiers et chemins sauvages dévoilés par ceux qui les connaissent.",
+        image: "experience-hiking",
+        alt: "Sentiers de randonnée de la Côte d’Azur",
+      },
+      {
+        id: "sunset-apero-hikes",
+        slug: "sunset-apero-hikes",
+        title: "Randonnées apéro au coucher du soleil",
+        detail: "L’heure dorée",
+        description:
+          "Une balade à votre rythme, un beau panorama et un apéritif au soleil couchant.",
+        image: "experience-sunset",
+        alt: "Un coucher de soleil sur la Côte d’Azur",
+      },
+      {
+        id: "velo",
+        slug: "cycling-experiences",
+        title: "Expériences à vélo",
+        detail: "Pédalez-la",
+        description:
+          "Des routes en balcon sur la mer aux beaux villages de l’arrière-pays.",
+        image: "experience-cycling",
+        alt: "Itinéraires à vélo au-dessus de la Méditerranée",
+      },
+      {
+        id: "corporate-experiences",
+        slug: "corporate-incentive-travel",
+        title: "Voyages d’entreprise & incentive",
+        detail: "Rencontrez-la",
+        description:
+          "Des programmes ancrés localement, une logistique soignée et des expériences pensées pour vos invités.",
+        image: "experience-corporate",
+        alt: "Une expérience d’entreprise sur la Côte d’Azur",
+      },
+      {
+        id: "familles",
+        slug: "family-experiences",
+        title: "Expériences en famille",
+        detail: "À vivre ensemble",
+        description:
+          "Des aventures douces et des découvertes pour toutes les générations.",
+        image: "experience-family",
+        alt: "Aventures en famille sur la Côte d’Azur",
+      },
+      {
+        id: "wild-provence",
+        slug: "wild-provence",
+        title: "Provence sauvage",
+        detail: "Cueillir avec respect",
+        description:
+          "Découvrez les plantes comestibles et sauvages lors d’une immersion guidée au cœur du paysage provençal.",
+        image: "experience-wild-provence",
+        alt: "Plantes sauvages et comestibles de Provence",
+      },
+      {
+        id: "outdoor-escape-games",
+        slug: "outdoor-escape-games",
+        title: "Escape games outdoor",
+        detail: "Résoudre ensemble",
+        description:
+          "Un défi ludique en plein air où indices, découverte et esprit d’équipe rassemblent votre groupe.",
+        image: "experience-escape-game",
+        alt: "Une équipe participe à un escape game en plein air",
+      },
+      {
+        id: "evjf-experiences",
+        slug: "evjf-experiences",
+        title: "EVJF & EVG · Groupes entre amis",
+        detail: "Célébrer ensemble",
+        description:
+          "Réunissez votre groupe pour une célébration privée et conviviale sur la Côte d’Azur, accompagnée localement et imaginée autour des personnes au cœur de l’événement.",
+        image: "experience-evjf",
+        alt: "Des amis célèbrent un EVJF ou un EVG sur la Côte d’Azur",
+      },
+      {
+        id: "cruise-guests",
+        slug: "cruise-guests",
+        title: "Excursions pour croisiéristes",
+        detail: "Au-delà du port",
+        description:
+          "Profitez pleinement de votre escale grâce à une excursion privée organisée selon votre temps à terre.",
+        image: "experience-cruise",
+        alt: "Une excursion privée pendant une escale sur la Côte d’Azur",
+      },
+    ],
+    explore: "Découvrir",
+  },
+  about: {
+    eyebrow: "UNE AUTRE FAÇON DE CONNAÎTRE UN LIEU",
+    title: "Pourquoi Rando d’Azur ?",
+    introduction:
+      "Nous sommes des experts locaux de la Côte d’Azur. Nous imaginons des expériences privées et authentiques, guidées par une connaissance intime du territoire.",
+    reasons: [
+      {
+        title: "Un regard profondément local",
+        description:
+          "Nous vivons ici. Notre connaissance ouvre les portes des lieux et des rencontres qui font la vraie Côte d’Azur.",
+      },
+      {
+        title: "Des expériences qui ont du sens",
+        description:
+          "Chaque rencontre est choisie pour son ancrage et les histoires sincères qu’elle révèle.",
+      },
+      {
+        title: "Imaginées autour de vous",
+        description:
+          "Des voyages privés conçus selon vos envies, votre rythme et ceux qui vous accompagnent.",
+      },
+      {
+        title: "Un service tout en justesse",
+        description:
+          "Une organisation attentive vous laisse libre de profiter pleinement de l’instant.",
+      },
+    ],
+    founderEyebrow: "LA PERSONNE DERRIÈRE LE VOYAGE",
+    founderTitle: "Rencontrez Maddy Polomeni",
+    founderRole: "Fondatrice & responsable des expériences",
+    founderParagraphs: [
+      "Maddy Polomeni, fondatrice de Rando d’Azur, partage sa connaissance locale de la Côte d’Azur à travers les randonnées, les expériences outdoor et les rencontres avec ses habitants. Une conviction simple anime cette démarche : la plus belle façon de découvrir la Côte d’Azur passe par ses habitants, ses lieux et les instants du quotidien qui la rendent unique.",
+      "Aujourd’hui, l’entreprise est devenue une équipe locale de confiance qui partage les mêmes valeurs. Cette évolution nous permet d’accueillir davantage de voyageurs tout en préservant l’authenticité, la souplesse et la qualité qui nous tiennent à cœur.",
+    ],
+    portraitAlt: "Maddy Polomeni, fondatrice & responsable des expériences",
+    teamAlt: "L’équipe locale de Rando d’Azur",
+  },
+  trusted: {
+    eyebrow: "LA CONFIANCE DES PROFESSIONNELS DU VOYAGE",
+    titleFirst: "Le voyage,",
+    titleSecond: "bien accompagné.",
+    introduction:
+      "Un partenaire local de confiance pour celles et ceux qui imaginent des voyages d’exception sur la Côte d’Azur.",
+    introShort: "Un partenaire local pour",
+    categories: [
+      "Hôtels de luxe",
+      "Créateurs de voyages",
+      "Agences réceptives",
+      "Compagnies de croisière",
+      "Événements d’entreprise",
+    ],
+    link: "Travailler avec notre équipe locale",
+  },
+  press: {
+    eyebrow: "PRESSE & MÉDIAS",
+    titleFirst: "La Côte d’Azur,",
+    titleSecond: "racontée de l’intérieur.",
+    introduction:
+      "Une sélection de parutions dans la presse et les magazines qui célèbrent les paysages et expériences de la Côte d’Azur.",
+    contact: "Contacter notre équipe",
+    categories: [
+      "Logos de magazines",
+      "Articles de presse",
+      "Reportages télévisés",
+      "Prix & distinctions",
+    ],
+    futureContent: "Emplacement réservé aux prochaines parutions",
+    featuredEyebrow: "DANS LES MÉDIAS",
+    featuredTitle: "Ils parlent de nous",
+    openCoverage: "Lire notre parution dans",
+    pageIntroduction:
+      "Reportages, entretiens et recommandations citant Maddy Polomeni. Chaque référence précise sa source et la nature de la parution ; les articles historiques ne décrivent pas les tarifs ou disponibilités actuels.",
+    viewAll: "Ils parlent de nous",
+    readArticle: "Lire l’article",
+    archiveEyebrow: "DANS LES ARCHIVES DE PRESSE",
+    archiveIntroduction:
+      "Des coupures de presse sont conservées dans les archives de l’entreprise. Leurs titres originaux et liens éditeurs sont en cours de vérification avant publication.",
+    archivePlaceholder:
+      "Coupure d’archive · référence de l’article original à confirmer",
+    televisionAppearance: "Passage à la télévision",
+    televisionArchive: "Explorer les archives télévisuelles",
+    televisionPhotoAlt: "Un instant des reportages consacrés à Rando d’Azur",
+  },
+  reviews: {
+    eyebrow: "AVIS GOOGLE",
+    titleFirst: "Quelques mots",
+    titleSecond: "de nos voyageurs.",
+    introduction:
+      "Des instants choisis, racontés par celles et ceux qui les ont vécus.",
+    trustStatement:
+      "Chaque expérience est imaginée autour de rencontres authentiques, de notre connaissance locale et de souvenirs inoubliables.",
+    ratingLabel: "Note Google",
+    publicReviews: "avis publics sur Google",
+    statisticsLabel: "Statistiques des avis Google",
+    averageRating: "Note moyenne",
+    reviewCountLabel: "Avis Google",
+    fiveStarCountLabel: "Avis 5 étoiles",
+    snapshotNote: "Profil Google consulté le",
+    fiveStars: "5 étoiles sur 5",
+    googleTranslationNote:
       "Extraits courts affichés dans la traduction anglaise de Google. Le pays des voyageurs n’était pas visible dans les extraits publics.",
     previousReviews: "Avis précédents",
     nextReviews: "Avis suivants",
