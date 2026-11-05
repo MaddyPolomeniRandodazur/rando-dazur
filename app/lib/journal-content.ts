@@ -7,7 +7,7 @@ export type JournalCopy = {
   faqs: { question: string; answer: string }[];
 };
 export type JournalArticle = {
-  slug: string; lastModified?: string; image: string; alt: Record<Locale, string>;
+  slug: string; lastModified?: string; image: string; coverCaption?: Record<Locale, string>; alt: Record<Locale, string>;
   sources: { name: string; url: string }[];
   photos?: { image: string; alt: Record<Locale, string>; caption: Record<Locale, string> }[];
   copy: Record<Locale, JournalCopy>;
