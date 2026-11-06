@@ -515,7 +515,7 @@ export const journalArticles: JournalArticle[] = [
         ]
       }
     }
-  },,
+  },
 {
   "slug": "gelee-fleurs-mimosa-recette",
   "lastModified": "2026-11-06",
