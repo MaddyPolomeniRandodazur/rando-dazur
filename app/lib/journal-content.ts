@@ -515,7 +515,241 @@ export const journalArticles: JournalArticle[] = [
         ]
       }
     }
+  },,
+{
+  "slug": "gelee-fleurs-mimosa-recette",
+  "lastModified": "2026-11-06",
+  "image": "/images/mimosa/mimosa-outdoor-break.webp",
+  "alt": {
+    "fr": "Petites fleurs de mimosa pour une recette maison",
+    "en": "Mimosa blossoms for a homemade recipe"
   },
+  "sources": [
+    {
+      "name": "Domaine du Rayol — recette de gelée de mimosa",
+      "url": "https://www.domainedurayol.org/recette-du-cafe-des-jardiniers-la-gelee-de-mimosa/"
+    },
+    {
+      "name": "Muséum national d’Histoire naturelle — le mimosa",
+      "url": "https://www.mnhn.fr/fr/mimosa"
+    }
+  ],
+  "copy": {
+    "fr": {
+      "title": "Gelée de mimosa maison : une recette ensoleillée",
+      "description": "Une recette de gelée de mimosa aux fleurs d’Acacia dealbata, parfumée au citron. Préparez cette gourmandise hivernale avec les conseils de Rando d’Azur.",
+      "intro": "Quand les collines de la Côte d’Azur se parent de jaune, le mimosa peut aussi s’inviter en cuisine. Voici une recette de gelée inspirée de celle du Café des Jardiniers du Domaine du Rayol. Elle met à l’honneur le parfum floral des fleurs, avec une pointe de citron.",
+      "sections": [
+        {
+          "title": "Avant de commencer : identifier les fleurs",
+          "paragraphs": [
+            "Cette recette est conçue pour les fleurs du mimosa d’hiver, Acacia dealbata. Le Muséum national d’Histoire naturelle indique que ses fleurs sont comestibles et acidulées, tandis que ses gousses ne le sont pas. Utilisez uniquement les petites fleurs jaunes correctement identifiées : jamais de fleurs de fleuriste, ni de végétaux provenant d’un lieu traité ou exposé à la pollution.",
+            "Cueillez avec parcimonie, avec l’accord du propriétaire si nécessaire, et laissez suffisamment de fleurs sur l’arbre pour la nature et les autres visiteurs. En cas de doute sur l’identification, ne consommez pas la plante."
+          ]
+        },
+        {
+          "title": "Ingrédients",
+          "paragraphs": [
+            "Pour une petite préparation : 50 g de fleurs de mimosa sans tiges, 500 ml d’eau, 175 g de sucre, le jus d’un demi-citron, 3 g d’agar-agar et 10 ml d’eau froide pour le délayer."
+          ]
+        },
+        {
+          "title": "Préparation",
+          "paragraphs": [
+            "Détachez les fleurs des tiges et retirez les feuilles et petits débris. Faites bouillir l’eau, versez-la sur les fleurs, couvrez et laissez infuser au moins une heure. Filtrez en pressant doucement les fleurs pour récupérer l’infusion.",
+            "Versez l’infusion dans une casserole avec le sucre et le jus de citron, puis portez à ébullition. Délayez l’agar-agar dans l’eau froide, ajoutez-le à la casserole et laissez frémir 8 minutes en remuant. Versez dans un récipient propre et laissez refroidir. Cette gelée fraîche est à conserver au réfrigérateur ; ce n’est pas une recette de conserve longue durée."
+          ]
+        },
+        {
+          "title": "Comment la déguster ?",
+          "paragraphs": [
+            "Sur une tartine, dans un yaourt nature ou avec un dessert, cette gelée apporte une note florale et citronnée. Une petite cuillerée suffit pour découvrir son parfum.",
+            "Maddy prévoit aussi de faire goûter ses préparations au mimosa lors de randonnées de saison avec Rando d’Azur, selon les dates et les disponibilités."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Les fleurs de mimosa sont-elles comestibles ?",
+          "answer": "Le Muséum national d’Histoire naturelle indique que les fleurs du mimosa d’hiver (Acacia dealbata) sont comestibles. Cette recette utilise uniquement les fleurs correctement identifiées, pas les gousses."
+        },
+        {
+          "question": "Peut-on utiliser un bouquet de mimosa acheté chez un fleuriste ?",
+          "answer": "Non. Pour une recette, utilisez uniquement des fleurs dont l’origine et l’absence de traitement sont connues. Les fleurs vendues comme fleurs coupées ne sont pas destinées à être consommées."
+        },
+        {
+          "question": "Combien de temps conserver la gelée ?",
+          "answer": "Cette version à l’agar-agar est une préparation fraîche : gardez-la au réfrigérateur et consommez-la rapidement. Elle n’est pas présentée comme une conserve stérilisée."
+        }
+      ]
+    },
+    "en": {
+      "title": "Homemade mimosa blossom jelly: a taste of sunshine",
+      "description": "A mimosa blossom jelly recipe made with correctly identified Acacia dealbata flowers and lemon. Try this fragrant winter treat with Rando d’Azur.",
+      "intro": "When the hills of the French Riviera turn golden, mimosa can find its way into the kitchen too. Here is a blossom jelly recipe inspired by the Café des Jardiniers at Domaine du Rayol. Floral notes meet a squeeze of lemon in this winter treat.",
+      "sections": [
+        {
+          "title": "Before you start: identify the blossoms",
+          "paragraphs": [
+            "This recipe is for winter mimosa flowers, Acacia dealbata. The French National Museum of Natural History says its flowers are edible and tangy, while its pods are not. Use only the small yellow blossoms when the plant has been correctly identified. Never use florist flowers or plants from treated or polluted areas.",
+            "Pick sparingly, seek the landowner’s permission where needed, and leave plenty of flowers on the tree for wildlife and other visitors. If you are unsure of the identification, do not eat the plant."
+          ]
+        },
+        {
+          "title": "Ingredients",
+          "paragraphs": [
+            "For a small batch: 50 g mimosa blossoms without stems, 500 ml water, 175 g sugar, the juice of half a lemon, 3 g agar-agar and 10 ml cold water to dissolve it."
+          ]
+        },
+        {
+          "title": "Method",
+          "paragraphs": [
+            "Remove the blossoms from their stems and pick out leaves or debris. Bring the water to a boil, pour it over the flowers, cover and steep for at least one hour. Strain, gently pressing the blossoms to collect the infusion.",
+            "Pour the infusion into a saucepan with the sugar and lemon juice, then bring to a boil. Dissolve the agar-agar in the cold water, add it to the pan and simmer for 8 minutes, stirring. Pour into a clean container and let cool. This is a fresh jelly; keep it refrigerated. It is not a long-term preserve."
+          ]
+        },
+        {
+          "title": "How to enjoy it",
+          "paragraphs": [
+            "Spread a little on toast, spoon it into plain yoghurt or serve it with dessert for a floral, lemony note.",
+            "Maddy also plans to offer tastes of her mimosa creations on seasonal Rando d’Azur hikes, subject to dates and availability."
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Are mimosa flowers edible?",
+          "answer": "The French National Museum of Natural History says the flowers of winter mimosa (Acacia dealbata) are edible. This recipe uses only correctly identified blossoms, not the pods."
+        },
+        {
+          "question": "Can I use florist mimosa?",
+          "answer": "No. Use only flowers from a known, untreated source. Cut flowers sold by florists are not intended for eating."
+        },
+        {
+          "question": "How should I store the jelly?",
+          "answer": "This agar-agar version is a fresh preparation. Keep it refrigerated and enjoy it promptly; it is not presented as a sterilised shelf-stable preserve."
+        }
+      ]
+    }
+  }
+},
+{
+  "slug": "sirop-fleurs-mimosa-recette",
+  "lastModified": "2026-11-06",
+  "image": "/images/mimosa/mimosa-outdoor-break.webp",
+  "alt": {
+    "fr": "Infusion de fleurs de mimosa pour préparer un sirop maison",
+    "en": "Mimosa blossom infusion for homemade syrup"
+  },
+  "sources": [
+    {
+      "name": "Conservatoire du Patrimoine du Freinet — une mine d’or hivernale",
+      "url": "https://www.conservatoiredufreinet.org/ressources/une-mine-dor-hivernale/"
+    },
+    {
+      "name": "Muséum national d’Histoire naturelle — le mimosa",
+      "url": "https://www.mnhn.fr/fr/mimosa"
+    }
+  ],
+  "copy": {
+    "fr": {
+      "title": "Sirop de mimosa maison : la recette des fleurs en bouteille",
+      "description": "Apprenez à préparer un sirop de mimosa maison avec des fleurs d’Acacia dealbata, de l’eau et du sucre. Une recette parfumée pour l’hiver azuréen.",
+      "intro": "Un peu de mimosa, de l’eau, du sucre : et voilà un sirop aux parfums de la Côte d’Azur. Cette méthode, publiée par le Conservatoire du Patrimoine du Freinet, concentre l’infusion de fleurs avec le double de son poids en sucre.",
+      "sections": [
+        {
+          "title": "Quelles fleurs utiliser ?",
+          "paragraphs": [
+            "Cette recette est conçue pour les fleurs du mimosa d’hiver (Acacia dealbata), correctement identifiées. Le Muséum national d’Histoire naturelle indique que ses fleurs sont comestibles et que ses gousses ne le sont pas. Prélevez uniquement les petites fleurs jaunes, sur un arbre dont vous connaissez l’origine et qui n’a pas été traité.",
+            "Évitez les bouquets de fleuriste, les bords de route et les zones traitées. Cueillez seulement une petite quantité, sans casser les branches, et renoncez à la dégustation si l’identification n’est pas certaine."
+          ]
+        },
+        {
+          "title": "Ingrédients",
+          "paragraphs": [
+            "Un bol de fleurs de mimosa sans tiges ni feuilles, 400 ml d’eau, puis du sucre à raison de deux fois le poids de l’infusion filtrée. Par exemple, pour 300 g d’infusion, ajoutez 600 g de sucre."
+          ]
+        },
+        {
+          "title": "Préparation",
+          "paragraphs": [
+            "Détachez les fleurs et secouez-les délicatement pour déloger les éventuels petits visiteurs. Portez l’eau à ébullition, versez-la sur les fleurs, couvrez et laissez infuser jusqu’à refroidissement complet.",
+            "Filtrez l’infusion et pesez-la. Ajoutez deux fois son poids en sucre, puis faites chauffer à feu doux jusqu’à dissolution. Portez à petits bouillons une dizaine de minutes en remuant. Versez dans une bouteille propre et ébouillantée. Laissez refroidir puis conservez au réfrigérateur. Cette recette maison n’est pas présentée comme une conserve à température ambiante."
+          ]
+        },
+        {
+          "title": "À boire et à goûter",
+          "paragraphs": [
+            "Allongez une petite dose de sirop avec de l’eau plate ou pétillante, ou ajoutez-en quelques gouttes à un dessert. Ajustez la quantité selon votre goût.",
+            "Maddy prévoit de faire découvrir son sirop et sa gelée lors de randonnées mimosa avec Rando d’Azur, selon les dates et les disponibilités. Une pause gourmande aux couleurs de l’hiver azuréen !"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "Quel goût a le sirop de mimosa ?",
+          "answer": "Les fleurs du mimosa d’hiver ont une saveur décrite comme acidulée. Le sirop obtenu est floral et sucré ; diluez-le dans de l’eau selon votre goût."
+        },
+        {
+          "question": "Peut-on conserver le sirop hors du réfrigérateur ?",
+          "answer": "Cette recette maison n’établit pas de durée de conservation à température ambiante. Après refroidissement, conservez la bouteille au réfrigérateur et consommez le sirop rapidement."
+        },
+        {
+          "question": "Peut-on utiliser les feuilles ou les gousses ?",
+          "answer": "Non : la recette utilise uniquement les fleurs correctement identifiées. Le Muséum national d’Histoire naturelle indique que les gousses ne sont pas comestibles."
+        }
+      ]
+    },
+    "en": {
+      "title": "Homemade mimosa blossom syrup: a taste of the French Riviera",
+      "description": "Make homemade mimosa syrup with correctly identified Acacia dealbata blossoms, water and sugar. A fragrant recipe for the French Riviera winter.",
+      "intro": "Mimosa, water and sugar: a syrup scented with the French Riviera. This method, shared by the Conservatoire du Patrimoine du Freinet, sweetens a flower infusion with twice its weight in sugar.",
+      "sections": [
+        {
+          "title": "Which blossoms should you use?",
+          "paragraphs": [
+            "This recipe is for correctly identified winter mimosa flowers (Acacia dealbata). The French National Museum of Natural History says its flowers are edible and its pods are not. Use only the small yellow blossoms from a known, untreated source.",
+            "Avoid florist bouquets, roadsides and treated areas. Pick a small amount without breaking branches, and do not taste the flowers if you are unsure of their identity."
+          ]
+        },
+        {
+          "title": "Ingredients",
+          "paragraphs": [
+            "One bowl of mimosa blossoms, with stems and leaves removed; 400 ml water; and sugar equal to twice the weight of the strained infusion. For example, if you have 300 g infusion, add 600 g sugar."
+          ]
+        },
+        {
+          "title": "Method",
+          "paragraphs": [
+            "Remove the blossoms and gently shake them to dislodge any tiny visitors. Bring the water to a boil, pour it over the flowers, cover and leave to infuse until completely cool.",
+            "Strain and weigh the infusion. Add twice its weight in sugar, then heat gently until dissolved. Bring to a gentle simmer for about 10 minutes, stirring. Pour into a clean, scalded bottle. Let cool and keep refrigerated. This homemade recipe is not presented as a shelf-stable preserve."
+          ]
+        },
+        {
+          "title": "Pour, sip and taste",
+          "paragraphs": [
+            "Dilute a small amount with still or sparkling water, or add a few drops to a dessert. Adjust to taste.",
+            "Maddy plans to share tastes of her syrup and jelly on Rando d’Azur mimosa hikes, subject to dates and availability. A golden winter treat from the French Riviera!"
+          ]
+        }
+      ],
+      "faqs": [
+        {
+          "question": "What does mimosa syrup taste like?",
+          "answer": "Winter mimosa flowers are described as tangy. The syrup is floral and sweet; dilute it in water to taste."
+        },
+        {
+          "question": "Can I store the syrup at room temperature?",
+          "answer": "This home recipe does not establish a room-temperature shelf life. Once cooled, keep the bottle refrigerated and enjoy the syrup promptly."
+        },
+        {
+          "question": "Can I use the leaves or pods?",
+          "answer": "No. The recipe uses only correctly identified blossoms. The French National Museum of Natural History says the pods are not edible."
+        }
+      ]
+    }
+  }
+}
 ];
 
 export function getJournalArticle(slug: string) {
