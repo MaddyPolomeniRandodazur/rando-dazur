@@ -82,7 +82,7 @@ export default async function HomePage({ locale }: { locale: Locale }) {
           photo={{ ...heroPhoto, src: "/images/hero/french-riviera-panoramic-picnic.jpg" }}
         />
         <Manifesto locale={locale} photos={experiencePhotos} />
-        <section className="page-width home-seasonal"><MimosaLink locale={locale} /></section>
+        <section className="page-width home-seasonal"><MimosaLink locale={locale} /><div style={{padding:"28px 0"}}><p className="eyebrow">{locale === "fr" ? "À OFFRIR · VALABLE EN 2027" : "GIVE AN EXPERIENCE · VALID IN 2027"}</p><h2>{locale === "fr" ? "Un cadeau à vivre, des souvenirs à partager" : "A gift to experience, memories to share"}</h2><p>{locale === "fr" ? "Pour vos parents, en couple ou en famille : offrez du grand air avec un bon d’achat Rando d’Azur." : "For parents, couples or families: give fresh air and discoveries with a Rando d’Azur gift voucher."}</p><Link className="text-link" href={localePath(locale,"/gift-cards")}>{locale === "fr" ? "Découvrir les bons cadeaux" : "Explore gift vouchers"} ↗</Link></div></section>
         <section className="section" id="about"><div className="page-width"><MaddyProfile locale={locale} compact /></div></section>
         <section className="page-width home-shortcuts" aria-label={locale === "fr" ? "Pour aller plus loin" : "Explore more"}>
           <Link className="text-link" href={localePath(locale, "/experiences/hiking-experiences")}>{locale === "fr" ? "Guide randonnée dans les Alpes-Maritimes" : "Private hiking guides in the Alpes-Maritimes"} ↗</Link>

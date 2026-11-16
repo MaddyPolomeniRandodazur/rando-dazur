@@ -101,6 +101,7 @@ export default function Footer({ locale, homeVisual = false }: { locale: Locale;
           </div>
           <nav className="footer-links" aria-label={copy.navigationLabel}>
             <a href={`${root}#experiences`}>{copy.experiences}</a>
+            <a href={localePath(locale, "/gift-cards")}>{locale === "fr" ? "Bons cadeaux : offrez une expérience" : "Experience gift vouchers"}</a>
             <a href={localePath(locale, "/kids-schools-youth-groups")}>{youthGroupsContent[locale].title}</a>
             <a href={localePath(locale, "/travel-trade")}>{copy.mice}</a>
             <a href={localePath(locale, "/travel-trade")}>{getTravelTradeContent(locale).linkLabel}</a>

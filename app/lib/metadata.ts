@@ -59,7 +59,7 @@ export function getLocalizedPageMetadata({
     ? destinationImages[slug]?.[0]
     : path.startsWith("/experiences/") ? experienceImages[slug]?.[0] : undefined;
   const socialImage = image ?? (path === "/travel-trade" ? "/images/travel-trade/cannes-terrace-collaboration.jpg" : pagePhoto?.src ?? "/images/hero/french-riviera-panoramic-picnic.jpg");
-  const socialImageAlt = path === "/experiences/edible-plants" ? ediblePlantsAlt[locale] : path === "/travel-trade" ? (locale === "fr" ? "Trois personnes collaborent sur une terrasse face à Cannes et à la Méditerranée" : "Three people collaborating on a terrace overlooking Cannes and the Mediterranean") : localizedImageAlt(locale, path === "/meet-maddy" ? "Maddy Polomeni with yellow mimosa on the French Riviera" : pagePhoto?.alt ?? "A Provençal picnic overlooking the French Riviera");
+  const socialImageAlt = path === "/gift-cards" ? (locale === "fr" ? "Bon cadeau Rando d’Azur valable en 2027, illustration de la Côte d’Azur" : "Rando d’Azur gift voucher valid in 2027, French Riviera illustration") : path === "/experiences/edible-plants" ? ediblePlantsAlt[locale] : path === "/travel-trade" ? (locale === "fr" ? "Trois personnes collaborent sur une terrasse face à Cannes et à la Méditerranée" : "Three people collaborating on a terrace overlooking Cannes and the Mediterranean") : localizedImageAlt(locale, path === "/meet-maddy" ? "Maddy Polomeni with yellow mimosa on the French Riviera" : pagePhoto?.alt ?? "A Provençal picnic overlooking the French Riviera");
 
   return {
     metadataBase: baseUrl,

@@ -109,6 +109,7 @@ function ExperiencesMenu({
             </div>
           </details>
         ))}
+        <Link href={localePath(locale, "/gift-cards")} onClick={closeMenus}>{locale === "fr" ? "Bons cadeaux" : "Gift vouchers"}</Link>
         <Link href={localePath(locale, "/partners-on-the-trail")} onClick={closeMenus}>{locale === "fr" ? "Mes partenaires sur le terrain" : "My partners on the trail"}</Link>
       </nav>
     </details>
